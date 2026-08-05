@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>car-training-sedan.glb — training car</title>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.184.0/build/three.module.js",
+    "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.184.0/examples/jsm/controls/OrbitControls.js",
+    "three/addons/exporters/OBJExporter.js": "https://unpkg.com/three@0.184.0/examples/jsm/exporters/OBJExporter.js",
+    "three/addons/exporters/GLTFExporter.js": "https://unpkg.com/three@0.184.0/examples/jsm/exporters/GLTFExporter.js"
+  },
+  "integrity": {
+    "https://unpkg.com/three@0.184.0/build/three.module.js": "sha384-8FCZ1eVO6it4+pbec2aDtnTrwjWXZLJRC+MAGCIPDgsYnUrl/E0A2YlF8ioMKI/J",
+    "https://unpkg.com/three@0.184.0/build/three.core.js": "sha384-dw2ooPewaEIrAgl6oFDBmmBWCE9oW9LxRGcfwZ0hLvEprzo202wXl7vCYHRlSnOT",
+    "https://unpkg.com/three@0.184.0/examples/jsm/controls/OrbitControls.js": "sha384-4rziNxOBZKQ69i+w+f89KJ55TCYquwchVbByQwmaOeIOXdOU2PLDn3kOfXHwIJC9",
+    "https://unpkg.com/three@0.184.0/examples/jsm/exporters/OBJExporter.js": "sha384-nbwtoZENJD3Vq+ACK0CuGQdPMuDWHkamC2KJD70EV5nfg6jQjfppKOea07YJN+N3",
+    "https://unpkg.com/three@0.184.0/examples/jsm/exporters/GLTFExporter.js": "sha384-VofkvpG6HERhFCYbsUOHeNXBCqID2nfqkQqnVzE1jc/oPcz+qJ13ADdXH08hE+cQ"
+  }
+}
+</script>
+<style>
+  html,body{margin:0;height:100%;background:#0B1120}
+  three-d-stage:not(:defined){visibility:hidden}
+  three-d-stage{display:block;width:100vw;height:100vh}
+</style>
+</head>
+<body>
+<three-d-stage name="car-training-sedan" background="#0B1120" autorotate></three-d-stage>
+<script src="./three-d-stage.js"></script>
+<script type="module">
+const stage = document.querySelector('three-d-stage');
+const { THREE } = await stage.ready;
+
+const M = {
+  paint:   new THREE.MeshStandardMaterial({ name:'CarPaint',  color:0xB9BEC6, metalness:0.35, roughness:0.34 }),
+  paintDk: new THREE.MeshStandardMaterial({ name:'CarPaintShadow', color:0x9AA0A8, metalness:0.35, roughness:0.40 }),
+  glass:   new THREE.MeshStandardMaterial({ name:'Glass', color:0x151C29, metalness:0.25, roughness:0.08, transparent:true, opacity:0.72 }),
+  trim:    new THREE.MeshStandardMaterial({ name:'TrimBlack', color:0x1A1D23, metalness:0.2, roughness:0.62 }),
+  rubber:  new THREE.MeshStandardMaterial({ name:'Rubber', color:0x141518, metalness:0.0, roughness:0.92 }),
+  chrome:  new THREE.MeshStandardMaterial({ name:'Chrome', color:0xC6CBD2, metalness:0.4, roughness:0.20 }),
+  blank:   new THREE.MeshStandardMaterial({ name:'BlankDecal', color:0xF4F5F7, metalness:0.0, roughness:0.45 }),
+  lens:    new THREE.MeshStandardMaterial({ name:'HeadlightLens', color:0xE6EEF7, metalness:0.15, roughness:0.10, emissive:0x223044, emissiveIntensity:0.5 }),
+  tail:    new THREE.MeshStandardMaterial({ name:'TaillightLens', color:0x8E1520, metalness:0.1, roughness:0.18, emissive:0x3A0409, emissiveIntensity:0.6 }),
+  cabinInt:new THREE.MeshStandardMaterial({ name:'Interior', color:0x2A2E36, metalness:0.0, roughness:0.85 })
+};
+
+const mesh = (geo, mat, name) => { const m = new THREE.Mesh(geo, mat); m.name = name; return m; };
+
+/* ---------- body shell: side profile extruded across the width ---------- */
+const HALF = 0.89;                 // 1.78 m wide
+const lower = new THREE.Shape();
+lower.moveTo(2.14, 0.46);
+lower.lineTo(2.23, 0.68);
+lower.lineTo(2.23, 0.92);
+lower.quadraticCurveTo(2.16, 1.01, 1.98, 1.04);   // hood leading edge
+lower.quadraticCurveTo(1.50, 1.07, 1.06, 1.19);  // hood up to the cowl
+lower.lineTo(-1.02, 1.21);                       // belt line
+lower.quadraticCurveTo(-1.50, 1.20, -2.02, 1.11);// rear deck
+lower.lineTo(-2.18, 1.02);
+lower.quadraticCurveTo(-2.26, 0.94, -2.24, 0.72);
+lower.lineTo(-2.16, 0.34);
+lower.lineTo(-1.86, 0.30);
+lower.absarc(-1.44, 0.30, 0.42, Math.PI, 0, true);   // rear wheel arch
+lower.lineTo(1.02, 0.30);
+lower.absarc(1.44, 0.30, 0.42, Math.PI, 0, true);    // front wheel arch
+lower.lineTo(2.14, 0.34);
+lower.closePath();
+
+const extrude = (shape, depth, bevel) => new THREE.ExtrudeGeometry(shape, {
+  depth, bevelEnabled:true, bevelThickness:bevel, bevelSize:bevel, bevelSegments:4, curveSegments:14, steps:1
+});
+
+const lowerGeo = extrude(lower, (HALF*2) - 0.12, 0.06);
+lowerGeo.translate(0, 0, -(HALF - 0.06));
+
+const cabin = new THREE.Shape();
+cabin.moveTo(1.06, 1.10);
+cabin.quadraticCurveTo(0.84, 1.34, 0.48, 1.52);   // raked A-pillar
+cabin.lineTo(-0.34, 1.56);                        // roof
+cabin.quadraticCurveTo(-0.98, 1.53, -1.24, 1.34); // C-pillar
+cabin.lineTo(-1.46, 1.10);
+cabin.closePath();
+const CH = 0.79;                   // cabin half width — tumblehome
+const cabinGeo = extrude(cabin, (CH*2) - 0.10, 0.05);
+cabinGeo.translate(0, 0, -(CH - 0.05));
+
+const Body = new THREE.Group();
+Body.name = 'Body';
+Body.add(mesh(lowerGeo, M.paint, 'Body_Lower'));
+Body.add(mesh(cabinGeo, M.paint, 'Body_Cabin'));
+
+// rocker sills
+[1,-1].forEach(s => {
+  const g = new THREE.BoxGeometry(2.10, 0.10, 0.10);
+  g.translate(0, 0.30, s*(HALF-0.03));
+  Body.add(mesh(g, M.trim, s>0 ? 'Body_Sill_L' : 'Body_Sill_R'));
+});
+// bumpers + grille
+const bumperF = new THREE.BoxGeometry(0.16, 0.30, 1.62); bumperF.translate(2.19, 0.50, 0);
+Body.add(mesh(bumperF, M.trim, 'Body_Bumper_F'));
+const bumperR = new THREE.BoxGeometry(0.16, 0.30, 1.62); bumperR.translate(-2.19, 0.50, 0);
+Body.add(mesh(bumperR, M.trim, 'Body_Bumper_R'));
+const grille = new THREE.BoxGeometry(0.10, 0.20, 1.10); grille.translate(2.24, 0.80, 0);
+Body.add(mesh(grille, M.trim, 'Body_Grille'));
+// door shut lines
+[[0.98],[ -0.10]].forEach(([x], i) => {
+  [1,-1].forEach(s => {
+    const g = new THREE.BoxGeometry(0.016, 0.62, 0.02);
+    g.translate(x, 0.80, s*(HALF+0.002));
+    Body.add(mesh(g, M.trim, `Body_Shutline_${i}_${s>0?'L':'R'}`));
+  });
+});
+// interior floor block so the cabin doesn't read hollow through the glass
+const floor = new THREE.BoxGeometry(2.0, 0.5, 1.5); floor.translate(-0.1, 0.9, 0);
+Body.add(mesh(floor, M.cabinInt, 'Body_InteriorBlock'));
+// taillights
+[1,-1].forEach(s => {
+  const g = new THREE.BoxGeometry(0.10, 0.16, 0.42);
+  g.translate(-2.20, 0.92, s*0.56);
+  Body.add(mesh(g, M.tail, s>0 ? 'Body_Taillight_L' : 'Body_Taillight_R'));
+});
+
+/* ---------- glass ---------- */
+const Glass = new THREE.Group(); Glass.name = 'Glass';
+const sideShape = new THREE.Shape();
+sideShape.moveTo(0.94, 1.18);
+sideShape.lineTo(0.56, 1.46);
+sideShape.lineTo(-1.10, 1.47);
+sideShape.lineTo(-1.36, 1.18);
+sideShape.closePath();
+[1,-1].forEach(s => {
+  const g = new THREE.ExtrudeGeometry(sideShape, { depth:0.02, bevelEnabled:false, curveSegments:6, steps:1 });
+  g.translate(0, 0, s*(CH + 0.005) - (s>0 ? 0 : 0.02));
+  Glass.add(mesh(g, M.glass, s>0 ? 'Glass_Side_L' : 'Glass_Side_R'));
+});
+const panel = (x1,y1,x2,y2,width,name) => {
+  const dx = x2-x1, dy = y2-y1, len = Math.hypot(dx,dy), ang = Math.atan2(dy,dx);
+  const g = new THREE.BoxGeometry(len*0.98, 0.025, width);
+  const m = mesh(g, M.glass, name);
+  const nx = dy/len, ny = -dx/len;
+  m.position.set((x1+x2)/2 + nx*0.02, (y1+y2)/2 + ny*0.02, 0);
+  m.rotation.z = ang;
+  return m;
+};
+Glass.add(panel(1.06, 1.12, 0.49, 1.51, 1.44, 'Glass_Windshield'));
+Glass.add(panel(-1.23, 1.34, -1.45, 1.12, 1.40, 'Glass_RearWindow'));
+
+/* ---------- wheels ---------- */
+const R_TIRE = 0.355, W_TIRE = 0.23;
+function makeWheel(name) {
+  const g = new THREE.Group(); g.name = name;
+  const tire = new THREE.CylinderGeometry(R_TIRE, R_TIRE, W_TIRE, 34, 1);
+  tire.rotateX(Math.PI/2);
+  g.add(mesh(tire, M.rubber, name + '_Tire'));
+  const rim = new THREE.CylinderGeometry(R_TIRE*0.68, R_TIRE*0.68, W_TIRE*1.02, 24, 1);
+  rim.rotateX(Math.PI/2);
+  g.add(mesh(rim, M.chrome, name + '_Rim'));
+  const hub = new THREE.CylinderGeometry(0.06, 0.06, W_TIRE*1.2, 12);
+  hub.rotateX(Math.PI/2);
+  g.add(mesh(hub, M.trim, name + '_Hub'));
+  for (let i=0;i<5;i++){
+    const sp = new THREE.BoxGeometry(0.045, R_TIRE*0.52, 0.03);
+    sp.translate(0, R_TIRE*0.30, 0);
+    sp.rotateZ(i * Math.PI*2/5);
+    const m = mesh(sp, M.trim, `${name}_Spoke_${i+1}`);
+    g.add(m);
+  }
+  return g;
+}
+const wheels = [
+  ['Wheel_FL',  1.44,  0.79],
+  ['Wheel_FR',  1.44, -0.79],
+  ['Wheel_RL', -1.44,  0.79],
+  ['Wheel_RR', -1.44, -0.79]
+].map(([n,x,z]) => { const w = makeWheel(n); w.position.set(x, R_TIRE, z); return w; });
+
+/* ---------- roof sign: bracket + blank front-facing quad (own UV island) ---------- */
+const RoofSign = new THREE.Group(); RoofSign.name = 'RoofSign';
+const signFace = new THREE.BoxGeometry(0.055, 0.26, 0.86);
+const signMesh = mesh(signFace, M.blank, 'RoofSign_Face');
+signMesh.position.set(0.00, 1.78, 0);
+RoofSign.add(signMesh);
+[1,-1].forEach(s => {
+  const leg = new THREE.BoxGeometry(0.06, 0.13, 0.06);
+  leg.translate(0.00, 1.595, s*0.34);
+  RoofSign.add(mesh(leg, M.trim, s>0 ? 'RoofSign_Leg_L' : 'RoofSign_Leg_R'));
+});
+const signBase = new THREE.BoxGeometry(0.30, 0.035, 0.80);
+signBase.translate(0.00, 1.565, 0);
+RoofSign.add(mesh(signBase, M.trim, 'RoofSign_Bracket'));
+
+/* ---------- door decals: blank magnetic panels, own UV island ---------- */
+const decalGeo = () => new THREE.PlaneGeometry(0.78, 0.36, 1, 1);
+const DoorDecal_L = mesh(decalGeo(), M.blank, 'DoorDecal_L');
+DoorDecal_L.position.set(0.42, 0.80, HALF + 0.012);
+DoorDecal_L.material = M.blank;
+const DoorDecal_R = mesh(decalGeo(), M.blank, 'DoorDecal_R');
+DoorDecal_R.position.set(0.42, 0.80, -(HALF + 0.012));
+DoorDecal_R.rotation.y = Math.PI;
+
+/* ---------- mirrors ---------- */
+function makeMirror(name, s) {
+  const g = new THREE.Group(); g.name = name;
+  const arm = new THREE.BoxGeometry(0.08, 0.05, 0.12);
+  arm.translate(0.96, 1.16, s*(HALF + 0.055));
+  g.add(mesh(arm, M.trim, name + '_Arm'));
+  const shell = new THREE.BoxGeometry(0.24, 0.13, 0.10);
+  shell.translate(0.93, 1.18, s*(HALF + 0.16));
+  g.add(mesh(shell, M.paint, name + '_Shell'));
+  const face = new THREE.BoxGeometry(0.19, 0.10, 0.02);
+  face.translate(0.845, 1.18, s*(HALF + 0.165));
+  g.add(mesh(face, M.glass, name + '_Face'));
+  return g;
+}
+
+/* ---------- headlights ---------- */
+function makeHeadlight(name, s) {
+  const g = new THREE.Group(); g.name = name;
+  const lens = new THREE.BoxGeometry(0.09, 0.115, 0.40);
+  lens.translate(2.185, 0.985, s*0.56);
+  g.add(mesh(lens, M.lens, name + '_Lens'));
+  const ring = new THREE.BoxGeometry(0.075, 0.155, 0.44);
+  ring.translate(2.175, 0.985, s*0.56);
+  g.add(mesh(ring, M.trim, name + '_Housing'));
+  return g;
+}
+
+/* ---------- instructor dual-control brake pedal (passenger footwell) ---------- */
+const Pedal_Instructor = new THREE.Group(); Pedal_Instructor.name = 'Pedal_Instructor';
+{
+  const pad = new THREE.BoxGeometry(0.075, 0.19, 0.11);
+  pad.translate(0.86, 0.52, -0.46);
+  const padMesh = mesh(pad, M.rubber, 'Pedal_Instructor_Pad');
+  padMesh.rotation.z = -0.28;
+  Pedal_Instructor.add(padMesh);
+  const arm = new THREE.BoxGeometry(0.42, 0.035, 0.035);
+  arm.translate(0.62, 0.42, -0.46);
+  Pedal_Instructor.add(mesh(arm, M.chrome, 'Pedal_Instructor_Arm'));
+  const rod = new THREE.BoxGeometry(0.90, 0.028, 0.028);
+  rod.translate(0.44, 0.40, -0.10);
+  rod.rotateY(-0.36);
+  Pedal_Instructor.add(mesh(rod, M.chrome, 'Pedal_Instructor_Linkage'));
+  const brk = new THREE.BoxGeometry(0.10, 0.10, 0.05);
+  brk.translate(0.40, 0.40, 0.30);
+  Pedal_Instructor.add(mesh(brk, M.trim, 'Pedal_Instructor_Bracket'));
+}
+
+/* ---------- assemble ---------- */
+const car = new THREE.Group();
+car.name = 'car_training_sedan';
+car.add(Body, Glass, ...wheels, RoofSign, DoorDecal_L, DoorDecal_R,
+        makeMirror('Mirror_L', 1), makeMirror('Mirror_R', -1),
+        makeHeadlight('Headlight_L', 1), makeHeadlight('Headlight_R', -1),
+        Pedal_Instructor);
+
+stage.setObject(car);
+
+let tris = 0;
+car.traverse(o => { if (o.isMesh && o.geometry.index) tris += o.geometry.index.count/3;
+                    else if (o.isMesh) tris += o.geometry.attributes.position.count/3; });
+console.log('triangles', Math.round(tris));
+</script>
+</body>
+</html>

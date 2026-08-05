@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en" data-restored-from="variant-c-atelier.html">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{name}} — Private Driving Instruction in {{city}}, California</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="{{name}}: DMV-licensed private driving instruction in {{city}}. One instructor, start to finish. Teen and adult lessons, road-test preparation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   VARIANT C — "ATELIER"
+   Positioning : Premium & Personal (one instructor, start to finish)
+   Pattern     : Social Proof-Focused / editorial  (ui-ux-pro-max)
+   Palette     : B2B Service navy, warmed — professional navy + brass
+   Type        : Fraunces (editorial serif) + Inter
+   Motif       : Editorial layout, oversized numerals, hairline rules
+   ============================================================ */
+
+:root{
+  --navy:#0F1D33; --navy-2:#1B2E4D; --navy-soft:#39527A;
+  /* #B4823C reaches only 3.22:1 on --paper and is used for 10-12px labels —
+     deepened to #8A6124 (5.23:1 on paper, 5.50:1 white-on-brass for .btn-brass).
+     --brass-lt stays light: it is only ever used on navy (7.72:1). */
+  --brass:#8A6124; --brass-lt:#D8A75B; --brass-pale:#F3E8D6;
+  --paper:#FBF9F5; --paper-2:#F3EFE8; --white:#FFFFFF;
+  --fg:#12203A; --fg-muted:#5C6B84; --fg-inv:#F2EFE9;
+  --rule:#DDD5C8; --rule-dark:rgba(255,255,255,.16);
+  --star:#B4823C;
+
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s5:1.25rem;
+  --s6:1.5rem; --s8:2rem; --s10:2.5rem; --s12:3rem; --s16:4rem; --s24:6rem;
+  --r-sm:3px; --r-md:6px; --r-full:999px;
+  --ease:cubic-bezier(.22,.7,.3,1);
+  --maxw:1200px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--fg);
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block}
+h1,h2,h3,h4{margin:0;font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.1;letter-spacing:-.018em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
+
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--s6)}
+.section{padding-block:var(--s24)}
+@media(max-width:768px){ .section{padding-block:var(--s16)} }
+.dark{background:var(--navy);color:var(--fg-inv)}
+.dark h1,.dark h2,.dark h3{color:#fff}
+
+.kicker{
+  display:block;font-family:'Inter',sans-serif;font-size:.7rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--brass);
+  padding-bottom:var(--s3);border-bottom:1px solid var(--rule);
+  margin-bottom:var(--s6);
+}
+.dark .kicker{color:var(--brass-lt);border-color:var(--rule-dark)}
+.h2{font-size:clamp(1.9rem,4.4vw,3.1rem);max-width:20ch}
+.lede{font-size:clamp(1.02rem,1.5vw,1.16rem);color:var(--fg-muted);max-width:58ch;line-height:1.75}
+.dark .lede{color:#B9C6DA}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);
+  min-height:54px;padding:0 var(--s8);border:1px solid transparent;border-radius:var(--r-sm);
+  font-family:'Inter',sans-serif;font-weight:600;font-size:.94rem;letter-spacing:.01em;
+  transition:background-color .2s var(--ease),color .2s var(--ease),border-color .2s var(--ease),transform .2s var(--ease);
+  touch-action:manipulation;white-space:nowrap;
+}
+.btn-solid{background:var(--navy);color:#fff}
+.btn-solid:hover{background:var(--navy-2);transform:translateY(-2px)}
+.btn-brass{background:var(--brass);color:#fff}
+.btn-brass:hover{background:#9E7133;transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--fg);border-color:var(--rule)}
+.btn-line:hover{border-color:var(--navy);background:var(--white);transform:translateY(-2px)}
+.dark .btn-line{color:#fff;border-color:rgba(255,255,255,.32)}
+.dark .btn-line:hover{background:rgba(255,255,255,.09);border-color:#fff}
+.btn-sm{min-height:44px;font-size:.86rem;padding:0 var(--s5)}
+
+/* ---------- header ---------- */
+.utility{background:var(--navy);color:#A9BAD3;font-size:.76rem;letter-spacing:.02em}
+.utility .wrap{display:flex;gap:var(--s4);align-items:center;justify-content:space-between;min-height:38px;flex-wrap:wrap}
+.utility a{display:inline-flex;align-items:center;min-height:44px}
+.utility strong{color:#fff;font-weight:600}
+
+header{position:sticky;top:0;z-index:100;background:rgba(251,249,245,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nav{display:flex;align-items:center;gap:var(--s6);min-height:80px}
+.brand{display:flex;flex-direction:column;justify-content:center;flex-shrink:0;line-height:1.15;min-height:44px}
+.brand .n{font-family:'Fraunces',serif;font-size:1.32rem;font-weight:600;letter-spacing:-.02em}
+.brand .s{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-top:2px}
+.navlinks{display:flex;gap:var(--s8);margin-left:auto;font-size:.87rem;font-weight:500}
+.navlinks a{color:var(--fg-muted);padding:.4rem 0;position:relative;transition:color .18s var(--ease)}
+.navlinks a::after{content:'';position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--brass);transition:width .24s var(--ease)}
+.navlinks a:hover{color:var(--navy)} .navlinks a:hover::after{width:100%}
+@media(max-width:1040px){ .navlinks{display:none} .nav{min-height:66px} }
+/* below 600px the sticky bottom bar already carries the CTA, so drop the header one */
+@media(max-width:600px){
+  .nav > .btn{display:none}
+  .brand{min-width:0}
+  .brand .n{font-size:1.12rem}
+  .brand .s{font-size:.56rem;letter-spacing:.14em}
+}
+
+/* =========================================================
+   HERO — editorial split
+   ========================================================= */
+.hero{padding-block:var(--s16) var(--s24);position:relative;overflow:hidden}
+.hero::after{
+  content:'';position:absolute;right:-10%;top:-10%;width:44vw;height:44vw;max-width:620px;max-height:620px;
+  border-radius:50%;background:radial-gradient(circle,var(--brass-pale) 0%,transparent 68%);z-index:0;opacity:.85;
+}
+.hero .wrap{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:var(--s16);align-items:center}
+@media(max-width:980px){ .hero-grid{grid-template-columns:1fr;gap:var(--s12)} }
+
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);font-weight:500;line-height:1.02;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--brass);font-weight:400}
+.hero-lede{margin-top:var(--s6);font-size:clamp(1.02rem,1.6vw,1.2rem);color:var(--fg-muted);max-width:46ch;line-height:1.72}
+.hero-cta{display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:var(--s10)}
+
+.hero-meta{display:flex;gap:var(--s10);flex-wrap:wrap;margin-top:var(--s12);padding-top:var(--s6);border-top:1px solid var(--rule)}
+.hmeta .n{font-family:'Fraunces',serif;font-size:2rem;font-weight:500;line-height:1;font-variant-numeric:tabular-nums;color:var(--navy)}
+.hmeta .l{font-size:.74rem;letter-spacing:.13em;text-transform:uppercase;color:var(--fg-muted);font-weight:600;margin-top:6px}
+
+/* --- portrait card --- */
+.portrait{position:relative}
+.portrait-frame{
+  background:var(--white);border:1px solid var(--rule);padding:var(--s3);
+  box-shadow:0 26px 60px -24px rgba(15,29,51,.26);
+}
+.portrait-art{aspect-ratio:4/5;background:linear-gradient(165deg,var(--navy) 0%,var(--navy-2) 58%,#2C4570 100%);position:relative;overflow:hidden;display:grid;place-items:center}
+.portrait-art::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(-38deg,transparent 0 26px,rgba(255,255,255,.035) 26px 52px);
+}
+.portrait-cap{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s4);padding:var(--s4) var(--s2) var(--s2)}
+.portrait-cap .who{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600}
+.portrait-cap .what{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.badge-float{
+  position:absolute;left:-26px;bottom:64px;background:var(--white);border:1px solid var(--rule);
+  padding:var(--s4) var(--s5);box-shadow:0 18px 40px -18px rgba(15,29,51,.32);max-width:230px;
+}
+@media(max-width:520px){ .badge-float{left:0;bottom:-20px;position:relative;margin-top:var(--s4);max-width:none} }
+.badge-float .t{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;line-height:1;color:var(--brass)}
+.badge-float .d{font-size:.78rem;color:var(--fg-muted);margin-top:4px;line-height:1.5}
+
+/* the driving-wheel mark inside the portrait */
+.wheelmark{width:62%;animation:slowturn 26s linear infinite}
+@keyframes slowturn{to{transform:rotate(360deg)}}
+
+/* ---------- editorial number list ---------- */
+.numlist{margin-top:var(--s16);border-top:1px solid var(--rule)}
+.numrow{
+  display:grid;grid-template-columns:auto 1fr 1.3fr;gap:var(--s8);
+  padding-block:var(--s10);border-bottom:1px solid var(--rule);align-items:baseline;
+  transition:background-color .3s var(--ease);
+}
+.numrow:hover{background:rgba(180,130,60,.05)}
+@media(max-width:820px){ .numrow{grid-template-columns:auto 1fr;gap:var(--s4) var(--s6)} .numrow p{grid-column:2} }
+.numrow .idx{font-family:'Fraunces',serif;font-size:clamp(2.4rem,5vw,3.6rem);font-weight:400;color:var(--rule);line-height:.9;font-variant-numeric:tabular-nums;min-width:2.4ch}
+.numrow h3{font-size:clamp(1.2rem,2.4vw,1.65rem);font-weight:600}
+.numrow .age{display:block;font-family:'Inter',sans-serif;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:var(--s2)}
+.numrow p{color:var(--fg-muted);font-size:.97rem}
+.numrow .go{display:inline-flex;align-items:center;gap:6px;margin-top:var(--s3);font-size:.86rem;font-weight:600;color:var(--navy)}
+.numrow:hover .go svg{transform:translateX(5px)}
+.numrow .go svg{transition:transform .22s var(--ease);color:var(--brass)}
+
+/* ---------- packages ---------- */
+.pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:var(--s12);border:1px solid var(--rule);background:var(--white)}
+@media(max-width:900px){ .pkgs{grid-template-columns:1fr;max-width:460px;margin-inline:auto} }
+.pkg{padding:var(--s10) var(--s8);border-right:1px solid var(--rule);display:flex;flex-direction:column;transition:background-color .25s var(--ease)}
+.pkg:last-child{border-right:0}
+@media(max-width:900px){ .pkg{border-right:0;border-bottom:1px solid var(--rule)} .pkg:last-child{border-bottom:0} }
+.pkg:hover{background:var(--paper)}
+.pkg.feature{background:var(--navy);color:var(--fg-inv);position:relative}
+.pkg.feature:hover{background:var(--navy)}
+.pkg.feature h3{color:#fff}
+.pkg-flag{font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:var(--s3)}
+.pkg.feature .pkg-flag{color:var(--brass-lt)} /* light brass only on the navy card */
+.pkg h3{font-size:1.3rem;font-weight:600}
+.pkg-price{display:flex;align-items:baseline;gap:5px;margin-block:var(--s5)}
+.pkg-price .amt{font-family:'Fraunces',serif;font-size:2.9rem;font-weight:500;line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.pkg.feature .amt{color:var(--brass-lt)}
+.pkg-price .per{font-size:.8rem;color:var(--fg-muted)}
+.pkg.feature .per{color:#9FB2CC}
+.pkg-desc{font-size:.9rem;color:var(--fg-muted);min-height:3em;border-bottom:1px solid var(--rule);padding-bottom:var(--s5)}
+.pkg.feature .pkg-desc{color:#B9C6DA;border-color:var(--rule-dark)}
+.pkg ul{list-style:none;padding:0;margin:var(--s5) 0 var(--s8);display:flex;flex-direction:column;gap:var(--s3)}
+.pkg li{display:flex;gap:var(--s3);font-size:.9rem;align-items:flex-start}
+.pkg li svg{flex-shrink:0;margin-top:5px;color:var(--brass)}
+.pkg.feature li svg{color:var(--brass-lt)}
+.pkg .btn{width:100%;margin-top:auto}
+
+/* ---------- quote ---------- */
+.pullquote{max-width:900px;margin-inline:auto;text-align:center}
+.pullquote blockquote{
+  font-family:'Fraunces',serif;font-size:clamp(1.4rem,3.4vw,2.3rem);font-weight:400;
+  line-height:1.34;letter-spacing:-.015em;margin:0;color:var(--navy);
+}
+.dark .pullquote blockquote{color:#fff}
+.pullquote .mark{font-family:'Fraunces',serif;font-size:4rem;color:var(--brass);line-height:.6;display:block;margin-bottom:var(--s4)}
+.pullquote cite{display:block;margin-top:var(--s8);font-style:normal;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted);font-weight:600}
+.dark .pullquote cite{color:#9FB2CC}
+
+/* ---------- instructors ---------- */
+.instgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s8);margin-top:var(--s12)}
+@media(max-width:900px){ .instgrid{grid-template-columns:1fr;max-width:440px;margin-inline:auto} }
+.inst{border-top:2px solid var(--navy);padding-top:var(--s5)}
+.inst-art{aspect-ratio:1;background:linear-gradient(160deg,var(--navy),var(--navy-2));display:grid;place-items:center;margin-bottom:var(--s5);position:relative;overflow:hidden}
+.inst-art::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(-38deg,transparent 0 20px,rgba(255,255,255,.04) 20px 40px)}
+.inst-art .mono{font-family:'Fraunces',serif;font-size:3.4rem;font-weight:500;color:var(--brass-lt);position:relative;z-index:1;letter-spacing:.02em}
+.inst h3{font-size:1.2rem;font-weight:600}
+.inst .role{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-block:var(--s2) var(--s3)}
+.inst p{font-size:.92rem;color:var(--fg-muted)}
+.inst .yrs{display:flex;justify-content:space-between;align-items:baseline;margin-top:var(--s5);padding-top:var(--s3);border-top:1px solid var(--rule);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-muted);font-weight:600}
+.inst .yrs b{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:500;color:var(--navy);letter-spacing:0;text-transform:none}
+
+/* ---------- steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s8);margin-top:var(--s12)}
+@media(max-width:900px){ .steps{grid-template-columns:1fr 1fr} }
+@media(max-width:560px){ .steps{grid-template-columns:1fr} }
+.step{border-top:1px solid var(--rule-dark);padding-top:var(--s4)}
+.step .n{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:500;color:var(--brass-lt);line-height:1}
+.step h3{font-size:1.05rem;font-weight:600;margin-block:var(--s3) var(--s2)}
+.step p{font-size:.9rem;color:#B9C6DA}
+
+/* ---------- safety ---------- */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:var(--s16);align-items:center}
+@media(max-width:900px){ .grid-2{grid-template-columns:1fr;gap:var(--s8)} }
+.slist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column}
+.slist li{display:flex;gap:var(--s4);align-items:baseline;padding-block:var(--s4);border-bottom:1px solid var(--rule);font-size:.96rem}
+.slist li:first-child{border-top:1px solid var(--rule)}
+.slist .k{font-family:'Fraunces',serif;font-size:.9rem;color:var(--brass);min-width:2.2ch;font-variant-numeric:tabular-nums}
+
+/* ---------- areas ---------- */
+.arealist{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:0;margin-top:var(--s8);border-top:1px solid var(--rule)}
+.arealink{
+  padding:var(--s5) var(--s2);border-bottom:1px solid var(--rule);
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s3);
+  font-size:.96rem;font-weight:500;min-height:56px;transition:color .18s var(--ease),padding-left .22s var(--ease);
+}
+.arealink:hover{color:var(--brass);padding-left:var(--s3)}
+.arealink svg{color:var(--rule);transition:transform .22s var(--ease),color .18s var(--ease);flex-shrink:0}
+.arealink:hover svg{color:var(--brass);transform:translateX(4px)}
+
+/* ---------- reviews ---------- */
+.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s8);margin-top:var(--s12)}
+@media(max-width:900px){ .revgrid{grid-template-columns:1fr} }
+.rev{display:flex;flex-direction:column;gap:var(--s4);border-top:1px solid var(--rule);padding-top:var(--s5)}
+.stars{display:inline-flex;gap:3px;color:var(--star)}
+.rev-txt{font-family:'Fraunces',serif;font-size:1.08rem;font-weight:400;line-height:1.55;color:var(--fg)}
+.rev-who{display:flex;align-items:center;gap:var(--s3);margin-top:auto;padding-top:var(--s3)}
+.rev-av{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:600;font-size:.86rem;color:#fff;flex-shrink:0;background:var(--navy)}
+.rev-name{font-size:.88rem;font-weight:600}
+.rev-meta{font-size:.74rem;color:var(--fg-muted)}
+
+.scorebar{display:flex;gap:var(--s10);align-items:baseline;flex-wrap:wrap;margin-top:var(--s8)}
+.scorebar .big{font-family:'Fraunces',serif;font-size:4.2rem;font-weight:500;line-height:1;color:var(--navy);font-variant-numeric:tabular-nums}
+
+/* ---------- licensing ---------- */
+.licgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s8);margin-top:var(--s8)}
+@media(max-width:860px){ .licgrid{grid-template-columns:1fr 1fr} }
+.lic{border-top:1px solid var(--rule-dark);padding-top:var(--s4)}
+.lic .k{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#9FB2CC;font-weight:600}
+.lic .v{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:500;color:#fff;margin-top:var(--s2);font-variant-numeric:tabular-nums}
+
+/* ---------- faq ---------- */
+.faq{margin-top:var(--s8);max-width:860px;border-top:1px solid var(--rule)}
+details{border-bottom:1px solid var(--rule)}
+summary{
+  padding:var(--s5) 0;font-family:'Fraunces',serif;font-weight:600;font-size:1.08rem;
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;
+  gap:var(--s4);min-height:62px;transition:color .18s var(--ease);
+}
+summary:hover{color:var(--brass)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'';width:10px;height:10px;border-right:1.6px solid var(--brass);border-bottom:1.6px solid var(--brass);transform:rotate(45deg);transition:transform .26s var(--ease);flex-shrink:0;margin-top:-5px}
+details[open] summary::after{transform:rotate(-135deg);margin-top:3px}
+details .body{padding-bottom:var(--s6);color:var(--fg-muted);font-size:.96rem;max-width:66ch}
+
+/* ---------- final CTA ---------- */
+.finalcta{text-align:center;max-width:680px;margin-inline:auto}
+.finalcta h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:500;max-width:none}
+.finalcta h2 em{font-style:italic;color:var(--brass-lt)}
+.finalcta p{margin-top:var(--s5);color:#B9C6DA;font-size:1.05rem}
+.finalcta .hero-cta{justify-content:center;margin-top:var(--s10)}
+
+/* ---------- integrations ---------- */
+.integ{display:flex;gap:var(--s6);flex-wrap:wrap;justify-content:center;margin-top:var(--s12);padding-top:var(--s6);border-top:1px solid var(--rule-dark)}
+.integ-item{display:inline-flex;align-items:center;gap:var(--s2);font-size:.8rem;color:#9FB2CC}
+.integ-item svg{color:var(--brass-lt);flex-shrink:0}
+
+/* ---------- footer ---------- */
+footer{background:var(--paper-2);color:var(--fg-muted);padding-block:var(--s16) var(--s8);border-top:1px solid var(--rule)}
+.fgrid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:var(--s8)}
+@media(max-width:860px){ .fgrid{grid-template-columns:1fr 1fr} }
+@media(max-width:520px){ .fgrid{grid-template-columns:1fr} }
+footer h4{color:var(--navy);font-family:'Inter',sans-serif;font-size:.68rem;text-transform:uppercase;letter-spacing:.18em;font-weight:600;margin-bottom:var(--s4)}
+footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;font-size:.9rem}
+footer ul a{display:inline-flex;align-items:center;min-height:44px}
+footer p a{display:inline-flex;align-items:center;min-height:44px}
+footer a:hover{color:var(--brass)}
+.fbot{border-top:1px solid var(--rule);margin-top:var(--s12);padding-top:var(--s6);display:flex;justify-content:space-between;gap:var(--s4);flex-wrap:wrap;font-size:.78rem}
+
+/* ---------- mobile bar ---------- */
+.mobilebar{
+  position:fixed;left:0;right:0;bottom:0;z-index:200;display:none;gap:var(--s2);
+  padding:var(--s3) var(--s4) calc(var(--s3) + env(safe-area-inset-bottom));
+  background:rgba(251,249,245,.97);backdrop-filter:blur(12px);border-top:1px solid var(--rule);
+}
+.mobilebar .btn{flex:1}
+@media(max-width:768px){ .mobilebar{display:flex} body{padding-bottom:92px} }
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+
+<style id="photo-enhancement-atelier">
+  .portrait-photo { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+</style>
+</head>
+<body>
+
+<!-- =================== PERSONALISE HERE =================== -->
+<script>
+const SCHOOL_SOURCE = {
+  name:     "Ventura Coast Driving School",
+  short:    "Ventura Coast",
+  city:     "Ventura",
+  county:   "Ventura County",
+  phone:    "(805) 555-0173",
+  phoneRaw: "+18055550173",
+  licence:  "E3345",
+  years:    "22",
+  students: "9,800",
+  rating:   "5.0",
+  reviews:  "186",
+  passRate: "97",
+  founder:  "Ray Whitaker",
+  areas:    ["Ventura","Oxnard","Camarillo","Thousand Oaks","Santa Paula","Ojai","Port Hueneme","Fillmore","Moorpark","Simi Valley"],
+  instructors: [
+    {n:"Ray Whitaker",  i:"RW", r:"Founder & Instructor", y:"22", b:"Started the school in a single sedan. Still teaches four days a week."},
+    {n:"Marisol Ortiz", i:"MO", r:"Senior Instructor",    y:"13", b:"Bilingual instruction. Specialises in adult learners and licence transfers."},
+    {n:"Grant Ellis",   i:"GE", r:"Road-Test Specialist", y:"9",  b:"Runs the Oxnard and Ventura DMV routes weekly. Nothing surprises his students."}
+  ]
+};
+const sanitizeSchoolValue = (value) => {
+  if (Array.isArray(value)) return value.map(sanitizeSchoolValue);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([key, entry]) => [key, sanitizeSchoolValue(entry)]));
+  }
+  return typeof value === 'string' ? value.replace(/[<>"'\`]/g, '') : value;
+};
+const SCHOOL = sanitizeSchoolValue(SCHOOL_SOURCE);
+</script>
+<!-- ======================================================== -->
+
+<div class="utility">
+  <div class="wrap">
+    <span>California DMV Licensed School <strong>#{{licence}}</strong> &nbsp;·&nbsp; Established <strong id="estYear">—</strong></span>
+    <a href="tel:{{phoneRaw}}"><strong>{{phone}}</strong></a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="n">{{short}}</span>
+      <span class="s">Driving School · Est. <span id="estYear2">—</span></span>
+    </a>
+    <nav class="navlinks" aria-label="Main">
+      <a href="#teen">Teen</a>
+      <a href="#adult">Adult</a>
+      <a href="#roadtest">Road Test</a>
+      <a href="#packages">Packages</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#areas">Areas</a>
+    </nav>
+    <a href="#book" class="btn btn-solid btn-sm" style="margin-left:auto">Book a Lesson</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">Private instruction since <span id="estYear3">—</span></span>
+      <h1>One instructor,<br>from your first<br><em>mile to your licence.</em></h1>
+      <p class="hero-lede">Most schools rotate you through whoever is free. At {{name}}, the instructor who takes you out on day one is the one sitting beside you at the DMV.</p>
+      <div class="hero-cta">
+        <a href="#book" class="btn btn-solid">Book a Lesson</a>
+        <a href="tel:{{phoneRaw}}" class="btn btn-line">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          {{phone}}
+        </a>
+      </div>
+      <div class="hero-meta">
+        <div class="hmeta"><div class="n">{{years}}</div><div class="l">Years teaching</div></div>
+        <div class="hmeta"><div class="n">{{students}}</div><div class="l">Drivers licensed</div></div>
+        <div class="hmeta"><div class="n">{{passRate}}%</div><div class="l">Pass first time</div></div>
+        <div class="hmeta"><div class="n">{{rating}}</div><div class="l">{{reviews}} reviews</div></div>
+      </div>
+    </div>
+
+    <div class="portrait">
+      <div class="portrait-frame">
+        <div class="portrait-art">
+          <img class="portrait-photo" src="images/hero.webp" alt="Driving instructor guiding a learner during an in-car lesson" width="1600" height="1067">
+        </div>
+        <div class="portrait-cap">
+          <span class="who">{{founder}}</span>
+          <span class="what">Founder</span>
+        </div>
+      </div>
+      <div class="badge-float">
+        <div class="t">{{passRate}}%</div>
+        <div class="d">of our students pass the DMV road test on their first attempt.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PATHS (editorial list) ============ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <span class="kicker reveal">Programs</span>
+    <h2 class="h2 reveal">Three programs, one standard of instruction.</h2>
+    <div class="numlist">
+
+      <a class="numrow reveal" href="#book" id="teen">
+        <span class="idx">01</span>
+        <div><span class="age">Ages 15½ – 17</span><h3>Teen Driver Program</h3></div>
+        <div>
+          <p>The six hours of professional behind-the-wheel training California requires, taught in sequence by one instructor who learns how your teen drives. All DMV paperwork handled.</p>
+          <span class="go">View teen packages <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="numrow reveal" href="#book" id="adult">
+        <span class="idx">02</span>
+        <div><span class="age">18 and over</span><h3>Adult Instruction</h3></div>
+        <div>
+          <p>For drivers who never learned, who are transferring a licence from another country, or who have been off the road for years. Evening and weekend lessons, no judgement.</p>
+          <span class="go">View adult packages <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+      <a class="numrow reveal" href="#book" id="roadtest">
+        <span class="idx">03</span>
+        <div><span class="age">Test in 1 – 3 weeks</span><h3>Road-Test Preparation</h3></div>
+        <div>
+          <p>We drive the examiner's actual route with you beforehand, rehearse every scored manoeuvre, then provide the car, the insurance and the ride on test day.</p>
+          <span class="go">View test-prep options <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PULLQUOTE ============ -->
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap pullquote reveal">
+    <span class="mark" aria-hidden="true">&ldquo;</span>
+    <blockquote>A nervous driver does not need a louder instructor. They need the same one, every week, until the road stops feeling like a test.</blockquote>
+    <cite>{{founder}}, Founder — {{name}}</cite>
+  </div>
+</section>
+
+<!-- ============ PACKAGES ============ -->
+<section class="section" id="packages">
+  <div class="wrap">
+    <span class="kicker reveal">Packages</span>
+    <h2 class="h2 reveal">Published prices. Nothing added later.</h2>
+    <p class="lede reveal" style="margin-top:var(--s5)">Each package includes pick-up anywhere in {{city}}, all DMV paperwork, and an insured dual-control vehicle.</p>
+
+    <div class="pkgs">
+      <div class="pkg reveal">
+        <span class="pkg-flag">Introductory</span>
+        <h3>Starter</h3>
+        <div class="pkg-price"><span class="amt">$189</span><span class="per">/ two lessons</span></div>
+        <p class="pkg-desc">A considered introduction for a new permit holder.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Two 2-hour sessions</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Pick-up and drop-off</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Written progress notes</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Dual-control vehicle</li>
+        </ul>
+        <a href="#book" class="btn btn-line">Choose Starter</a>
+      </div>
+
+      <div class="pkg feature reveal">
+        <span class="pkg-flag">Most chosen</span>
+        <h3>DMV Complete</h3>
+        <div class="pkg-price"><span class="amt">$479</span><span class="per">/ full program</span></div>
+        <p class="pkg-desc">The complete state requirement, plus the test itself.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>All six DMV-required hours</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Test day: car, insurance, driver</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Rehearsal on the examiner's route</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Progress updates for parents</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Complimentary re-test session</li>
+        </ul>
+        <a href="#book" class="btn btn-brass">Choose Complete</a>
+      </div>
+
+      <div class="pkg reveal">
+        <span class="pkg-flag">Single appointment</span>
+        <h3>Test Day</h3>
+        <div class="pkg-price"><span class="amt">$159</span><span class="per">/ appointment</span></div>
+        <p class="pkg-desc">For the driver who has practised and needs a compliant car.</p>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>One-hour warm-up drive</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Vehicle, registration, insurance</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Transport to and from the DMV</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Pre-test safety inspection</li>
+        </ul>
+        <a href="#book" class="btn btn-line">Choose Test Day</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENROLMENT ============ -->
+<section class="section dark">
+  <div class="wrap">
+    <span class="kicker reveal">Enrolment</span>
+    <h2 class="h2 reveal">Booked from your phone, in about two minutes.</h2>
+    <p class="lede reveal" style="margin-top:var(--s5)">No enquiry forms that go unanswered, and no being told to call back when the schedule is in front of someone.</p>
+    <div class="steps">
+      <div class="step reveal"><span class="n">01</span><h3>Choose a package</h3><p>Published prices, shown in full before you commit.</p></div>
+      <div class="step reveal"><span class="n">02</span><h3>Select a time</h3><p>Live instructor availability. Your slot is held immediately.</p></div>
+      <div class="step reveal"><span class="n">03</span><h3>Confirm and pay</h3><p>Card or digital wallet, with a calendar invitation by email.</p></div>
+      <div class="step reveal"><span class="n">04</span><h3>We come to you</h3><p>Collection from home, school or work across {{city}}.</p></div>
+    </div>
+    <div class="integ">
+      <span class="integ-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Connects to your existing booking platform</span>
+      <span class="integ-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Card and wallet payments</span>
+      <span class="integ-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Automatic reminders</span>
+      <span class="integ-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Call and form tracking</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTRUCTORS ============ -->
+<section class="section" id="instructors">
+  <div class="wrap">
+    <span class="kicker reveal">Instructors</span>
+    <h2 class="h2 reveal">Licensed individually by the State of California.</h2>
+    <p class="lede reveal" style="margin-top:var(--s5)">California licenses instructors, not only schools. Every name below appears on the DMV register and can be checked before you book.</p>
+    <div class="instgrid" id="instructorGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SAFETY ============ -->
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <span class="kicker">Vehicles &amp; safety</span>
+      <h2 class="h2">A second set of controls, and a second set of eyes.</h2>
+      <p class="lede" style="margin-top:var(--s5)">Every {{short}} vehicle carries a full instructor control set and is inspected before each teaching day. The maintenance log is available on request.</p>
+    </div>
+    <ul class="slist reveal">
+      <li><span class="k">01</span><span>Dual-control brake, clutch and mirror set</span></li>
+      <li><span class="k">02</span><span>Commercially insured for student drivers</span></li>
+      <li><span class="k">03</span><span>Late-model automatics with reversing cameras</span></li>
+      <li><span class="k">04</span><span>Sanitised between every student</span></li>
+      <li><span class="k">05</span><span>DMV-compliant for road-test use</span></li>
+      <li><span class="k">06</span><span>Documented daily pre-drive inspection</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ AREAS ============ -->
+<section class="section" id="areas">
+  <div class="wrap">
+    <span class="kicker reveal">Service areas</span>
+    <h2 class="h2 reveal">Collection across {{county}}.</h2>
+    <p class="lede reveal" style="margin-top:var(--s5)">Each area below has a dedicated page covering the local DMV office, its test routes and pricing — the structure local search rewards.</p>
+    <div class="arealist" id="areaList"></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section" style="background:var(--paper-2)">
+  <div class="wrap">
+    <span class="kicker reveal">Reviews</span>
+    <h2 class="h2 reveal">What {{city}} says.</h2>
+    <div class="scorebar reveal">
+      <span class="big">{{rating}}</span>
+      <div>
+        <span class="stars" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>
+        </span>
+        <div style="font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-muted);font-weight:600;margin-top:4px">Across {{reviews}} Google reviews</div>
+      </div>
+    </div>
+
+    <div class="revgrid">
+      <div class="rev reveal">
+        <span class="stars" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <p class="rev-txt">"The same instructor every single lesson. By the fourth one he knew exactly which junction she was avoiding, and made her drive it."</p>
+        <div class="rev-who"><span class="rev-av">HL</span><div><div class="rev-name">Helen L.</div><div class="rev-meta">Parent · {{city}}</div></div></div>
+      </div>
+      <div class="rev reveal">
+        <span class="stars" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <p class="rev-txt">"I emigrated at 41 and had to start over. Marisol taught me in two languages and never once made it feel remedial."</p>
+        <div class="rev-who"><span class="rev-av">TN</span><div><div class="rev-name">Thanh N.</div><div class="rev-meta">Adult learner · Oxnard</div></div></div>
+      </div>
+      <div class="rev reveal">
+        <span class="stars" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></span>
+        <p class="rev-txt">"Twenty-two years in the same town. Half the parents at our school learned to drive with Ray themselves. That says everything."</p>
+        <div class="rev-who"><span class="rev-av">DC</span><div><div class="rev-name">Dana C.</div><div class="rev-meta">Parent · Camarillo</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LICENSING ============ -->
+<section class="section dark">
+  <div class="wrap">
+    <span class="kicker reveal">Licensing &amp; credentials</span>
+    <h2 class="h2 reveal">Verify us before you book.</h2>
+    <p class="lede reveal" style="margin-top:var(--s5)">California requires driving schools, their owners and their instructors to hold separate DMV licences. Ours are published here and listed on the state register.</p>
+    <div class="licgrid">
+      <div class="lic reveal"><div class="k">DMV School Licence</div><div class="v">#{{licence}}</div></div>
+      <div class="lic reveal"><div class="k">Bonded &amp; Insured</div><div class="v">Yes</div></div>
+      <div class="lic reveal"><div class="k">Instructors Licensed</div><div class="v">All</div></div>
+      <div class="lic reveal"><div class="k">Established</div><div class="v" id="estYear4">—</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="wrap">
+    <span class="kicker reveal">Questions</span>
+    <h2 class="h2 reveal">Before you book.</h2>
+    <div class="faq">
+      <details class="reveal" open><summary>How many hours does California actually require?</summary><div class="body">For drivers under 18, the DMV requires six hours of professional behind-the-wheel training with a licensed instructor, alongside 50 hours of supervised practice with a parent or guardian, ten of which must be at night. Our DMV Complete package covers all six professional hours.</div></details>
+      <details class="reveal"><summary>Will I have the same instructor throughout?</summary><div class="body">Yes. That is the point of the school. Unless you ask to change, the instructor who takes your first lesson takes every subsequent one, including test day.</div></details>
+      <details class="reveal"><summary>Can I use your car for the DMV road test?</summary><div class="body">Yes. Our vehicles are registered, insured and DMV-compliant for road-test use, and we include the warm-up drive and transport to and from the test centre.</div></details>
+      <details class="reveal"><summary>Do you collect from school or work?</summary><div class="body">Anywhere within our service area at no additional charge. Simply set the address when booking.</div></details>
+      <details class="reveal"><summary>What if the student is very anxious?</summary><div class="body">Tell us when you book. We begin in a quiet lot rather than in traffic, and we do not put any student on a freeway before they are ready. Several of our instructors work primarily with nervous drivers.</div></details>
+      <details class="reveal"><summary>What is the cancellation policy?</summary><div class="body">Reschedule without charge up to 24 hours before the lesson, directly from your confirmation email. Within 24 hours, a partial fee applies.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="section dark" id="book">
+  <div class="wrap finalcta reveal">
+    <h2>Begin with a single lesson.<br><em>Decide from there.</em></h2>
+    <p>Live instructor availability across {{city}} and {{county}}. Most new students are on the road within a week.</p>
+    <div class="hero-cta">
+      <a href="tel:{{phoneRaw}}" class="btn btn-brass">Call {{phone}}</a>
+      <a href="#packages" class="btn btn-line">View packages</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="margin-bottom:var(--s4)">
+          <span class="n" style="color:var(--navy)">{{short}}</span>
+          <span class="s">Driving School · Est. <span id="estYear5">—</span></span>
+        </div>
+        <p style="font-size:.9rem;max-width:34ch">California DMV licensed driving school #{{licence}}. Private teen and adult instruction across {{county}}.</p>
+        <p style="margin-top:var(--s4)"><a href="tel:{{phoneRaw}}" style="color:var(--navy);font-family:'Fraunces',serif;font-size:1.2rem;font-weight:600">{{phone}}</a></p>
+      </div>
+      <div><h4>Programs</h4><ul><li><a href="#teen">Teen Program</a></li><li><a href="#adult">Adult Instruction</a></li><li><a href="#roadtest">Road-Test Prep</a></li><li><a href="#packages">Packages</a></li></ul></div>
+      <div><h4>School</h4><ul><li><a href="#instructors">Instructors</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#areas">Service Areas</a></li><li><a href="#">Licensing</a></li></ul></div>
+      <div><h4>Areas</h4><ul id="footerAreas"></ul></div>
+    </div>
+    <div class="fbot">
+      <span>© <span id="yr"></span> {{name}}. All rights reserved.</span>
+      <span>DMV Licence #{{licence}} · Bonded &amp; Insured</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobilebar">
+  <a href="tel:{{phoneRaw}}" class="btn btn-line btn-sm">Call</a>
+  <a href="#book" class="btn btn-solid btn-sm">Book a Lesson</a>
+</div>
+
+<script>
+(function(){
+  const rx = /\{\{(\w+)\}\}/g;
+  const sub = (s) => s.replace(rx, (m,k) => SCHOOL[k] ?? m);
+
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  while (walker.nextNode()) if (rx.test(walker.currentNode.nodeValue)) { rx.lastIndex = 0; nodes.push(walker.currentNode); }
+  nodes.forEach(n => n.nodeValue = sub(n.nodeValue));
+  document.querySelectorAll('[href],[title],[aria-label],[content]').forEach(el => {
+    ['href','title','aria-label','content'].forEach(a => {
+      const v = el.getAttribute(a);
+      if (v && v.includes('{{')) el.setAttribute(a, sub(v));
+    });
+  });
+  document.title = sub(document.title);
+
+  /* areas */
+  document.getElementById('areaList').innerHTML = SCHOOL.areas.map(a => `
+    <a class="arealink" href="#book">${a}
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>`).join('');
+  document.getElementById('footerAreas').innerHTML =
+    SCHOOL.areas.slice(0,5).map(a => `<li><a href="#areas">Lessons in ${a}</a></li>`).join('');
+
+  /* instructors */
+  document.getElementById('instructorGrid').innerHTML = SCHOOL.instructors.map(p => `
+    <div class="inst reveal">
+      <div class="inst-art"><span class="mono" aria-hidden="true">${p.i}</span></div>
+      <h3>${p.n}</h3>
+      <div class="role">${p.r}</div>
+      <p>${p.b}</p>
+      <div class="yrs"><span>DMV licensed</span><b>${p.y} yrs</b></div>
+    </div>`).join('');
+
+  /* years */
+  const nowYr = new Date().getFullYear();
+  const est = nowYr - parseInt(SCHOOL.years, 10);
+  ['estYear','estYear2','estYear3','estYear4','estYear5'].forEach(id => {
+    const el = document.getElementById(id); if (el) el.textContent = est;
+  });
+  document.getElementById('yr').textContent = nowYr;
+
+  /* reveal */
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:.1, rootMargin:'0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach((el,i) => {
+    el.style.transitionDelay = (i % 3 * 80) + 'ms';
+    io.observe(el);
+  });
+
+  /* counters on the hero figures */
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cio = new IntersectionObserver((es) => {
+    es.forEach(e => {
+      if (!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      if (reduced) return;
+      const el = e.target, full = el.textContent;
+      const num = parseFloat(full.replace(/[^\d.]/g,''));
+      if (isNaN(num)) return;
+      const suffix = full.replace(/[\d.,]+/,'').trim();
+      const hasComma = full.includes(',');
+      const dur = 1200, t0 = performance.now();
+      const tick = (t) => {
+        const p = Math.min((t - t0) / dur, 1);
+        const v = num * (1 - Math.pow(1 - p, 3));
+        const shown = num % 1 ? v.toFixed(1) : Math.round(v);
+        el.textContent = (hasComma ? Number(shown).toLocaleString('en-US') : shown) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }, { threshold:.5 });
+  document.querySelectorAll('.hmeta .n').forEach(c => cio.observe(c));
+})();
+</script>
+</body>
+</html>

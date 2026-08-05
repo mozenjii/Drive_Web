@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cockpit",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "sites/cockpit", "--", "-p", "3210"],
+      "port": 3210
+    },
+    {
+      "name": "safe-route",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "sites/safe-route", "--", "-p", "3211"],
+      "port": 3211
+    },
+    {
+      "name": "apex",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "sites/apex", "--", "-p", "3212"],
+      "port": 3212
+    },
+    {
+      "name": "atelier",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "sites/atelier", "--", "-p", "3213"],
+      "port": 3213
+    }
+  ]
+}

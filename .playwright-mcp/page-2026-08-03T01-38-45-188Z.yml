@@ -1,0 +1,144 @@
+- generic [ref=f6e2]:
+  - banner [ref=f6e3]:
+    - generic [ref=f6e4]:
+      - link "Meridian Driving School home" [ref=f6e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f6e6]: Meridian
+        - generic [ref=f6e7]: Driving school
+      - navigation "Main navigation" [ref=f6e8]:
+        - link "Programs" [ref=f6e9] [cursor=pointer]:
+          - /url: "#teen"
+        - link "Our approach" [ref=f6e10] [cursor=pointer]:
+          - /url: "#approach"
+        - link "Service area" [ref=f6e11] [cursor=pointer]:
+          - /url: "#areas"
+      - link "Call Meridian" [ref=f6e12] [cursor=pointer]:
+        - /url: tel:+19515550164
+        - generic [ref=f6e15]: Call
+  - main [ref=f6e16]:
+    - generic [ref=f6e17]:
+      - generic [ref=f6e18]:
+        - img "Calm in-car driving lesson with an instructor and learner" [ref=f6e20]
+        - generic [ref=f6e21]:
+          - paragraph [ref=f6e22]: Private driving instruction in Riverside
+          - heading "The right instructor. The right lesson plan." [level=1] [ref=f6e23]
+          - paragraph [ref=f6e24]: A thoughtful, one-to-one approach for teen and adult learners who want more confidence on the road.
+          - generic [ref=f6e25]:
+            - generic [ref=f6e26]: I'm looking for
+            - group "Choose a driving program" [ref=f6e27]:
+              - button "Teen Program For new drivers getting started" [pressed] [ref=f6e28] [cursor=pointer]:
+                - generic [ref=f6e31]:
+                  - strong [ref=f6e32]: Teen Program
+                  - generic [ref=f6e33]: For new drivers getting started
+              - button "Adult Lessons Flexible lessons for adult drivers" [ref=f6e34] [cursor=pointer]:
+                - generic [ref=f6e37]:
+                  - strong [ref=f6e38]: Adult Lessons
+                  - generic [ref=f6e39]: Flexible lessons for adult drivers
+              - button "Road-Test Prep Prepare and feel confident" [ref=f6e40] [cursor=pointer]:
+                - generic [ref=f6e43]:
+                  - strong [ref=f6e44]: Road-Test Prep
+                  - generic [ref=f6e45]: Prepare and feel confident
+            - link "View Teen Program" [ref=f6e46] [cursor=pointer]:
+              - /url: "#teen"
+          - link "Call Meridian" [ref=f6e50] [cursor=pointer]:
+            - /url: tel:+19515550164
+      - generic "Service highlights" [ref=f6e53]:
+        - generic [ref=f6e54]: Safety-led instruction
+        - generic [ref=f6e58]: Private lessons
+        - generic [ref=f6e62]: Serving Riverside
+    - region [ref=f6e67]:
+      - generic [ref=f6e68]:
+        - paragraph [ref=f6e69]: Choose your starting point
+        - heading "Lessons with a clear next step." [level=2] [ref=f6e70]
+        - generic [ref=f6e71]:
+          - article [ref=f6e72]:
+            - generic [ref=f6e73]: "01"
+            - paragraph [ref=f6e76]: For new drivers
+            - heading "Teen program" [level=3] [ref=f6e77]
+            - paragraph [ref=f6e78]: A calm place to begin behind the wheel, with lessons that build from familiar streets to the skills a new driver needs next.
+            - link "Ask about teen program" [ref=f6e79] [cursor=pointer]:
+              - /url: tel:+19515550164
+          - article [ref=f6e82]:
+            - generic [ref=f6e83]: "02"
+            - paragraph [ref=f6e86]: For adult learners
+            - heading "Adult lessons" [level=3] [ref=f6e87]
+            - paragraph [ref=f6e88]: A considered route back to driving for first-time learners, returning drivers, and people new to California roads.
+            - link "Ask about adult lessons" [ref=f6e89] [cursor=pointer]:
+              - /url: tel:+19515550164
+          - article [ref=f6e92]:
+            - generic [ref=f6e93]: "03"
+            - paragraph [ref=f6e96]: For the final stretch
+            - heading "Road-test prep" [level=3] [ref=f6e97]
+            - paragraph [ref=f6e98]: Use a focused lesson to practise the essentials, ask questions, and arrive at your test feeling more prepared.
+            - link "Ask about road-test prep" [ref=f6e99] [cursor=pointer]:
+              - /url: tel:+19515550164
+    - generic [ref=f6e103]:
+      - generic [ref=f6e104]:
+        - paragraph [ref=f6e105]: A calmer way to learn
+        - heading "Build confidence one decision at a time." [level=2] [ref=f6e106]
+        - paragraph [ref=f6e107]: Good instruction makes room for questions. We begin with where a learner is today, explain the next skill clearly, and leave time to practise it without pressure.
+        - list [ref=f6e108]:
+          - listitem [ref=f6e109]:
+            - generic [ref=f6e110]: "01"
+            - generic [ref=f6e111]:
+              - heading "Choose a route" [level=3] [ref=f6e112]
+              - paragraph [ref=f6e113]: Tell us what you are working toward when you call.
+          - listitem [ref=f6e114]:
+            - generic [ref=f6e115]: "02"
+            - generic [ref=f6e116]:
+              - heading "Meet your instructor" [level=3] [ref=f6e117]
+              - paragraph [ref=f6e118]: Start with a lesson plan shaped around your experience.
+          - listitem [ref=f6e119]:
+            - generic [ref=f6e120]: "03"
+            - generic [ref=f6e121]:
+              - heading "Keep building" [level=3] [ref=f6e122]
+              - paragraph [ref=f6e123]: Practise practical driving decisions at a comfortable pace.
+      - img "Instructor-side dual controls in a driving school car" [ref=f6e125]
+    - generic [ref=f6e127]:
+      - img "Learner practising a parking maneuver with an instructor in a cone-marked area" [ref=f6e129]
+      - generic [ref=f6e130]:
+        - paragraph [ref=f6e131]: Road-test preparation
+        - heading "Practise with purpose before test day." [level=2] [ref=f6e132]
+        - paragraph [ref=f6e133]: A dedicated preparation lesson is a chance to revisit manoeuvres, talk through decisions, and make a personal plan for the days before your appointment.
+        - link "Talk through test prep" [ref=f6e134] [cursor=pointer]:
+          - /url: tel:+19515550164
+    - region [ref=f6e137]:
+      - generic [ref=f6e138]:
+        - generic [ref=f6e139]:
+          - paragraph [ref=f6e140]: Before the first lesson
+          - heading "California teen-driver guidance." [level=2] [ref=f6e141]
+          - paragraph [ref=f6e142]: Requirements can change and each learner's situation is different. This is general DMV guidance, not legal advice; check the official DMV information before making plans.
+          - link "California DMV teen drivers guide" [ref=f6e143] [cursor=pointer]:
+            - /url: https://www.dmv.ca.gov/portal/driver-education-and-safety/teen-drivers/
+        - generic [ref=f6e146]:
+          - group [ref=f6e147]:
+            - generic "What is the usual teen path? –" [ref=f6e148] [cursor=pointer]
+            - paragraph [ref=f6e149]: California DMV guidance for teens includes driver education, 6 hours of professional behind-the-wheel training, and 50 hours of supervised practice, including 10 hours at night.
+          - group [ref=f6e150]:
+            - generic "How are scheduling and pickup confirmed? +" [ref=f6e151] [cursor=pointer]
+          - group [ref=f6e152]:
+            - generic "What should I ask when I call? +" [ref=f6e153] [cursor=pointer]
+    - generic [ref=f6e155]:
+      - generic [ref=f6e156]:
+        - paragraph [ref=f6e157]: Local, considered, practical
+        - heading "Lessons across Riverside County." [level=2] [ref=f6e158]
+        - paragraph [ref=f6e159]: Call us to discuss a lesson that fits your day and the parts of driving you want to work on.
+        - link "Call Meridian" [ref=f6e160] [cursor=pointer]:
+          - /url: tel:+19515550164
+      - list "Service areas" [ref=f6e163]:
+        - listitem [ref=f6e164]: Riverside
+        - listitem [ref=f6e165]: Moreno Valley
+        - listitem [ref=f6e166]: Corona
+        - listitem [ref=f6e167]: Jurupa Valley
+        - listitem [ref=f6e168]: Perris
+        - listitem [ref=f6e169]: Norco
+        - listitem [ref=f6e170]: Eastvale
+        - listitem [ref=f6e171]: Rialto
+  - contentinfo [ref=f6e172]:
+    - generic [ref=f6e173]:
+      - generic [ref=f6e174]:
+        - strong [ref=f6e175]: Meridian
+        - text: Driving school
+      - link "(951) 555-0164" [ref=f6e176] [cursor=pointer]:
+        - /url: tel:+19515550164
+      - generic [ref=f6e177]: © 2026 Meridian Driving School

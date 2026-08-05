@@ -1,0 +1,165 @@
+- generic [active] [ref=f17e1]:
+  - banner [ref=f17e2]:
+    - generic [ref=f17e3]:
+      - link "Meridian Driving School home" [ref=f17e4] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f17e8]:
+          - strong [ref=f17e9]: Meridian
+          - generic [ref=f17e10]: Driving school
+      - link "Call Meridian Driving School at (951) 555-0164" [ref=f17e11] [cursor=pointer]:
+        - /url: tel:+19515550164
+      - button "Open navigation" [ref=f17e15] [cursor=pointer]
+  - main [ref=f17e18]:
+    - region [ref=f17e19]:
+      - generic [ref=f17e20]:
+        - img "Parent, learner, and instructor preparing for a driving lesson beside a training vehicle" [ref=f17e22]
+        - generic [ref=f17e23]:
+          - paragraph [ref=f17e24]: Family-focused driver education
+          - heading "Learn safely. Drive confidently." [level=1] [ref=f17e27]
+          - paragraph [ref=f17e28]: Clear guidance for new drivers and the people supporting them—built around patient instruction, practical safety checks, and a real conversation with the school.
+          - generic [ref=f17e29]:
+            - generic [ref=f17e30]: I'm looking for
+            - group "Choose a driving program" [ref=f17e31]:
+              - button "Teen Program For new drivers getting started" [pressed] [ref=f17e32] [cursor=pointer]:
+                - generic [ref=f17e35]:
+                  - strong [ref=f17e36]: Teen Program
+                  - generic [ref=f17e37]: For new drivers getting started
+              - button "Adult Lessons Flexible lessons for adult drivers" [ref=f17e38] [cursor=pointer]:
+                - generic [ref=f17e41]:
+                  - strong [ref=f17e42]: Adult Lessons
+                  - generic [ref=f17e43]: Flexible lessons for adult drivers
+              - button "Road-Test Prep Prepare and feel confident" [ref=f17e44] [cursor=pointer]:
+                - generic [ref=f17e47]:
+                  - strong [ref=f17e48]: Road-Test Prep
+                  - generic [ref=f17e49]: Prepare and feel confident
+            - link "View Teen Program" [ref=f17e50] [cursor=pointer]:
+              - /url: "#teen"
+          - link "Call the school" [ref=f17e54] [cursor=pointer]:
+            - /url: tel:+19515550164
+      - generic "Safety-focused support" [ref=f17e57]:
+        - generic [ref=f17e58]:
+          - generic [ref=f17e59]: Safety-first lessons
+          - generic [ref=f17e62]: Dual-control training cars
+          - generic [ref=f17e65]: Service-area pickup discussions
+    - region [ref=f17e69]:
+      - generic [ref=f17e70]:
+        - paragraph [ref=f17e71]: Start with the right support
+        - heading "A route for every stage of learning" [level=2] [ref=f17e72]
+        - paragraph [ref=f17e73]: Choose a starting point, then call us to discuss the lessons and scheduling that fit your situation.
+        - generic [ref=f17e74]:
+          - article [ref=f17e75]:
+            - paragraph [ref=f17e76]: For new drivers
+            - heading "Teen driver program" [level=3] [ref=f17e77]
+            - paragraph [ref=f17e78]: Start with a clear plan for professional lessons, supervised practice, and the next steps your family can discuss together.
+            - list [ref=f17e79]:
+              - listitem [ref=f17e80]: A calm first-lesson approach
+              - listitem [ref=f17e83]: Progress notes for the family
+              - listitem [ref=f17e86]: Room to build skills gradually
+            - link "Talk about this program" [ref=f17e89] [cursor=pointer]:
+              - /url: tel:+19515550164
+          - article [ref=f17e92]:
+            - paragraph [ref=f17e93]: For adult learners
+            - heading "Adult lessons" [level=3] [ref=f17e94]
+            - paragraph [ref=f17e95]: Practical, one-to-one instruction for first licences, returning drivers, and anyone who wants more confidence behind the wheel.
+            - list [ref=f17e96]:
+              - listitem [ref=f17e97]: Lessons shaped around your goals
+              - listitem [ref=f17e100]: Practice for everyday driving
+              - listitem [ref=f17e103]: An unhurried, supportive pace
+            - link "Talk about this program" [ref=f17e106] [cursor=pointer]:
+              - /url: tel:+19515550164
+          - article [ref=f17e109]:
+            - paragraph [ref=f17e110]: For test day
+            - heading "Road-test preparation" [level=3] [ref=f17e111]
+            - paragraph [ref=f17e112]: Focus on observation, control, and the routines that help you arrive prepared for your scheduled road test.
+            - list [ref=f17e113]:
+              - listitem [ref=f17e114]: A structured pre-test review
+              - listitem [ref=f17e117]: Practice in a training vehicle
+              - listitem [ref=f17e120]: A simple plan for test day
+            - link "Talk about this program" [ref=f17e123] [cursor=pointer]:
+              - /url: tel:+19515550164
+    - region [ref=f17e126]:
+      - generic [ref=f17e127]:
+        - generic [ref=f17e128]:
+          - paragraph [ref=f17e129]: A steady learning process
+          - heading "A calmer way to build confidence" [level=2] [ref=f17e130]
+          - paragraph [ref=f17e131]: Learning to drive is personal. We make the next step easy to understand and leave room for questions from learners and parents.
+          - list [ref=f17e132]:
+            - listitem [ref=f17e133]:
+              - generic [ref=f17e134]: "1"
+              - generic [ref=f17e135]:
+                - heading "Choose your route" [level=3] [ref=f17e136]
+                - paragraph [ref=f17e137]: Tell us whether you are starting as a teen, adult learner, or preparing for a road test.
+            - listitem [ref=f17e138]:
+              - generic [ref=f17e139]: "2"
+              - generic [ref=f17e140]:
+                - heading "Talk through your needs" [level=3] [ref=f17e141]
+                - paragraph [ref=f17e142]: Call the school to discuss service area, availability, and the right next lesson.
+            - listitem [ref=f17e143]:
+              - generic [ref=f17e144]: "3"
+              - generic [ref=f17e145]:
+                - heading "Build confidence steadily" [level=3] [ref=f17e146]
+                - paragraph [ref=f17e147]: Practice the skills that make daily driving feel predictable and manageable.
+        - img "Instructor-side dual controls in a training vehicle" [ref=f17e149]
+    - region [ref=f17e150]:
+      - generic [ref=f17e151]:
+        - generic [ref=f17e152]:
+          - paragraph [ref=f17e153]: For parents and supporters
+          - heading "Know what comes next." [level=2] [ref=f17e154]
+          - paragraph [ref=f17e155]: We help families turn questions into a manageable plan—from early lessons through road-test preparation. Call before booking so the school can answer what matters to you.
+          - link "Call (951) 555-0164" [ref=f17e156] [cursor=pointer]:
+            - /url: tel:+19515550164
+        - list [ref=f17e159]:
+          - listitem [ref=f17e160]:
+            - generic [ref=f17e163]:
+              - strong [ref=f17e164]: People-first guidance
+              - generic [ref=f17e165]: Talk through your learner's comfort level and goals.
+          - listitem [ref=f17e166]:
+            - generic [ref=f17e169]:
+              - strong [ref=f17e170]: Simple preparation
+              - generic [ref=f17e171]: Understand the practical steps before the next lesson.
+          - listitem [ref=f17e172]:
+            - generic [ref=f17e175]:
+              - strong [ref=f17e176]: Confidence over pressure
+              - generic [ref=f17e177]: Progress is built one safe skill at a time.
+    - region [ref=f17e178]:
+      - generic [ref=f17e179]:
+        - img "Learner practicing a parking maneuver with an instructor in a cone-marked area" [ref=f17e181]
+        - generic [ref=f17e182]:
+          - paragraph [ref=f17e183]: Road-test readiness
+          - heading "Prepare for the road test with purpose." [level=2] [ref=f17e184]
+          - paragraph [ref=f17e185]: Use lessons to rehearse the observation, decision-making, and vehicle-control routines that matter on test day. Contact the school to discuss a preparation plan.
+          - link "Explore road-test prep" [ref=f17e186] [cursor=pointer]:
+            - /url: "#roadtest"
+    - region [ref=f17e189]:
+      - generic [ref=f17e190]:
+        - generic [ref=f17e191]:
+          - paragraph [ref=f17e192]: Helpful starting point
+          - heading "California teen driver guidance" [level=2] [ref=f17e193]
+          - paragraph [ref=f17e194]: A quick family-friendly overview of the usual teen licensing path. Requirements can change, so use the DMV as the source of record for your learner's situation.
+          - link "California DMV teen drivers guidance" [ref=f17e195] [cursor=pointer]:
+            - /url: https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/teen-drivers/
+        - generic [ref=f17e198]:
+          - group [ref=f17e199]:
+            - generic "What should teen families plan for?" [ref=f17e200] [cursor=pointer]
+            - paragraph [ref=f17e201]: California's teen licensing path generally includes driver education, 6 hours of professional behind-the-wheel training, and 50 hours of supervised practice with a parent or guardian, including 10 hours at night. Confirm current details with the California DMV.
+          - group [ref=f17e202]:
+            - generic "How do we confirm scheduling or pickup?" [ref=f17e203] [cursor=pointer]
+          - group [ref=f17e204]:
+            - generic "What should I ask when I call?" [ref=f17e205] [cursor=pointer]
+    - region [ref=f17e206]:
+      - generic [ref=f17e207]:
+        - generic [ref=f17e208]:
+          - paragraph [ref=f17e209]: Serving Riverside County
+          - heading "Let's talk about your pickup area." [level=2] [ref=f17e210]
+          - paragraph [ref=f17e211]: Ask about lessons around Riverside and nearby communities. We'll help you understand the best next step for your learner.
+        - generic [ref=f17e212]:
+          - link "Call the school" [ref=f17e213] [cursor=pointer]:
+            - /url: tel:+19515550164
+          - paragraph [ref=f17e216]: (951) 555-0164
+  - contentinfo [ref=f17e217]:
+    - generic [ref=f17e218]:
+      - generic [ref=f17e219]:
+        - strong [ref=f17e220]: Meridian Driving School
+        - paragraph [ref=f17e221]: Supportive driving instruction for learners and families in Riverside County.
+      - link "(951) 555-0164" [ref=f17e222] [cursor=pointer]:
+        - /url: tel:+19515550164

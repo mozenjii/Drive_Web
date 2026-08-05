@@ -1,0 +1,169 @@
+- generic [active] [ref=f28e1]:
+  - banner [ref=f28e2]:
+    - generic [ref=f28e3]:
+      - link "Meridian home" [ref=f28e4] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f28e8]:
+          - strong [ref=f28e9]: Meridian
+          - generic [ref=f28e10]: Driving School
+      - link "Call Meridian at (951) 555-0164" [ref=f28e11] [cursor=pointer]:
+        - /url: tel:+19515550164
+      - button "Open navigation" [ref=f28e15] [cursor=pointer]
+  - main [ref=f28e18]:
+    - region [ref=f28e19]:
+      - generic [ref=f28e20]:
+        - img "Learner meeting an instructor beside a training vehicle" [ref=f28e22]
+        - generic [ref=f28e23]:
+          - paragraph [ref=f28e24]: Driving lessons in Riverside
+          - heading "Your road. Your lesson plan." [level=1] [ref=f28e25]
+          - paragraph [ref=f28e26]: Choose what you need, then take a clear next step with a school you can call directly.
+          - generic [ref=f28e27]:
+            - generic [ref=f28e28]: I'm looking for
+            - group "Choose a driving program" [ref=f28e29]:
+              - button "Teen Program For new drivers getting started" [pressed] [ref=f28e30] [cursor=pointer]:
+                - generic [ref=f28e33]:
+                  - strong [ref=f28e34]: Teen Program
+                  - generic [ref=f28e35]: For new drivers getting started
+              - button "Adult Lessons Flexible lessons for adult drivers" [ref=f28e36] [cursor=pointer]:
+                - generic [ref=f28e39]:
+                  - strong [ref=f28e40]: Adult Lessons
+                  - generic [ref=f28e41]: Flexible lessons for adult drivers
+              - button "Road-Test Prep Prepare and feel confident" [ref=f28e42] [cursor=pointer]:
+                - generic [ref=f28e45]:
+                  - strong [ref=f28e46]: Road-Test Prep
+                  - generic [ref=f28e47]: Prepare and feel confident
+            - link "View Teen Program" [ref=f28e48] [cursor=pointer]:
+              - /url: "#teen"
+          - link "Prefer to talk? Call Meridian" [ref=f28e52] [cursor=pointer]:
+            - /url: tel:+19515550164
+    - region "School approach" [ref=f28e55]:
+      - generic [ref=f28e56]:
+        - generic [ref=f28e57]: Safety-ledinstruction
+        - generic [ref=f28e61]: In-car lessonplanning
+        - generic [ref=f28e65]: Serving Riverside County
+    - region [ref=f28e70]:
+      - generic [ref=f28e71]:
+        - paragraph [ref=f28e72]: Choose your route
+        - generic [ref=f28e73]:
+          - heading "A program path that starts where you are." [level=2] [ref=f28e74]
+          - paragraph [ref=f28e75]: Compare the three routes, then call to discuss the option, timing, and next step that make sense for you.
+        - generic [ref=f28e76]:
+          - article [ref=f28e77]:
+            - paragraph [ref=f28e78]: Teen program
+            - heading "A clear start for new drivers." [level=3] [ref=f28e79]
+            - paragraph [ref=f28e80]: Start with the foundations, build supervised practice habits, and make each lesson feel manageable.
+            - list [ref=f28e81]:
+              - listitem [ref=f28e82]: A plan for permit-to-licence milestones
+              - listitem [ref=f28e85]: Calm, one-to-one driving practice
+              - listitem [ref=f28e88]: A parent-friendly next-step conversation
+            - link "Call about this program" [ref=f28e91] [cursor=pointer]:
+              - /url: tel:+19515550164
+          - article [ref=f28e94]:
+            - paragraph [ref=f28e95]: Adult lessons
+            - heading "Lessons that fit your life." [level=3] [ref=f28e96]
+            - paragraph [ref=f28e97]: Whether you are learning for the first time, returning to driving, or transferring a licence, choose the skills you want to practise.
+            - list [ref=f28e98]:
+              - listitem [ref=f28e99]: Flexible lesson goals
+              - listitem [ref=f28e102]: Space to build confidence gradually
+              - listitem [ref=f28e105]: A useful path for returning drivers
+            - link "Call about this program" [ref=f28e108] [cursor=pointer]:
+              - /url: tel:+19515550164
+          - article [ref=f28e111]:
+            - paragraph [ref=f28e112]: Road-test prep
+            - heading "Walk into test day prepared." [level=3] [ref=f28e113]
+            - paragraph [ref=f28e114]: Use a focused practice lesson to review observation, positioning, parking, and the habits you want to carry into the road test.
+            - list [ref=f28e115]:
+              - listitem [ref=f28e116]: A focused pre-test lesson
+              - listitem [ref=f28e119]: Practice around your assessment goals
+              - listitem [ref=f28e122]: An unhurried plan for the day
+            - link "Call about this program" [ref=f28e125] [cursor=pointer]:
+              - /url: tel:+19515550164
+    - region [ref=f28e128]:
+      - generic [ref=f28e129]:
+        - generic [ref=f28e130]:
+          - paragraph [ref=f28e131]: The lesson flow
+          - heading "A straightforward route from first call to confident driving." [level=2] [ref=f28e132]
+          - paragraph [ref=f28e133]: "The experience stays practical: choose a path, speak to a person, and build a lesson plan that meets you at your current confidence level."
+          - link "Call Meridian" [ref=f28e134] [cursor=pointer]:
+            - /url: tel:+19515550164
+        - list [ref=f28e137]:
+          - listitem [ref=f28e138]:
+            - generic [ref=f28e139]: "01"
+            - generic [ref=f28e140]:
+              - heading "Choose your route" [level=3] [ref=f28e141]
+              - paragraph [ref=f28e142]: Pick Teen, Adult, or Road-Test Prep so the first conversation starts in the right place.
+          - listitem [ref=f28e143]:
+            - generic [ref=f28e144]: "02"
+            - generic [ref=f28e145]:
+              - heading "Talk through your goals" [level=3] [ref=f28e146]
+              - paragraph [ref=f28e147]: Call the school to discuss timing, pickup area, and what you would like to work on.
+          - listitem [ref=f28e148]:
+            - generic [ref=f28e149]: "03"
+            - generic [ref=f28e150]:
+              - heading "Build confidence on the road" [level=3] [ref=f28e151]
+              - paragraph [ref=f28e152]: Take each lesson at a steady pace with a practical plan for what comes next.
+    - region [ref=f28e153]:
+      - generic [ref=f28e154]:
+        - img "Instructor-side controls in a modern training car" [ref=f28e156]
+        - generic [ref=f28e157]:
+          - paragraph [ref=f28e158]: In the car
+          - heading "A learning space built for clear instruction." [level=2] [ref=f28e159]
+          - paragraph [ref=f28e160]: Good instruction is more than a route on a screen. It is time to practise observation, vehicle control, decision-making, and the next skill on your plan.
+          - link "Ask about lesson planning" [ref=f28e161] [cursor=pointer]:
+            - /url: tel:+19515550164
+    - region [ref=f28e164]:
+      - generic [ref=f28e165]:
+        - generic [ref=f28e166]:
+          - paragraph [ref=f28e167]: Road-test preparation
+          - heading "Turn your goals into a focused practice drive." [level=2] [ref=f28e168]
+          - paragraph [ref=f28e169]: Road-test preparation gives you focused time to practise the skills you want to review before test day. Call to talk through your goals.
+          - link "Explore road-test prep" [ref=f28e170] [cursor=pointer]:
+            - /url: "#roadtest"
+        - img "Learner practicing a parking maneuver with an instructor in a cone-marked area" [ref=f28e174]
+    - region [ref=f28e175]:
+      - generic [ref=f28e176]:
+        - generic [ref=f28e177]:
+          - paragraph [ref=f28e178]: Service area
+          - heading "Planning lessons across Riverside County." [level=2] [ref=f28e179]
+          - paragraph [ref=f28e180]: Talk through your location and preferred timing when you call. We can help you understand whether the school’s service area suits your lesson plan.
+        - generic "Service areas" [ref=f28e181]:
+          - generic [ref=f28e182]: Riverside
+          - generic [ref=f28e186]: Moreno Valley
+          - generic [ref=f28e190]: Corona
+          - generic [ref=f28e194]: Jurupa Valley
+          - generic [ref=f28e198]: Perris
+          - generic [ref=f28e202]: Norco
+    - region [ref=f28e206]:
+      - generic [ref=f28e207]:
+        - generic [ref=f28e208]:
+          - paragraph [ref=f28e209]: California learner guidance
+          - heading "Questions before your first lesson." [level=2] [ref=f28e210]
+          - paragraph [ref=f28e211]: These are general California DMV requirements and planning pointers. Rules can change, so check the official DMV guidance for your situation.
+        - generic [ref=f28e212]:
+          - group [ref=f28e213]:
+            - generic "What is the general teen-driver path in California? –" [ref=f28e214] [cursor=pointer]
+            - paragraph [ref=f28e215]:
+              - text: For drivers under 18, California generally requires driver education, 6 hours of professional behind-the-wheel training, and 50 hours of supervised practice with a parent or guardian—including 10 hours at night—before the driving test. Review the
+              - link "California DMV teen drivers guidance" [ref=f28e216] [cursor=pointer]:
+                - /url: https://www.dmv.ca.gov/portal/driver-education-and-safety/teen-drivers/
+              - text: for the current requirements.
+          - group [ref=f28e217]:
+            - generic "How are pickup and lesson times confirmed? +" [ref=f28e218] [cursor=pointer]
+          - group [ref=f28e219]:
+            - generic "What should I ask when I call? +" [ref=f28e220] [cursor=pointer]
+    - region [ref=f28e221]:
+      - generic [ref=f28e222]:
+        - paragraph [ref=f28e225]: Ready when you are
+        - heading "Let’s choose the right first lesson." [level=2] [ref=f28e226]
+        - paragraph [ref=f28e227]: Call Meridian to discuss your goals, your area, and the program that fits.
+        - link "Call (951) 555-0164" [ref=f28e228] [cursor=pointer]:
+          - /url: tel:+19515550164
+  - contentinfo [ref=f28e231]:
+    - generic [ref=f28e232]:
+      - generic [ref=f28e237]:
+        - strong [ref=f28e238]: Meridian
+        - generic [ref=f28e239]: Driving School
+      - paragraph [ref=f28e240]: Teen, adult, and road-test preparation lessons across Riverside County.
+      - link "Call (951) 555-0164" [ref=f28e241] [cursor=pointer]:
+        - /url: tel:+19515550164
+  - alert [ref=f28e242]

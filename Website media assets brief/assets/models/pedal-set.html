@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>pedal-set.glb — dual-control instructor pedals</title>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.184.0/build/three.module.js",
+    "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.184.0/examples/jsm/controls/OrbitControls.js",
+    "three/addons/exporters/OBJExporter.js": "https://unpkg.com/three@0.184.0/examples/jsm/exporters/OBJExporter.js",
+    "three/addons/exporters/GLTFExporter.js": "https://unpkg.com/three@0.184.0/examples/jsm/exporters/GLTFExporter.js"
+  },
+  "integrity": {
+    "https://unpkg.com/three@0.184.0/build/three.module.js": "sha384-8FCZ1eVO6it4+pbec2aDtnTrwjWXZLJRC+MAGCIPDgsYnUrl/E0A2YlF8ioMKI/J",
+    "https://unpkg.com/three@0.184.0/build/three.core.js": "sha384-dw2ooPewaEIrAgl6oFDBmmBWCE9oW9LxRGcfwZ0hLvEprzo202wXl7vCYHRlSnOT",
+    "https://unpkg.com/three@0.184.0/examples/jsm/controls/OrbitControls.js": "sha384-4rziNxOBZKQ69i+w+f89KJ55TCYquwchVbByQwmaOeIOXdOU2PLDn3kOfXHwIJC9",
+    "https://unpkg.com/three@0.184.0/examples/jsm/exporters/OBJExporter.js": "sha384-nbwtoZENJD3Vq+ACK0CuGQdPMuDWHkamC2KJD70EV5nfg6jQjfppKOea07YJN+N3",
+    "https://unpkg.com/three@0.184.0/examples/jsm/exporters/GLTFExporter.js": "sha384-VofkvpG6HERhFCYbsUOHeNXBCqID2nfqkQqnVzE1jc/oPcz+qJ13ADdXH08hE+cQ"
+  }
+}
+</script>
+<style>
+  html,body{margin:0;height:100%;background:#0B1120}
+  three-d-stage:not(:defined){visibility:hidden}
+  three-d-stage{display:block;width:100vw;height:100vh}
+</style>
+</head>
+<body>
+<three-d-stage name="pedal-set" background="#0B1120" autorotate></three-d-stage>
+<script src="./three-d-stage.js"></script>
+<script type="module">
+const stage = document.querySelector('three-d-stage');
+const { THREE } = await stage.ready;
+
+const M = {
+  steel:  new THREE.MeshStandardMaterial({ name:'Steel',      color:0xB4BAC2, metalness:0.40, roughness:0.28 }),
+  anod:   new THREE.MeshStandardMaterial({ name:'AnodBlack',  color:0x24272C, metalness:0.35, roughness:0.42 }),
+  rubber: new THREE.MeshStandardMaterial({ name:'PedalRubber',color:0x141518, metalness:0.0,  roughness:0.92 }),
+  carpet: new THREE.MeshStandardMaterial({ name:'Carpet',     color:0x4A4E55, metalness:0.0,  roughness:1.0 }),
+  firew:  new THREE.MeshStandardMaterial({ name:'Bulkhead',   color:0x2E323A, metalness:0.0,  roughness:0.88 }),
+  red:    new THREE.MeshStandardMaterial({ name:'SafetyRed',  color:0xB4121C, metalness:0.1,  roughness:0.45 })
+};
+const mesh = (geo, mat, name) => { const m = new THREE.Mesh(geo, mat); m.name = name; return m; };
+
+/* ---------- footwell shell: floor + bulkhead, real-world metres ---------- */
+const Footwell = new THREE.Group(); Footwell.name = 'Footwell';
+const floor = new THREE.BoxGeometry(1.30, 0.03, 0.80);
+floor.translate(0, 0.015, 0);
+Footwell.add(mesh(floor, M.carpet, 'Footwell_Floor'));
+const wall = new THREE.BoxGeometry(1.30, 0.80, 0.04);
+wall.translate(0, 0.40, -0.38);
+Footwell.add(mesh(wall, M.firew, 'Footwell_Bulkhead'));
+
+/* ---------- a pedal: hanging arm + rubber-faced pad ---------- */
+function makePedal(name, x, padW, padH, tilt, mat) {
+  const g = new THREE.Group(); g.name = name;
+  const arm = new THREE.BoxGeometry(0.030, 0.34, 0.030);
+  arm.translate(x, 0.40, -0.30);
+  g.add(mesh(arm, M.steel, name + '_Arm'));
+  const knee = new THREE.BoxGeometry(0.030, 0.030, 0.16);
+  knee.translate(x, 0.245, -0.235);
+  g.add(mesh(knee, M.steel, name + '_Knuckle'));
+  const back = new THREE.BoxGeometry(padW, padH, 0.020);
+  const bm = mesh(back, mat, name + '_Backplate');
+  bm.position.set(x, 0.185, -0.165);
+  bm.rotation.x = tilt;
+  g.add(bm);
+  const pad = new THREE.BoxGeometry(padW*0.86, padH*0.86, 0.016);
+  const pm = mesh(pad, M.rubber, name + '_Pad');
+  pm.position.set(x, 0.185, -0.152);
+  pm.rotation.x = tilt;
+  g.add(pm);
+  // grip ribs
+  for (let i=0;i<4;i++){
+    const r = new THREE.BoxGeometry(padW*0.74, 0.012, 0.008);
+    const rm = mesh(r, M.anod, `${name}_Rib_${i+1}`);
+    rm.position.set(x, 0.185 + (i-1.5)*padH*0.19, -0.145);
+    rm.rotation.x = tilt;
+    g.add(rm);
+  }
+  return g;
+}
+
+/* driver's own pedals — the reference the instructor set mirrors */
+const Pedal_Brake       = makePedal('Pedal_Brake',       -0.16, 0.11, 0.16, -0.22, M.anod);
+const Pedal_Accelerator = makePedal('Pedal_Accelerator',  0.02, 0.07, 0.20, -0.26, M.anod);
+
+/* ---------- the instructor's dual-control brake ---------- */
+const Pedal_Instructor = makePedal('Pedal_Instructor', 0.44, 0.12, 0.17, -0.22, M.red);
+Pedal_Instructor.name = 'Pedal_Instructor';
+
+/* linkage: instructor pedal arm -> transverse rod -> driver's brake arm */
+const Linkage = new THREE.Group(); Linkage.name = 'Linkage';
+const rod = new THREE.CylinderGeometry(0.011, 0.011, 0.62, 14);
+rod.rotateZ(Math.PI/2);
+rod.translate(0.14, 0.545, -0.30);
+Linkage.add(mesh(rod, M.steel, 'Linkage_Rod'));
+[[-0.16],[0.44]].forEach(([x], i) => {
+  const clevis = new THREE.BoxGeometry(0.05, 0.09, 0.05);
+  clevis.translate(x, 0.52, -0.30);
+  Linkage.add(mesh(clevis, M.anod, i === 0 ? 'Linkage_Clevis_Driver' : 'Linkage_Clevis_Instructor'));
+  const pin = new THREE.CylinderGeometry(0.008, 0.008, 0.07, 10);
+  pin.rotateZ(Math.PI/2);
+  pin.translate(x, 0.545, -0.30);
+  Linkage.add(mesh(pin, M.steel, i === 0 ? 'Linkage_Pin_Driver' : 'Linkage_Pin_Instructor'));
+});
+
+/* ---------- mounting bracket: bulkhead plate + floor rail ---------- */
+const Mount = new THREE.Group(); Mount.name = 'Mount';
+const plate = new THREE.BoxGeometry(0.34, 0.20, 0.022);
+plate.translate(0.44, 0.60, -0.345);
+Mount.add(mesh(plate, M.steel, 'Mount_BulkheadPlate'));
+for (let i=0;i<4;i++){
+  const bx = 0.44 + (i%2 ? 0.12 : -0.12), by = 0.60 + (i<2 ? 0.07 : -0.07);
+  const bolt = new THREE.CylinderGeometry(0.011, 0.011, 0.03, 6);
+  bolt.rotateX(Math.PI/2);
+  bolt.translate(bx, by, -0.332);
+  Mount.add(mesh(bolt, M.anod, `Mount_Bolt_${i+1}`));
+}
+const rail = new THREE.BoxGeometry(0.06, 0.05, 0.44);
+rail.translate(0.44, 0.055, -0.16);
+Mount.add(mesh(rail, M.steel, 'Mount_FloorRail'));
+const foot = new THREE.BoxGeometry(0.16, 0.018, 0.10);
+foot.translate(0.44, 0.038, 0.03);
+Mount.add(mesh(foot, M.steel, 'Mount_FloorFoot'));
+
+const rig = new THREE.Group();
+rig.name = 'pedal_set_dual_control';
+rig.add(Footwell, Pedal_Brake, Pedal_Accelerator, Pedal_Instructor, Linkage, Mount);
+stage.setObject(rig);
+
+let tris = 0;
+rig.traverse(o => { if (o.isMesh) tris += (o.geometry.index ? o.geometry.index.count : o.geometry.attributes.position.count)/3; });
+console.log('triangles', Math.round(tris));
+</script>
+</body>
+</html>

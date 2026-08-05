@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driving School Template — Three Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0C1220; --surface:#151E31; --surface-2:#1D2841;
+  --fg:#F2F5FA; --fg-muted:#93A3BE; --border:rgba(255,255,255,.11);
+  --a:#2B57D4; --b:#DC2626; --c:#8A6124;
+  --ease:cubic-bezier(.22,.7,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:'Inter',system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{margin:0;line-height:1.12;letter-spacing:-.028em}
+p{margin:0}
+:focus-visible{outline:2px solid #6E9BFF;outline-offset:3px;border-radius:4px}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:1.5rem}
+
+header{padding-block:4.5rem 3rem;border-bottom:1px solid var(--border)}
+.eyebrow{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#7E9BE0;margin-bottom:1.25rem}
+h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;max-width:20ch}
+.sub{margin-top:1.25rem;color:var(--fg-muted);max-width:62ch;font-size:1.05rem}
+
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;padding-block:3.5rem}
+@media(max-width:860px){.grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
+.card.lead{grid-column:1/-1}
+@media(min-width:861px){
+  .card.lead{display:grid;grid-template-columns:1.15fr 1fr;align-items:stretch}
+  .card.lead .swatchbar{grid-column:1/-1}
+  .card.lead .thumb{aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--border)}
+  .card.lead .body{padding:2rem}
+}
+.badge-new{
+  display:inline-block;font-size:.6rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+  background:#FFB020;color:#1A1200;padding:.2rem .5rem;border-radius:4px;margin-left:.5rem;vertical-align:middle;
+}
+
+.card{
+  background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .24s var(--ease),border-color .24s var(--ease),box-shadow .24s var(--ease);
+}
+.card:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.26);box-shadow:0 26px 50px -22px rgba(0,0,0,.7)}
+
+.swatchbar{height:5px;display:flex}
+.swatchbar i{flex:1}
+
+.thumb{aspect-ratio:16/10;position:relative;overflow:hidden;border-bottom:1px solid var(--border);display:grid;place-items:center}
+.thumb-a{background:linear-gradient(150deg,#EFF6FF,#DBEAFE 55%,#DCFCE7)}
+.thumb-b{background:linear-gradient(150deg,#131C2F,#0B1120)}
+.thumb-c{background:linear-gradient(150deg,#FBF9F5,#F3EFE8)}
+.thumb svg{width:74%;height:auto}
+
+.body{padding:1.6rem;display:flex;flex-direction:column;gap:.85rem;flex:1}
+.tag{display:inline-flex;align-items:center;gap:.4rem;font-size:.68rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;padding:.3rem .6rem;border-radius:999px;width:fit-content}
+.tag-a{background:rgba(43,87,212,.2);color:#9DBBFF}
+.tag-b{background:rgba(220,38,38,.2);color:#FF9B9B}
+.tag-c{background:rgba(216,167,91,.18);color:#E3BE83}
+.card h2{font-size:1.35rem;font-weight:700}
+.card .desc{font-size:.92rem;color:var(--fg-muted)}
+
+.meta{list-style:none;padding:0;margin:.4rem 0 0;display:flex;flex-direction:column;gap:.55rem;font-size:.83rem}
+.meta li{display:flex;gap:.7rem}
+.meta .k{color:#6E80A0;min-width:8.5ch;flex-shrink:0}
+.meta .v{color:#CBD6E8}
+
+.open{
+  margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:48px;border-radius:9px;font-weight:700;font-size:.92rem;
+  background:rgba(255,255,255,.08);border:1px solid var(--border);transition:background-color .2s var(--ease),transform .2s var(--ease);
+}
+.open:hover{background:rgba(255,255,255,.16);transform:translateY(-2px)}
+.card:hover .open svg{transform:translateX(4px)}
+.open svg{transition:transform .2s var(--ease)}
+
+.note{border-top:1px solid var(--border);padding-block:3rem 5rem}
+.note h3{font-size:1.05rem;font-weight:700;margin-bottom:.9rem}
+.note p{color:var(--fg-muted);font-size:.93rem;max-width:76ch;margin-bottom:.7rem}
+.note code{background:var(--surface-2);padding:.15rem .45rem;border-radius:5px;font-size:.86em;color:#B8CBEA}
+.warn{border-left:3px solid #C98A2E;padding-left:1rem;margin-top:1.5rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="eyebrow">Campaign 1 · Licensed passenger-car driving schools · California</span>
+    <h1>Driving School Enrolment System</h1>
+    <p class="sub">Four homepage concepts for the same offer. Each tests a different <strong>positioning angle</strong>, not just a different colour scheme — so the reply data tells you which message lands, not which shade of blue won. <strong style="color:#FFCE72">Cockpit</strong> is the newest and the one to lead with.</p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+
+    <!-- D — lead concept -->
+    <a class="card lead" href="variant-d-cockpit.html">
+      <div class="swatchbar"><i style="background:#070B14"></i><i style="background:#FFB020"></i><i style="background:#34D07F"></i></div>
+      <div class="thumb" style="background:linear-gradient(150deg,#0E1523,#070B14)">
+        <svg viewBox="0 0 300 190" aria-hidden="true">
+          <!-- gauge cluster -->
+          <g fill="none" stroke-width="5" stroke-linecap="round">
+            <g transform="translate(52,58) rotate(135)">
+              <circle r="22" stroke="rgba(255,255,255,.10)" stroke-dasharray="103 999"/>
+              <circle r="22" stroke="#34D07F" stroke-dasharray="99 999"/>
+            </g>
+            <g transform="translate(112,58) rotate(135)">
+              <circle r="22" stroke="rgba(255,255,255,.10)" stroke-dasharray="103 999"/>
+              <circle r="22" stroke="#FFB020" stroke-dasharray="66 999"/>
+            </g>
+          </g>
+          <text x="52" y="63" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#F4F8FF">96%</text>
+          <text x="112" y="63" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#F4F8FF">4.9</text>
+          <!-- booking widget -->
+          <rect x="168" y="24" width="112" height="142" rx="10" fill="#161F31" stroke="rgba(255,255,255,.16)"/>
+          <rect x="180" y="36" width="34" height="4" rx="2" fill="#FFB020"/>
+          <rect x="218" y="36" width="26" height="4" rx="2" fill="rgba(255,255,255,.14)"/>
+          <rect x="248" y="36" width="20" height="4" rx="2" fill="rgba(255,255,255,.14)"/>
+          <rect x="180" y="50" width="88" height="26" rx="6" fill="rgba(255,176,32,.16)" stroke="#FFB020"/>
+          <rect x="180" y="82" width="88" height="22" rx="6" fill="rgba(255,255,255,.05)"/>
+          <rect x="180" y="110" width="88" height="22" rx="6" fill="rgba(255,255,255,.05)"/>
+          <rect x="180" y="140" width="88" height="16" rx="5" fill="#FFB020"/>
+          <!-- manoeuvre trail -->
+          <path d="M20 160 Q70 160 92 140 T140 120" stroke="#FFB020" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+          <g transform="translate(140,120) rotate(-24)">
+            <rect x="-15" y="-7" width="30" height="14" rx="4" fill="#CBD5E1"/>
+            <rect x="-7" y="-5" width="13" height="10" rx="3" fill="#3E5878"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag" style="background:rgba(255,176,32,.18);color:#FFCE72">Angle 4 · Show, don't tell<span class="badge-new">New</span></span>
+        <h2>Cockpit</h2>
+        <p class="desc">The answer to "too plain, too textual". This one <strong>demonstrates</strong> the product instead of describing it: a working 3-step booking flow with live slot selection, a road-test manoeuvre simulator that animates parallel parking and three-point turns, and a price calculator that quotes before anyone picks up a phone. Instrument-cluster visual language — amber readouts on near-black, like a car dashboard at night.</p>
+        <ul class="meta">
+          <li><span class="k">Targets</span><span class="v">Every lead type — the widest net</span></li>
+          <li><span class="k">Pattern</span><span class="v">Funnel (3-Step Conversion)</span></li>
+          <li><span class="k">Type</span><span class="v">Space Grotesk + Inter + JetBrains Mono</span></li>
+          <li><span class="k">Interactive</span><span class="v">Booking flow · Simulator · Calculator</span></li>
+          <li><span class="k">Media</span><span class="v">Photo slots wired and ready</span></li>
+        </ul>
+        <span class="open">Open concept <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <!-- A -->
+    <a class="card" href="variant-a-safe-route.html">
+      <div class="swatchbar"><i style="background:#1E40AF"></i><i style="background:#15803D"></i><i style="background:#EFF6FF"></i></div>
+      <div class="thumb thumb-a">
+        <svg viewBox="0 0 300 190" aria-hidden="true">
+          <path d="M20 160 C70 160 70 120 120 120 S170 76 220 76 S270 44 285 40" fill="none" stroke="#1E40AF" stroke-width="12" opacity=".16" stroke-linecap="round"/>
+          <path d="M20 160 C70 160 70 120 120 120 S170 76 220 76 S270 44 285 40" fill="none" stroke="#1E40AF" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="20" cy="160" r="8" fill="#fff" stroke="#1E40AF" stroke-width="3"/>
+          <circle cx="120" cy="120" r="8" fill="#fff" stroke="#2B57D4" stroke-width="3"/>
+          <circle cx="220" cy="76" r="8" fill="#fff" stroke="#15803D" stroke-width="3"/>
+          <circle cx="285" cy="40" r="11" fill="#15803D"/>
+          <path d="m280 40 3.5 3.5 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <g transform="translate(155 84) rotate(-20)">
+            <rect x="0" y="4" width="26" height="9" rx="4" fill="#1E40AF"/>
+            <path d="M5 4.5 L8 1 H18 L21 4.5 Z" fill="#2B57D4"/>
+            <circle cx="7" cy="13" r="2.6" fill="#0F1F4B"/><circle cx="19" cy="13" r="2.6" fill="#0F1F4B"/>
+          </g>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag tag-a">Angle 1 · Safety &amp; Licensing</span>
+        <h2>Safe Route</h2>
+        <p class="desc">Civic, reassuring, DMV-forward. Leads with the licence number and a visual "permit → licensed" journey. Built to reassure the person paying: a parent.</p>
+        <ul class="meta">
+          <li><span class="k">Targets</span><span class="v">Parents of teen drivers</span></li>
+          <li><span class="k">Pattern</span><span class="v">Trust &amp; Authority + Conversion</span></li>
+          <li><span class="k">Type</span><span class="v">Plus Jakarta Sans</span></li>
+          <li><span class="k">Motion</span><span class="v">Car travelling an SVG route</span></li>
+        </ul>
+        <span class="open">Open concept <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <!-- B -->
+    <a class="card" href="variant-b-apex.html">
+      <div class="swatchbar"><i style="background:#0B1120"></i><i style="background:#DC2626"></i><i style="background:#F8FAFC"></i></div>
+      <div class="thumb thumb-b">
+        <svg viewBox="0 0 300 190" aria-hidden="true">
+          <ellipse cx="150" cy="150" rx="130" ry="16" fill="#DC2626" opacity=".13"/>
+          <g stroke="#fff" stroke-width="2.4" opacity=".26" stroke-linecap="round">
+            <line x1="30" y1="168" x2="70" y2="168"/><line x1="120" y1="168" x2="180" y2="168"/><line x1="230" y1="168" x2="270" y2="168"/>
+          </g>
+          <path d="M60 118 Q64 96 84 90 L128 84 Q158 60 200 60 L232 62 Q254 66 264 92 L268 116 Q270 128 258 130 L70 130 Q58 128 60 118 Z" fill="#CBD5E1"/>
+          <path d="M132 84 Q160 64 198 64 L228 66 Q246 70 256 90 Z" fill="#EEF2F7"/>
+          <path d="M140 84 Q162 68 190 66 L190 84 Z" fill="#3E5878"/>
+          <path d="M198 66 L226 68 Q242 72 250 84 L198 84 Z" fill="#3E5878"/>
+          <rect x="150" y="100" width="86" height="15" rx="3" fill="#DC2626"/>
+          <text x="193" y="111" text-anchor="middle" font-family="Inter,sans-serif" font-size="8.5" font-weight="800" fill="#fff" letter-spacing="1">STUDENT</text>
+          <ellipse cx="62" cy="112" rx="9" ry="6" fill="#FDE68A"/>
+          <circle cx="106" cy="130" r="22" fill="#101827"/><circle cx="106" cy="130" r="12" fill="#E2E8F0"/>
+          <circle cx="232" cy="130" r="22" fill="#101827"/><circle cx="232" cy="130" r="12" fill="#E2E8F0"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag tag-b">Angle 2 · Speed &amp; Confidence</span>
+        <h2>Apex</h2>
+        <p class="desc">Dark, kinetic, automotive. A 3D car on a moving perspective road that tilts with the cursor. Leads with the pass rate, not the paperwork.</p>
+        <ul class="meta">
+          <li><span class="k">Targets</span><span class="v">Adults &amp; road-test retakes</span></li>
+          <li><span class="k">Pattern</span><span class="v">Kinetic Brutalism</span></li>
+          <li><span class="k">Type</span><span class="v">Outfit 900 + Work Sans</span></li>
+          <li><span class="k">Motion</span><span class="v">3D car, scrolling road, ticker</span></li>
+        </ul>
+        <span class="open">Open concept <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <!-- C -->
+    <a class="card" href="variant-c-atelier.html">
+      <div class="swatchbar"><i style="background:#0F1D33"></i><i style="background:#8A6124"></i><i style="background:#FBF9F5"></i></div>
+      <div class="thumb thumb-c">
+        <svg viewBox="0 0 300 190" aria-hidden="true">
+          <rect x="86" y="24" width="128" height="142" fill="#0F1D33"/>
+          <g opacity=".9">
+            <circle cx="150" cy="95" r="42" fill="none" stroke="#D8A75B" stroke-width="4"/>
+            <circle cx="150" cy="95" r="13" fill="#D8A75B"/>
+            <circle cx="150" cy="95" r="8" fill="#0F1D33"/>
+            <g stroke="#D8A75B" stroke-width="5.5" stroke-linecap="round">
+              <line x1="150" y1="108" x2="150" y2="132"/>
+              <line x1="137" y1="88" x2="112" y2="80"/>
+              <line x1="163" y1="88" x2="188" y2="80"/>
+            </g>
+          </g>
+          <line x1="42" y1="176" x2="258" y2="176" stroke="#DDD5C8" stroke-width="1.5"/>
+          <rect x="42" y="150" width="34" height="4" fill="#8A6124"/>
+        </svg>
+      </div>
+      <div class="body">
+        <span class="tag tag-c">Angle 3 · Premium &amp; Personal</span>
+        <h2>Atelier</h2>
+        <p class="desc">Editorial and restrained. Sells the founder and the promise of one instructor start-to-finish. Reads like a long-established local institution.</p>
+        <ul class="meta">
+          <li><span class="k">Targets</span><span class="v">Established, referral-led schools</span></li>
+          <li><span class="k">Pattern</span><span class="v">Social Proof-Focused</span></li>
+          <li><span class="k">Type</span><span class="v">Fraunces + Inter</span></li>
+          <li><span class="k">Motion</span><span class="v">Restrained; slow-turning emblem</span></li>
+        </ul>
+        <span class="open">Open concept <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<div class="wrap note">
+  <h3>Personalising a preview</h3>
+  <p>Each file is fully self-contained — one HTML document, no build step, no dependencies. Near the top of the <code>&lt;body&gt;</code> there is a single <code>const SCHOOL = { … }</code> block. Change the school name, city, county, phone, DMV licence number, years, review count and instructor names, and every heading, link, footer, page title and service-area chip updates automatically.</p>
+  <p>That is the only block you edit per prospect. Budget about two minutes per personalised preview.</p>
+
+  <div class="warn">
+    <p style="color:#E3BE83;font-weight:600;margin-bottom:.4rem">Placeholder content — replace before sending</p>
+    <p>Every school name, licence number, price, statistic, review and instructor in these files is invented for demonstration. Before sending a preview to a real business, replace the licence number and figures with that school's own — or delete them. Do not attribute invented reviews or statistics to a real named business.</p>
+  </div>
+</div>
+
+</body>
+</html>
