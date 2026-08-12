@@ -259,7 +259,7 @@
    alignment stops mattering and the band can size to its own copy — but it
    keeps a floor so the scrim still reads as a band and not as a shadow. */
 @media (max-width: 700px) {
-  .pathCard-photo { min-height: 380px; }
+  .pathCard-photo { min-height: 420px; }
   .pathCard-photo .pathBody { min-height: 232px; }
 }
 
