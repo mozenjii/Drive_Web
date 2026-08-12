@@ -720,40 +720,77 @@
    Colours use the client's own brand tokens, so it belongs to the page it sits
    on rather than looking like a bolted-on widget. */
 
+/* A round button carrying a speech bubble, not a text pill.
+   The pill read as a banner — the thing people have learned to ignore — and at
+   ~150px wide it sat across the corner of the page on a phone. A circle with a
+   bubble in it is the one control everybody already recognises as "talk to
+   someone", it costs a quarter of the room, and it says what it is without
+   needing to be read. The words survive as the accessible name, so a screen
+   reader still announces "Ask a question". */
 .aiLauncher {
   position: fixed;
   right: var(--space-5);
-  bottom: var(--space-5);
+  /* Rides above the call bar, and drops into the corner when the bar slides
+     away. --bar-h is 0 wherever no bar is rendered. */
+  bottom: calc(var(--space-5) + var(--bar-h, 0px));
   z-index: 60;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-3);
-  min-height: 48px;
-  padding: 0.8rem 1.25rem;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
   border-radius: var(--r-full);
   background: var(--primary-dark);
   color: #fff;
-  font-weight: 700;
-  font-size: 0.92rem;
   box-shadow: var(--sh-4);
   border: 1px solid var(--primary-dark);
+  transition: background 0.18s var(--ease), transform 0.18s var(--ease),
+    bottom 0.28s var(--ease);
 }
-.aiLauncher:hover { background: var(--primary); }
+.aiLauncher:hover { background: var(--primary); transform: translateY(-2px); }
+.aiLauncherIcon { display: block; }
+/* The "answering now" dot, moved onto the rim of the circle. */
 .aiLauncherDot {
-  width: 8px;
-  height: 8px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #6ee7a8;
-  box-shadow: 0 0 0 3px rgba(110, 231, 168, 0.28);
+  border: 2px solid var(--primary-dark);
+}
+/* Name on hover, for a pointer that has time to hover. Never on touch, where it
+   would flash on tap and where the icon has to carry it anyway. */
+.aiLauncherLabel {
+  position: absolute;
+  right: calc(100% + var(--space-3));
+  white-space: nowrap;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--r-sm);
+  background: var(--fg);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 0.18s var(--ease), transform 0.18s var(--ease);
+  pointer-events: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .aiLauncher:hover .aiLauncherLabel,
+  .aiLauncher:focus-visible .aiLauncherLabel { opacity: 1; transform: translateX(0); }
 }
 
 .aiPanel {
   position: fixed;
   right: var(--space-5);
-  bottom: calc(var(--space-5) + 62px);
+  /* Clears the launcher (58px + a gap) and, under it, the call bar. */
+  bottom: calc(var(--space-5) + var(--bar-h, 0px) + 68px);
   z-index: 61;
   width: min(390px, calc(100vw - var(--space-8)));
   max-height: min(640px, calc(100vh - 140px));
+  max-height: min(640px, calc(100dvh - 140px));
   display: flex;
   flex-direction: column;
   background: var(--surface);
@@ -923,15 +960,19 @@
   line-height: 1.45;
 }
 
-/* The mobile call bar already owns the bottom of the viewport on small screens,
-   so the launcher moves above it rather than sitting on top of it. */
+/* On a phone the panel spans the width, and both it and the launcher sit on top
+   of whatever --bar-h currently is — which is zero once the call bar has slid
+   away, so the assistant follows it down into the corner.
+   `dvh` rather than `vh`: on a phone `100vh` is the height with the address bar
+   *hidden*, so a panel sized against it is taller than the screen it is on. */
 @media (max-width: 720px) {
-  .aiLauncher { bottom: calc(var(--space-5) + 62px); right: var(--space-4); }
+  .aiLauncher { right: var(--space-4); }
   .aiPanel {
     right: var(--space-3);
     left: var(--space-3);
     width: auto;
-    bottom: calc(var(--space-5) + 118px);
+    bottom: calc(var(--space-5) + var(--bar-h, 0px) + 68px);
     max-height: min(560px, calc(100vh - 200px));
+    max-height: min(560px, calc(100dvh - 200px));
   }
 }

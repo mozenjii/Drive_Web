@@ -180,6 +180,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-soft);
+  transition: transform 0.28s var(--ease);
 }
 .headerInner {
   display: flex;
@@ -331,21 +332,77 @@ a.chip:hover { border-color: var(--primary); color: var(--primary-dark); backgro
 @media (max-width: 900px) { .footerGrid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .footerGrid { grid-template-columns: 1fr; } }
 
-/* ---------------- sticky mobile bar ---------------- */
+/* ---------------- the call bar, and chrome motion ----------------
+
+   Two questions this answers, both raised off a phone:
+
+   1. Should the call/book bar exist at all, or move up beside the header?
+      It stays at the bottom. On a phone the bottom edge is the only part of the
+      screen a thumb reaches without regripping, and "call" is the action this
+      entire page exists to produce — a driving school is booked by phone. Moving
+      it up beside the logo would put the one thing we want tapped in the one
+      place a thumb cannot comfortably go.
+
+   2. Then why was it taking up the screen?
+      Because it never left, and neither did the header: 72px pinned at the top
+      and ~88px pinned at the bottom is a quarter of a 667px phone, permanently.
+      Both now travel with the scroll direction — gone while you read down, back
+      the instant you swipe up. See ChromeMotion.tsx.
+
+   The bar is also shorter than it was: the buttons keep their 48px tap target,
+   the padding around them does not. */
+
+/** Height the bar actually occupies, so the page and the assistant can both
+ *  reserve exactly that and nothing more. Zero where no bar is rendered. */
+:root { --bar-h: 0px; }
 
 .mobileBar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
   display: none; gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  padding-bottom: calc(var(--space-3) + env(safe-area-inset-bottom, 0px));
+  padding: var(--space-2) var(--space-4);
+  padding-bottom: calc(var(--space-2) + env(safe-area-inset-bottom, 0px));
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(14px);
   border-top: 1px solid var(--border);
+  transition: transform 0.28s var(--ease);
 }
-.mobileBar .btn { flex: 1; }
+/* One line, always. On a 320px screen "Book a lesson" wrapped to two lines,
+   which both looks broken inside a pill and makes the bar 96px tall — 24px more
+   than the page reserves for it, so the last of the content sat underneath it. */
+.mobileBar .btn {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  padding-inline: var(--space-4);
+}
+@media (max-width: 360px) {
+  .mobileBar .btn { font-size: 0.92rem; padding-inline: var(--space-3); }
+}
+
 @media (max-width: 1024px) {
   .mobileBar { display: flex; }
-  body { padding-bottom: 88px; }
+  /* 48px button + 8px padding top and bottom + the 1px rule. Only the clients
+     who publish a phone number get a bar, so only they reserve room for one —
+     the rest used to carry 88px of empty page under the footer. */
+  .themed[data-bar='on'] {
+    --bar-h: 72px;
+    padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Out of the way going down, back on the way up. Transform only: no layout is
+     read or written while scrolling. */
+  :root[data-chrome='hidden'] .header { transform: translateY(-100%); }
+  :root[data-chrome='hidden'] .mobileBar {
+    transform: translateY(calc(100% + env(safe-area-inset-bottom, 0px)));
+  }
+  /* With the bar gone, the assistant takes the corner it was avoiding. */
+  :root[data-chrome='hidden'] .themed[data-bar='on'] { --bar-h: 0px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .mobileBar,
+  .aiLauncher { transition: none; }
 }
 
 /* ---------------- breadcrumbs ---------------- */

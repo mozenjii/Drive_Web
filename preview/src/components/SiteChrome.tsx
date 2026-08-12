@@ -1,4 +1,5 @@
 import { Photo } from '@/components/Photo';
+import { ChromeMotion } from '@/components/ChromeMotion';
 import Link from 'next/link';
 import type { Client } from '@/lib/types';
 import { hrefFor, navRoutesFor, slugify } from '@/lib/routes';
@@ -53,7 +54,14 @@ export function SiteChrome({
     : undefined;
 
   return (
-    <div className="themed" data-variant={client.variant} style={brandVars}>
+    <div
+      className="themed"
+      data-variant={client.variant}
+      /* The bottom call bar only exists for clients who publish a phone number,
+         and only that case should reserve room for it. */
+      data-bar={primary ? 'on' : 'off'}
+      style={brandVars}
+    >
       <a className="skip" href="#main">
         Skip to content
       </a>
@@ -221,6 +229,10 @@ export function SiteChrome({
 
       {/* Sits above the mobile call bar; both are fixed, see components.css. */}
       <Assistant client={client} />
+
+      {/* Slides the header and the call bar out of the way while you scroll down.
+          Renders nothing. */}
+      <ChromeMotion />
 
       {primary ? (
         <div className="mobileBar">

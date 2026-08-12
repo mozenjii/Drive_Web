@@ -117,10 +117,15 @@ export function Assistant({ client }: { client: Client }) {
         className="aiLauncher"
         aria-expanded={open}
         aria-controls={panelId}
+        aria-label={open ? 'Close the assistant' : `Ask ${client.short} a question`}
+        title={open ? 'Close' : 'Ask a question'}
         onClick={() => setOpen((v) => !v)}
       >
-        <span className="aiLauncherDot" aria-hidden="true" />
-        {open ? 'Close' : 'Ask a question'}
+        {open ? <CloseGlyph /> : <ChatGlyph />}
+        {open ? null : <span className="aiLauncherDot" aria-hidden="true" />}
+        <span className="aiLauncherLabel" aria-hidden="true">
+          {open ? 'Close' : 'Ask a question'}
+        </span>
       </button>
 
       {open ? (
@@ -414,4 +419,49 @@ function cheapestNote(client: Client) {
     .filter((p) => p.price !== undefined)
     .sort((a, b) => a.price! - b.price!)[0];
   return low ? ` Packages from ${formatPrice(low.price!)}.` : '';
+}
+
+/**
+ * The launcher's icon. A speech bubble with three dots — the one shape that
+ * reads as "talk to someone" without a caption, on a 58px circle, at arm's
+ * length, in sunlight.
+ */
+function ChatGlyph() {
+  return (
+    <svg
+      className="aiLauncherIcon"
+      width="26"
+      height="26"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z" />
+      <circle cx="8.75" cy="11.75" r="1.05" fill="currentColor" stroke="none" />
+      <circle cx="12.5" cy="11.75" r="1.05" fill="currentColor" stroke="none" />
+      <circle cx="16.25" cy="11.75" r="1.05" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function CloseGlyph() {
+  return (
+    <svg
+      className="aiLauncherIcon"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.4"
+      strokeLinecap="round"
+      aria-hidden="true"
+    >
+      <path d="M18 6 6 18M6 6l12 12" />
+    </svg>
+  );
 }
