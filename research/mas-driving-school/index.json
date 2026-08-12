@@ -1,0 +1,285 @@
+{
+  "slug": "mas-driving-school",
+  "base": "http://www.masdrivingschool.com/",
+  "resolved": "https://masdrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://masdrivingschool.com/",
+      "title": "MAS Driving And Traffic School - WHERE DRIVING MATTERS MAS",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 4020
+    },
+    {
+      "url": "https://masdrivingschool.com/aboutus.php",
+      "title": "MAS Driving And Traffic School - WHERE DRIVING MATTERS MAS",
+      "status": 200,
+      "file": "01-aboutus-php.txt",
+      "chars": 3204
+    },
+    {
+      "url": "https://masdrivingschool.com/contact.php",
+      "title": "",
+      "status": 409,
+      "file": "02-contact-php.txt",
+      "chars": 0
+    },
+    {
+      "url": "https://masdrivingschool.com/gallery.php",
+      "title": "MAS Driving And Traffic School - WHERE DRIVING MATTERS MAS",
+      "status": 200,
+      "file": "03-gallery-php.txt",
+      "chars": 1031
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://masdrivingschool.com/images/logo.png",
+      "file": "logo.png",
+      "hint": "img",
+      "w": 812,
+      "h": 894,
+      "bytes": 57283
+    },
+    {
+      "url": "https://masdrivingschool.com/images/banner/img1.jpg",
+      "file": "img1.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 788,
+      "bytes": 636216
+    },
+    {
+      "url": "https://masdrivingschool.com/images/mas-driving-school.jpg",
+      "file": "mas-driving-school.jpg",
+      "hint": "img",
+      "w": 444,
+      "h": 536,
+      "bytes": 148118
+    },
+    {
+      "url": "https://masdrivingschool.com/images/car.png",
+      "file": "car.png",
+      "hint": "img",
+      "w": 293,
+      "h": 144,
+      "bytes": 11010
+    },
+    {
+      "url": "https://masdrivingschool.com/images/courses-for-adults.jpg",
+      "file": "courses-for-adults.jpg",
+      "hint": "img",
+      "w": 1599,
+      "h": 1022,
+      "bytes": 138903
+    },
+    {
+      "url": "https://masdrivingschool.com/images/courses-for-teens.jpg",
+      "file": "courses-for-teens.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1377,
+      "bytes": 90688
+    },
+    {
+      "url": "https://masdrivingschool.com/images/car-rental.jpg",
+      "file": "car-rental.jpg",
+      "hint": "img",
+      "w": 2000,
+      "h": 1500,
+      "bytes": 238840
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img1.jpg",
+      "file": "img1-1.jpg",
+      "hint": "img",
+      "w": 1452,
+      "h": 1936,
+      "bytes": 233496
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img2.jpg",
+      "file": "img2.jpg",
+      "hint": "img",
+      "w": 799,
+      "h": 599,
+      "bytes": 85332
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img4.jpg",
+      "file": "img4.jpg",
+      "hint": "img",
+      "w": 960,
+      "h": 669,
+      "bytes": 71957
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img3.jpg",
+      "file": "img3.jpg",
+      "hint": "img",
+      "w": 848,
+      "h": 815,
+      "bytes": 260168
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img5.jpg",
+      "file": "img5.jpg",
+      "hint": "img",
+      "w": 799,
+      "h": 599,
+      "bytes": 92736
+    },
+    {
+      "url": "https://masdrivingschool.com/images/Google-Review-Logo.png",
+      "file": "Google-Review-Logo.png",
+      "hint": "img",
+      "w": 3840,
+      "h": 2160,
+      "bytes": 33244
+    },
+    {
+      "url": "https://masdrivingschool.com/images/favicon.jpg",
+      "file": "favicon.jpg",
+      "hint": "icon",
+      "w": 1080,
+      "h": 1080,
+      "bytes": 230130
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img18.jpg",
+      "file": "img18.jpg",
+      "hint": "img",
+      "w": 1450,
+      "h": 654,
+      "bytes": 131181
+    },
+    {
+      "url": "https://masdrivingschool.com/images/about-img.jpg",
+      "file": "about-img.jpg",
+      "hint": "img",
+      "w": 800,
+      "h": 826,
+      "bytes": 118523
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img0.jpg",
+      "file": "img0.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 294950
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img6.jpg",
+      "file": "img6.jpg",
+      "hint": "img",
+      "w": 799,
+      "h": 599,
+      "bytes": 94012
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img7.jpg",
+      "file": "img7.jpg",
+      "hint": "img",
+      "w": 1131,
+      "h": 848,
+      "bytes": 133099
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img8.jpg",
+      "file": "img8.jpg",
+      "hint": "img",
+      "w": 799,
+      "h": 599,
+      "bytes": 85332
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img9.jpg",
+      "file": "img9.jpg",
+      "hint": "img",
+      "w": 1536,
+      "h": 2048,
+      "bytes": 313066
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img10.jpg",
+      "file": "img10.jpg",
+      "hint": "img",
+      "w": 848,
+      "h": 1131,
+      "bytes": 115675
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img11.jpg",
+      "file": "img11.jpg",
+      "hint": "img",
+      "w": 848,
+      "h": 1131,
+      "bytes": 108085
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img12.jpg",
+      "file": "img12.jpg",
+      "hint": "img",
+      "w": 1200,
+      "h": 1600,
+      "bytes": 143774
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img13.jpg",
+      "file": "img13.jpg",
+      "hint": "img",
+      "w": 848,
+      "h": 1131,
+      "bytes": 87757
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img14.jpg",
+      "file": "img14.jpg",
+      "hint": "img",
+      "w": 848,
+      "h": 1131,
+      "bytes": 97855
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img15.jpg",
+      "file": "img15.jpg",
+      "hint": "img",
+      "w": 423,
+      "h": 564,
+      "bytes": 37512
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img16.jpg",
+      "file": "img16.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 316816
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img17.jpg",
+      "file": "img17.jpg",
+      "hint": "img",
+      "w": 799,
+      "h": 599,
+      "bytes": 77296
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img19.jpg",
+      "file": "img19.jpg",
+      "hint": "img",
+      "w": 1450,
+      "h": 654,
+      "bytes": 114939
+    },
+    {
+      "url": "https://masdrivingschool.com/images/gallery/img20.jpg",
+      "file": "img20.jpg",
+      "hint": "img",
+      "w": 799,
+      "h": 599,
+      "bytes": 87562
+    }
+  ]
+}

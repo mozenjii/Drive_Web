@@ -1,0 +1,715 @@
+{
+  "slug": "newport-driving-school",
+  "base": "http://www.newportdrivingschool.com/",
+  "resolved": "https://newportdrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://newportdrivingschool.com/",
+      "title": "Orange County driving school - Better Drivers,\u00a0Safer\u00a0Roads",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 13463
+    },
+    {
+      "url": "https://newportdrivingschool.com/locations/driving-lessons-in-costa-mesa/",
+      "title": "Driving Lessons in Costa Mesa, CA | Newport Driving School",
+      "status": 200,
+      "file": "01-locations-driving-lessons-in-costa-mesa.txt",
+      "chars": 7871
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/driver-license-process-services/",
+      "title": "Driver License Process Services - Newport Driving School",
+      "status": 200,
+      "file": "02-product-driver-license-process-services.txt",
+      "chars": 5197
+    },
+    {
+      "url": "https://newportdrivingschool.com/driving-lessons-programs/",
+      "title": "Driving lessons programs | Newport Driving School - Driving Lessons",
+      "status": 200,
+      "file": "03-driving-lessons-programs.txt",
+      "chars": 6471
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/on-the-field-service-otfs/",
+      "title": "Driver License Process Services - Newport Driving School",
+      "status": 200,
+      "file": "04-product-on-the-field-service-otfs.txt",
+      "chars": 5201
+    },
+    {
+      "url": "https://www.newportdrivingschool.com/driving-lessons-programs/",
+      "title": "Driving lessons programs | Newport Driving School - Driving Lessons",
+      "status": 200,
+      "file": "05-driving-lessons-programs.txt",
+      "chars": 6471
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/fast-track-study-program-for-dmv-written-test/",
+      "title": "Fast-Track Study Program For DMV Written Test (FTSP) - Newport Driving School %",
+      "status": 200,
+      "file": "06-product-fast-track-study-program-for-dmv-written-test.txt",
+      "chars": 5529
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/behind-the-wheel-training-program/",
+      "title": "Behind the Wheel Training Program - Newport Driving School",
+      "status": 200,
+      "file": "07-product-behind-the-wheel-training-program.txt",
+      "chars": 7318
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/international-driving-permit-program/",
+      "title": "California Driver License Program for Foreigners - Newport Driving School",
+      "status": 200,
+      "file": "08-product-international-driving-permit-program.txt",
+      "chars": 6532
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/ab60-driver-license-program/",
+      "title": "AB60 Driver License Program - Newport Driving School",
+      "status": 200,
+      "file": "09-product-ab60-driver-license-program.txt",
+      "chars": 9463
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/fast-track-20-hour-driving-program/",
+      "title": "Fast Track 20-Hour Driving Program - Newport Driving School",
+      "status": 200,
+      "file": "10-product-fast-track-20-hour-driving-program.txt",
+      "chars": 5717
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/global-training-program/",
+      "title": "Global Training Program - Newport Driving School",
+      "status": 200,
+      "file": "11-product-global-training-program.txt",
+      "chars": 5535
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/public-figures-vip-program/",
+      "title": "Public Figures VIP Program - Newport Driving School",
+      "status": 200,
+      "file": "12-product-public-figures-vip-program.txt",
+      "chars": 5972
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/train-the-trainer-program/",
+      "title": "Train-The-Trainer Program - Newport Driving School",
+      "status": 200,
+      "file": "13-product-train-the-trainer-program.txt",
+      "chars": 5598
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/public-figures-personalized-program-private-driving-instructor-vip-driving-instructor/",
+      "title": "Public Figures VIP Program - Newport Driving School",
+      "status": 200,
+      "file": "14-product-public-figures-personalized-program-private-driving-.txt",
+      "chars": 5671
+    },
+    {
+      "url": "https://www.newportdrivingschool.com/california-special-programs/traffic-school-california/",
+      "title": "Online Traffic School California - Newport Driving School",
+      "status": 200,
+      "file": "15-california-special-programs-traffic-school-california.txt",
+      "chars": 5642
+    },
+    {
+      "url": "https://www.newportdrivingschool.com/california-special-programs/driver-education-online-course/",
+      "title": "Driving Education Training Course | Driving Course Near Me",
+      "status": 200,
+      "file": "16-california-special-programs-driver-education-online-course.txt",
+      "chars": 6363
+    },
+    {
+      "url": "https://newportdrivingschool.com/product/dmv-driving-test-program/",
+      "title": "DMV Road Test Service (DRTS) - Newport Driving School",
+      "status": 200,
+      "file": "17-product-dmv-driving-test-program.txt",
+      "chars": 6211
+    },
+    {
+      "url": "https://newportdrivingschool.com/product-category/other-programs/",
+      "title": "Other programs Archives - Newport Driving School",
+      "status": 200,
+      "file": "18-product-category-other-programs.txt",
+      "chars": 4679
+    },
+    {
+      "url": "https://newportdrivingschool.com/student-license-program/",
+      "title": "Driving License Program Newport Beach - Newport Driving School",
+      "status": 200,
+      "file": "19-student-license-program.txt",
+      "chars": 5001
+    },
+    {
+      "url": "https://newportdrivingschool.com/product-category/classroom-programs/",
+      "title": "Classroom Programs Archives - Newport Driving School",
+      "status": 200,
+      "file": "20-product-category-classroom-programs.txt",
+      "chars": 5034
+    },
+    {
+      "url": "https://newportdrivingschool.com/product-category/in-car-programs/",
+      "title": "In-Car Programs Archives - Newport Driving School",
+      "status": 200,
+      "file": "21-product-category-in-car-programs.txt",
+      "chars": 5906
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/10/NDSLogo-transparente-750-copy.png",
+      "file": "NDSLogo-transparente-750-copy.png",
+      "hint": "img",
+      "w": 750,
+      "h": 747,
+      "bytes": 279359
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/08/slide02_miin02.jpg",
+      "file": "slide02_miin02.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 796,
+      "bytes": 134839
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/08/michigan_min.jpg",
+      "file": "michigan_min.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 900,
+      "bytes": 210265
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/08/home_slide05_min.jpg",
+      "file": "home_slide05_min.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 900,
+      "bytes": 106357
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/08/home_slide_06.jpg",
+      "file": "home_slide_06.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 900,
+      "bytes": 71777
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/08/home_slide04_min.jpg",
+      "file": "home_slide04_min.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 900,
+      "bytes": 159849
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2024/11/gift.jpg",
+      "file": "gift.jpg",
+      "hint": "img",
+      "w": 452,
+      "h": 197,
+      "bytes": 35247
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2024/11/fondo.webp",
+      "file": "fondo.webp",
+      "hint": "img",
+      "w": 1280,
+      "h": 731,
+      "bytes": 56188
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2024/10/instructors.jpg",
+      "file": "instructors.jpg",
+      "hint": "img",
+      "w": 900,
+      "h": 900,
+      "bytes": 127361
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2024/10/home_prices-1.jpg",
+      "file": "home_prices-1.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 875,
+      "bytes": 108661
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/home_testimonial_miin-1.jpg",
+      "file": "home_testimonial_miin-1.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 467,
+      "bytes": 49567
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/google-reviews_miin.jpg",
+      "file": "google-reviews_miin.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 110,
+      "bytes": 8053
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/yellow_bot_miin-1.jpg",
+      "file": "yellow_bot_miin-1.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 110,
+      "bytes": 6427
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/get_passed_miin.jpg",
+      "file": "get_passed_miin.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 110,
+      "bytes": 4103
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/insider_miin.jpg",
+      "file": "insider_miin.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 110,
+      "bytes": 5245
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/yellowpages_miin.jpg",
+      "file": "yellowpages_miin.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 110,
+      "bytes": 6749
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/facebook_miin.jpg",
+      "file": "facebook_miin.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 110,
+      "bytes": 6135
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/11/Logo05.png",
+      "file": "Logo05.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 25826
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2026/05/asd.jpg",
+      "file": "asd.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 15034
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2024/11/baker.png",
+      "file": "baker.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 4656
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/logo01-1.png",
+      "file": "logo01-1.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 6779
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Logo04.png",
+      "file": "Logo04.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 7102
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Logo02.png",
+      "file": "Logo02.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 7327
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Logo03.png",
+      "file": "Logo03.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 8757
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2024/11/bakers.png",
+      "file": "bakers.png",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 31071
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2025/08/fms.jpg",
+      "file": "fms.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 116,
+      "bytes": 9952
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/06_miin.jpg",
+      "file": "06_miin.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 27203
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/03_miin.jpg",
+      "file": "03_miin.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 36317
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/01_miin.jpg",
+      "file": "01_miin.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 22320
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/04_miin.jpg",
+      "file": "04_miin.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 34441
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/02_miin.jpg",
+      "file": "02_miin.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 24459
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/05_miin.jpg",
+      "file": "05_miin.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 33680
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/06/new-port-150x150.png",
+      "file": "new-port-150x150.png",
+      "hint": "icon",
+      "w": 150,
+      "h": 150,
+      "bytes": 39651
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/06/new-port.png",
+      "file": "new-port.png",
+      "hint": "icon",
+      "w": 200,
+      "h": 200,
+      "bytes": 69057
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2026/05/hero-driver-TAPk7pMW.webp",
+      "file": "hero-driver-TAPk7pMW.webp",
+      "hint": "img",
+      "w": 1280,
+      "h": 1280,
+      "bytes": 38204
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2026/05/palmdale-road-C0daP24C-1.webp",
+      "file": "palmdale-road-C0daP24C-1.webp",
+      "hint": "img",
+      "w": 1024,
+      "h": 655,
+      "bytes": 81984
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/07/nice-friendly-woman-talking-client-while-standing-reception-1-1-scaled.jpg",
+      "file": "woman-talking-client-while-standing-reception-1-1-scaled.jpg",
+      "hint": "img",
+      "w": 2560,
+      "h": 1703,
+      "bytes": 288086
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/10/Driver-Evaluation-Course.jpg",
+      "file": "Driver-Evaluation-Course.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 112559
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/12/Global-Training-Program-1.jpg",
+      "file": "Global-Training-Program-1.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 1000,
+      "bytes": 223302
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2025/08/Medical-Driving-Assessment-MDA_min.webp",
+      "file": "Medical-Driving-Assessment-MDA_min.webp",
+      "hint": "img",
+      "w": 1000,
+      "h": 1000,
+      "bytes": 31576
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/12/Train-The-Trainer-Program.jpg",
+      "file": "Train-The-Trainer-Program.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 1000,
+      "bytes": 111141
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/online.jpg",
+      "file": "online.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 40375
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/class.jpg",
+      "file": "class.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 42118
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/on-site.jpg",
+      "file": "on-site.jpg",
+      "hint": "bg",
+      "w": 700,
+      "h": 700,
+      "bytes": 35732
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2026/03/Fast-Track-20-Hour-Driving-Program-.webp",
+      "file": "Fast-Track-20-Hour-Driving-Program-.webp",
+      "hint": "img",
+      "w": 1000,
+      "h": 1000,
+      "bytes": 40690
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/12/Img.jpg",
+      "file": "Img.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 1000,
+      "bytes": 81891
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2022/09/California-Motorcycle-Course.jpg",
+      "file": "California-Motorcycle-Course.jpg",
+      "hint": "img",
+      "w": 900,
+      "h": 900,
+      "bytes": 736850
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Driver-Education-Training-Course_min.jpg",
+      "file": "Driver-Education-Training-Course_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 53440
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2022/02/Post-16-Defensive-Driving-1.jpg",
+      "file": "Post-16-Defensive-Driving-1.jpg",
+      "hint": "img",
+      "w": 960,
+      "h": 960,
+      "bytes": 150367
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Behind-the-Wheel-Program_min.jpg",
+      "file": "Behind-the-Wheel-Program_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 64304
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Manual-Transmission-Program-Stick-Shift_min.jpg",
+      "file": "Manual-Transmission-Program-Stick-Shift_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 96949
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/DMV-Road-Test-Program_min.jpg",
+      "file": "DMV-Road-Test-Program_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 47209
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2022/02/personalized-driving-lessons.jpg",
+      "file": "personalized-driving-lessons.jpg",
+      "hint": "img",
+      "w": 900,
+      "h": 900,
+      "bytes": 546281
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Driver-Safety-Course_min.jpg",
+      "file": "Driver-Safety-Course_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 90689
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/International-Driving-Program_min.jpg",
+      "file": "International-Driving-Program_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 46615
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2021/12/Img2.jpg",
+      "file": "Img2.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 1000,
+      "bytes": 145778
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/AB60-Driver-License-Programs_min.jpg",
+      "file": "AB60-Driver-License-Programs_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 130623
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Senior-Driver-Course_min.jpg",
+      "file": "Senior-Driver-Course_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 59481
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Defensive-Driving-Safety-Course_min.jpg",
+      "file": "Defensive-Driving-Safety-Course_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 107870
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Disable-Driver-Training-Program_min.jpg",
+      "file": "Disable-Driver-Training-Program_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 148396
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Public-Figures-Personalized-Program-VIP_min.jpg",
+      "file": "Public-Figures-Personalized-Program-VIP_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 60917
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/12/imagen.jpg",
+      "file": "imagen.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 409,
+      "bytes": 87320
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/05/fotos.jpg",
+      "file": "fotos.jpg",
+      "hint": "img",
+      "w": 1024,
+      "h": 680,
+      "bytes": 145635
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2023/05/fotos_02.jpg",
+      "file": "fotos_02.jpg",
+      "hint": "img",
+      "w": 1024,
+      "h": 683,
+      "bytes": 178070
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Trafic-School-California_min.jpg",
+      "file": "Trafic-School-California_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 66744
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2026/04/Traffic-Safety-Edfucators-Association.webp",
+      "file": "Traffic-Safety-Edfucators-Association.webp",
+      "hint": "img",
+      "w": 826,
+      "h": 1076,
+      "bytes": 92390
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Driver-Education-Online-Course_min.jpg",
+      "file": "Driver-Education-Online-Course_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 101736
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Mature-Driver-Improvement-Program_min.jpg",
+      "file": "Mature-Driver-Improvement-Program_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 55676
+    },
+    {
+      "url": "https://newportdrivingschool.com/wp-content/uploads/2020/07/Student-License-Program_min.jpg",
+      "file": "Student-License-Program_min.jpg",
+      "hint": "img",
+      "w": 700,
+      "h": 700,
+      "bytes": 58217
+    }
+  ]
+}

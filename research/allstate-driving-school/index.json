@@ -1,0 +1,315 @@
+{
+  "slug": "allstate-driving-school",
+  "base": "https://allstatedrivered.com/",
+  "resolved": "https://allstatedrivered.com/",
+  "pages": [
+    {
+      "url": "https://allstatedrivered.com/",
+      "title": "Driving School | San Diego -  La Jolla Allstate Driving School",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 4042
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-lessons/teen/driver-training.php",
+      "title": "Teen - San Diego | Allstate Driving School",
+      "status": 200,
+      "file": "01-driving-lessons-teen-driver-training-php.txt",
+      "chars": 10942
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-lessons/foreign-adult/driver-training.php",
+      "title": "Adult Driver Training San Diego | Allstate Driving School",
+      "status": 200,
+      "file": "02-driving-lessons-foreign-adult-driver-training-php.txt",
+      "chars": 4491
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-lessons/senior/driver-training.php",
+      "title": "Senior Driver Training - San Diego | Allstate Driving School",
+      "status": 200,
+      "file": "03-driving-lessons-senior-driver-training-php.txt",
+      "chars": 4349
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-school/ucsd-la-jolla-driving-lessons.php",
+      "title": "La Jolla - UCSD | Allstate Driving School",
+      "status": 200,
+      "file": "04-driving-school-ucsd-la-jolla-driving-lessons-php.txt",
+      "chars": 4784
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-school/rancho-penasquitos-driving-lessons.php",
+      "title": "Rancho Penasquitos | Allstate Driving School",
+      "status": 200,
+      "file": "05-driving-school-rancho-penasquitos-driving-lessons-php.txt",
+      "chars": 4218
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-school/carmel-valley-driving-lessons.php",
+      "title": "Carmel Valley Driving Lessons | Allstate Driving School",
+      "status": 200,
+      "file": "06-driving-school-carmel-valley-driving-lessons-php.txt",
+      "chars": 4598
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-school/about-us.php",
+      "title": "About Us | Allstate Driving School",
+      "status": 200,
+      "file": "07-driving-school-about-us-php.txt",
+      "chars": 5741
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-school/driving-instructors.php",
+      "title": "Driving Instructors | Allstate Driving School",
+      "status": 200,
+      "file": "08-driving-school-driving-instructors-php.txt",
+      "chars": 6508
+    },
+    {
+      "url": "https://allstatedrivered.com/driving-school/contact-us.php",
+      "title": "Contact our Driver Trainers | Allstate Driving School",
+      "status": 200,
+      "file": "09-driving-school-contact-us-php.txt",
+      "chars": 3135
+    },
+    {
+      "url": "https://allstatedrivered.com/index.php",
+      "title": "Driving School | San Diego -  La Jolla Allstate Driving School",
+      "status": 200,
+      "file": "10-index-php.txt",
+      "chars": 4042
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/",
+      "title": "Allstate Driving School",
+      "status": 200,
+      "file": "11-online-30.txt",
+      "chars": 1150
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/course/view.php?id=2",
+      "title": "Allstate Driving School: Log in to the site",
+      "status": 200,
+      "file": "12-online-30-course-view-php-id-2.txt",
+      "chars": 333
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/course/index.php",
+      "title": "Allstate",
+      "status": 200,
+      "file": "13-online-30-course-index-php.txt",
+      "chars": 289
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/view.php?view=month&time=1786239782&course=1",
+      "title": "Allstate: Calendar: Detailed month view: August 2026",
+      "status": 200,
+      "file": "14-online-30-calendar-view-php-view-month-time-1786239782-cours.txt",
+      "chars": 981
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/course/forgot_password.php",
+      "title": "",
+      "status": 404,
+      "file": "15-online-30-course-forgot-password-php.txt",
+      "chars": 15
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/view.php?view=month&course=1&time=1782885600",
+      "title": "Allstate: Calendar: Detailed month view: July 2026",
+      "status": 200,
+      "file": "16-online-30-calendar-view-php-view-month-course-1-time-1782885.txt",
+      "chars": 967
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/view.php?view=month&course=1&time=1788242400",
+      "title": "Allstate: Calendar: Detailed month view: September 2026",
+      "status": 200,
+      "file": "17-online-30-calendar-view-php-view-month-course-1-time-1788242.txt",
+      "chars": 989
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/set.php?return=L2NhbGVuZGFyL3ZpZXcucGhwP3ZpZXc9bW9udGgmdGltZT0xNzg2MTY4ODAwJmNvdXJzZT0x&sesskey=ePVu7yeYs8&var=showcourses",
+      "title": "Allstate: Calendar: Detailed month view: August 2026",
+      "status": 200,
+      "file": "18-online-30-calendar-set-php-return-l2nhbgvuzgfyl3zpzxcucghwp3.txt",
+      "chars": 981
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/view.php?view=month&time=1782885600&course=1",
+      "title": "Allstate: Calendar: Detailed month view: July 2026",
+      "status": 200,
+      "file": "19-online-30-calendar-view-php-view-month-time-1782885600-cours.txt",
+      "chars": 967
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/view.php?view=month&time=1786168800&course=1",
+      "title": "Allstate: Calendar: Detailed month view: August 2026",
+      "status": 200,
+      "file": "20-online-30-calendar-view-php-view-month-time-1786168800-cours.txt",
+      "chars": 981
+    },
+    {
+      "url": "https://allstatedrivered.com/online_30/calendar/view.php?view=month&time=1788242400&course=1",
+      "title": "Allstate: Calendar: Detailed month view: September 2026",
+      "status": 200,
+      "file": "21-online-30-calendar-view-php-view-month-time-1788242400-cours.txt",
+      "chars": 989
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://allstatedrivered.com/images/car.png",
+      "file": "car.png",
+      "hint": "img",
+      "w": 971,
+      "h": 387,
+      "bytes": 322283
+    },
+    {
+      "url": "https://allstatedrivered.com/images/white.jpg",
+      "file": "white.jpg",
+      "hint": "img",
+      "w": 2009,
+      "h": 586,
+      "bytes": 15116
+    },
+    {
+      "url": "https://allstatedrivered.com/images/seal.png",
+      "file": "seal.png",
+      "hint": "img",
+      "w": 206,
+      "h": 199,
+      "bytes": 51992
+    },
+    {
+      "url": "https://allstatedrivered.com/images/parent-teen.jpg",
+      "file": "parent-teen.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 127146
+    },
+    {
+      "url": "https://allstatedrivered.com/images/keys.png",
+      "file": "keys.png",
+      "hint": "img",
+      "w": 888,
+      "h": 1509,
+      "bytes": 2207170
+    },
+    {
+      "url": "https://allstatedrivered.com/images/adults.jpg",
+      "file": "adults.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 101059
+    },
+    {
+      "url": "https://allstatedrivered.com/images/seniors.jpg",
+      "file": "seniors.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 127379
+    },
+    {
+      "url": "https://allstatedrivered.com/images/ucsd-la-jolla-driving-area.jpg",
+      "file": "ucsd-la-jolla-driving-area.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 328550
+    },
+    {
+      "url": "https://allstatedrivered.com/images/rancho-penasquitos-poway-driving.jpg",
+      "file": "rancho-penasquitos-poway-driving.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 402464
+    },
+    {
+      "url": "https://allstatedrivered.com/images/carmel-valley-san-diego-driving.jpg",
+      "file": "carmel-valley-san-diego-driving.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 393013
+    },
+    {
+      "url": "https://allstatedrivered.com/images/about.jpg",
+      "file": "about.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 51324
+    },
+    {
+      "url": "https://allstatedrivered.com/img/instructors/kelly web pic.jpg",
+      "file": "kelly-web-pic.jpg",
+      "hint": "img",
+      "w": 174,
+      "h": 275,
+      "bytes": 29608
+    },
+    {
+      "url": "https://allstatedrivered.com/img/instructors/Mayala3.gif",
+      "file": "Mayala3.gif",
+      "hint": "img",
+      "w": 171,
+      "h": 259,
+      "bytes": 34566
+    },
+    {
+      "url": "https://allstatedrivered.com/img/instructors/Tom Web Pic.jpg",
+      "file": "Tom-Web-Pic.jpg",
+      "hint": "img",
+      "w": 175,
+      "h": 263,
+      "bytes": 31162
+    },
+    {
+      "url": "https://allstatedrivered.com/img/instructors/S1.jpg",
+      "file": "S1.jpg",
+      "hint": "img",
+      "w": 165,
+      "h": 270,
+      "bytes": 60850
+    },
+    {
+      "url": "https://allstatedrivered.com/img/instructors/L9.gif",
+      "file": "L9.gif",
+      "hint": "img",
+      "w": 175,
+      "h": 270,
+      "bytes": 35436
+    },
+    {
+      "url": "https://allstatedrivered.com/img/instructors/Salomo.jpg",
+      "file": "Salomo.jpg",
+      "hint": "img",
+      "w": 160,
+      "h": 275,
+      "bytes": 27433
+    },
+    {
+      "url": "https://allstatedrivered.com/images/contact.jpg",
+      "file": "contact.jpg",
+      "hint": "img",
+      "w": 914,
+      "h": 610,
+      "bytes": 41486
+    },
+    {
+      "url": "https://allstatedrivered.com/img/home_01.jpg",
+      "file": "home_01.jpg",
+      "hint": "img",
+      "w": 706,
+      "h": 187,
+      "bytes": 65200
+    }
+  ]
+}

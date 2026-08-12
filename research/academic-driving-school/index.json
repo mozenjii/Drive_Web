@@ -1,0 +1,306 @@
+{
+  "slug": "academic-driving-school",
+  "base": "http://www.academicdrivingschool.com/",
+  "resolved": "https://academicdrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://academicdrivingschool.com/",
+      "title": "Home - Academic Driving School",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 5674
+    },
+    {
+      "url": "https://academicdrivingschool.com/services-html/",
+      "title": "Traffic School - Academic Driving School",
+      "status": 200,
+      "file": "01-services-html.txt",
+      "chars": 1969
+    },
+    {
+      "url": "https://academicdrivingschool.com/california-dmv-preparation-test-courses/",
+      "title": "California DMV Practice Test - Academic Driving School",
+      "status": 200,
+      "file": "02-california-dmv-preparation-test-courses.txt",
+      "chars": 1119
+    },
+    {
+      "url": "https://academicdrivingschool.com/permit-course/",
+      "title": "Academic Driving School \u00e2\u0080\u0093 California DMV Learner's Permit Practice Test",
+      "status": 200,
+      "file": "03-permit-course.txt",
+      "chars": 752
+    },
+    {
+      "url": "https://academicdrivingschool.com/in-car-driving-lessons-html/",
+      "title": "in car driving lessons - Academic Driving School",
+      "status": 200,
+      "file": "04-in-car-driving-lessons-html.txt",
+      "chars": 4842
+    },
+    {
+      "url": "https://academicdrivingschool.com/drivers-ed-online-html/",
+      "title": "Drivers Ed - Academic Driving School",
+      "status": 200,
+      "file": "05-drivers-ed-online-html.txt",
+      "chars": 5564
+    },
+    {
+      "url": "https://academicdrivingschool.com/about-html/",
+      "title": "About Us - Academic Driving School",
+      "status": 200,
+      "file": "06-about-html.txt",
+      "chars": 6169
+    },
+    {
+      "url": "https://academicdrivingschool.com/academic-driving-school-reviews/",
+      "title": "Academic Driving school reviews - Academic Driving School",
+      "status": 200,
+      "file": "07-academic-driving-school-reviews.txt",
+      "chars": 898
+    },
+    {
+      "url": "https://academicdrivingschool.com/driving-faq-frequently-asked-questions/",
+      "title": "Driving FAQ (Frequently Asked Questions) - Academic Driving School",
+      "status": 200,
+      "file": "08-driving-faq-frequently-asked-questions.txt",
+      "chars": 4819
+    },
+    {
+      "url": "https://academicdrivingschool.com/contact-html/",
+      "title": "Contact - Academic Driving School",
+      "status": 200,
+      "file": "09-contact-html.txt",
+      "chars": 1159
+    },
+    {
+      "url": "https://academicdrivingschool.com",
+      "title": "Home - Academic Driving School",
+      "status": 200,
+      "file": "10-index.txt",
+      "chars": 5674
+    },
+    {
+      "url": "https://academicdrivingschool.com/career-jobs/",
+      "title": "Career (jobs) - Academic Driving School",
+      "status": 200,
+      "file": "11-career-jobs.txt",
+      "chars": 2724
+    },
+    {
+      "url": "https://academicdrivingschool.com/script/register.php",
+      "title": "30 Hour Drivers Ed Curriculum - Online Registration Form",
+      "status": 200,
+      "file": "12-script-register-php.txt",
+      "chars": 2871
+    },
+    {
+      "url": "https://academicdrivingschool.com/script/candidate_login.php",
+      "title": "30 Hour Drivers Ed Curriculum",
+      "status": 200,
+      "file": "13-script-candidate-login-php.txt",
+      "chars": 433
+    },
+    {
+      "url": "https://academicdrivingschool.com/script/forgot_password.php",
+      "title": "User Forgot Password",
+      "status": 200,
+      "file": "14-script-forgot-password-php.txt",
+      "chars": 395
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2021/02/new-logo-PNG.png?w=3020&ssl=1",
+      "file": "new-logo-PNG.png",
+      "hint": "img",
+      "w": 3020,
+      "h": 2282,
+      "bytes": 104411
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2021/02/new-logo-PNG.png?fit=3020%2C2282&ssl=1",
+      "file": "new-logo-PNG-1.png",
+      "hint": "img",
+      "w": 3020,
+      "h": 2282,
+      "bytes": 104411
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/panel-driving-instructor_5.jpg?w=400&ssl=1",
+      "file": "panel-driving-instructor_5.jpg",
+      "hint": "img",
+      "w": 400,
+      "h": 400,
+      "bytes": 46613
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/panel-driving-instructor_5.jpg?fit=300%2C300&ssl=1",
+      "file": "panel-driving-instructor_5-1.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 300,
+      "bytes": 13817
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/student-drive-main-1_5.jpg?w=394&ssl=1",
+      "file": "student-drive-main-1_5.jpg",
+      "hint": "img",
+      "w": 394,
+      "h": 403,
+      "bytes": 25777
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/student-drive-main-1_5.jpg?fit=293%2C300&ssl=1",
+      "file": "student-drive-main-1_5-1.jpg",
+      "hint": "img",
+      "w": 293,
+      "h": 300,
+      "bytes": 15790
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/traffic-light-red-black-24177.png?w=1089&ssl=1",
+      "file": "traffic-light-red-black-24177.png",
+      "hint": "img",
+      "w": 1089,
+      "h": 1280,
+      "bytes": 89504
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/traffic-light-red-black-24177.png?fit=255%2C300&ssl=1",
+      "file": "traffic-light-red-black-24177-1.png",
+      "hint": "img",
+      "w": 255,
+      "h": 300,
+      "bytes": 11696
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2021/02/about-01-free-img.jpg?fit=714%2C850&ssl=1",
+      "file": "about-01-free-img.jpg",
+      "hint": "img",
+      "w": 714,
+      "h": 850,
+      "bytes": 41727
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2021/02/bg-05-free-img.jpg?fit=671%2C1080&ssl=1",
+      "file": "bg-05-free-img.jpg",
+      "hint": "img",
+      "w": 671,
+      "h": 1080,
+      "bytes": 79959
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2026/01/cropped-Logo.jpg?fit=192%2C192&ssl=1",
+      "file": "cropped-Logo.jpg",
+      "hint": "icon",
+      "w": 192,
+      "h": 192,
+      "bytes": 5552
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2026/01/cropped-Logo.jpg?fit=180%2C180&ssl=1",
+      "file": "cropped-Logo-1.jpg",
+      "hint": "icon",
+      "w": 180,
+      "h": 180,
+      "bytes": 5054
+    },
+    {
+      "url": "https://academicdrivingschool.com/wp-content/uploads/2022/01/panel-driving-instructor_5-300x300.jpg",
+      "file": "panel-driving-instructor_5-300x300.jpg",
+      "hint": "og",
+      "w": 300,
+      "h": 300,
+      "bytes": 22524
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/04/11231748_1649066225318304_3526114791386669935_n.jpg?w=600&ssl=1",
+      "file": "11231748_1649066225318304_3526114791386669935_n.jpg",
+      "hint": "img",
+      "w": 600,
+      "h": 446,
+      "bytes": 42842
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/04/11231748_1649066225318304_3526114791386669935_n.jpg?fit=600%2C446&ssl=1",
+      "file": "11231748_1649066225318304_3526114791386669935_n-1.jpg",
+      "hint": "img",
+      "w": 600,
+      "h": 446,
+      "bytes": 42842
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/04/cartoon-school-road-2898150.png?w=1280&ssl=1",
+      "file": "cartoon-school-road-2898150.png",
+      "hint": "img",
+      "w": 1280,
+      "h": 995,
+      "bytes": 114458
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/04/cartoon-school-road-2898150.png?fit=1280%2C995&ssl=1",
+      "file": "cartoon-school-road-2898150-1.png",
+      "hint": "img",
+      "w": 1280,
+      "h": 995,
+      "bytes": 114458
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/stop-sign-traffic-sign-road-6874065.jpg?w=1280&ssl=1",
+      "file": "stop-sign-traffic-sign-road-6874065.jpg",
+      "hint": "img",
+      "w": 1280,
+      "h": 848,
+      "bytes": 183770
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2022/01/stop-sign-traffic-sign-road-6874065.jpg?fit=1280%2C848&ssl=1",
+      "file": "stop-sign-traffic-sign-road-6874065-1.jpg",
+      "hint": "img",
+      "w": 1280,
+      "h": 848,
+      "bytes": 183562
+    },
+    {
+      "url": "https://academicdrivingschool.com/wp-content/uploads/2022/04/11231748_1649066225318304_3526114791386669935_n.jpg",
+      "file": "11231748_1649066225318304_3526114791386669935_n-2.jpg",
+      "hint": "og",
+      "w": 600,
+      "h": 446,
+      "bytes": 42842
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2021/02/about-02-free-img.jpg?fit=760%2C850&ssl=1",
+      "file": "about-02-free-img.jpg",
+      "hint": "img",
+      "w": 760,
+      "h": 850,
+      "bytes": 60369
+    },
+    {
+      "url": "https://i0.wp.com/academicdrivingschool.com/wp-content/uploads/2021/02/bg-06-free-img.jpg?fit=671%2C1080&ssl=1",
+      "file": "bg-06-free-img.jpg",
+      "hint": "img",
+      "w": 671,
+      "h": 1080,
+      "bytes": 109436
+    },
+    {
+      "url": "https://academicdrivingschool.com/wp-content/uploads/2021/02/about-02-free-img.jpg",
+      "file": "about-02-free-img-1.jpg",
+      "hint": "og",
+      "w": 760,
+      "h": 850,
+      "bytes": 60369
+    },
+    {
+      "url": "https://academicdrivingschool.com/script/images/logo/logo1.png",
+      "file": "logo1.png",
+      "hint": "img",
+      "w": 3020,
+      "h": 2282,
+      "bytes": 331812
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "slug": "san-diego-bay-driving-school",
+  "base": "http://sandiegobaydrivingschool.com/",
+  "resolved": "https://sandiegobaydrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://sandiegobaydrivingschool.com/",
+      "title": "Behind the wheel training",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 2032
+    },
+    {
+      "url": "https://sandiegobaydrivingschool.com/https/wwwmaturedrivercoursescom/registerphphttpson1afeidie255ciffg255e",
+      "title": "Mature Driving Course \u2014 Behind the wheel training",
+      "status": 200,
+      "file": "01-https-wwwmaturedrivercoursescom-registerphphttpson1afeidie25.txt",
+      "chars": 1432
+    },
+    {
+      "url": "https://sandiegobaydrivingschool.com/drivinglessons",
+      "title": "Classes \u2014 Behind the wheel training",
+      "status": 200,
+      "file": "02-drivinglessons.txt",
+      "chars": 2967
+    },
+    {
+      "url": "https://sandiegobaydrivingschool.com/dmv-study-quizzes",
+      "title": "Driving Permit Test Preperation \u2014 Behind the wheel training",
+      "status": 200,
+      "file": "03-dmv-study-quizzes.txt",
+      "chars": 1524
+    },
+    {
+      "url": "https://sandiegobaydrivingschool.com/trafficschool",
+      "title": "About \u2014 Behind the wheel training",
+      "status": 200,
+      "file": "04-trafficschool.txt",
+      "chars": 1118
+    },
+    {
+      "url": "https://sandiegobaydrivingschool.com/contact",
+      "title": "Contact \u2014 Behind the wheel training",
+      "status": 200,
+      "file": "05-contact.txt",
+      "chars": 817
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/26edb97e-9792-41d3-aa7d-c6bbe58ca341/LOGO+SI+FONDO+PARA+APLICAR.png?format=1500w",
+      "file": "LOGO-SI-FONDO-PARA-APLICAR.png",
+      "hint": "img",
+      "w": 1500,
+      "h": 1500,
+      "bytes": 329990
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/50d266f3-4fe2-4ade-979b-9001586192fd/file_00000000190471f5a4d0afa5ed9682cf+%281%29.png?format=2500w",
+      "file": "file_00000000190471f5a4d0afa5ed9682cf-281-29.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1346440
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/50d266f3-4fe2-4ade-979b-9001586192fd/file_00000000190471f5a4d0afa5ed9682cf+%281%29.png",
+      "file": "file_00000000190471f5a4d0afa5ed9682cf-281-29-1.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1346440
+    },
+    {
+      "url": "http://static1.squarespace.com/static/60483ce07335f429c488da4a/t/6312bcf59bfffb06c8d5b311/1662172405837/LOGO+SI+FONDO+PARA+APLICAR.png?format=1500w",
+      "file": "LOGO-SI-FONDO-PARA-APLICAR-1.png",
+      "hint": "og",
+      "w": 1500,
+      "h": 1500,
+      "bytes": 329990
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/793dbbb7-7d45-4bac-8132-8342a22065ad/file_00000000343471fd868bf5785ec5a0aa.png?format=2500w",
+      "file": "file_00000000343471fd868bf5785ec5a0aa.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1378366
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/793dbbb7-7d45-4bac-8132-8342a22065ad/file_00000000343471fd868bf5785ec5a0aa.png",
+      "file": "file_00000000343471fd868bf5785ec5a0aa-1.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1378366
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/63a6536b-e321-48dd-b60a-b4c7e39e0d7e/file_00000000bdbc71fdaf592cce8bf408e1+%281%29.png?format=2500w",
+      "file": "file_00000000bdbc71fdaf592cce8bf408e1-281-29.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1383122
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/63a6536b-e321-48dd-b60a-b4c7e39e0d7e/file_00000000bdbc71fdaf592cce8bf408e1+%281%29.png",
+      "file": "file_00000000bdbc71fdaf592cce8bf408e1-281-29-1.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1383122
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/1615354008691-6ENPIRBXJ9K6WNI9OQQE/DSC01630.JPG?format=2500w",
+      "file": "DSC01630.JPG",
+      "hint": "img",
+      "w": 2500,
+      "h": 1407,
+      "bytes": 608984
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/1615354008691-6ENPIRBXJ9K6WNI9OQQE/DSC01630.JPG",
+      "file": "DSC01630-1.JPG",
+      "hint": "img",
+      "w": 2500,
+      "h": 1407,
+      "bytes": 608984
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/1615354419601-279U6MP8C5G9QNCAOBTH/DSC01613.JPG?format=2500w",
+      "file": "DSC01613.JPG",
+      "hint": "img",
+      "w": 2500,
+      "h": 1407,
+      "bytes": 169228
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/1615354419601-279U6MP8C5G9QNCAOBTH/DSC01613.JPG",
+      "file": "DSC01613-1.JPG",
+      "hint": "img",
+      "w": 2500,
+      "h": 1407,
+      "bytes": 169228
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/070be469-339f-460f-b97b-ab01544829f7/file_00000000d3c871f6993360f3d9cd1224+%281%29.png?format=2500w",
+      "file": "file_00000000d3c871f6993360f3d9cd1224-281-29.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1427806
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/070be469-339f-460f-b97b-ab01544829f7/file_00000000d3c871f6993360f3d9cd1224+%281%29.png",
+      "file": "file_00000000d3c871f6993360f3d9cd1224-281-29-1.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1427806
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/a9e780bb-05fa-4482-9ee5-4d7e833035f5/file_0000000000dc71fda9a0f0c8460b942c+%281%29.png?format=2500w",
+      "file": "file_0000000000dc71fda9a0f0c8460b942c-281-29.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1185352
+    },
+    {
+      "url": "https://images.squarespace-cdn.com/content/v1/60483ce07335f429c488da4a/a9e780bb-05fa-4482-9ee5-4d7e833035f5/file_0000000000dc71fda9a0f0c8460b942c+%281%29.png",
+      "file": "file_0000000000dc71fda9a0f0c8460b942c-281-29-1.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1536,
+      "bytes": 1185352
+    }
+  ]
+}

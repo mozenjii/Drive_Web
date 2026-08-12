@@ -1,0 +1,267 @@
+{
+  "slug": "a1-driving-school-bakersfield",
+  "base": "https://www.a1safedriving.com/bakersfield",
+  "resolved": "https://www.a1safedriving.com/bakersfield",
+  "pages": [
+    {
+      "url": "https://www.a1safedriving.com/bakersfield",
+      "title": "Bakersfield | A1 Driving School",
+      "status": 200,
+      "file": "00-bakersfield.txt",
+      "chars": 12870
+    },
+    {
+      "url": "https://www.a1safedriving.com/20250907-press-release-top-rated-driving-school-bakersfield",
+      "title": "Top Rated Bakersifled Driving School Report | 2025 Press Release",
+      "status": 200,
+      "file": "01-20250907-press-release-top-rated-driving-school-bakersfield.txt",
+      "chars": 8488
+    },
+    {
+      "url": "https://www.a1safedriving.com/services",
+      "title": "Learn Driving with A1 Driving School Locations | Comprehensive Training & DMV Tests",
+      "status": 200,
+      "file": "02-services.txt",
+      "chars": 6397
+    },
+    {
+      "url": "https://www.a1safedriving.com/driving-lessons",
+      "title": "Driving Lessons | A1 Driving School",
+      "status": 200,
+      "file": "03-driving-lessons.txt",
+      "chars": 7181
+    },
+    {
+      "url": "https://www.a1safedriving.com/bakersfield/teen-driving-lessons",
+      "title": "Learn to Drive with Driver Education Kern County | A1 Driving School Bakersfield",
+      "status": 200,
+      "file": "04-bakersfield-teen-driving-lessons.txt",
+      "chars": 8013
+    },
+    {
+      "url": "https://www.a1safedriving.com/online-driver-education",
+      "title": "Online Driver Education | A1 Driving School",
+      "status": 200,
+      "file": "05-online-driver-education.txt",
+      "chars": 1387
+    },
+    {
+      "url": "https://www.a1safedriving.com/about-us",
+      "title": "About Us | A1 Driving School",
+      "status": 200,
+      "file": "06-about-us.txt",
+      "chars": 2569
+    },
+    {
+      "url": "https://www.a1safedriving.com/faq",
+      "title": "FAQ | A1 Driving School",
+      "status": 200,
+      "file": "07-faq.txt",
+      "chars": 1768
+    },
+    {
+      "url": "https://www.a1safedriving.com/contact-us",
+      "title": "Contact Us | A1 Driving School",
+      "status": 200,
+      "file": "08-contact-us.txt",
+      "chars": 1777
+    },
+    {
+      "url": "https://www.a1safedriving.com",
+      "title": "A1 Driving School Tehachapi | Expert Driving Education",
+      "status": 200,
+      "file": "09-index.txt",
+      "chars": 3323
+    },
+    {
+      "url": "https://www.a1safedriving.com/trafic-school",
+      "title": "A1 Driving School Online - Convenient Traffic School with Safe Lane Changing Tips",
+      "status": 200,
+      "file": "10-trafic-school.txt",
+      "chars": 1713
+    },
+    {
+      "url": "https://www.a1safedriving.com/tehachapi",
+      "title": "A1 Driving School Tehachapi - Expert Driving Lessons for Beginners & Beyond",
+      "status": 200,
+      "file": "11-tehachapi.txt",
+      "chars": 2537
+    },
+    {
+      "url": "https://www.a1safedriving.com/ridgecrest",
+      "title": "Ridgecrest | A1 Driving School",
+      "status": 200,
+      "file": "12-ridgecrest.txt",
+      "chars": 2536
+    },
+    {
+      "url": "https://www.a1safedriving.com/lake-isabella",
+      "title": "Lake Isabella | A1 Driving School",
+      "status": 200,
+      "file": "13-lake-isabella.txt",
+      "chars": 3110
+    },
+    {
+      "url": "https://www.a1safedriving.com/news",
+      "title": "Press Releases & News | A1 Driving School",
+      "status": 200,
+      "file": "14-news.txt",
+      "chars": 1572
+    },
+    {
+      "url": "https://www.a1safedriving.com/20250913-press-release-comprehensive-course-information-resources",
+      "title": "A1 Driving School Bakersfield Launches Comprehensive Course Information Hub | 2025 Press Release",
+      "status": 200,
+      "file": "15-20250913-press-release-comprehensive-course-information-reso.txt",
+      "chars": 8911
+    },
+    {
+      "url": "https://www.a1safedriving.com/bakersfield-teen-driving-school-excellence",
+      "title": "Top Choice for Teen Driver's Ed Kern County | A1 Driving School Excellence",
+      "status": 200,
+      "file": "16-bakersfield-teen-driving-school-excellence.txt",
+      "chars": 4660
+    },
+    {
+      "url": "https://www.a1safedriving.com/blog",
+      "title": "Blog | A1 Driving School",
+      "status": 200,
+      "file": "17-blog.txt",
+      "chars": 3323
+    },
+    {
+      "url": "https://www.a1safedriving.com/post/back-to-school-back-to-driving-why-now-is-the-perfect-time-for-behind-the-wheel-training",
+      "title": "Back to School, Back to Driving: Why Now Is the Perfect Time for Behind-the-Wheel Training",
+      "status": 200,
+      "file": "18-post-back-to-school-back-to-driving-why-now-is-the-perfect-t.txt",
+      "chars": 8014
+    },
+    {
+      "url": "https://www.a1safedriving.com/post/drivers-training-bakersfield-what-sets-a1-driving-school-apart-from-the-rest",
+      "title": "Drivers Training Bakersfield: What Sets A1 Driving School Apart From the Rest",
+      "status": 200,
+      "file": "19-post-drivers-training-bakersfield-what-sets-a1-driving-schoo.txt",
+      "chars": 7601
+    },
+    {
+      "url": "https://www.a1safedriving.com/post/teen-driver-s-education-in-kern-county",
+      "title": "Teen Driver's Education in Kern County",
+      "status": 200,
+      "file": "20-post-teen-driver-s-education-in-kern-county.txt",
+      "chars": 5911
+    },
+    {
+      "url": "https://www.a1safedriving.com/bakersfield-driving-anxiety-solution",
+      "title": "Audit Confirms A1 Driving School Bakersfield #1 for Anxious Teens",
+      "status": 200,
+      "file": "21-bakersfield-driving-anxiety-solution.txt",
+      "chars": 10377
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_05bbc942102c42569746936bf36abfff~mv2.jpg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2286dd_05bbc942102c42569746936bf36abfff~mv2.jpg",
+      "file": "2286dd_05bbc942102c42569746936bf36abfff-mv2.jpg",
+      "hint": "img",
+      "w": 147,
+      "h": 98,
+      "bytes": 2379
+    },
+    {
+      "url": "https://static.wixstatic.com/media/ede7c1_bdaae4a79b9147c8b39ee569ed798642~mv2.jpg/v1/fill/w_600,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ede7c1_bdaae4a79b9147c8b39ee569ed798642~mv2.jpg",
+      "file": "ede7c1_bdaae4a79b9147c8b39ee569ed798642-mv2.jpg",
+      "hint": "img",
+      "w": 600,
+      "h": 443,
+      "bytes": 82309
+    },
+    {
+      "url": "https://static.wixstatic.com/media/ede7c1_e672dfcd6c9c4d85ac9a2a88e9fcdfcd~mv2.jpg/v1/fill/w_600,h_312,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ede7c1_e672dfcd6c9c4d85ac9a2a88e9fcdfcd~mv2.jpg",
+      "file": "ede7c1_e672dfcd6c9c4d85ac9a2a88e9fcdfcd-mv2.jpg",
+      "hint": "img",
+      "w": 600,
+      "h": 312,
+      "bytes": 34001
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_1834dd46186d414db71af9a6ceb7c68e%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/2286dd_1834dd46186d414db71af9a6ceb7c68e%7Emv2.png",
+      "file": "2286dd_1834dd46186d414db71af9a6ceb7c68e-7Emv2.png",
+      "hint": "icon",
+      "w": 192,
+      "h": 192,
+      "bytes": 5475
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_1834dd46186d414db71af9a6ceb7c68e%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/2286dd_1834dd46186d414db71af9a6ceb7c68e%7Emv2.png",
+      "file": "2286dd_1834dd46186d414db71af9a6ceb7c68e-7Emv2-1.png",
+      "hint": "icon",
+      "w": 180,
+      "h": 180,
+      "bytes": 5198
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_37c252e14d964a9eabdf7b7458fb2b73%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/2286dd_37c252e14d964a9eabdf7b7458fb2b73%7Emv2.jpg",
+      "file": "2286dd_37c252e14d964a9eabdf7b7458fb2b73-7Emv2.jpg",
+      "hint": "og",
+      "w": 1773,
+      "h": 1330,
+      "bytes": 123230
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_1b018e96738e40f7a935a33c50c98b04~mv2.png/v1/fill/w_549,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2286dd_1b018e96738e40f7a935a33c50c98b04~mv2.png",
+      "file": "2286dd_1b018e96738e40f7a935a33c50c98b04-mv2.png",
+      "hint": "img",
+      "w": 549,
+      "h": 600,
+      "bytes": 231873
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_c598e339e1dc4145bf172a4b983a6886~mv2.png/v1/fill/w_549,h_600,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2286dd_c598e339e1dc4145bf172a4b983a6886~mv2.png",
+      "file": "2286dd_c598e339e1dc4145bf172a4b983a6886-mv2.png",
+      "hint": "img",
+      "w": 549,
+      "h": 600,
+      "bytes": 122414
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_9b2fe0f1d7194fdcbf6a9fd484f4737e~mv2.jpeg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/s238911022779922227_p5_i3_w1200_1678913203.jpeg",
+      "file": "s238911022779922227_p5_i3_w1200_1678913203.jpeg",
+      "hint": "img",
+      "w": 600,
+      "h": 400,
+      "bytes": 64071
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_86d9c543f8bb425c9246ed9c4adde3ec~mv2.jpg/v1/fill/w_270,h_180,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2286dd_86d9c543f8bb425c9246ed9c4adde3ec~mv2.jpg",
+      "file": "2286dd_86d9c543f8bb425c9246ed9c4adde3ec-mv2.jpg",
+      "hint": "img",
+      "w": 270,
+      "h": 180,
+      "bytes": 9997
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_808c629a5a0a4c6f869ad48d1d900eb0~mv2.jpeg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2286dd_808c629a5a0a4c6f869ad48d1d900eb0~mv2.jpeg",
+      "file": "2286dd_808c629a5a0a4c6f869ad48d1d900eb0-mv2.jpeg",
+      "hint": "img",
+      "w": 600,
+      "h": 400,
+      "bytes": 31778
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_4663442915da47a787642eecd6e2ff8d~mv2.jpeg/v1/fill/w_600,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/home_1678046733.jpeg",
+      "file": "home_1678046733.jpeg",
+      "hint": "img",
+      "w": 600,
+      "h": 400,
+      "bytes": 50362
+    },
+    {
+      "url": "https://static.wixstatic.com/media/2286dd_5c0e7d1fa2f54ceaae18d6efcc2ffd1e~mv2.jpeg/v1/fill/w_147,h_98,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/2286dd_5c0e7d1fa2f54ceaae18d6efcc2ffd1e~mv2.jpeg",
+      "file": "2286dd_5c0e7d1fa2f54ceaae18d6efcc2ffd1e-mv2.jpeg",
+      "hint": "img",
+      "w": 147,
+      "h": 98,
+      "bytes": 3965
+    }
+  ]
+}

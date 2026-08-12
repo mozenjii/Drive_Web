@@ -1,0 +1,171 @@
+{
+  "slug": "allgood-driving-school",
+  "base": "http://www.allgooddrivers.com/",
+  "resolved": "https://allgooddrivers.com/",
+  "pages": [
+    {
+      "url": "https://allgooddrivers.com/",
+      "title": "Home AllGood Driving School Inc  Allgooddrivers",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 2860
+    },
+    {
+      "url": "https://allgooddrivers.com/service-area-locations",
+      "title": "Service Area Locations",
+      "status": 200,
+      "file": "01-service-area-locations.txt",
+      "chars": 2379
+    },
+    {
+      "url": "https://allgooddrivers.com/behind-the-wheel-lessons",
+      "title": "Behind The Wheel Lessons",
+      "status": 200,
+      "file": "02-behind-the-wheel-lessons.txt",
+      "chars": 13828
+    },
+    {
+      "url": "https://allgooddrivers.com/lesson-curriculum",
+      "title": "Lesson Curriculum",
+      "status": 200,
+      "file": "03-lesson-curriculum.txt",
+      "chars": 14642
+    },
+    {
+      "url": "https://allgooddrivers.com/online-driver-ed",
+      "title": "Online Driver Ed",
+      "status": 200,
+      "file": "04-online-driver-ed.txt",
+      "chars": 6527
+    },
+    {
+      "url": "https://allgooddrivers.com/login-to-online-driver-ed",
+      "title": "Login To Online Driver Ed",
+      "status": 200,
+      "file": "05-login-to-online-driver-ed.txt",
+      "chars": 917
+    },
+    {
+      "url": "https://allgooddrivers.com/use-our-car-for-dmv-test",
+      "title": "Use our Car for DMV Test",
+      "status": 200,
+      "file": "06-use-our-car-for-dmv-test.txt",
+      "chars": 5932
+    },
+    {
+      "url": "https://allgooddrivers.com/about-us",
+      "title": "About Us",
+      "status": 200,
+      "file": "07-about-us.txt",
+      "chars": 2635
+    },
+    {
+      "url": "https://allgooddrivers.com/meet-our-staff",
+      "title": "Meet Our Staff",
+      "status": 200,
+      "file": "08-meet-our-staff.txt",
+      "chars": 16302
+    },
+    {
+      "url": "https://allgooddrivers.com/faqs-1",
+      "title": "FAQs",
+      "status": 200,
+      "file": "09-faqs-1.txt",
+      "chars": 18943
+    },
+    {
+      "url": "https://allgooddrivers.com/contact-us",
+      "title": "Contact Us",
+      "status": 200,
+      "file": "10-contact-us.txt",
+      "chars": 1184
+    },
+    {
+      "url": "http://www.allgooddrivers.com",
+      "title": "Home AllGood Driving School Inc  Allgooddrivers",
+      "status": 200,
+      "file": "11-index.txt",
+      "chars": 2860
+    },
+    {
+      "url": "http://www.allgooddrivers.com/service-area-locations",
+      "title": "Service Area Locations",
+      "status": 200,
+      "file": "12-service-area-locations.txt",
+      "chars": 2379
+    },
+    {
+      "url": "http://www.allgooddrivers.com/behind-the-wheel-lessons",
+      "title": "Behind The Wheel Lessons",
+      "status": 200,
+      "file": "13-behind-the-wheel-lessons.txt",
+      "chars": 13828
+    },
+    {
+      "url": "http://www.allgooddrivers.com/lesson-curriculum",
+      "title": "Lesson Curriculum",
+      "status": 200,
+      "file": "14-lesson-curriculum.txt",
+      "chars": 14642
+    },
+    {
+      "url": "http://www.allgooddrivers.com/online-driver-ed",
+      "title": "Online Driver Ed",
+      "status": 200,
+      "file": "15-online-driver-ed.txt",
+      "chars": 6527
+    },
+    {
+      "url": "http://www.allgooddrivers.com/login-to-online-driver-ed",
+      "title": "Login To Online Driver Ed",
+      "status": 200,
+      "file": "16-login-to-online-driver-ed.txt",
+      "chars": 917
+    },
+    {
+      "url": "http://www.allgooddrivers.com/use-our-car-for-dmv-test",
+      "title": "Use our Car for DMV Test",
+      "status": 200,
+      "file": "17-use-our-car-for-dmv-test.txt",
+      "chars": 5932
+    },
+    {
+      "url": "http://www.allgooddrivers.com/about-us",
+      "title": "About Us",
+      "status": 200,
+      "file": "18-about-us.txt",
+      "chars": 2635
+    },
+    {
+      "url": "http://www.allgooddrivers.com/meet-our-staff",
+      "title": "Meet Our Staff",
+      "status": 200,
+      "file": "19-meet-our-staff.txt",
+      "chars": 16302
+    },
+    {
+      "url": "http://www.allgooddrivers.com/faqs-1",
+      "title": "FAQs",
+      "status": 200,
+      "file": "20-faqs-1.txt",
+      "chars": 18943
+    },
+    {
+      "url": "http://www.allgooddrivers.com/contact-us",
+      "title": "Contact Us",
+      "status": 200,
+      "file": "21-contact-us.txt",
+      "chars": 1184
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://img1.wsimg.com/isteam/ip/21bd428e-6f25-4227-a212-d9e44b634d54/25698308-90dd-4bf9-aff9-c56532b3f53e.jpg",
+      "file": "25698308-90dd-4bf9-aff9-c56532b3f53e.jpg",
+      "hint": "og",
+      "w": 424,
+      "h": 283,
+      "bytes": 42995
+    }
+  ]
+}

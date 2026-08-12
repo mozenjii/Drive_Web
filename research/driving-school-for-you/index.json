@@ -1,0 +1,85 @@
+{
+  "slug": "driving-school-for-you",
+  "base": "https://drivingschoolforyou.com/",
+  "resolved": "https://drivingschoolforyou.com/",
+  "pages": [
+    {
+      "url": "https://drivingschoolforyou.com/",
+      "title": "San Diego | DMV-approved  - Driving School For You",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 3817
+    },
+    {
+      "url": "https://drivingschoolforyou.com/60-hour-driving-instructor-course",
+      "title": "60-Hour Driving Instructor Course - Driving School For You",
+      "status": 200,
+      "file": "01-60-hour-driving-instructor-course.txt",
+      "chars": 2466
+    },
+    {
+      "url": "https://drivingschoolforyou.com/driving-lessons",
+      "title": "Driving Lessons for Teens & Adults - Driving School For You",
+      "status": 200,
+      "file": "02-driving-lessons.txt",
+      "chars": 1983
+    },
+    {
+      "url": "https://drivingschoolforyou.com/testimonials",
+      "title": "Student Reviews & Testimonials - Driving School For You",
+      "status": 200,
+      "file": "03-testimonials.txt",
+      "chars": 4232
+    },
+    {
+      "url": "https://drivingschoolforyou.com/traffic-school",
+      "title": "Traffic School Online Course - Driving School For You",
+      "status": 200,
+      "file": "04-traffic-school.txt",
+      "chars": 1808
+    },
+    {
+      "url": "https://drivingschoolforyou.com/contact-us",
+      "title": "Contact us | Book Your Driving Lesson - Driving School For You",
+      "status": 200,
+      "file": "05-contact-us.txt",
+      "chars": 1319
+    },
+    {
+      "url": "https://drivingschoolforyou.com/location",
+      "title": "Location | Chula Vista, CA - Driving School For You",
+      "status": 200,
+      "file": "06-location.txt",
+      "chars": 742
+    },
+    {
+      "url": "https://drivingschoolforyou.com/store",
+      "title": "Driving School Packages - Driving School For You",
+      "status": 200,
+      "file": "07-store.txt",
+      "chars": 696
+    },
+    {
+      "url": "https://drivingschoolforyou.com/blog",
+      "title": "Driving School Blog | Expert Tips & Advice - Driving School For You",
+      "status": 200,
+      "file": "08-blog.txt",
+      "chars": 700
+    },
+    {
+      "url": "https://drivingschoolforyou.com/store/product/p_3150504",
+      "title": "store/product - Driving School For You",
+      "status": 200,
+      "file": "09-store-product-p-3150504.txt",
+      "chars": 640
+    },
+    {
+      "url": "https://drivingschoolforyou.com/store/product/p_3148785",
+      "title": "store/product - Driving School For You",
+      "status": 200,
+      "file": "10-store-product-p-3148785.txt",
+      "chars": 640
+    }
+  ],
+  "assets": []
+}

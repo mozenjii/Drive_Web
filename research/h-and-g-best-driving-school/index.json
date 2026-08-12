@@ -1,0 +1,355 @@
+{
+  "slug": "h-and-g-best-driving-school",
+  "base": "https://handgbestdrivingschool.com/",
+  "resolved": "https://handgbestdrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://handgbestdrivingschool.com/",
+      "title": "H and G Best Driving School \u2013 Drive with Safety. Navigate with Skill.",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 6642
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/bronze-package/",
+      "title": "Bronze Package \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "01-product-bronze-package.txt",
+      "chars": 2657
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/silver-package/",
+      "title": "Silver Package \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "02-product-silver-package.txt",
+      "chars": 3344
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/gold-package/",
+      "title": "Gold Package \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "03-product-gold-package.txt",
+      "chars": 4171
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product-category/packages/",
+      "title": "Packages \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "04-product-category-packages.txt",
+      "chars": 1630
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/services/",
+      "title": "Services \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "05-services.txt",
+      "chars": 2117
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/freeway-driving-training/",
+      "title": "Freeway Driving Training \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "06-product-freeway-driving-training.txt",
+      "chars": 2545
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/online-education/",
+      "title": "Online Education \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "07-product-online-education.txt",
+      "chars": 3951
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product-category/online-education/",
+      "title": "Online Education \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "08-product-category-online-education.txt",
+      "chars": 1236
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/dmv-test/",
+      "title": "Test Day Drive \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "09-product-dmv-test.txt",
+      "chars": 2839
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/product/test-day-drive/",
+      "title": "Test Day Drive \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "10-product-test-day-drive.txt",
+      "chars": 2839
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/about-us/",
+      "title": "About Us \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "11-about-us.txt",
+      "chars": 5518
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/contact-us/",
+      "title": "Contact Us \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "12-contact-us.txt",
+      "chars": 1291
+    },
+    {
+      "url": "https://handgbestdrivingschool.com",
+      "title": "H and G Best Driving School \u2013 Drive with Safety. Navigate with Skill.",
+      "status": 200,
+      "file": "13-index.txt",
+      "chars": 6642
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/posts",
+      "title": "Posts \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "14-posts.txt",
+      "chars": 6314
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/resources/",
+      "title": "Resources \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "15-resources.txt",
+      "chars": 3028
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/uncategorized/dmv-online-services/",
+      "title": "DMV Online Services \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "16-uncategorized-dmv-online-services.txt",
+      "chars": 1010
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/uncategorized/teen-driver-tips/",
+      "title": "Teen Driver Tips \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "17-uncategorized-teen-driver-tips.txt",
+      "chars": 999
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/uncategorized/dmv-appointment/",
+      "title": "DMV Appointment \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "18-uncategorized-dmv-appointment.txt",
+      "chars": 994
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/uncategorized/dmv-locator/",
+      "title": "DMV Locator \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "19-uncategorized-dmv-locator.txt",
+      "chars": 959
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/uncategorized/drive-test-info/",
+      "title": "Drive Test Info \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "20-uncategorized-drive-test-info.txt",
+      "chars": 1000
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/uncategorized/senior-drivers/",
+      "title": "Senior Drivers \u2013 H and G Best Driving School",
+      "status": 200,
+      "file": "21-uncategorized-senior-drivers.txt",
+      "chars": 1025
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/driving-school-logo-.png",
+      "file": "driving-school-logo-.png",
+      "hint": "img",
+      "w": 321,
+      "h": 268,
+      "bytes": 82294
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/unnamed.png",
+      "file": "unnamed.png",
+      "hint": "img",
+      "w": 512,
+      "h": 301,
+      "bytes": 266193
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Bronze-Transparent-1-1.png",
+      "file": "Bronze-Transparent-1-1.png",
+      "hint": "img",
+      "w": 232,
+      "h": 231,
+      "bytes": 67916
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Silver-Transparent-1-2.png",
+      "file": "Silver-Transparent-1-2.png",
+      "hint": "img",
+      "w": 232,
+      "h": 233,
+      "bytes": 46870
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Gold-Transparent-1-1.png",
+      "file": "Gold-Transparent-1-1.png",
+      "hint": "img",
+      "w": 233,
+      "h": 233,
+      "bytes": 68049
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/375px-California_Department_of_Motor_Vehicles_logo.svg_.png",
+      "file": "375px-California_Department_of_Motor_Vehicles_logo.svg_.png",
+      "hint": "img",
+      "w": 375,
+      "h": 375,
+      "bytes": 56685
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2026/05/new.png",
+      "file": "new.png",
+      "hint": "img",
+      "w": 375,
+      "h": 375,
+      "bytes": 220444
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/road-5710320_1280.jpg",
+      "file": "road-5710320_1280.jpg",
+      "hint": "img",
+      "w": 1280,
+      "h": 853,
+      "bytes": 650345
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/bigstock-Learner-driver-student-driving-44751097.jpg",
+      "file": "bigstock-Learner-driver-student-driving-44751097.jpg",
+      "hint": "img",
+      "w": 900,
+      "h": 600,
+      "bytes": 554848
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Vern-Eide-Mitsubishi-Teen-Driving-Safety-Program-Slider.jpg",
+      "file": "Vern-Eide-Mitsubishi-Teen-Driving-Safety-Program-Slider.jpg",
+      "hint": "img",
+      "w": 1800,
+      "h": 1250,
+      "bytes": 178199
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Driver-Training_physical-therapy-and-rehabilitation_MNRH.jpg",
+      "file": "Driver-Training_physical-therapy-and-rehabilitation_MNRH.jpg",
+      "hint": "img",
+      "w": 730,
+      "h": 410,
+      "bytes": 314776
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/tyttd.jpg",
+      "file": "tyttd.jpg",
+      "hint": "img",
+      "w": 450,
+      "h": 300,
+      "bytes": 155103
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/working_culture_is_the_part_of_business_success_5d8cd5099e53a.jpg",
+      "file": "ng_culture_is_the_part_of_business_success_5d8cd5099e53a.jpg",
+      "hint": "img",
+      "w": 786,
+      "h": 524,
+      "bytes": 139106
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Who-Is-Legally-Responsible-in-a-Road-Rage-Incident.jpg",
+      "file": "Who-Is-Legally-Responsible-in-a-Road-Rage-Incident.jpg",
+      "hint": "img",
+      "w": 1200,
+      "h": 800,
+      "bytes": 114968
+    },
+    {
+      "url": "https://ps.w.org/mailpoet/assets/form-templates/template-4/mailbox@3x.png",
+      "file": "mailbox-3x.png",
+      "hint": "img",
+      "w": 378,
+      "h": 360,
+      "bytes": 2656
+    },
+    {
+      "url": "https://s.w.org/images/core/emoji/15.0.3/svg/1f44b.svg",
+      "file": "1f44b.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 1618
+    },
+    {
+      "url": "https://s.w.org/images/core/5.8/art-01.jpg",
+      "file": "art-01.jpg",
+      "hint": "bg",
+      "w": 2560,
+      "h": 1679,
+      "bytes": 262324
+    },
+    {
+      "url": "http://panoramicprosperity.com/wp-content/uploads/2023/12/dddd.png",
+      "file": "dddd.png",
+      "hint": "bg",
+      "w": 1280,
+      "h": 900,
+      "bytes": 1381318
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/themes/educational-blocks/images/inner-banner.png",
+      "file": "inner-banner.png",
+      "hint": "img",
+      "w": 1074,
+      "h": 443,
+      "bytes": 411465
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2026/05/375px-California_Department_of_Motor_Vehicles_logo.png",
+      "file": "375px-California_Department_of_Motor_Vehicles_logo.png",
+      "hint": "img",
+      "w": 375,
+      "h": 375,
+      "bytes": 198649
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Bronze-Transparent-1.png",
+      "file": "Bronze-Transparent-1.png",
+      "hint": "img",
+      "w": 232,
+      "h": 231,
+      "bytes": 67916
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Silver-Transparent-1-1.png",
+      "file": "Silver-Transparent-1-1.png",
+      "hint": "img",
+      "w": 232,
+      "h": 233,
+      "bytes": 46870
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Gold-Transparent-1.png",
+      "file": "Gold-Transparent-1.png",
+      "hint": "img",
+      "w": 233,
+      "h": 233,
+      "bytes": 68049
+    },
+    {
+      "url": "https://handgbestdrivingschool.com/wp-content/uploads/2024/04/Capturewertwert.jpg",
+      "file": "Capturewertwert.jpg",
+      "hint": "img",
+      "w": 773,
+      "h": 562,
+      "bytes": 54760
+    }
+  ]
+}
