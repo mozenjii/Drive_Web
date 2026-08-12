@@ -23,6 +23,8 @@ the original away — the reason something changed is usually worth more than th
 | [011-open-items.md](011-open-items.md) | Blocked on someone else, or not done yet |
 | [012-stop-shipping-a-template.md](012-stop-shipping-a-template.md) | The shared-photo and shared-heading failure, and the reference sites to design against |
 | [013-assistant-and-ai-features.md](013-assistant-and-ai-features.md) | The on-page assistant, why it is not an LLM, and which AI features need a back end |
+| [014-deployment.md](014-deployment.md) | Where the previews are live, on which account, and what is compiled in at build time |
+| [015-css-tokens-and-card-structure.md](015-css-tokens-and-card-structure.md) | The undeclared spacing tokens that silently zeroed padding on all 20 previews, and the card layering/alignment fixes |
 
 ## Standing rules
 

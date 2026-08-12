@@ -4,6 +4,30 @@ Newest first. One entry per session or per distinct piece of work.
 
 ---
 
+## 2026-08-12 — Four spacing tokens that were never declared
+
+Reported from a live screenshot: the programme cards read as unstructured on "almost every one" of
+the twenty previews. They were. `--space-7`, `--space-9`, `--space-14` and `--space-20` were
+referenced by the stylesheets and declared nowhere, and an undefined custom property does not fall
+back — it drops the declaration to its initial value. Card copy was rendering with `padding: 0`
+against the card edge, and the `editorial` and `panel` heroes (9 clients) had no vertical padding
+at all.
+
+Three more faults in the same cards, all structural rather than cosmetic: the card's gradient wash
+was painting *underneath* the photograph because photo, wash and copy scrim all sat at `z-index:-1`;
+the copy scrim was inset in percentages, so only its weakest third fell inside the card and white
+copy sat on pale photography at ~0.36 alpha; and the copy block was bottom-aligned, so a tile
+without a price started its title 40px below its neighbour's.
+
+Photographs and the text-over-photograph treatment kept as designed — spacing, layering and
+alignment only. Now guarded by a test that fails on any `var()` with no declaration and no
+fallback, which is the only part of this the build could ever have caught. Tests 344 → 345.
+
+Detail and post-fix measurements in
+[015-css-tokens-and-card-structure.md](015-css-tokens-and-card-structure.md).
+
+---
+
 ## 2026-08-12 — Live at epoches.pages.dev
 
 All 20 previews deployed and verified on the live domain: 20/20 returning 200, 20/20 `noindex`,
