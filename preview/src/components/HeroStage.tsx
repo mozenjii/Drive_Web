@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { Photo } from '@/components/Photo';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import type { Client } from '@/lib/types';
@@ -160,7 +160,7 @@ export function HeroStage({
           </div>
           {hero ? (
             <figure className="heroPortrait">
-              <Image
+              <Photo
                 src={hero.src}
                 alt={hero.alt}
                 width={900}
@@ -198,7 +198,7 @@ export function HeroStage({
   return (
     <section className="stage" ref={stageRef}>
       <div className="stageMedia">
-        <Image src={hero!.src} alt={hero!.alt} fill priority sizes="100vw" className="stagePhoto" />
+        <Photo src={hero!.src} alt={hero!.alt} fill priority sizes="100vw" className="stagePhoto" />
         <span className="stageWash" aria-hidden="true" />
         <span className="stageStreaks" aria-hidden="true" />
       </div>

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Photo } from '@/components/Photo';
 import Link from 'next/link';
 import type { Client, Section } from '@/lib/types';
 import { hrefFor, slugify } from '@/lib/routes';
@@ -50,16 +50,26 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
   const imageCards = programsWithPages.filter((p) => p.image).length >= 2;
   const photoCards = programsWithPages.slice(0, imageCards ? 4 : 3);
 
-  function render(section: Section, index: number) {
-    // Alternating surfaces are decided by position in *this* client's order,
-    // not baked into each section, so a reordered page still reads as designed.
-    const alt = index % 2 === 0 ? ' section-alt' : '';
+  /**
+   * Alternating surfaces, decided by position among the sections that actually
+   * RENDER — not by index into `client.sections`.
+   *
+   * With the index, a section that dropped out for want of data took its shade
+   * with it and left its neighbours matching: Academic publishes no packages and
+   * no instructors, so `programs` and `road-test` both came out `section-alt` and
+   * ran together as one undifferentiated block. Every case below calls this after
+   * its own guard, so only rendered sections consume a turn.
+   */
+  let surfaces = 0;
+  const surface = () => `section${surfaces++ % 2 === 0 ? ' section-alt' : ''}`;
+
+  function render(section: Section) {
 
     switch (section.id) {
       case 'programs':
         if (!programsWithPages.length) return null;
         return (
-          <section className={`section${alt}`} id="programs" key={section.id}>
+          <section className={surface()} id="programs" key={section.id}>
             <div className="wrap">
               <Head section={section} />
               {/* Photo-backed where the client has photography for the
@@ -92,7 +102,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
                     }
                   >
                     {program.image ? (
-                      <Image
+                      <Photo
                         className="pathPhoto"
                         src={program.image}
                         alt=""
@@ -121,7 +131,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
       case 'packages':
         if (!client.packageGroups?.length) return null;
         return (
-          <section className={`section${alt}`} id="packages" key={section.id}>
+          <section className={surface()} id="packages" key={section.id}>
             <div className="wrap">
               <Head section={section} />
               <PackagePicker groups={client.packageGroups} />
@@ -137,13 +147,13 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
 
       case 'road-test':
         return (
-          <section className={`section${alt}`} id="road-test" key={section.id}>
+          <section className={surface()} id="road-test" key={section.id}>
             <div className="wrap">
               {roadTest ? (
                 <div className="splitHead">
                   <Head section={section} />
                   <figure className="photoFrame photoFrame-tall">
-                    <Image
+                    <Photo
                       src={roadTest.src}
                       alt={roadTest.alt}
                       width={1200}
@@ -163,19 +173,20 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
       case 'instructors':
         if (!client.instructors?.length) return null;
         return (
-          <section className={`section${alt}`} id="instructors" key={section.id}>
+          <section className={surface()} id="instructors" key={section.id}>
             <div className="wrap">
               <Head section={section} />
               <div className="grid-3">
                 {client.instructors.slice(0, 3).map((instructor, i) => (
                   <Reveal key={instructor.name} as="article" delay={i * 90} className="card person">
                     {instructor.photo ? (
-                      <Image
+                      <Photo
                         className="avatar avatarPhoto"
                         src={instructor.photo}
                         alt={`${instructor.name}, ${client.short} driving instructor`}
                         width={160}
                         height={160}
+                        sizes="92px"
                       />
                     ) : (
                       <span className="avatar" aria-hidden="true">
@@ -208,7 +219,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
         if (!client.vehicles) return null;
         const gallery = client.vehicles.gallery ?? [];
         return (
-          <section className={`section${alt}`} key={section.id}>
+          <section className={surface()} key={section.id}>
             <div className={`wrap${vehicle ? ' grid-2 vehicleBlock' : ''}`}>
               <div>
                 <Head section={section} />
@@ -224,7 +235,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
               </div>
               {vehicle ? (
                 <figure className="photoFrame">
-                  <Image
+                  <Photo
                     src={vehicle.src}
                     alt={vehicle.alt}
                     width={1200}
@@ -240,7 +251,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
               <div className="wrap fleetRow">
                 {gallery.map((car, i) => (
                   <Reveal key={car.src} as="figure" delay={i * 80} className="fleetCar">
-                    <Image
+                    <Photo
                       src={car.src}
                       alt={car.alt}
                       width={500}
@@ -259,7 +270,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
       case 'reviews':
         if (!client.testimonials?.length) return null;
         return (
-          <section className={`section${alt}`} id="reviews" key={section.id}>
+          <section className={surface()} id="reviews" key={section.id}>
             <div className="wrap">
               <Head section={section} />
               <div className="grid-3">
@@ -279,7 +290,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
 
       case 'areas':
         return (
-          <section className={`section${alt}`} id="areas" key={section.id}>
+          <section className={surface()} id="areas" key={section.id}>
             <div className="wrap">
               <Head section={section} />
               <div className="chipRow">
@@ -295,7 +306,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
 
       case 'cta':
         return (
-          <section className={`section${alt}`} key={section.id}>
+          <section className={surface()} key={section.id}>
             <div className="wrap finalCta">
               <h2>{section.title}</h2>
               {section.lede ? <p>{section.lede}</p> : null}

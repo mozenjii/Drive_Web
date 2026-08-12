@@ -319,6 +319,31 @@
   .heroEditorialProof { gap: var(--space-6); }
 }
 
+/* ---------------- photographs ---------------- */
+
+/* Every photograph on the site comes through <Photo>, which sets its 16px blurred
+   placeholder as an inline background-image. These two rules make that background
+   read as the photograph-to-be rather than as a stretched thumbnail, and they
+   stop the placeholder tiling out of the box on a wide frame. The real file paints
+   straight over it, so there is nothing to clean up on load and no JS involved. */
+.photoImg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* Flat art (logos) is transparent — a colour wash behind it would never be
+   covered, so <Photo> omits the placeholder and this keeps the box honest. */
+.photoFlat { background: none; }
+
+/* What next/image's `fill` used to provide inline. Only the full-bleed hero
+   plate uses it. */
+.photoFill {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* ---------------- photography frames ---------------- */
 
 .photoFrame {

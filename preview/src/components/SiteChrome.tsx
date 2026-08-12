@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Photo } from '@/components/Photo';
 import Link from 'next/link';
 import type { Client } from '@/lib/types';
 import { hrefFor, navRoutesFor, slugify } from '@/lib/routes';
@@ -65,12 +65,13 @@ export function SiteChrome({
                 client's real mark reads as their site, upgraded. Falls back to a
                 monogram for clients whose logo we could not obtain. */}
             {client.logo ? (
-              <Image
+              <Photo
                 className="brandLogo"
                 src={client.logo}
                 alt={client.name}
                 width={200}
                 height={122}
+                sizes="200px"
                 priority
               />
             ) : (
@@ -118,12 +119,13 @@ export function SiteChrome({
           <div className="footerGrid">
             <div>
               {client.logo ? (
-                <Image
+                <Photo
                   className="footerLogo"
                   src={client.logo}
                   alt={client.name}
                   width={200}
                   height={122}
+                  sizes="200px"
                 />
               ) : null}
               <h3>{client.name}</h3>

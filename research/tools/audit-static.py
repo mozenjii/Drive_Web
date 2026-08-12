@@ -55,10 +55,25 @@ for dirpath, _dirnames, filenames in os.walk(ROOT):
     elif len(heads) > 1:
         multi_h1.append(f"{rel} ({len(heads)})")
 
-    for m in re.finditer(r'src="(/[^"?]+\.(?:jpg|jpeg|png|webp|gif|svg))"', doc, re.I):
+    # Both the fallback `src` and every rung of `srcset`. Photographs are served
+    # as a derived WebP ladder (see preview/scripts/derive-photos.mjs), so most
+    # references a browser will actually fetch live in srcset — checking src alone
+    # would resolve one file per image and miss a whole missing ladder.
+    refs = [m.group(1) for m in re.finditer(r'src="(/[^"?]+\.(?:jpg|jpeg|png|webp|gif|svg))"', doc, re.I)]
+    for m in re.finditer(r'srcset="([^"]+)"', doc, re.I):
+        for candidate in html.unescape(m.group(1)).split(","):
+            url = candidate.strip().split()[0] if candidate.strip() else ""
+            if url.startswith("/") and re.search(r"\.(jpg|jpeg|png|webp|gif|svg)$", url, re.I):
+                refs.append(url)
+
+    for raw in refs:
         img_refs += 1
-        ref = html.unescape(m.group(1))
-        if ref.startswith("/images/"):
+        ref = html.unescape(raw)
+        # Shared stock is anything under /images — including its derived copies,
+        # which live at /d/images/... . Matching only the start of the path would
+        # have let a derived ladder reintroduce the one photograph of the one set
+        # of students across twenty previews, silently.
+        if ref.startswith("/images/") or ref.startswith("/d/images/"):
             shared_stock[ref] += 1
         if not os.path.exists(os.path.join(ROOT, ref.lstrip("/"))):
             missing_img[ref] += 1

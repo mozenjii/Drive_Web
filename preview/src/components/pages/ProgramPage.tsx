@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Photo } from '@/components/Photo';
 import Link from 'next/link';
 import type { Client, Program } from '@/lib/types';
 import { hrefFor } from '@/lib/routes';
@@ -23,7 +23,7 @@ export function ProgramPage({ client, program }: { client: Client; program: Prog
       {program.image ? (
         <section className="wrap">
           <figure className="photoFrame photoBanner">
-            <Image
+            <Photo
               src={program.image}
               alt={`${program.title} at ${client.name}`}
               width={1600}

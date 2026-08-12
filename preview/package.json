@@ -5,7 +5,9 @@
   "description": "Personalised driving-school website previews. One static build, one Cloudflare Pages project, one path prefix per client.",
   "scripts": {
     "dev": "next dev -p 4310",
-    "build": "next build",
+    "photos": "node scripts/derive-photos.mjs",
+    "photos:check": "node scripts/derive-photos.mjs --check",
+    "build": "node scripts/derive-photos.mjs && next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
@@ -28,6 +30,7 @@
     "@vitest/coverage-v8": "^4.1.10",
     "jsdom": "^27.0.1",
     "postcss": "8.5.25",
+    "sharp": "0.35.3",
     "tailwindcss": "4.3.3",
     "typescript": "5.7.3",
     "vitest": "^4.1.10"

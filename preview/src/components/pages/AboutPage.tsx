@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Photo } from '@/components/Photo';
 import type { Client } from '@/lib/types';
 import { Tick } from '@/components/SiteChrome';
 import { PageHeader } from '@/components/pages/PageHeader';
@@ -39,7 +39,7 @@ export function AboutPage({ client, years }: { client: Client; years?: number })
       <section className="wrap">
         {banner ? (
           <figure className="photoFrame photoBanner">
-            <Image
+            <Photo
               src={banner.src}
               alt={banner.alt}
               width={1600}

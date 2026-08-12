@@ -24,3 +24,10 @@ research/*/assets/
 # Wrangler local deploy state (account id, project name, build cache).
 # Not secret, but machine-local — the OAuth token itself lives outside the repo.
 .wrangler/
+
+# Derived photograph ladder (preview/scripts/derive-photos.mjs). Regenerated from
+# the committed originals on every build — 311 WebP files that would otherwise
+# churn in the diff every time a photograph is swapped. The MANIFEST beside them
+# (preview/src/data/photo-manifest.json) IS committed: the typecheck and the test
+# suite read it, and both run before the build that would regenerate it.
+preview/public/d/

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Photo } from '@/components/Photo';
 import type { Client } from '@/lib/types';
 import { Reveal } from '@/components/Reveal';
 import { Tick } from '@/components/SiteChrome';
@@ -36,12 +36,13 @@ export function InstructorsPage({ client }: { client: Client }) {
           {instructors.map((instructor, i) => (
             <Reveal key={instructor.name} as="article" delay={(i % 3) * 90} className="card person">
               {instructor.photo ? (
-                <Image
+                <Photo
                   className="avatar avatarPhoto"
                   src={instructor.photo}
                   alt={`${instructor.name}, ${client.short} driving instructor`}
                   width={160}
                   height={160}
+                  sizes="92px"
                 />
               ) : (
                 <span className="avatar" aria-hidden="true">
