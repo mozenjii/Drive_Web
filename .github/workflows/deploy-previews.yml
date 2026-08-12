@@ -1,0 +1,92 @@
+name: Deploy previews
+
+# One build, one Cloudflare Pages project, every client. See docs/ARCHITECTURE.md
+# for why this is not a project (or a branch) per client.
+#
+# Required repository secrets:
+#   CLOUDFLARE_API_TOKEN   — a token with the "Cloudflare Pages: Edit" permission
+#   CLOUDFLARE_ACCOUNT_ID  — from the right-hand sidebar of the Cloudflare dashboard
+#
+# Optional repository variable:
+#   PREVIEW_BASE           — the host the export is served from, e.g.
+#                            https://epoches.pages.dev. Compiled into every
+#                            canonical and og:url at BUILD time, so attaching a
+#                            custom domain in the dashboard is not enough on its
+#                            own — set this and rebuild. Defaults to the value in
+#                            src/lib/seo.ts, which is the live pages.dev host.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'preview/**'
+      - '.github/workflows/deploy-previews.yml'
+  workflow_dispatch:
+
+concurrency:
+  # The free plan allows one concurrent build. Queue rather than race.
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: preview/package-lock.json
+
+      - name: Install
+        working-directory: preview
+        run: npm ci
+
+      - name: Typecheck
+        working-directory: preview
+        run: npx tsc --noEmit
+
+      # Geometry and brand-contrast tests. The contrast suite is the reason this
+      # gates the deploy rather than just running locally: it asserts every
+      # client's palette clears WCAG AA where it carries text, and it has already
+      # caught one brand three thousandths under the line after hex rounding.
+      - name: Test
+        working-directory: preview
+        run: npx vitest run
+
+      - name: Build static export
+        working-directory: preview
+        env:
+          NEXT_PUBLIC_PREVIEW_BASE: ${{ vars.PREVIEW_BASE }}
+        run: npx next build
+
+      # One audit over the whole export, replacing the two inline checks that
+      # used to live here. It covers everything they did and more:
+      #
+      #   - every page carries noindex     (a preview must never compete with
+      #     the real business's own site in search)
+      #   - every image reference resolves (a typo is a broken image on a page
+      #     we are asking someone to judge us by)
+      #   - no page borrows shared stock   (twenty previews once shared one
+      #     photograph of one set of students — see memory/012)
+      #   - every internal link resolves
+      #   - every page has a title, a lang attribute and exactly one h1
+      #   - every img has an alt attribute
+      #   - no duplicate element ids
+      #
+      # Source: research/tools/audit-static.py. Exits non-zero on any failure.
+      - name: Audit the built export
+        run: python3 research/tools/audit-static.py preview/out
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy preview/out --project-name=epoches --branch=main
