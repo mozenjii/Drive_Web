@@ -20,9 +20,31 @@ export const academicDriving: Client = {
   short: 'Academic',
   variant: 'apex',
 
-  /** Their usable photography is two images among two dozen theme demo files.
-   *  Panel hero rather than a borrowed picture. */
+  /** Their usable photography is two images among two dozen theme demo files —
+   *  both now wired below. Neither is big enough to carry a full-bleed hero
+   *  (the photograph is 394px square), so the panel hero stands. */
   heroStyle: 'panel',
+
+  /** Their own mark, off their own site. It was sitting in the scraped assets
+   *  while the header rendered an "AD" monogram. */
+  logo: '/clients/academic-driving-school/logo.png',
+
+  /**
+   * The one photograph on their site that is unarguably theirs: their own
+   * signwritten car, their logo on the door, their phone number under it, a real
+   * student at the wheel. Everything else in their media library is Astra theme
+   * furniture (`*-free-img.jpg`), pixabay road signs, or clip-art traffic lights
+   * from 4-designer.com — none of it any more theirs than our stock would be.
+   *
+   * It goes in `roadTest`, the smallest photo slot on the page, because at
+   * 394 x 403 it is already being asked to fill ~470px there.
+   */
+  photos: {
+    roadTest: {
+      src: '/clients/academic-driving-school/student-car.jpg',
+      alt: 'A student in the driver’s seat of a signwritten Academic Driving School car',
+    },
+  },
 
   /**
    * "Driving is a skill you learn, not a right you're given" is on their own
@@ -249,6 +271,6 @@ export const academicDriving: Client = {
     'No behind-the-wheel prices are published anywhere; only the $19.95 traffic school and $17.95 mature driver courses. None invented.',
     'Instructor named repeatedly in reviews: Mashal. No staff page exists.',
     'Their permit practice course with a per-lesson mastery dashboard is genuinely better than most competitors and is three clicks deep.',
-    'Their site publishes no usable photography; this preview uses shared stock.',
+    'Photography: their own signwritten car (wired) and their own logo (wired) were the only two usable assets among 24 scraped files; the rest are Astra theme demos, pixabay stock and 4-designer clip-art. No shared stock is used anywhere on this preview. Their own instructor and lesson photographs remain the ask.',
   ],
 };
