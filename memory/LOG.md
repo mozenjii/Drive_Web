@@ -4,6 +4,29 @@ Newest first. One entry per session or per distinct piece of work.
 
 ---
 
+## 2026-08-13 — The chrome was holding a quarter of the phone screen
+
+Third report off a phone, and the framing that matters: **these are mobile-first pages.**
+73px of sticky header plus 88px of fixed call bar is 24% of a 667px screen, held
+permanently. Both now travel with the scroll direction — gone going down, back going up —
+below 1024px. The bar stays at the bottom rather than moving up beside the header: the
+bottom edge is the only part of a phone a thumb reaches without regripping, and calling is
+the conversion. The assistant is a 58px circle with a speech bubble instead of a pill that
+read as a banner.
+
+Two bugs found in the doing. "Book a lesson" wrapped at 320px and made the bar taller than
+the room reserved for it. And the reserved room was driven from the value that animates, so
+the document shrank 72px every time the bar left — content jumping on every direction
+change, with an oscillation waiting at the foot of the page. The second was caught on the
+live deploy; the local pass had sampled the padding in the state where it was correct.
+
+The hide/show decision is a pure function with its own tests — thumb jitter, slow drags,
+iOS rubber-band, panel open. Tests 387 -> 394.
+
+Detail in [017-mobile-chrome.md](017-mobile-chrome.md).
+
+---
+
 ## 2026-08-12 — Photographs were being served exactly as scraped
 
 Second report off the live site: images take too long to appear, and the pages without any
