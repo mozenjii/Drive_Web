@@ -352,9 +352,22 @@ a.chip:hover { border-color: var(--primary); color: var(--primary-dark); backgro
    The bar is also shorter than it was: the buttons keep their 48px tap target,
    the padding around them does not. */
 
-/** Height the bar actually occupies, so the page and the assistant can both
- *  reserve exactly that and nothing more. Zero where no bar is rendered. */
-:root { --bar-h: 0px; }
+/**
+ * Two variables, deliberately:
+ *
+ * `--bar-h` is the room the PAGE reserves under its own content, and it must not
+ * change when the bar slides away. Driving the page's padding from a value that
+ * animates makes the document 72px shorter every time you scroll down — the
+ * content jumps, and at the foot of the page the shrink moves the scroll
+ * position, which fires another scroll event, which hides the bar again.
+ *
+ * `--bar-lift` is how far the assistant has to sit above the bar right now, and
+ * that one does go to zero when the bar leaves, so the launcher drops into the
+ * corner it was avoiding.
+ *
+ * Both are zero where no bar is rendered.
+ */
+:root { --bar-h: 0px; --bar-lift: 0px; }
 
 .mobileBar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
@@ -386,6 +399,7 @@ a.chip:hover { border-color: var(--primary); color: var(--primary-dark); backgro
      the rest used to carry 88px of empty page under the footer. */
   .themed[data-bar='on'] {
     --bar-h: 72px;
+    --bar-lift: 72px;
     padding-bottom: calc(var(--bar-h) + env(safe-area-inset-bottom, 0px));
   }
 
@@ -395,8 +409,9 @@ a.chip:hover { border-color: var(--primary); color: var(--primary-dark); backgro
   :root[data-chrome='hidden'] .mobileBar {
     transform: translateY(calc(100% + env(safe-area-inset-bottom, 0px)));
   }
-  /* With the bar gone, the assistant takes the corner it was avoiding. */
-  :root[data-chrome='hidden'] .themed[data-bar='on'] { --bar-h: 0px; }
+  /* With the bar gone, the assistant takes the corner it was avoiding. The
+     page's reserved room (--bar-h) deliberately does NOT move with it. */
+  :root[data-chrome='hidden'] .themed[data-bar='on'] { --bar-lift: 0px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -795,7 +795,7 @@
   right: var(--space-5);
   /* Rides above the call bar, and drops into the corner when the bar slides
      away. --bar-h is 0 wherever no bar is rendered. */
-  bottom: calc(var(--space-5) + var(--bar-h, 0px));
+  bottom: calc(var(--space-5) + var(--bar-lift, 0px));
   z-index: 60;
   display: grid;
   place-items: center;
@@ -849,7 +849,7 @@
   position: fixed;
   right: var(--space-5);
   /* Clears the launcher (58px + a gap) and, under it, the call bar. */
-  bottom: calc(var(--space-5) + var(--bar-h, 0px) + 68px);
+  bottom: calc(var(--space-5) + var(--bar-lift, 0px) + 68px);
   z-index: 61;
   width: min(390px, calc(100vw - var(--space-8)));
   max-height: min(640px, calc(100vh - 140px));
@@ -1024,7 +1024,7 @@
 }
 
 /* On a phone the panel spans the width, and both it and the launcher sit on top
-   of whatever --bar-h currently is — which is zero once the call bar has slid
+   of whatever --bar-lift currently is — which is zero once the call bar has slid
    away, so the assistant follows it down into the corner.
    `dvh` rather than `vh`: on a phone `100vh` is the height with the address bar
    *hidden*, so a panel sized against it is taller than the screen it is on. */
@@ -1034,7 +1034,7 @@
     right: var(--space-3);
     left: var(--space-3);
     width: auto;
-    bottom: calc(var(--space-5) + var(--bar-h, 0px) + 68px);
+    bottom: calc(var(--space-5) + var(--bar-lift, 0px) + 68px);
     max-height: min(560px, calc(100vh - 200px));
     max-height: min(560px, calc(100dvh - 200px));
   }
