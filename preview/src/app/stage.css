@@ -209,7 +209,14 @@
   align-items: center;
 }
 .heroSerifTitle {
-  font-family: var(--font-display, inherit);
+  /* --font-display was never declared anywhere, so this fell through to
+     `inherit` and the "large serif" editorial hero was set in the body sans on
+     four of its five clients (Atelier got a serif only because a variant rule
+     re-set every h1). --font-serif is the token layout.tsx actually defines. */
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  /* Fraunces is self-hosted at 400 and 600 only. The global h1 weight of 800
+     would be synthesised by the browser — a smeared fake bold. */
+  font-weight: 600;
   margin-top: var(--space-6);
   color: var(--fg);
   font-size: clamp(2.1rem, 4.4vw, 3.5rem);
