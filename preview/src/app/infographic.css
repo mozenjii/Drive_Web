@@ -1,0 +1,215 @@
+/* ============================================================
+   Infographics — visual explainers used on every page so no page
+   is a wall of text. Understanding faster is what closes.
+   ============================================================ */
+
+/* ---------------- DMV requirements board ---------------- */
+
+.reqBoard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--space-8);
+  box-shadow: var(--sh-2);
+}
+.reqLead { color: var(--fg-muted); max-width: 62ch; font-size: 1.02rem; }
+.reqLead strong { color: var(--fg); }
+
+.reqGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+  counter-reset: req;
+}
+.reqCard {
+  position: relative;
+  padding: var(--space-6);
+  border-radius: var(--r-lg);
+  background: var(--bg);
+  border: 1px solid var(--border-soft);
+  overflow: hidden;
+}
+.reqCard::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+}
+.reqCard-a::before { background: var(--primary); }
+.reqCard-b::before { background: var(--accent); }
+.reqCard-c::before { background: var(--brand-accent, #f07f2c); }
+
+.reqIndex {
+  position: absolute;
+  top: var(--space-4);
+  right: var(--space-5);
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--border);
+}
+.reqHours {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--fg);
+}
+.reqHours em {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  margin-left: var(--space-2);
+}
+.reqCard h3 { font-size: 1.05rem; margin-top: var(--space-4); }
+.reqCard p { color: var(--fg-muted); font-size: 0.92rem; margin-top: var(--space-2); }
+.reqNote {
+  display: inline-block;
+  margin-top: var(--space-4);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--r-full);
+}
+.reqFoot {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-soft);
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+}
+.reqFoot svg { flex: none; margin-top: 3px; color: var(--accent); }
+
+@media (max-width: 900px) {
+  .reqGrid { grid-template-columns: 1fr; }
+  .reqBoard { padding: var(--space-5); }
+}
+
+/* ---------------- hours bar ---------------- */
+
+.hoursBar { margin-top: var(--space-6); }
+.hoursLabel { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+/* A segmented bar, not a row of buttons. Each segment is one lesson; the
+   duration is written once underneath. See HoursBar in Infographic.tsx. */
+.hoursTrack {
+  display: flex;
+  gap: 3px;
+  margin-top: var(--space-3);
+  height: 12px;
+  padding: 3px;
+  border-radius: var(--r-full);
+  background: var(--primary-soft);
+}
+.hoursSeg {
+  flex: 1 1 0;
+  min-width: 6px;
+  border-radius: var(--r-full);
+  background: var(--primary);
+}
+.hoursTotal { margin-top: var(--space-3); font-size: 0.88rem; color: var(--fg-muted); }
+.hoursTotal b { color: var(--fg); font-weight: 800; }
+
+/* ---------------- journey ---------------- */
+
+.journey { counter-reset: step; margin-top: var(--space-6); }
+.journey li {
+  display: flex;
+  gap: var(--space-5);
+  padding-bottom: var(--space-8);
+  position: relative;
+}
+/* The connector runs the whole way to the next step. It used to be
+   `linear-gradient(180deg, var(--border), transparent)`, which faded out before
+   it arrived — a line that stops halfway reads as a broken page rather than as a
+   route. Drawn as lane markings, which is what the journey actually depicts. */
+.journey li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 52px;
+  bottom: -6px;
+  width: 3px;
+  border-radius: 2px;
+  background-image: linear-gradient(
+    180deg,
+    var(--primary-soft) 0 10px,
+    transparent 10px 18px
+  );
+  background-size: 3px 18px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .journey li:not(:last-child)::before { background-position-y: 0; }
+}
+.journeyDot {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--primary);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 0 0 5px var(--primary-soft);
+}
+.journey h3 { font-size: 1.06rem; }
+.journey p { color: var(--fg-muted); font-size: 0.95rem; margin-top: var(--space-2); max-width: 60ch; }
+
+/* ---------------- stat band ---------------- */
+
+.statBand {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+.statItem {
+  padding: var(--space-6);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  text-align: center;
+  box-shadow: var(--sh-1);
+}
+.statValue {
+  display: block;
+  font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--primary);
+}
+.statLabel {
+  display: block;
+  margin-top: var(--space-3);
+  font-size: 0.84rem;
+  color: var(--fg-muted);
+  font-weight: 600;
+}
+
+/* ---------------- client logo in chrome ---------------- */
+
+.brandLogo {
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+}
+.footerLogo {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: var(--space-4);
+  filter: brightness(0) invert(1);
+  opacity: 0.92;
+}

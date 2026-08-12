@@ -1,0 +1,363 @@
+/* ============================================================
+   Image-first hero stage + photography treatment.
+
+   Direction from the image-first-grid-layout skill: the photograph
+   is the stage. Gradient washes carry readability, structural rails
+   impose order, copy anchors low-left, motion drifts rather than
+   performs. A driving school sells a person you trust with your kid
+   — so the human face outranks any illustration.
+   ============================================================ */
+
+.stage {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(560px, 78vh, 780px);
+  display: flex;
+  align-items: flex-end;
+  padding-block: var(--space-24) var(--space-12);
+  overflow: hidden;
+}
+
+.stageMedia {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.stagePhoto {
+  object-fit: cover;
+  object-position: 62% 42%;
+  /* Parallax drift, scaled slightly so the edges never expose. */
+  transform: scale(1.06) translate3d(var(--drift-x, 0px), var(--drift-y, 0px), 0);
+  transition: transform 0.8s var(--ease);
+}
+
+/* Directional wash: strong at the copy edge, clearing toward the image's
+   subject so the family stays visible rather than being flattened out. */
+.stageWash {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(94deg, rgba(9, 20, 52, 0.94) 0%, rgba(9, 20, 52, 0.78) 34%,
+      rgba(9, 20, 52, 0.34) 60%, rgba(9, 20, 52, 0.12) 100%),
+    linear-gradient(0deg, rgba(9, 20, 52, 0.68) 0%, transparent 42%);
+}
+
+/* Faint additive streaks — the "technical atmosphere" note. Barely there. */
+.stageStreaks {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: screen;
+  opacity: 0.5;
+  background: repeating-linear-gradient(
+    102deg,
+    transparent 0 118px,
+    rgba(147, 197, 253, 0.09) 118px 119px
+  );
+  animation: streakDrift 18s linear infinite;
+}
+@keyframes streakDrift {
+  to { transform: translateX(119px); }
+}
+
+/* .stageRails deleted — see HeroStage.tsx. Three white hairlines that faded out
+   mid-image with a stray dot on each. Removed rather than restyled. */
+
+.stageInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  gap: var(--space-12);
+  align-items: end;
+  width: 100%;
+}
+
+/* Shared hero atoms.
+ *
+ * These default to DARK text, because two of the three hero compositions sit on
+ * a light surface. Only `.stage` — the full-bleed photograph — overrides them to
+ * white, and it does so below.
+ *
+ * They used to be white unconditionally, which was correct while the photo hero
+ * was the only hero. The moment `editorial` and `panel` started reusing them,
+ * every licence line and every proof figure on those pages became white text on
+ * a near-white background: invisible, and invisible in a way a screenshot shows
+ * instantly but a build never will. */
+.stageKicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  background: var(--primary-soft);
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--r-full);
+}
+.stageKicker b { color: var(--primary-dark); font-weight: 800; letter-spacing: 0.06em; }
+.stageKicker em {
+  font-style: normal;
+  padding-left: var(--space-3);
+  border-left: 1px solid var(--border);
+  /* --fg-dim is toned for the page background, not for --primary-soft, and on
+     the soft tint it fell to 4.45:1 on Learn 2 Drive's brass. --primary-dark is
+     the token that is *tested* against --primary-soft (brand.test.ts), so it is
+     the only safe choice for text sitting on that chip. It stays visibly
+     quieter than the `b` beside it because that one is heavier, not darker. */
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+.proofValue {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--fg);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.proofLabel { font-size: 0.86rem; color: var(--fg-muted); }
+
+/* --- the photo hero, and ONLY the photo hero, inverts them --- */
+.stage .stageKicker {
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(10px);
+}
+.stage .stageKicker b { color: #fff; }
+.stage .stageKicker em {
+  border-left-color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.72);
+}
+.stage .proofValue { color: #fff; }
+.stage .proofLabel { color: rgba(255, 255, 255, 0.76); }
+
+.stageTitle {
+  margin-top: var(--space-6);
+  color: #fff;
+  font-size: clamp(2.3rem, 5.6vw, 4.1rem);
+  letter-spacing: -0.032em;
+  text-wrap: balance;
+  text-shadow: 0 2px 30px rgba(9, 20, 52, 0.4);
+}
+
+.stageLede {
+  margin-top: var(--space-5);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1rem, 1.5vw, 1.13rem);
+  max-width: 48ch;
+}
+
+.stageActions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-8); }
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.13);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.42);
+  backdrop-filter: blur(12px);
+}
+.btn-glass:hover { background: rgba(255, 255, 255, 0.24); border-color: #fff; }
+
+/* Proof block floats in the adjacent grid lane, low-fill so it sits on the
+   image rather than fighting it with heavy container chrome. */
+.stageProof {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border-radius: var(--r-lg);
+  background: rgba(9, 20, 52, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(16px);
+}
+.proofRow { display: flex; align-items: baseline; gap: var(--space-3); }
+
+@media (max-width: 1024px) {
+  .stageInner { grid-template-columns: 1fr; gap: var(--space-8); }
+  .stageProof { flex-direction: row; flex-wrap: wrap; gap: var(--space-6); }
+}
+@media (max-width: 640px) {
+  .stage { min-height: auto; padding-block: var(--space-16) var(--space-10); }
+  .stagePhoto { object-position: 66% 40%; }
+  .stageWash {
+    background:
+      linear-gradient(0deg, rgba(9, 20, 52, 0.95) 12%, rgba(9, 20, 52, 0.72) 52%,
+        rgba(9, 20, 52, 0.5) 100%);
+  }
+  .stageProof { padding: var(--space-5); }
+  .proofValue { font-size: 1.5rem; }
+}
+
+/* ============================================================
+   Editorial hero — a named person is the product.
+   Large serif, their words, portrait alongside. Light surface.
+   ============================================================ */
+
+.heroEditorial {
+  background:
+    radial-gradient(120% 90% at 88% 8%, var(--primary-soft) 0%, transparent 62%),
+    var(--bg);
+  border-bottom: 1px solid var(--border-soft);
+  padding-block: var(--space-20) var(--space-16);
+}
+.heroEditorialInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: var(--space-14);
+  align-items: center;
+}
+.heroSerifTitle {
+  font-family: var(--font-display, inherit);
+  margin-top: var(--space-6);
+  color: var(--fg);
+  font-size: clamp(2.1rem, 4.4vw, 3.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+.heroEditorialLede {
+  margin-top: var(--space-5);
+  color: var(--fg-muted);
+  font-size: clamp(1rem, 1.4vw, 1.14rem);
+  max-width: 46ch;
+}
+.heroEditorialProof {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+  padding-top: var(--space-7);
+  border-top: 1px solid var(--border);
+}
+.heroPortrait {
+  position: relative;
+  margin: 0;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--sh-4);
+  aspect-ratio: 4 / 5;
+  background: var(--surface);
+}
+.heroPortrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.heroPortrait figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: var(--space-8) var(--space-5) var(--space-4);
+  color: #fff;
+  font-size: 0.84rem;
+  font-weight: 600;
+  background: linear-gradient(0deg, rgba(9, 20, 52, 0.9), transparent);
+}
+
+/* ============================================================
+   Panel hero — operations and numbers, no photograph.
+   Also the honest composition for a client who publishes none.
+   ============================================================ */
+
+.heroPanel {
+  position: relative;
+  background:
+    linear-gradient(180deg, var(--primary-soft) 0%, transparent 78%),
+    var(--bg);
+  padding-block: var(--space-20) var(--space-14);
+}
+.heroPanelInner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: var(--space-12);
+  align-items: end;
+}
+.heroPanelTitle {
+  margin-top: var(--space-6);
+  color: var(--fg);
+  font-size: clamp(2.1rem, 4.8vw, 3.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+.heroPanelLede {
+  margin-top: var(--space-5);
+  color: var(--fg-muted);
+  font-size: clamp(1rem, 1.4vw, 1.14rem);
+  max-width: 52ch;
+}
+.heroPanelProof {
+  display: grid;
+  gap: var(--space-6);
+  padding: var(--space-7);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--sh-2);
+}
+.heroPanelRule {
+  margin-top: var(--space-12);
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+@media (max-width: 1000px) {
+  .heroEditorialInner,
+  .heroPanelInner { grid-template-columns: 1fr; gap: var(--space-9); }
+  .heroPortrait { aspect-ratio: 16 / 11; }
+  .heroPanelProof { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+}
+@media (max-width: 640px) {
+  .heroEditorial,
+  .heroPanel { padding-block: var(--space-14) var(--space-10); }
+  .heroEditorialProof { gap: var(--space-6); }
+}
+
+/* ---------------- photography frames ---------------- */
+
+.photoFrame {
+  position: relative;
+  margin: 0;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  box-shadow: var(--sh-4);
+  background: var(--surface);
+}
+.photoFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s var(--ease);
+}
+.photoFrame:hover img { transform: scale(1.035); }
+.photoFrame figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: var(--space-8) var(--space-5) var(--space-4);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 600;
+  background: linear-gradient(0deg, rgba(9, 20, 52, 0.88), transparent);
+}
+.photoFrame-tall { aspect-ratio: 4 / 3; }
+
+.splitHead {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: var(--space-10);
+  align-items: center;
+  margin-bottom: var(--space-10);
+}
+@media (max-width: 900px) {
+  .splitHead { grid-template-columns: 1fr; gap: var(--space-6); }
+  .photoFrame-tall { aspect-ratio: 16 / 10; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stageStreaks { animation: none; }
+  .stagePhoto { transform: scale(1.06); transition: none; }
+  .photoFrame:hover img { transform: none; }
+}
+
+.photoBanner { aspect-ratio: 21 / 9; margin-top: var(--space-4); }
+@media (max-width: 700px) { .photoBanner { aspect-ratio: 16 / 10; } }

@@ -1,0 +1,912 @@
+/* ============================================================
+   Component styles. Split from globals.css so the token layer
+   and the component layer can be reviewed independently.
+   ============================================================ */
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------------- hero 3D scene ---------------- */
+
+.heroScene { perspective: 1100px; perspective-origin: 50% 40%; }
+.scene3d {
+  position: relative;
+  height: 420px;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transition: transform 0.5s var(--ease);
+}
+.road {
+  position: absolute;
+  inset: 8% 4% 0 4%;
+  background: linear-gradient(180deg, #1e3a8a 0%, #1e40af 60%, #2b57d4 100%);
+  border-radius: var(--r-lg);
+  transform: rotateX(58deg) translateZ(-40px);
+  transform-origin: 50% 100%;
+  overflow: hidden;
+  box-shadow: var(--sh-4);
+}
+.road::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(239, 246, 255, 0.85) 0%, transparent 45%);
+}
+.roadLine {
+  position: absolute;
+  left: 50%;
+  top: -60px;
+  width: 8px;
+  height: 46px;
+  margin-left: -4px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.92);
+  animation: roadRun 2.4s linear infinite;
+}
+.roadLine:nth-child(1) { animation-delay: 0s; }
+.roadLine:nth-child(2) { animation-delay: 0.4s; }
+.roadLine:nth-child(3) { animation-delay: 0.8s; }
+.roadLine:nth-child(4) { animation-delay: 1.2s; }
+.roadLine:nth-child(5) { animation-delay: 1.6s; }
+.roadLine:nth-child(6) { animation-delay: 2s; }
+@keyframes roadRun {
+  to { transform: translateY(520px); }
+}
+
+.floatCard {
+  position: absolute;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: var(--space-4) var(--space-5);
+  box-shadow: var(--sh-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.86rem;
+}
+.floatCard strong { display: block; font-size: 0.92rem; }
+.floatCard span { color: var(--fg-muted); font-size: 0.8rem; }
+.floatCard-a { left: 0; top: 16%; transform: translateZ(90px); animation: bobA 6s ease-in-out infinite; }
+.floatCard-b { right: 2%; top: 46%; transform: translateZ(140px); animation: bobB 7s ease-in-out infinite; }
+@keyframes bobA {
+  50% { transform: translateZ(90px) translateY(-12px); }
+}
+@keyframes bobB {
+  50% { transform: translateZ(140px) translateY(-16px); }
+}
+.floatDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+  flex: none;
+}
+
+.floatBadge {
+  position: absolute;
+  right: 12%;
+  bottom: 6%;
+  transform: translateZ(180px);
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--r-full);
+  width: 92px;
+  height: 92px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  box-shadow: var(--sh-4);
+  animation: bobA 5.5s ease-in-out infinite;
+}
+.floatBadge strong { font-size: 1.15rem; letter-spacing: 0.02em; }
+.floatBadge span { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; }
+
+@media (max-width: 900px) {
+  .scene3d { height: 300px; }
+  .floatCard-b { display: none; }
+}
+
+/* ---------------- path cards ---------------- */
+
+.pathCard h3 { font-size: 1.2rem; margin-bottom: var(--space-3); }
+.pathCard p { color: var(--fg-muted); font-size: 0.96rem; }
+.pathPrice { margin-top: var(--space-4); font-weight: 800; color: var(--accent-dark); }
+.pathLink { display: inline-block; margin-top: var(--space-5); font-weight: 700; color: var(--primary); }
+.pathLink:hover { text-decoration: underline; }
+
+/* Photo-backed programme card. The photograph is the card, copy sits on a
+   bottom-weighted scrim, and the link renders as an outlined control so it
+   reads as an action against the image rather than a stray underline. */
+/* Every tile the same height and the same treatment, so the row reads as a set.
+   `align-items: stretch` is the default but is stated because it is load-bearing
+   here: without equal-height tiles the grid looked like a mistake. */
+.pathGrid { gap: var(--space-6); align-items: stretch; }
+.pathCard-photo {
+  position: relative;
+  isolation: isolate;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--fg);
+}
+/* No photograph for this programme — carry the brand instead of dropping a
+   white card into the middle of a photo grid. */
+.pathCard-solid {
+  background: linear-gradient(150deg, var(--primary-dark) 0%, var(--primary) 58%, var(--accent-dark) 100%);
+}
+.pathCard-solid::before { content: none; }
+.pathPhoto {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transition: transform 0.6s var(--ease);
+}
+.pathCard-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* Heavier and taller than the first attempt. The copy sits over whatever the
+     photograph happens to contain — a bright windscreen, a pale interior — so
+     the scrim has to hold legibility without being told what is underneath. */
+  background: linear-gradient(
+    0deg,
+    rgba(9, 14, 26, 0.94) 0%,
+    rgba(9, 14, 26, 0.86) 34%,
+    rgba(9, 14, 26, 0.58) 62%,
+    rgba(9, 14, 26, 0.2) 100%
+  );
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pathCard-photo:hover .pathPhoto { transform: scale(1.045); }
+}
+/* Copy stops short of the right edge — it was running the full width of the
+   tile and colliding with the rounded corner.
+   `pathBody` carries its OWN scrim rather than relying on the card-wide one:
+   the card scrim is positioned as a fraction of card height, so a longer summary
+   pushed its text further up into the bright part of the photograph. One card
+   with 133 characters of copy started 35% up the tile instead of 43% and became
+   unreadable over a car window. Now the dark backing travels with the text. */
+.pathCard-photo .pathBody {
+  position: relative;
+  padding: var(--space-7);
+  max-width: 40ch;
+  width: 100%;
+  /* A fixed band, bottom-aligned, so the copy starts at the same height on every
+     tile in the row. Without it a title that wrapped to two lines, or a card
+     with no price, shifted its block by 12% of the card and the row read as
+     ragged even though every tile was exactly the same size. */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 200px;
+}
+.pathCard-photo .pathBody::before {
+  content: '';
+  position: absolute;
+  inset: -30% -100% -100% -100%;
+  z-index: -1;
+  background: linear-gradient(
+    0deg,
+    rgba(9, 14, 26, 0.95) 40%,
+    rgba(9, 14, 26, 0.82) 68%,
+    transparent 100%
+  );
+}
+.pathCard-photo h3 { color: #fff; font-size: 1.45rem; text-wrap: balance; }
+/* Two lines, so summary length cannot change the height of the copy block and
+   every tile in the row reads as the same object. The full text is on the
+   programme page the card links to. */
+.pathCard-photo p {
+  color: rgba(255, 255, 255, 0.92);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pathCard-photo .pathPrice { color: #fff; }
+.pathCard-photo .pathLink {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: var(--r-sm);
+  padding: 0.62rem 1.1rem;
+  color: #fff;
+  min-height: 44px;
+}
+.pathCard-photo .pathLink:hover {
+  background: #fff;
+  color: var(--fg);
+  text-decoration: none;
+}
+@media (max-width: 700px) {
+  .pathCard-photo { min-height: 260px; }
+}
+
+/* ---------------- package picker ---------------- */
+
+.pickerTabs { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-8); }
+.pickerTab {
+  padding: 0.7rem 1.2rem;
+  min-height: 48px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--fg-muted);
+  transition: all 0.18s var(--ease);
+}
+.pickerTab[aria-selected='true'] {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: var(--sh-2);
+}
+.pickerTab[aria-selected='false']:hover { border-color: var(--primary); color: var(--primary); }
+.pickerBlurb { color: var(--fg-muted); margin-bottom: var(--space-6); max-width: 62ch; }
+.pickerGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+.pickerFoot { margin-top: var(--space-8); color: var(--fg-muted); font-size: 0.95rem; }
+/* --primary-dark: these links sit on the tinted section background, not on
+   white, which cost Easy Street and Express about 0.4 of their contrast
+   ratio and put both under AA. Caught by the live audit. */
+.pickerFoot a { color: var(--primary-dark); font-weight: 700; }
+.pickerFoot a:hover { text-decoration: underline; }
+@media (max-width: 900px) {
+  .pickerGrid { grid-template-columns: 1fr; }
+}
+
+.pkg {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--r-lg);
+  padding: var(--space-6);
+  box-shadow: var(--sh-1);
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease);
+}
+.pkg:hover { transform: translateY(-4px); box-shadow: var(--sh-3); }
+.pkg-featured { border-color: var(--primary); box-shadow: var(--sh-3); }
+.pkgFlag {
+  position: absolute;
+  top: -12px;
+  left: var(--space-6);
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--r-full);
+}
+.pkg h3 { font-size: 1.25rem; }
+.pkgDetail { color: var(--fg-muted); font-size: 0.9rem; margin-top: var(--space-2); }
+.pkgPrice { font-size: 2rem; font-weight: 800; margin-top: var(--space-4); letter-spacing: -0.03em; }
+.pkgPrice span { font-size: 0.85rem; font-weight: 600; color: var(--fg-dim); letter-spacing: 0; }
+.pkgPriceAsk { font-size: 1.3rem; color: var(--fg-muted); }
+.pkgSaving {
+  margin-top: var(--space-2);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--r-full);
+}
+.pkgFeatures {
+  margin-top: var(--space-6);
+  border-top: 1px solid var(--border-soft);
+  padding-top: var(--space-4);
+}
+.pkgFeatures li {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: 0.38rem 0;
+  font-size: 0.92rem;
+}
+.pkgFeatures li.in { color: var(--fg); }
+.pkgFeatures li.in > span:first-child { color: var(--accent); font-weight: 800; }
+.pkgFeatures li.out { color: var(--fg-dim); }
+.pkgFeatures li.out > span:first-child { color: var(--fg-dim); font-weight: 800; }
+
+/* ---------------- price table ---------------- */
+
+.priceTable {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--surface);
+}
+.priceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-soft);
+}
+.priceRow:last-child { border-bottom: 0; }
+.priceName { font-weight: 700; }
+.priceDesc { color: var(--fg-muted); font-size: 0.88rem; margin-top: var(--space-1); max-width: 60ch; }
+.priceValue { font-weight: 800; font-size: 1.2rem; white-space: nowrap; }
+
+/* ---------------- manoeuvre simulator ---------------- */
+
+.sim {
+  --sim-road: #dbeafe;
+  --sim-kerb: #bfdbfe;
+  --sim-line: #93b4fb;
+  --sim-parked: #a7c3fb;
+  --sim-parked-glass: #cfe0fe;
+  --sim-kerb-edge: #93b4fb;
+  --sim-bay: #1e40af;
+  --sim-trail: #15803d;
+  --sim-car: #1e40af;
+  --sim-glass: #bfdbfe;
+  --sim-tyre: #1f2937;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  padding: var(--space-8);
+  box-shadow: var(--sh-2);
+}
+.simControls { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.simBtn {
+  padding: 0.7rem 1.15rem;
+  min-height: 48px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  transition: all 0.18s var(--ease);
+}
+.simBtn[aria-pressed='true'] {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: var(--sh-2);
+}
+.simBtn[aria-pressed='false']:hover { border-color: var(--primary); color: var(--primary); }
+.simStage { position: relative; border-radius: var(--r-lg); overflow: hidden; }
+.simStage svg { width: 100%; height: auto; }
+.simBadge {
+  position: absolute;
+  left: var(--space-4);
+  bottom: var(--space-4);
+  background: rgba(15, 31, 75, 0.86);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--r-full);
+}
+.simBadge-rev { background: var(--accent-dark); }
+.simCopy h3 { font-size: 1.35rem; }
+.simCopy p { margin-top: var(--space-4); color: var(--fg-muted); }
+.simSteps {
+  margin-top: var(--space-5);
+  display: grid;
+  gap: var(--space-2);
+  counter-reset: simstep;
+  list-style: none;
+}
+.simSteps li {
+  position: relative;
+  padding-left: 2.1rem;
+  font-size: 0.9rem;
+  color: var(--fg-dim);
+  transition: color 0.2s var(--ease);
+}
+.simSteps li::before {
+  counter-increment: simstep;
+  content: counter(simstep);
+  position: absolute;
+  left: 0;
+  top: -0.05rem;
+  width: 1.45rem;
+  height: 1.45rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.simSteps li[aria-current='step'] { color: var(--fg); font-weight: 600; }
+.simSteps li[aria-current='step']::before {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: #fff;
+}
+.simFoot {
+  font-size: 0.88rem;
+  color: var(--fg-dim);
+  border-top: 1px solid var(--border-soft);
+  padding-top: var(--space-4);
+}
+@media (max-width: 900px) {
+  .sim { grid-template-columns: 1fr; padding: var(--space-5); }
+}
+
+/* ---------------- people ---------------- */
+
+.avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(140deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-5);
+  box-shadow: var(--sh-2);
+}
+.person h3,
+.personName { font-size: 1.15rem; }
+.personRole { color: var(--primary); font-weight: 700; font-size: 0.88rem; margin-top: var(--space-1); }
+.personMeta { color: var(--fg-dim); font-size: 0.85rem; margin-top: var(--space-2); }
+.personBio { color: var(--fg-muted); font-size: 0.94rem; margin-top: var(--space-4); }
+.personLangs { font-size: 0.84rem; color: var(--accent-dark); font-weight: 700; margin-top: var(--space-3); }
+
+/* ---------------- quotes ---------------- */
+
+.quote { display: flex; flex-direction: column; justify-content: space-between; }
+.quoteBody { color: var(--fg); font-size: 1rem; line-height: 1.65; }
+.quoteName { margin-top: var(--space-5); font-weight: 700; font-size: 0.88rem; }
+.quoteName span { color: var(--fg-dim); font-weight: 500; }
+
+/* ---------------- vehicles ---------------- */
+
+.vehicleBlock { align-items: center; }
+.carDiagram {
+  background: var(--bg);
+  border-radius: var(--r-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--border-soft);
+}
+
+/* ---------------- page header ---------------- */
+
+.pageHead { position: relative; padding-block: var(--space-8) var(--space-12); overflow: hidden; }
+.pageHead::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(800px 340px at 10% -20%, rgba(59, 130, 246, 0.15), transparent 62%);
+  pointer-events: none;
+}
+.pageHead .wrap { position: relative; }
+.pageTitle { font-size: clamp(1.9rem, 4.4vw, 3rem); margin-top: var(--space-4); }
+.pageLede { margin-top: var(--space-5); color: var(--fg-muted); font-size: 1.05rem; max-width: 62ch; }
+.subhead { font-size: 1.25rem; margin-top: var(--space-8); margin-bottom: var(--space-4); }
+
+/* ---------------- aside card ---------------- */
+
+.asideCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--space-6);
+  box-shadow: var(--sh-2);
+  position: sticky;
+  top: 96px;
+}
+.asideLabel {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+}
+.asidePrice { font-size: 2.1rem; font-weight: 800; letter-spacing: -0.03em; margin-top: var(--space-2); }
+.asideNote { color: var(--fg-muted); font-size: 0.92rem; margin-top: var(--space-2); }
+.asideList { margin-top: var(--space-3); }
+.asideList li {
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+  padding: 0.3rem 0 0.3rem var(--space-4);
+  position: relative;
+}
+.asideList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.95em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.asideActions { display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-6); }
+.contactPhone { margin-top: var(--space-2); }
+.contactPhone a { font-size: 1.35rem; font-weight: 800; color: var(--primary); }
+.contactPhone a:hover { text-decoration: underline; }
+.contactPhoneLabel { display: block; font-size: 0.8rem; color: var(--fg-dim); }
+.linkish { color: var(--primary); font-weight: 700; }
+.linkish:hover { text-decoration: underline; }
+@media (max-width: 900px) {
+  .asideCard { position: static; }
+}
+
+/* ---------------- form ---------------- */
+
+.formCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: var(--space-8);
+  box-shadow: var(--sh-2);
+}
+.formTitle { font-size: 1.4rem; margin-bottom: var(--space-6); }
+.field { display: block; margin-bottom: var(--space-5); }
+.field > span { display: block; font-weight: 700; font-size: 0.9rem; margin-bottom: var(--space-2); }
+.optional { color: var(--fg-dim); font-weight: 500; font-style: normal; font-size: 0.85rem; }
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  min-height: 48px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  font: inherit;
+  color: var(--fg);
+}
+.field textarea { min-height: 110px; resize: vertical; }
+.field input:focus,
+.field select:focus,
+.field textarea:focus { outline: 3px solid var(--ring); outline-offset: 2px; }
+.field input[aria-invalid='true'] { border-color: var(--danger); }
+.fieldError {
+  display: block;
+  color: var(--danger);
+  font-size: 0.85rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: var(--space-2);
+}
+.formSubmit { width: 100%; }
+.formDone { text-align: center; }
+.formTick {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 auto var(--space-5);
+}
+.formDone h2 { font-size: 1.35rem; }
+.formDone p { color: var(--fg-muted); margin-top: var(--space-4); }
+.formNote { font-size: 0.88rem; color: var(--fg-dim); }
+.formDone .btn { margin-top: var(--space-6); }
+
+/* ---------------- final CTA ---------------- */
+
+.finalCta {
+  text-align: center;
+  background: linear-gradient(140deg, var(--primary), #2b57d4 55%, var(--accent));
+  border-radius: var(--r-xl);
+  padding: var(--space-16) var(--space-8);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--sh-4);
+}
+.finalCta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 58px, rgba(255, 255, 255, 0.07) 58px 62px);
+}
+.finalCta > * { position: relative; }
+.finalCta h2 { color: #fff; font-size: clamp(1.7rem, 3.8vw, 2.6rem); }
+.finalCta p { color: rgba(255, 255, 255, 0.9); margin-top: var(--space-4); max-width: 56ch; margin-inline: auto; }
+.finalCta .btn-ghost { background: rgba(255, 255, 255, 0.14); color: #fff; border-color: rgba(255, 255, 255, 0.4); }
+.finalCta .btn-ghost:hover { background: rgba(255, 255, 255, 0.24); border-color: #fff; }
+
+@media (prefers-reduced-motion: reduce) {
+  .roadLine,
+  .floatCard-a,
+  .floatCard-b,
+  .floatBadge { animation: none; }
+}
+
+/* ---------------- fleet row ----------------
+   For schools that photograph their own cars. Several name them, and their
+   students recognise them on the road — that is a stronger trust signal than
+   any stock interior shot, so the cars get a row of their own. */
+
+.fleetRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-8);
+}
+.fleetCar {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: var(--sh-1);
+}
+.fleetCar img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.fleetCar figcaption {
+  padding: var(--space-3) var(--space-4);
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--primary);
+  letter-spacing: 0.01em;
+}
+
+/* A real headshot beats a monogram every time; the monogram is only the
+   fallback for schools that publish no photograph of their instructors. */
+.avatarPhoto {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  background: var(--border-soft);
+  border: 1px solid var(--border);
+}
+
+/* ---------------- assistant ---------------- */
+/* Deterministic, data-only assistant. Logic in lib/assistant.ts.
+   Colours use the client's own brand tokens, so it belongs to the page it sits
+   on rather than looking like a bolted-on widget. */
+
+.aiLauncher {
+  position: fixed;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 48px;
+  padding: 0.8rem 1.25rem;
+  border-radius: var(--r-full);
+  background: var(--primary-dark);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  box-shadow: var(--sh-4);
+  border: 1px solid var(--primary-dark);
+}
+.aiLauncher:hover { background: var(--primary); }
+.aiLauncherDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6ee7a8;
+  box-shadow: 0 0 0 3px rgba(110, 231, 168, 0.28);
+}
+
+.aiPanel {
+  position: fixed;
+  right: var(--space-5);
+  bottom: calc(var(--space-5) + 62px);
+  z-index: 61;
+  width: min(390px, calc(100vw - var(--space-8)));
+  max-height: min(640px, calc(100vh - 140px));
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-xl);
+  box-shadow: var(--sh-4);
+  overflow: hidden;
+}
+.aiHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--primary-soft);
+  border-bottom: 1px solid var(--border);
+}
+.aiTitle { font-weight: 800; color: var(--fg); }
+.aiSub { font-size: 0.78rem; color: var(--fg-muted); margin-top: 2px; }
+.aiClose {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--r-full);
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+}
+.aiClose:hover { background: var(--surface); color: var(--fg); }
+
+.aiLog {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.aiTurn p { font-size: 0.92rem; line-height: 1.55; }
+.aiTurn p + p { margin-top: var(--space-2); }
+.aiTurn-bot { color: var(--fg); }
+.aiTurn-you {
+  align-self: flex-end;
+  max-width: 85%;
+  background: var(--primary-dark);
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--r-lg);
+}
+.aiInlineLink {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--primary-dark);
+}
+.aiInlineLink:hover { text-decoration: underline; }
+
+.aiChips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.aiChip {
+  min-height: 40px;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--primary-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: left;
+}
+.aiChip:hover { border-color: var(--primary); background: var(--primary-soft); }
+
+.aiFlow { display: flex; flex-direction: column; gap: var(--space-4); }
+.aiAsk { font-weight: 700; font-size: 0.94rem; color: var(--fg); }
+.aiFlowActions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-4); }
+.aiBtnSm { min-height: 42px; padding: 0.55rem 1rem; font-size: 0.87rem; }
+.aiBack {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--fg-muted);
+  min-height: 40px;
+}
+.aiBack:hover { color: var(--primary-dark); }
+
+.aiCard {
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  background: var(--bg);
+  padding: var(--space-5);
+}
+.aiCardKicker {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+}
+.aiCardTitle { font-size: 1.12rem; font-weight: 800; margin-top: var(--space-2); }
+.aiCardMeta { font-size: 0.9rem; color: var(--fg-muted); margin-top: var(--space-2); }
+.aiCardList { margin-top: var(--space-3); display: grid; gap: 4px; list-style: none; }
+.aiCardList li { font-size: 0.87rem; color: var(--fg-muted); padding-left: 1rem; position: relative; }
+.aiCardList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.aiNote { margin-top: var(--space-4); font-size: 0.8rem; color: var(--fg-dim); line-height: 1.5; }
+.aiNote-strong {
+  border-left: 3px solid var(--accent-dark);
+  padding-left: var(--space-3);
+  color: var(--fg-muted);
+}
+
+.aiForm { display: grid; gap: var(--space-3); }
+.aiField { display: grid; gap: 4px; }
+.aiField span { font-size: 0.8rem; font-weight: 700; color: var(--fg-muted); }
+.aiField input {
+  min-height: 44px;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--fg);
+  font-size: 0.92rem;
+}
+.aiField input:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+
+.aiInputRow {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+}
+.aiInput {
+  flex: 1 1 auto;
+  min-height: 44px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-full);
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 0.92rem;
+}
+.aiInput:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+.aiSend {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-full);
+  background: var(--primary-dark);
+  color: #fff;
+  font-size: 1.05rem;
+}
+.aiSend:hover { background: var(--primary); }
+
+.aiFoot {
+  padding: 0 var(--space-5) var(--space-4);
+  font-size: 0.74rem;
+  color: var(--fg-dim);
+  background: var(--surface);
+  line-height: 1.45;
+}
+
+/* The mobile call bar already owns the bottom of the viewport on small screens,
+   so the launcher moves above it rather than sitting on top of it. */
+@media (max-width: 720px) {
+  .aiLauncher { bottom: calc(var(--space-5) + 62px); right: var(--space-4); }
+  .aiPanel {
+    right: var(--space-3);
+    left: var(--space-3);
+    width: auto;
+    bottom: calc(var(--space-5) + 118px);
+    max-height: min(560px, calc(100vh - 200px));
+  }
+}

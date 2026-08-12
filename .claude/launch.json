@@ -2,28 +2,16 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "cockpit",
+      "name": "previews",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "sites/cockpit", "--", "-p", "3210"],
-      "port": 3210
+      "runtimeArgs": ["run", "dev", "--prefix", "preview"],
+      "port": 4310
     },
     {
-      "name": "safe-route",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "sites/safe-route", "--", "-p", "3211"],
-      "port": 3211
-    },
-    {
-      "name": "apex",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "sites/apex", "--", "-p", "3212"],
-      "port": 3212
-    },
-    {
-      "name": "atelier",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev", "--prefix", "sites/atelier", "--", "-p", "3213"],
-      "port": 3213
+      "name": "previews-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4311", "--directory", "preview/out"],
+      "port": 4311
     }
   ]
 }

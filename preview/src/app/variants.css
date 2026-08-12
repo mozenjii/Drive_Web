@@ -1,0 +1,182 @@
+/* ============================================================
+   Template variants.
+
+   Three light-background directions. The variant is chosen per
+   client from the business they actually are — see docs/DESIGN.md.
+   Every token below is overridden by the client's OWN brand colours
+   when we have scraped them, because a preview wearing the client's
+   real mark reads as their site upgraded, not as a template.
+
+   Contrast note: every foreground/background pair here was picked to
+   clear WCAG AA at small text. If you change one, re-measure it.
+   ============================================================ */
+
+/* ---------------- A · Safe Route ----------------
+   Parents of teen drivers. Trust, licensing, safety.
+   Government-portal blue + service green. */
+
+[data-variant='safe-route'] {
+  --primary: #1e40af;
+  --primary-dark: #1a369b;
+  --primary-soft: #dbeafe;
+  --secondary: #3b82f6;
+
+  --accent: #15803d;      /* darkened from #16A34A — 3.3:1 → 5.02:1 */
+  --accent-dark: #116230;
+  --accent-soft: #dcfce7;
+
+  --bg: #eff6ff;
+  --surface: #ffffff;
+  --fg: #0f1f4b;
+  --fg-muted: #4a5b85;
+  --fg-dim: #5a6a8e;   /* was #6B7BA5 at 4.2:1 — failed AA for small text */
+  --border: #bfdbfe;
+  --border-soft: #dce9fd;
+  --ring: #1e40af;
+
+  --sh-4: 0 28px 56px -12px rgba(30, 64, 175, 0.22);
+  --footer-bg: #0f1f4b;
+  --footer-fg: #cbd9f5;
+  --footer-dim: #93a7d4;
+  --wash: 9, 20, 52;
+}
+
+/* ---------------- B · Apex ----------------
+   Adult learners, road-test retakes, "get me licensed".
+   Slate paper + decisive red. Tighter, more urgent. */
+
+[data-variant='apex'] {
+  --primary: #b91c1c;     /* darkened from #DC2626 for small text on paper */
+  --primary-dark: #991b1b;
+  --primary-soft: #fee2e2;
+  --secondary: #ef4444;
+
+  --accent: #0f172a;
+  --accent-dark: #020617;
+  --accent-soft: #e2e8f0;
+
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --fg: #0b1120;
+  --fg-muted: #475569;
+  /* was #64748B — 4.55:1 against this variant's own --bg, and lower again
+     behind the translucent header. A live audit caught .brandSub at 4.37:1.
+     Same hue, darkened to 5.5:1, matching what Safe Route already does. */
+  --fg-dim: #5a6778;
+  --border: #cbd5e1;
+  --border-soft: #e2e8f0;
+  --ring: #b91c1c;
+
+  --r-sm: 4px;
+  --r-md: 6px;
+  --r-lg: 10px;
+  --r-xl: 14px;
+
+  --sh-4: 0 28px 56px -12px rgba(11, 17, 32, 0.28);
+  --footer-bg: #0b1120;
+  --footer-fg: #cbd5e1;
+  --footer-dim: #7d8ca3;
+  --wash: 11, 17, 32;
+}
+
+/* Apex reads as engineered rather than friendly: squarer corners, tighter
+   tracking, uppercase micro-labels. */
+[data-variant='apex'] h1,
+[data-variant='apex'] h2 {
+  letter-spacing: -0.038em;
+}
+[data-variant='apex'] .kicker,
+[data-variant='apex'] .stageKicker {
+  border-radius: 3px;
+}
+[data-variant='apex'] .btn {
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.86rem;
+}
+
+/* ---------------- C · Atelier ----------------
+   Long-established, referral-led, owner-operated.
+   Warm paper + brass. Editorial serif headlines. */
+
+[data-variant='atelier'] {
+  --primary: #1e3a5f;
+  --primary-dark: #16293f;
+  --primary-soft: #e7ecf3;
+  --secondary: #2f5680;
+
+  --accent: #8a6124;      /* darkened from #B4823C — 3.22:1 → 5.23:1 */
+  --accent-dark: #6d4b1b;
+  --accent-soft: #f5ecdc;
+
+  --bg: #fbf9f5;
+  --surface: #ffffff;
+  --fg: #1c1a17;
+  --fg-muted: #55504a;
+  /* was #7A736A — 4.45:1 against this variant's warm paper, a real AA failure
+     for the header subtitle and every muted caption. Darkened to 5.55:1. */
+  --fg-dim: #6b645a;
+  --border: #e4ddd1;
+  --border-soft: #efe9df;
+  --ring: #8a6124;
+
+  --r-sm: 2px;
+  --r-md: 4px;
+  --r-lg: 6px;
+  --r-xl: 8px;
+
+  --sh-4: 0 28px 56px -12px rgba(28, 26, 23, 0.2);
+  --footer-bg: #1c1a17;
+  --footer-fg: #ddd5c8;
+  --footer-dim: #9c9284;
+  --wash: 28, 26, 23;
+}
+
+[data-variant='atelier'] h1,
+[data-variant='atelier'] h2,
+[data-variant='atelier'] .stageTitle,
+[data-variant='atelier'] .pageTitle {
+  font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.012em;
+}
+[data-variant='atelier'] .kicker,
+[data-variant='atelier'] .stageKicker {
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+}
+
+/* ---------------- client brand override ----------------
+   Set as inline custom properties on the wrapper from client.brand.
+   A scraped logo colour beats any template palette — this is the
+   difference between "a template with their name on it" and "their
+   site, rebuilt". */
+
+.themed {
+  min-height: 100vh;
+}
+
+/* Footer + wash consume the variant tokens so all three stay coherent. */
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-fg);
+}
+.footer h3 { color: #fff; }
+.stageWash {
+  background:
+    linear-gradient(94deg, rgba(var(--wash), 0.94) 0%, rgba(var(--wash), 0.78) 34%,
+      rgba(var(--wash), 0.34) 60%, rgba(var(--wash), 0.12) 100%),
+    linear-gradient(0deg, rgba(var(--wash), 0.68) 0%, transparent 42%);
+}
+.stageProof { background: rgba(var(--wash), 0.42); }
+.photoFrame figcaption { background: linear-gradient(0deg, rgba(var(--wash), 0.88), transparent); }
+.simLive,
+.simBadge { background: rgba(var(--wash), 0.86); }
+
+@media (max-width: 640px) {
+  .stageWash {
+    background: linear-gradient(0deg, rgba(var(--wash), 0.95) 12%, rgba(var(--wash), 0.72) 52%,
+      rgba(var(--wash), 0.5) 100%);
+  }
+}
