@@ -69,3 +69,42 @@ Desktop (1440 x 900) deliberately unchanged.
 not be watched, only their start and end states measured with transitions pinned off.
 The *feel* of the reveal — whether 0.28s is right, whether the threshold is where a thumb
 wants it — is unjudged and wants a real device.
+
+## 2026-08-13, later the same day — REVERSED: the bottom bar is gone
+
+The section above argues for keeping the call bar at the bottom on thumb-reach
+grounds. Mohib overruled it, and the reason is better than mine:
+
+> "I haven't seen any website with a footer, like, a bottom bar. It's my first, so I'm
+> not gonna risk it."
+
+Thumb reach is a real ergonomic argument and it is the wrong one here. These pages are
+cold outreach whose entire job is to read as *their site, rebuilt* — not as something
+built by someone with opinions about mobile patterns. A control a prospect has never seen
+on a driving school's website is a risk with no upside, however well it performs in the
+abstract. **Familiarity outranks ergonomics when the page is the pitch.**
+
+So: the bar is deleted, and Call and Book moved up into the header. Below 1024px the nav
+collapses entirely, so the header had been carrying a logo and nothing else; it now
+carries the logo and both actions. The header keeps the scroll behaviour — off the top
+going down, back the moment you scroll up.
+
+Fitting three things across 320px needed two constraints, both worth keeping:
+
+- **Scraped logos are any shape.** Easy Street's is 225px wide at the header's 46px
+  height, which alone is most of a 320px screen. Capped at 132px, and 104px under 400px.
+- **The call button drops its label under 400px** and keeps it as the accessible name.
+  That left it 42px wide — under the minimum target size even though its *height* was
+  fine. Both header buttons now carry `min-width` as well as `min-height`.
+
+Everything the bar needed went with it: the reserved page padding (~88px of dead space
+under the footer on every client, rendered or not), the `--bar-h`/`--bar-lift` pair, and
+the assistant's offset — the launcher sits in the corner of the viewport again.
+
+### Measured live, after the reversal
+
+All 20 clients at 320px: header 69px, both actions at least 44x44, brand never
+overlapping the actions, no horizontal overflow, **no bottom bar in any document**.
+Header hides at 390x844, 375x667 and 320x568; unchanged at 1440x900; document height
+identical in both states. At 430px and up the call label returns; above 1024px the header
+actions give way to the full desktop nav.

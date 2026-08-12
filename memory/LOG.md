@@ -4,6 +4,25 @@ Newest first. One entry per session or per distinct piece of work.
 
 ---
 
+## 2026-08-13 — The bottom bar is gone; call and book live in the header
+
+Reversal of the same day's decision, and the reasoning is worth more than the change:
+Mohib has never seen a driving school's site with a fixed bottom bar, and a cold preview
+is the wrong place to be the first thing a prospect has seen do it. **Familiarity
+outranks ergonomics when the page is the pitch** — thumb reach is a real argument and
+still the wrong one for a page whose job is to read as *their site, rebuilt*.
+
+Call and Book moved into the header, which below 1024px had been carrying a logo and
+nothing else. The header keeps the hide-on-scroll-down behaviour. Two constraints came out
+of fitting three things across 320px: scraped logos need a hard width cap (Easy Street's
+is 225px wide), and a button that drops its label needs `min-width` as well as
+`min-height` or it falls under the minimum tap target at 42px.
+
+Recorded under the original argument in [017-mobile-chrome.md](017-mobile-chrome.md)
+rather than replacing it.
+
+---
+
 ## 2026-08-13 — The chrome was holding a quarter of the phone screen
 
 Third report off a phone, and the framing that matters: **these are mobile-first pages.**
