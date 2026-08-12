@@ -25,6 +25,7 @@ the original away — the reason something changed is usually worth more than th
 | [013-assistant-and-ai-features.md](013-assistant-and-ai-features.md) | The on-page assistant, why it is not an LLM, and which AI features need a back end |
 | [014-deployment.md](014-deployment.md) | Where the previews are live, on which account, and what is compiled in at build time |
 | [015-css-tokens-and-card-structure.md](015-css-tokens-and-card-structure.md) | The undeclared spacing tokens that silently zeroed padding on all 20 previews, and the card layering/alignment fixes |
+| [016-photograph-delivery.md](016-photograph-delivery.md) | Why photographs were slow (the export serves originals), the derived WebP ladder that fixed it, and which clients still have no photography |
 
 ## Standing rules
 

@@ -4,6 +4,33 @@ Newest first. One entry per session or per distinct piece of work.
 
 ---
 
+## 2026-08-12 — Photographs were being served exactly as scraped
+
+Second report off the live site: images take too long to appear, and the pages without any
+look bare beside the pages with them.
+
+The delivery half was real and unnoticed. A static export cannot run next/image's
+optimiser, so `unoptimized: true` was set and every `<Image>` emitted the original file at
+its original size with no `srcset` — a 1231KB PNG behind a 361px card, an 806KB JPEG behind
+a 511px portrait. There was no step between "scraped" and "served". There is now: a sharp
+pass writes a WebP ladder into `public/d`, and a `<Photo>` component carries srcset, the
+declared sizes, intrinsic dimensions and a 16px blurred placeholder so the space is the
+colour of the photograph from the first paint. Live, warm edge, cache bypassed: the hero
+went 806KB/1708ms to 68KB/289ms; a card image went 1231KB to 56KB.
+
+The bare-page half was half a content gap and half our own oversight — Academic's real logo
+and a photograph of their own signwritten car were sitting unused in the scraped assets
+while their preview rendered a monogram and no pictures. Both wired. AllGood, Kanor and
+Driving School For You genuinely have nothing usable; their own photography is still the
+ask.
+
+Also fixed: section shading was keyed off the index into `client.sections`, so a section
+dropped for want of data left its neighbours matching.
+
+Detail in [016-photograph-delivery.md](016-photograph-delivery.md).
+
+---
+
 ## 2026-08-12 — Four spacing tokens that were never declared
 
 Reported from a live screenshot: the programme cards read as unstructured on "almost every one" of
