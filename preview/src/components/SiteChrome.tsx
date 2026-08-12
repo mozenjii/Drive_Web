@@ -54,14 +54,7 @@ export function SiteChrome({
     : undefined;
 
   return (
-    <div
-      className="themed"
-      data-variant={client.variant}
-      /* The bottom call bar only exists for clients who publish a phone number,
-         and only that case should reserve room for it. */
-      data-bar={primary ? 'on' : 'off'}
-      style={brandVars}
-    >
+    <div className="themed" data-variant={client.variant} style={brandVars}>
       <a className="skip" href="#main">
         Skip to content
       </a>
@@ -117,6 +110,22 @@ export function SiteChrome({
               </a>
             ) : null}
           </nav>
+
+          {/* The call and book actions, on a phone. They used to live in a fixed
+              bar pinned to the bottom of the viewport; that bar is gone. Below
+              1024px the nav above collapses away entirely, so without these the
+              header carried a logo and nothing else. */}
+          <div className="headerActions">
+            {primary ? (
+              <a className="btn btn-ghost headerCall" href={`tel:${primary.raw}`}>
+                <PhoneIcon />
+                <span>Call</span>
+              </a>
+            ) : null}
+            <Link className="btn btn-accent headerBook" href={`${hrefFor(client, ['contact'])}/`}>
+              Book
+            </Link>
+          </div>
         </div>
       </header>
 
@@ -234,17 +243,6 @@ export function SiteChrome({
           Renders nothing. */}
       <ChromeMotion />
 
-      {primary ? (
-        <div className="mobileBar">
-          <a className="btn btn-ghost" href={`tel:${primary.raw}`}>
-            <PhoneIcon />
-            Call
-          </a>
-          <Link className="btn btn-accent" href={`${hrefFor(client, ['contact'])}/`}>
-            Book a lesson
-          </Link>
-        </div>
-      ) : null}
     </div>
   );
 }

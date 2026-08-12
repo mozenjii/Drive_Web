@@ -6,12 +6,12 @@ import { nextChrome, type ChromeState } from '@/lib/chrome-motion';
 /**
  * Gives the phone its screen back.
  *
- * The header is sticky and the call/book bar is fixed, so on a 667px-tall phone
- * they were permanently holding ~160px — a quarter of the viewport — no matter
- * how far down the page you were. Both now slide out of the way as soon as you
- * scroll *down*, and come straight back the moment you scroll *up*, which is the
- * behaviour a reader already expects from every native app: the controls are
- * gone while you read and one flick away when you want them.
+ * The header is sticky, and on a phone it carries the call and book actions as
+ * well as the logo — so it is 68px held at the top of the screen for as long as
+ * the page is open. It now slides out of the way as soon as you scroll *down*,
+ * and comes straight back the moment you scroll *up*, which is the behaviour a
+ * reader already expects: the controls are gone while you read and one flick
+ * away when you want them.
  *
  * This sets `data-chrome` on the document element; everything else is CSS (see
  * `globals.css`, "chrome motion"). Nothing here measures or writes layout, so it
@@ -25,7 +25,7 @@ import { nextChrome, type ChromeState } from '@/lib/chrome-motion';
  *   accumulate into a decision rather than being swallowed.
  * - The top 120px always shows the chrome: at the top of a page the header is
  *   part of the design, not an obstruction.
- * - Nothing hides while the assistant is open — its panel is anchored to the bar.
+ * - Nothing hides while the assistant panel is open.
  */
 export function ChromeMotion() {
   useEffect(() => {
