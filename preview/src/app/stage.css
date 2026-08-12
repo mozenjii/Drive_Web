@@ -210,12 +210,14 @@
 }
 .heroSerifTitle {
   /* --font-display was never declared anywhere, so this fell through to
-     `inherit` and the "large serif" editorial hero was set in the body sans on
-     four of its five clients (Atelier got a serif only because a variant rule
-     re-set every h1). --font-serif is the token layout.tsx actually defines. */
+     `inherit` — the body sans. Nothing showed, because all five clients on this
+     hero are Atelier and `[data-variant='atelier'] h1` re-sets the family; the
+     bug was latent, waiting for the first editorial hero on another variant.
+     --font-serif is the token layout.tsx actually defines. */
   font-family: var(--font-serif), Georgia, 'Times New Roman', serif;
-  /* Fraunces is self-hosted at 400 and 600 only. The global h1 weight of 800
-     would be synthesised by the browser — a smeared fake bold. */
+  /* Fraunces is self-hosted at 400 and 600 only, so the global h1 weight of 800
+     would be a browser-synthesised fake bold. Atelier's own h1 rule wins over
+     this and asks for 400; this covers the other variants. */
   font-weight: 600;
   margin-top: var(--space-6);
   color: var(--fg);
