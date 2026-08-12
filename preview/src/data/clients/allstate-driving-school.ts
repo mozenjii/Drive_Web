@@ -158,6 +158,15 @@ export const allstateDriving: Client = {
         'DL400D completion certificate',
         'Freeway, traffic law and parking manoeuvres',
       ],
+      // Definitional only — what the DMV form IS, not a claim about how this
+      // school issues it. Verified against dmv.ca.gov, not paraphrased from
+      // the school's own copy.
+      featureNotes: {
+        'DL400D completion certificate':
+          "The DMV's Certificate of Completion of Behind-the-Wheel Training. It is issued once the "
+          + 'required six hours are done, and it is what the DMV needs to see before a driver under '
+          + '18 can sit the drive test.',
+      },
       packages: [
         {
           name: 'First lesson',

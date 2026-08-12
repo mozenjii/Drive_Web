@@ -68,6 +68,16 @@ export interface PackageGroup {
   blurb?: string;
   /** The comparison matrix rows shown against every package in this group. */
   features: string[];
+  /**
+   * Optional one-tap explanation for a feature row, keyed by the exact string
+   * used in `features`. Add one only where the bare label genuinely doesn't
+   * say what the buyer gets — "DMV test day car" (whose car, for how long?).
+   * A row with no note renders no icon at all.
+   *
+   * Nothing decision-critical goes in here. Collapsed text is text most
+   * parents will never open, and price/hours/coverage have to stay visible.
+   */
+  featureNotes?: Record<string, string>;
   /** Default lesson length in hours for this group. Falls back to 2. */
   lessonHours?: number;
   packages: Package[];

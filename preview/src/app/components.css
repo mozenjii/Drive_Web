@@ -352,6 +352,69 @@
 .pkgFeatures li.out { color: var(--fg-dim); }
 .pkgFeatures li.out > span:first-child { color: var(--fg-dim); font-weight: 800; }
 
+/* ---------------- info hint (one-tap detail) ---------------- */
+
+.hint { display: inline; }
+
+/* The glyph reads as 16px but the hit area is a full 44px, which is the
+   minimum comfortable touch target. Negative margins stop that padding from
+   spacing out the feature rows. */
+.hintBtn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-dim);
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1;
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: var(--r-full);
+  display: inline-grid;
+  place-items: center;
+  vertical-align: 1px;
+  margin-inline-start: 0.35rem;
+  padding: 0;
+  position: relative;
+}
+.hintBtn::after {
+  content: '';
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 44px;
+  height: 44px;
+  transform: translate(-50%, -50%);
+}
+.hintBtn:hover,
+.hintBtn:focus-visible {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.hintBtn[aria-expanded='true'] {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--on-primary);
+}
+
+.hintBody { display: none; }
+.hintBody.is-open {
+  display: block;
+  margin-top: 0.4rem;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+  color: var(--fg);
+  /* primary-soft is redefined per variant in variants.css, so the hint themes
+     itself correctly across Cockpit / Safe Route / Apex / Atelier. */
+  background: var(--primary-soft);
+  border-inline-start: 2px solid var(--primary);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+
 /* ---------------- price table ---------------- */
 
 .priceTable {

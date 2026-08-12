@@ -4,6 +4,7 @@ import { useState } from 'react';
 import type { PackageGroup } from '@/lib/types';
 import { formatPrice } from '@/lib/seo';
 import { HoursBar } from '@/components/Infographic';
+import { InfoHint } from '@/components/InfoHint';
 
 /**
  * The packages, as a switchable comparison matrix.
@@ -81,11 +82,18 @@ export function PackagePicker({ groups }: { groups: PackageGroup[] }) {
               <ul className="pkgFeatures">
                 {group.features.map((feature) => {
                   const included = pkg.includes?.includes(feature) ?? false;
+                  const note = group.featureNotes?.[feature];
                   return (
                     <li key={feature} className={included ? 'in' : 'out'}>
                       <span aria-hidden="true">{included ? '✓' : '·'}</span>
-                      <span>{feature}</span>
-                      <span className="srOnly">{included ? ' — included' : ' — not included'}</span>
+                      <span>
+                        {feature}
+                        <span className="srOnly">{included ? ' — included' : ' — not included'}</span>
+                        {/* Only rows the client data explains get an affordance.
+                            No note, no icon — an icon that opens "yes, included"
+                            teaches people the icons aren't worth tapping. */}
+                        {note ? <InfoHint label={feature}>{note}</InfoHint> : null}
+                      </span>
                     </li>
                   );
                 })}
