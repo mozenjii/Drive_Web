@@ -1,0 +1,26 @@
+node_modules/
+.next/
+out/
+dist/
+.DS_Store
+*.pem
+.env*
+!.env.example
+npm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+coverage/
+playwright-report/
+test-results/
+
+
+# Scraped prospect assets — 84MB of other people's images. The ones a preview
+# actually uses are copied into preview/public/clients/, and the rest can be
+# regenerated with research/tools/scrape.py. The page text and index.json ARE
+# tracked: they are the evidence behind every claim in a client file.
+research/*/assets/
+
+# Wrangler local deploy state (account id, project name, build cache).
+# Not secret, but machine-local — the OAuth token itself lives outside the repo.
+.wrangler/
