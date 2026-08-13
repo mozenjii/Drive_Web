@@ -585,17 +585,71 @@
 
 /* ---------------- page header ---------------- */
 
-.pageHead { position: relative; padding-block: var(--space-8) var(--space-12); overflow: hidden; }
+.pageHead {
+  position: relative;
+  isolation: isolate;
+  padding-block: var(--space-8) var(--space-12);
+  overflow: hidden;
+  background:
+    linear-gradient(110deg, color-mix(in srgb, var(--bg) 96%, var(--primary-soft)) 0%, var(--bg) 70%),
+    var(--bg);
+}
 .pageHead::before {
   content: '';
   position: absolute;
   inset: 0;
+  z-index: -1;
   background: radial-gradient(800px 340px at 10% -20%, rgba(59, 130, 246, 0.15), transparent 62%);
   pointer-events: none;
 }
-.pageHead .wrap { position: relative; }
+.pageHead::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: var(--page-head-image);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.58;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 38%, #000 72%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, transparent 38%, #000 72%, #000 100%);
+  pointer-events: none;
+}
+.pageHead[data-art='people']::after { background-image: var(--page-head-people-image); }
+.pageHead[data-custom-image]::after {
+  background-image: var(--page-head-custom-image, var(--page-head-people-image));
+}
+.pageHead .wrap { position: relative; z-index: 1; }
+.pageHeadDisclosure {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-3);
+  z-index: 2;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--fg-muted);
+  font-size: 0.7rem;
+  line-height: 1.2;
+  pointer-events: none;
+}
 .pageTitle { font-size: clamp(1.9rem, 4.4vw, 3rem); margin-top: var(--space-4); }
 .pageLede { margin-top: var(--space-5); color: var(--fg-muted); font-size: 1.05rem; max-width: 62ch; }
+.pageHead .crumbs,
+.pageHead .kicker,
+.pageHead .pageTitle,
+.pageHead .pageLede { position: relative; }
+
+@media (max-width: 700px) {
+  .pageHead::after {
+    background-position: 68% center;
+    opacity: 0.28;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.25) 40%, #000 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.25) 40%, #000 100%);
+  }
+  .pageHead[data-custom-image]::after { background-position: 76% center; }
+  .pageHeadDisclosure { font-size: 0.65rem; }
+}
 .subhead { font-size: 1.25rem; margin-top: var(--space-8); margin-bottom: var(--space-4); }
 
 /* ---------------- aside card ---------------- */

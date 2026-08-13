@@ -77,7 +77,7 @@ export const safetyFirst: Client = {
   },
 
   // Their own logo, scraped from safetyfirstds.com/media/img/logo.png.
-  logo: '/clients/safety-first-driving-school/logo.png',
+  logo: '/clients/safety-first-driving-school/logo-restored.png',
 
   /**
    * Their own photography, which this preview shipped without for far too long
@@ -89,6 +89,11 @@ export const safetyFirst: Client = {
    * a headline over the top of a headline reads as a mistake.
    */
   photos: {
+    contact: {
+      src: '/clients/safety-first-driving-school/contact-team-car.webp',
+      alt: 'An instructor and adult learner standing beside a branded Safety First Driving School training car',
+      disclosure: 'AI-generated promotional image',
+    },
     hero: {
       src: '/clients/safety-first-driving-school/car-image.jpg',
       alt: 'A white Safety First Driving School car, signwritten with STUDENT DRIVER, the school name and the phone number 805.374.2393',

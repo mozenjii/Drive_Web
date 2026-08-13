@@ -275,6 +275,31 @@
       }
     ]
   },
+  "/clients/bills-driving-school/contact-team-car.webp": {
+    "hash": "8bdd7074c1b7",
+    "width": 1600,
+    "height": 756,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoQAAgABABsJZQCw7EOmNRlIAD+562CEO0zDVUpX9OQHmAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/bills-driving-school/contact-team-car-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/bills-driving-school/contact-team-car-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/bills-driving-school/contact-team-car-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/bills-driving-school/contact-team-car-1600.webp"
+      }
+    ]
+  },
   "/clients/bills-driving-school/hero.jpg": {
     "hash": "aff62b99e082",
     "width": 2000,
@@ -297,6 +322,27 @@
       {
         "w": 1600,
         "src": "/d/clients/bills-driving-school/hero-1600.webp"
+      }
+    ]
+  },
+  "/clients/bills-driving-school/logo-restored.png": {
+    "hash": "b652aa018ef1",
+    "width": 800,
+    "height": 617,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4WAoAAAAQAAAADwAACwAAQUxQSHAAAAANcBvbtqqc77hrZh3QAg3Qf0Lm7vDca4iICShXxvNRGfZ3t958Jkm1UUkc/HN706XghAuH5IzJFbmdCGwppES0YG8iXfz/p6It4ZWC/b9fRD5k5Zw8EBgXnW7+C4nyZr9dCkGcN/rdIER5vRGGOMkBVlA4IDQAAADwAQCdASoQAAwABABsJaACdH8ADgkgfAAA+9/VNNa0s5fpWJvi3VdnMdvWMr388ktIAAAA",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/bills-driving-school/logo-restored-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/bills-driving-school/logo-restored-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/bills-driving-school/logo-restored-800.webp"
       }
     ]
   },
@@ -1645,6 +1691,31 @@
       }
     ]
   },
+  "/clients/safety-first-driving-school/contact-team-car.webp": {
+    "hash": "2ecab97a0197",
+    "width": 1600,
+    "height": 787,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoQAAgABABsJZQAAhpbOkAA/nia9bG+OxvpQYg+7u1224dcw4AAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/safety-first-driving-school/contact-team-car-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/safety-first-driving-school/contact-team-car-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/safety-first-driving-school/contact-team-car-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/safety-first-driving-school/contact-team-car-1600.webp"
+      }
+    ]
+  },
   "/clients/safety-first-driving-school/image1.jpg": {
     "hash": "2df57e1e0fd0",
     "width": 247,
@@ -1681,6 +1752,27 @@
       {
         "w": 247,
         "src": "/d/clients/safety-first-driving-school/image3-247.webp"
+      }
+    ]
+  },
+  "/clients/safety-first-driving-school/logo-restored.png": {
+    "hash": "ac5bdfab5cfa",
+    "width": 800,
+    "height": 500,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRuAAAABXRUJQVlA4WAoAAAAQAAAADwAACQAAQUxQSHsAAAANcBgAaNoQqbv/f9589SYpMHkiIlKovM3N7W2A4a+Sus/M/bY6YAaGoBwqn7bn6IgQ8Qyq0kcvoN0Qkd0PHYaMfhaxQxC4zwCALH1PoFBKoiGzGiSW2ldaCqXdeBsdyzCNA8HsRXa83HeZFEUomaUXuHWcrEzSUCEL7SsAVlA4ID4AAACwAQCdASoQAAoABABsJbACdACdDhAAANvDlcXdze6EtgARQDgIUdDyLr+xAg64svHLOjwbE++P2LofzAAAAA==",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/safety-first-driving-school/logo-restored-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/safety-first-driving-school/logo-restored-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/safety-first-driving-school/logo-restored-800.webp"
       }
     ]
   },
@@ -2139,6 +2231,156 @@
       {
         "w": 1314,
         "src": "/d/images/hiring-banner-1314.webp"
+      }
+    ]
+  },
+  "/images/page-head-apex.webp": {
+    "hash": "f7b2aade5916",
+    "width": 1600,
+    "height": 687,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoQAAcABABsJZwCw7EOuBaDAAD+7UNdpaAHOIhPgZo+NsAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/images/page-head-apex-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/images/page-head-apex-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/images/page-head-apex-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/images/page-head-apex-1600.webp"
+      }
+    ]
+  },
+  "/images/page-head-atelier.webp": {
+    "hash": "15add8d39741",
+    "width": 1600,
+    "height": 640,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoQAAYABABsJQBOgCEqIkDgAP7v0hsHVBvTrSX7XlxhZP0fRGAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/images/page-head-atelier-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/images/page-head-atelier-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/images/page-head-atelier-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/images/page-head-atelier-1600.webp"
+      }
+    ]
+  },
+  "/images/page-head-people-apex.webp": {
+    "hash": "82323dad0172",
+    "width": 1600,
+    "height": 737,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoQAAcABABsJZwAAlw6NJgYAP5xte0k21FGrwxaaZVtgAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/images/page-head-people-apex-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/images/page-head-people-apex-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/images/page-head-people-apex-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/images/page-head-people-apex-1600.webp"
+      }
+    ]
+  },
+  "/images/page-head-people-atelier.webp": {
+    "hash": "3cc9148a1d5a",
+    "width": 1600,
+    "height": 681,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoQAAcABABsJQBOgB+X6w5DgAD+79ZwhJkr01xXfCVmYwamt4y9DAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/images/page-head-people-atelier-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/images/page-head-people-atelier-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/images/page-head-people-atelier-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/images/page-head-people-atelier-1600.webp"
+      }
+    ]
+  },
+  "/images/page-head-people-safe-route.webp": {
+    "hash": "f42566fe8ae3",
+    "width": 1600,
+    "height": 683,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoQAAcABABsJZQCdAELYMDh84AA/u/SK6dAc0WyZxeRZFncMWFZAAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/images/page-head-people-safe-route-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/images/page-head-people-safe-route-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/images/page-head-people-safe-route-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/images/page-head-people-safe-route-1600.webp"
+      }
+    ]
+  },
+  "/images/page-head-safe-route.webp": {
+    "hash": "0b4cdb90e34a",
+    "width": 1600,
+    "height": 640,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoQAAYABABsJZQCdAENV++rgAD+7VmjHh0xTlm3Zjtvb8t4u1AAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/images/page-head-safe-route-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/images/page-head-safe-route-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/images/page-head-safe-route-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/images/page-head-safe-route-1600.webp"
       }
     ]
   },

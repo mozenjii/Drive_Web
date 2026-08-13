@@ -203,11 +203,15 @@ export interface Photo {
    * screen-reader user than a generic one.
    */
   alt: string;
+  /** Visible qualification when the scene is illustrative or AI-generated. */
+  disclosure?: string;
 }
 
 export interface Photos {
   /** Full-bleed hero. Wants people, not a car park. */
   hero?: Photo;
+  /** Client-specific contact header: ideally their branded car with people. */
+  contact?: Photo;
   /** Beside the drive-test section. */
   roadTest?: Photo;
   /** Beside the vehicles block. Their own car if they publish one. */

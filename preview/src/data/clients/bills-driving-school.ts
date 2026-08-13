@@ -71,7 +71,7 @@ export const billsDriving: Client = {
     ],
   },
 
-  logo: '/clients/bills-driving-school/logo.png',
+  logo: '/clients/bills-driving-school/logo-restored.png',
 
   /**
    * Sampled from their mark: grass green #548C4E and a soft gold #DEC069.
@@ -93,6 +93,11 @@ export const billsDriving: Client = {
   },
 
   photos: {
+    contact: {
+      src: '/clients/bills-driving-school/contact-team-car.webp',
+      alt: 'An instructor and adult learner standing beside a white training car branded for Bill’s Driving School',
+      disclosure: 'AI-generated promotional image',
+    },
     hero: {
       src: '/clients/bills-driving-school/hero.jpg',
       alt: 'A car on an open road at sunset',

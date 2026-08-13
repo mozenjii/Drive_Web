@@ -7,6 +7,9 @@ export function ContactPage({ client }: { client: Client }) {
     <>
       <PageHeader
         client={client}
+        art="people"
+        image={client.photos?.contact?.src}
+        imageDisclosure={client.photos?.contact?.disclosure}
         kicker="Contact"
         title="Book a lesson, or just ask."
         lede={client.schedulingNote}

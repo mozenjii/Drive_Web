@@ -16,6 +16,8 @@
    Government-portal blue + service green. */
 
 [data-variant='safe-route'] {
+  --page-head-image: url('/images/page-head-safe-route.webp');
+  --page-head-people-image: url('/images/page-head-people-safe-route.webp');
   --primary: #1e40af;
   --primary-dark: #1a369b;
   --primary-soft: #dbeafe;
@@ -46,6 +48,8 @@
    Slate paper + decisive red. Tighter, more urgent. */
 
 [data-variant='apex'] {
+  --page-head-image: url('/images/page-head-apex.webp');
+  --page-head-people-image: url('/images/page-head-people-apex.webp');
   --primary: #b91c1c;     /* darkened from #DC2626 for small text on paper */
   --primary-dark: #991b1b;
   --primary-soft: #fee2e2;
@@ -101,6 +105,8 @@
    Warm paper + brass. Editorial serif headlines. */
 
 [data-variant='atelier'] {
+  --page-head-image: url('/images/page-head-atelier.webp');
+  --page-head-people-image: url('/images/page-head-people-atelier.webp');
   --primary: #1e3a5f;
   --primary-dark: #16293f;
   --primary-soft: #e7ecf3;
