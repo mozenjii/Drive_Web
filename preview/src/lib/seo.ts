@@ -11,7 +11,17 @@ import type { Client } from './types';
  * client buys, their site graduates to its own repo and its own project, and
  * indexing is a decision made there.
  */
-const configuredBase = process.env.NEXT_PUBLIC_PREVIEW_BASE?.trim().replace(/\/+$/, '');
+/**
+ * `|| undefined` and not just `?.`: an *unset* variable is undefined and falls
+ * through to the default below, but the deploy workflow passes
+ * `NEXT_PUBLIC_PREVIEW_BASE: ${{ vars.PREVIEW_BASE }}`, and an unconfigured
+ * repository variable arrives as the **empty string** — which is not nullish, so
+ * `?? default` would have kept it. Every canonical and og:url in the export
+ * would then have been a bare path with no host: exactly the class of fault
+ * recorded in memory/014, invisible on the page and fatal to a pasted link.
+ */
+const configuredBase =
+  process.env.NEXT_PUBLIC_PREVIEW_BASE?.trim().replace(/\/+$/, '') || undefined;
 
 /**
  * The host this export will actually be served from, compiled into every

@@ -95,9 +95,65 @@ jobs:
       - name: Audit the built export
         run: python3 research/tools/audit-static.py preview/out
 
+      # Is there anything to deploy WITH?
+      #
+      # This workflow failed on every run from the day it was added — nine of
+      # them — and every failure was this step, with the build, the tests and the
+      # audit above all green. A wall of red mail for a missing credential trains
+      # you to ignore the one alert that will eventually matter, and it hid the
+      # fact that the previews were only ever live because they were deployed by
+      # hand.
+      #
+      # A missing secret is a configuration state, not a broken build. It is
+      # reported in the run summary and the deploy is skipped. If the secrets ARE
+      # present, nothing below changes: a genuine deploy failure still fails the
+      # run, which is the alert worth keeping.
+      - name: Check deploy credentials
+        id: creds
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -u
+          have_token=$([ -n "${CF_TOKEN}" ] && echo yes || echo no)
+          have_account=$([ -n "${CF_ACCOUNT}" ] && echo yes || echo no)
+          if [ "$have_token" = yes ] && [ "$have_account" = yes ]; then
+            echo 'ready=true' >> "$GITHUB_OUTPUT"
+            echo '### Deploying' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo 'ready=false' >> "$GITHUB_OUTPUT"
+          {
+            echo '### Deployment skipped — no Cloudflare credentials'
+            echo
+            echo 'The export built and passed every check. Nothing was published.'
+            echo
+            echo '| secret | set |'
+            echo '|---|---|'
+            echo "| \`CLOUDFLARE_API_TOKEN\` | ${have_token} |"
+            echo "| \`CLOUDFLARE_ACCOUNT_ID\` | ${have_account} |"
+            echo
+            echo 'Add them under **Settings → Secrets and variables → Actions**. The token needs'
+            echo '**Cloudflare Pages: Edit**, and it must belong to the account that owns the'
+            echo '`epoches` Pages project — see `memory/014-deployment.md`, which records that'
+            echo 'these previews live on the personal account and NOT the Epoches company one.'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: Deploy to Cloudflare Pages
+        if: steps.creds.outputs.ready == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy preview/out --project-name=epoches --branch=main
+
+      # The export is worth keeping even when it cannot be published: it is the
+      # thing that would have been deployed, and it can be dragged straight into
+      # the Cloudflare dashboard.
+      - name: Keep the export when it could not be deployed
+        if: steps.creds.outputs.ready != 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-export
+          path: preview/out
+          retention-days: 7
