@@ -226,7 +226,12 @@ if (!check) {
 
 if (check) {
   const current = await readFile(MANIFEST, 'utf8').catch(() => '');
-  if (current !== serialised) {
+  // Compare content, not bytes. The manifest is stored LF, but a Windows
+  // checkout with core.autocrlf=true writes it CRLF, and a byte comparison then
+  // reports every photograph as stale on a fresh clone — a failure with nothing
+  // behind it, on the machine this project is actually developed on.
+  const sameContent = (a, b) => a.replace(/\r\n/g, '\n') === b.replace(/\r\n/g, '\n');
+  if (!sameContent(current, serialised)) {
     console.error('photo-manifest.json is out of date — run: npm run photos');
     process.exitCode = 1;
   } else if (!process.exitCode) {
