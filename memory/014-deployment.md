@@ -118,3 +118,37 @@ trees took under a minute and was the only reason the difference surfaced.
   proof figure of **31 years**, both derived from `SINCE 1995`. One of the two should move.
 
 Related: [[002-preview-architecture]], [[010-verification]], [[011-open-items]]
+
+## 2026-08-13 — The deploy workflow has never once succeeded
+
+Nine runs from the day it was added (2026-08-12), nine failures, all mailed as "Deploy
+previews workflow run failed for main branch". Reproduced every step against a fresh clone
+on a clean `npm ci`: install, `photos:check`, `tsc`, 399 tests, the export and the static
+audit over 293 pages **all pass**. The only step that cannot be reproduced locally is the
+one that needs credentials, so that is where it fails.
+
+**Every deploy of these previews has therefore been manual**, by
+`npx wrangler pages deploy preview/out --project-name=epoches --branch=main` from the
+personal account. The live site has never once been published by CI.
+
+What to fix, under **Settings → Secrets and variables → Actions**:
+
+| | |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | needs **Cloudflare Pages: Edit** |
+| `CLOUDFLARE_ACCOUNT_ID` | must be `bf90a73e76dc962d466924f51a2cd2fe` — the personal account, NOT the Epoches company one |
+| `PREVIEW_BASE` (a *variable*, not a secret) | optional; unset is fine now, see below |
+
+The workflow no longer fails the whole run over it: a missing secret is reported in the run
+summary, the export is kept as an artifact for seven days, and the run passes. Real deploy
+failures still fail, which is the alert worth keeping.
+
+### The bug the fix nearly shipped
+
+`NEXT_PUBLIC_PREVIEW_BASE: ${{ vars.PREVIEW_BASE }}` passes the **empty string** when that
+repository variable is unconfigured, and an empty string is not nullish — so
+`?? 'https://epoches.pages.dev'` kept it. The first CI deploy that ever worked would have
+published 293 pages whose every `canonical` and `og:url` was a bare path with no host:
+invisible on the page, fatal to a pasted link, and the same fault as the
+`preview.epoches.com` bug above. Empty and blank now fall through to the default, pinned by
+`seo.test.ts`.
