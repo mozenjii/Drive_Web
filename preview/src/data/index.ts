@@ -3,6 +3,9 @@ import { a1Driving } from './clients/a1-driving-school-bakersfield';
 import { bonitaDriving } from './clients/bonita-driving-school';
 import { vipDriving } from './clients/vip-driving-school';
 import { americanBestCali } from './clients/american-best-cali-driving-school';
+import { abDriving } from './clients/ab-driving-school';
+import { worldDriving } from './clients/world-driving-school';
+import { aCaliforniaDriving } from './clients/a-california-driving-school';
 import { academicDriving } from './clients/academic-driving-school';
 import { allgoodDriving } from './clients/allgood-driving-school';
 import { drivingSchoolForYou } from './clients/driving-school-for-you';
@@ -57,6 +60,9 @@ export const clients: Client[] = [
   bonitaDriving,
   vipDriving,
   americanBestCali,
+  abDriving,
+  worldDriving,
+  aCaliforniaDriving,
 ];
 
 export const clientBySlug = new Map(clients.map((c) => [c.slug, c]));

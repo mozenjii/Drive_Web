@@ -1,4 +1,25 @@
 {
+  "/clients/a-california-driving-school/logo.png": {
+    "hash": "d75363fca54d",
+    "width": 675,
+    "height": 212,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4WAoAAAAQAAAADwAABAAAQUxQSD8AAAANYNBIkqKd4wf/Ipl5wUZEBEJVl9y0TfiWbjoZsa69ibLA5P0NPiVPzlSYPwWZsSBFp6SfOEf2XxeVDICMPAgAVlA4IDoAAACQAQCdASoQAAUABABsJbACdACCbOAA+v+YDsrrpN9haUKGyZ/NSWHM3sPmYI6/y5CIyj6ZjLrgAAAA",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/a-california-driving-school/logo-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/a-california-driving-school/logo-400.webp"
+      },
+      {
+        "w": 675,
+        "src": "/d/clients/a-california-driving-school/logo-675.webp"
+      }
+    ]
+  },
   "/clients/a1-driving-school-bakersfield/a.jpg": {
     "hash": "8194074066b8",
     "width": 600,
@@ -34,6 +55,27 @@
       {
         "w": 800,
         "src": "/d/clients/a1-driving-school-bakersfield/logo-800.webp"
+      }
+    ]
+  },
+  "/clients/ab-driving-school/logo.png": {
+    "hash": "66027e4c7992",
+    "width": 500,
+    "height": 500,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRigBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSLoAAAANgCDbdtrmCcxM+99fUIoks/9PYRERMQEAIKKmjcJrvvCviKpx0OZmdvojdTUNBS/v+2cnQOp67NVKkXA3e5CM67GDnc+615+bOdJmbGEW4mLslb2behi0XRiIyrHl572ostMTAER5nayW6RJSCIAvFlIKbxdVZYKZrmWhonFve2WZOEhd26LbYvNPd8WKWfAhikrR7p4OaSzOg9NKAdduzRaXctt1pQCANudOKaBzhb9M+zxviDMlAABWUDggSAAAAPABAJ0BKhAAEAAEAGwlAFh2HrDmllHMgAD+zxqH3M/bxTGEeTQN4nP6WV1QnZ9Z2iPFOb2qL5rxJ04iChSf9s/WpG7NjSDAAA==",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/ab-driving-school/logo-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/ab-driving-school/logo-400.webp"
+      },
+      {
+        "w": 500,
+        "src": "/d/clients/ab-driving-school/logo-500.webp"
       }
     ]
   },
@@ -2214,6 +2256,77 @@
       {
         "w": 1600,
         "src": "/d/clients/vip-driving-school/car-1600.webp"
+      }
+    ]
+  },
+  "/clients/world-driving-school/car.png": {
+    "hash": "c08da79d4c40",
+    "width": 2752,
+    "height": 1536,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoQAAkABABsJZQAAjIoBYAA/p/AeFmwo/cOdwa3RmQsL0424T/AAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/world-driving-school/car-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/world-driving-school/car-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/world-driving-school/car-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/world-driving-school/car-1600.webp"
+      }
+    ]
+  },
+  "/clients/world-driving-school/logo.png": {
+    "hash": "0cbe7f833b09",
+    "width": 1024,
+    "height": 1024,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRg4BAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSKYAAAABn6EokqSmmpyeGIAf/iViIiIyVFtwKB4U1SVg2TCKXwRRRMBM27axo+2sRfQ/Ej5HEhI4iCRJkRrm0b9V/p3pZw0RMQGQars/7nA7XR9rhlRVuLFoASNQJZdsiT01YMmWXMD0xt4Q3z1ZB4j4STSO/ovkQcGfoSjpl2uTm/yPkTP/kZKrUfnGsnODYBJAIBkPgAOmZw0pDCZpsnutRJhMN8BkPWYAVlA4IEIAAAAQAgCdASoQABAABABsJbACdAEfmO/PKZPgAP38jvfPRtp5q3zI5+JnHHU84lQrfgj6ZV6vMq9PC359x7g/oxKAAAA=",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/world-driving-school/logo-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/world-driving-school/logo-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/world-driving-school/logo-800.webp"
+      }
+    ]
+  },
+  "/clients/world-driving-school/passed.jpg": {
+    "hash": "f71cfe6c8d8a",
+    "width": 1440,
+    "height": 1080,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAAAQAgCdASoQAAwABABsJZQC7AEO5YZJpVoAAPzir5IYyRGNbgyGE1QsT/O6b7arAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/world-driving-school/passed-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/world-driving-school/passed-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/world-driving-school/passed-1200.webp"
+      },
+      {
+        "w": 1440,
+        "src": "/d/clients/world-driving-school/passed-1440.webp"
       }
     ]
   },
