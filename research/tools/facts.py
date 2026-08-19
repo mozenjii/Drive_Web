@@ -19,6 +19,12 @@ import re
 import sys
 from collections import OrderedDict
 
+# These pages are other people's marketing copy: curly quotes, em dashes, the
+# occasional emoji. On Windows a piped stdout defaults to cp1252 and the whole
+# run dies on the first one, halfway through a client's facts.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 PATTERNS = OrderedDict([

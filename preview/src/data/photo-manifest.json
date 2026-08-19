@@ -418,6 +418,77 @@
       }
     ]
   },
+  "/clients/bonita-driving-school/car.jpeg": {
+    "hash": "6d9921ffff32",
+    "width": 2048,
+    "height": 1536,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAwABABsJYwCdADZN3oAAP7ck6I6qcTMv97zyl6IG9WOZlCoz5Emg3tH3cF6ZM3+AAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/bonita-driving-school/car-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/bonita-driving-school/car-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/bonita-driving-school/car-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/bonita-driving-school/car-1600.webp"
+      }
+    ]
+  },
+  "/clients/bonita-driving-school/logo.png": {
+    "hash": "eed381499288",
+    "width": 500,
+    "height": 500,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRiIBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSKkAAAANcBjJdtq8r4hMYei/OwbJbEEYSoiICcA/iQnBb37w8Q2JbDJWt9bY1t8AEsV6NRbozO5Ye4AV602GAB7N9tBFyOkmc7WjJCdzsB56Mo7tDSSLPBjriGvlIgAmNe86D9AN7+lGN9x854QShJtro9BAbywrCoHe1jSVwHA5NHKsYluF8ZQBodrtG+JwNF4LALfB7o7GQU/nkgDgNtQX27FEjwhvb8ENHh8BAFZQOCBSAAAA8AEAnQEqEAAQAAQAbCWkAA+PDuEm4RhwAP6q+WHGdOnzHfT2wGrZk3DByb2IxypGg4P7jmCJEGr5wFswfngLMD012QINzZrzYJ6zroFl/1wQAA==",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/bonita-driving-school/logo-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/bonita-driving-school/logo-400.webp"
+      },
+      {
+        "w": 500,
+        "src": "/d/clients/bonita-driving-school/logo-500.webp"
+      }
+    ]
+  },
+  "/clients/bonita-driving-school/student-certificate.jpeg": {
+    "hash": "79e2f7fc90e9",
+    "width": 1440,
+    "height": 1920,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACQAwCdASoQABUAPxl6slCsqCSisAgBkCMJQBOgA8eNjF9MVmxAAP6rkx9sT0G6PAiBPmaJEsDhh9ZU5ZpHy26EYNqUA2BN5QAMVrpiyacpsGbwAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/bonita-driving-school/student-certificate-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/bonita-driving-school/student-certificate-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/bonita-driving-school/student-certificate-1200.webp"
+      },
+      {
+        "w": 1440,
+        "src": "/d/clients/bonita-driving-school/student-certificate-1440.webp"
+      }
+    ]
+  },
   "/clients/dollar-driving-school/hero.jpg": {
     "hash": "b21db84d2df9",
     "width": 1000,
@@ -2118,6 +2189,31 @@
       {
         "w": 1600,
         "src": "/d/clients/turlock-driving-school/reviews-1600.webp"
+      }
+    ]
+  },
+  "/clients/vip-driving-school/car.jpg": {
+    "hash": "7705d5d2c01d",
+    "width": 1920,
+    "height": 1440,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoQAAwABABsJYgC7ADQzBtZ/AAA8/C/1nslg9uTYLkQ5ne1SXEhVxEAAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/vip-driving-school/car-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/vip-driving-school/car-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/vip-driving-school/car-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/vip-driving-school/car-1600.webp"
       }
     ]
   },

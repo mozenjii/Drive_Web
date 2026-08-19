@@ -1,5 +1,8 @@
 import type { Client } from '@/lib/types';
 import { a1Driving } from './clients/a1-driving-school-bakersfield';
+import { bonitaDriving } from './clients/bonita-driving-school';
+import { vipDriving } from './clients/vip-driving-school';
+import { americanBestCali } from './clients/american-best-cali-driving-school';
 import { academicDriving } from './clients/academic-driving-school';
 import { allgoodDriving } from './clients/allgood-driving-school';
 import { drivingSchoolForYou } from './clients/driving-school-for-you';
@@ -49,6 +52,11 @@ export const clients: Client[] = [
   a1Driving,
   drivingSchoolForYou,
   allgoodDriving,
+
+  // Tier A — the second twenty.
+  bonitaDriving,
+  vipDriving,
+  americanBestCali,
 ];
 
 export const clientBySlug = new Map(clients.map((c) => [c.slug, c]));
