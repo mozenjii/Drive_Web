@@ -460,6 +460,27 @@
       }
     ]
   },
+  "/clients/bolsa-driving-school/logo.jpg": {
+    "hash": "946460511e0c",
+    "width": 410,
+    "height": 100,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoQAAQABABsJZQCdAEO+LrHgAD+5/fE1BQzoG6AAAA=",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/bolsa-driving-school/logo-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/bolsa-driving-school/logo-400.webp"
+      },
+      {
+        "w": 410,
+        "src": "/d/clients/bolsa-driving-school/logo-410.webp"
+      }
+    ]
+  },
   "/clients/bonita-driving-school/car.jpeg": {
     "hash": "6d9921ffff32",
     "width": 2048,
