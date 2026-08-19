@@ -7,6 +7,7 @@ import { abDriving } from './clients/ab-driving-school';
 import { worldDriving } from './clients/world-driving-school';
 import { aCaliforniaDriving } from './clients/a-california-driving-school';
 import { bolsaDriving } from './clients/bolsa-driving-school';
+import { driveAcademy } from './clients/drive-academy-driving-school';
 import { academicDriving } from './clients/academic-driving-school';
 import { allgoodDriving } from './clients/allgood-driving-school';
 import { drivingSchoolForYou } from './clients/driving-school-for-you';
@@ -65,6 +66,7 @@ export const clients: Client[] = [
   worldDriving,
   aCaliforniaDriving,
   bolsaDriving,
+  driveAcademy,
 ];
 
 export const clientBySlug = new Map(clients.map((c) => [c.slug, c]));

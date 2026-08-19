@@ -686,6 +686,31 @@
       }
     ]
   },
+  "/clients/drive-academy-driving-school/car.jpg": {
+    "hash": "9d1ebc5353e1",
+    "width": 2560,
+    "height": 1920,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQAAwABABsJQBOgBwsoKNhGYAA/lP68g9qdSiqaLxZAQBFkfB4RLKL8hQeL2AA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/drive-academy-driving-school/car-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/drive-academy-driving-school/car-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/drive-academy-driving-school/car-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/drive-academy-driving-school/car-1600.webp"
+      }
+    ]
+  },
   "/clients/easy-street-driving-school/car.jpg": {
     "hash": "6554c707603c",
     "width": 800,
