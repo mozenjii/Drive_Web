@@ -1188,6 +1188,90 @@
       }
     ]
   },
+  "/clients/gnc-driving-school/class.jpg": {
+    "hash": "5111cfcfd10f",
+    "width": 1600,
+    "height": 1200,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoQAAwABABsJZQC7AEJVYifiAD+l5mUpHKtz4pdSNKAX4AR70F/zwAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/gnc-driving-school/class-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/gnc-driving-school/class-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/gnc-driving-school/class-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/gnc-driving-school/class-1600.webp"
+      }
+    ]
+  },
+  "/clients/gnc-driving-school/classroom.jpg": {
+    "hash": "6c58202de823",
+    "width": 1600,
+    "height": 1200,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQAAwABABsJZACdAD0LK+IigAA/o9jW3sVh/kQNYjmVuQ8JaFNDq+CkU/AAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/gnc-driving-school/classroom-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/gnc-driving-school/classroom-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/gnc-driving-school/classroom-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/gnc-driving-school/classroom-1600.webp"
+      }
+    ]
+  },
+  "/clients/gnc-driving-school/logo.png": {
+    "hash": "5c7df492af0e",
+    "width": 253,
+    "height": 95,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4WAoAAAAQAAAADwAABQAAQUxQSFMAAAAFcBxJduqsmM8/BLLzz8d3RrGURkSE1ta44ATH9/qKuSxSMKUZ4XzE9P/F8yhdKnTGCfr/81/LtxkzG6WEjP8nAZNZRQYAjPjLF22d4hSYQM+xAABWUDggIgAAAHABAJ0BKhAABgAFgGwljAJ0AUAAAP7g6aTGVI55W0Ek8AA=",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/gnc-driving-school/logo-200.webp"
+      },
+      {
+        "w": 253,
+        "src": "/d/clients/gnc-driving-school/logo-253.webp"
+      }
+    ]
+  },
+  "/clients/guardian-angel-driving-school/logo.png": {
+    "hash": "cc88fec4bd35",
+    "width": 391,
+    "height": 200,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSGkAAAANcBhJsqrcfXc3IDbSthjc4dltGhERW3N7aFHftwJ7Asxj466XHwKfPbCImjfl//bWxB5ICMeknwooJSTWQnj3kmJoYo/JGeWYTpeLqfq2CMk5AUi/n8oriiRk8kIfAjGOA4+J/Cj2YQAAVlA4IDAAAACwAQCdASoQAAgABABsJbACdADx9UAAAP32rgdSwPt/rQWalcc/f3dAV8D0sdDQAAA=",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/guardian-angel-driving-school/logo-200.webp"
+      },
+      {
+        "w": 391,
+        "src": "/d/clients/guardian-angel-driving-school/logo-391.webp"
+      }
+    ]
+  },
   "/clients/h-and-g-best-driving-school/hero.jpg": {
     "hash": "e836df860e9f",
     "width": 1800,

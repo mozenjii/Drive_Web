@@ -15,6 +15,10 @@ from collections import Counter
 from PIL import Image
 
 AA = 4.5
+# Aim above the line, not at it. See the note in palette.py: three sampled
+# palettes printed as "4.50"/"4.51" here and were rejected by brand.test.ts,
+# which measures the ratio without rounding.
+AA_TARGET = 4.62
 
 
 def srgb_to_lin(c: float) -> float:
@@ -109,8 +113,8 @@ def block(path: str) -> str:
     p_raw = primary["rgb"]
     a_raw = accent["rgb"] if accent else None
 
-    p = darken_to(p_raw, AA)
-    a = darken_to(a_raw, AA) if a_raw else darken_to(mix(p_raw, (140, 90, 30), 0.75), AA)
+    p = darken_to(p_raw, AA_TARGET)
+    a = darken_to(a_raw, AA_TARGET) if a_raw else darken_to(mix(p_raw, (140, 90, 30), 0.75), AA_TARGET)
 
     p_dark = darken_to(p, contrast(p, (255, 255, 255)) * 1.28)
     a_dark = darken_to(a, contrast(a, (255, 255, 255)) * 1.28)
@@ -123,7 +127,7 @@ def block(path: str) -> str:
     border_soft = lighten_to(p, 0.915)
     # Muted text should read as grey that happens to belong to the brand family,
     # not as a washed-out version of the brand itself.
-    fg_dim = darken_to(mix(p, (108, 108, 120), 0.7), AA)
+    fg_dim = darken_to(mix(p, (108, 108, 120), 0.7), AA_TARGET)
 
     lines = [
         f"  // sampled from {path.split(chr(92))[-1]}",

@@ -11,6 +11,12 @@ import colorsys
 import sys
 
 AA = 4.5
+# Darken to a MARGIN above the line, not to the line itself. Rounding to two
+# decimals in this tool's own output hid three palettes that measured 4.4915,
+# 4.4958 and 4.5146 — all printed as "4.50" or "4.51" and passing, all rejected
+# by preview/src/lib/brand.test.ts, which computes the ratio properly. Half a
+# percent of lightness costs nothing and keeps the brand its own hue.
+AA_TARGET = 4.62
 WHITE = (255, 255, 255)
 
 
@@ -61,8 +67,8 @@ def mix(a, b, t):
 
 def block(name: str, primary_hex: str, accent_hex: str) -> None:
     praw, araw = parse(primary_hex), parse(accent_hex)
-    p = darken_to(praw, AA)
-    a = darken_to(araw, AA)
+    p = darken_to(praw, AA_TARGET)
+    a = darken_to(araw, AA_TARGET)
     p_dark = darken_to(p, contrast(p) * 1.2)
     a_dark = darken_to(a, contrast(a) * 1.2)
     p_soft = tint(praw, 0.935)
@@ -71,7 +77,7 @@ def block(name: str, primary_hex: str, accent_hex: str) -> None:
     bg = tint(praw, 0.973)
     border = tint(praw, 0.865)
     border_soft = tint(praw, 0.925)
-    fg_dim = darken_to(mix(p, (108, 108, 118), 0.66), AA)
+    fg_dim = darken_to(mix(p, (108, 108, 118), 0.66), AA_TARGET)
 
     checks = {
         "primary/white": contrast(p),
