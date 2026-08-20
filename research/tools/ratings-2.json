@@ -34,11 +34,6 @@
     "source": "Google",
     "value": "4.2"
   },
-  "coastline-formerly-drive-america": {
-    "count": "362",
-    "source": "Google",
-    "value": "4.8"
-  },
   "commercial-drivers-license-of-california": {
     "count": "113",
     "source": "Google",
@@ -88,6 +83,11 @@
     "count": "68",
     "source": "Google",
     "value": "4.9"
+  },
+  "teen-driving-school": {
+    "value": "4.6",
+    "count": "63",
+    "source": "Google"
   },
   "vip-driving-school": {
     "count": "237",

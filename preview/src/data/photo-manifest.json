@@ -552,6 +552,27 @@
       }
     ]
   },
+  "/clients/budget-driving-school-chula-vista/logo.jpg": {
+    "hash": "4a35fe820888",
+    "width": 452,
+    "height": 129,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoQAAUABABsJagCdLoAAudRdUAA/duoZcoyoEvUjDF/H/dus/brvEAA",
+    "variants": [
+      {
+        "w": 200,
+        "src": "/d/clients/budget-driving-school-chula-vista/logo-200.webp"
+      },
+      {
+        "w": 400,
+        "src": "/d/clients/budget-driving-school-chula-vista/logo-400.webp"
+      },
+      {
+        "w": 452,
+        "src": "/d/clients/budget-driving-school-chula-vista/logo-452.webp"
+      }
+    ]
+  },
   "/clients/dollar-driving-school/hero.jpg": {
     "hash": "b21db84d2df9",
     "width": 1000,
