@@ -34,6 +34,11 @@ function publishedNumbers(client: Client): Set<string> {
   add(client.licence);
   add(client.founded);
   add(client.address);
+  // The email is published data too, and some of them carry digits:
+  // actiondriving888@gmail.com made this test fail on "888" the first time a
+  // client's address had a number in it. The reply was quoting their own contact
+  // details, which is the one thing the assistant is unambiguously allowed to do.
+  add(client.email);
   add(client.areasNote);
   add(client.schedulingNote);
   client.phones.forEach((p) => { add(p.display); add(p.raw); add(p.label); });
