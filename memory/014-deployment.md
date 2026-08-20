@@ -152,3 +152,27 @@ published 293 pages whose every `canonical` and `og:url` was a bare path with no
 invisible on the page, fatal to a pasted link, and the same fault as the
 `preview.epoches.com` bug above. Empty and blank now fall through to the default, pinned by
 `seo.test.ts`.
+
+## 2026-08-20 — The wrangler session has drifted to the company account again
+
+`wrangler whoami` now reports **epochesofficial@gmail.com**, account
+`264259a526f92bbef106ca307dc8d541` — the **Epoches company** account. The `epoches`
+Pages project lives on the personal account, `bf90a73e76dc962d466924f51a2cd2fe`, and
+a deploy attempt against the company session failed with `Authentication error
+[code: 10000]`.
+
+**No deploy was made.** This is the same wrong turn as 2026-08-12, and the lesson holds:
+being authenticated answers *can I deploy*, never *should this land here*. A successful
+deploy from this session would have published 439 pages of twenty-nine clients' previews
+to the wrong Cloudflare account.
+
+Re-authentication is an interactive browser OAuth flow, so it cannot be done from a
+non-interactive session:
+
+```
+npx wrangler login          # sign in as mohibbasra342@gmail.com
+npx wrangler whoami         # must show bf90a73e76dc962d466924f51a2cd2fe
+cd preview && npx wrangler pages deploy out --project-name=epoches --branch=main
+```
+
+Checking `whoami` before every manual deploy is now the rule, not a nicety.
