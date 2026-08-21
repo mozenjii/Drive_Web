@@ -14,6 +14,8 @@ import { guardianAngel } from './clients/guardian-angel-driving-school';
 import { gncDriving } from './clients/gnc-driving-school';
 import { fastLearning } from './clients/fast-learning-driving-school';
 import { teenDrivingSchool } from './clients/teen-driving-school';
+import { easyAffordable } from './clients/easy-affordable-driving-school';
+import { premierDriving } from './clients/premier-driving';
 import { academicDriving } from './clients/academic-driving-school';
 import { allgoodDriving } from './clients/allgood-driving-school';
 import { drivingSchoolForYou } from './clients/driving-school-for-you';
@@ -79,6 +81,8 @@ export const clients: Client[] = [
   gncDriving,
   fastLearning,
   teenDrivingSchool,
+  easyAffordable,
+  premierDriving,
 ];
 
 export const clientBySlug = new Map(clients.map((c) => [c.slug, c]));
