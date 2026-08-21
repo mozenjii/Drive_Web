@@ -47,8 +47,7 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
   const programsWithPages = (client.programs ?? []).filter((p) => p.slug);
   const roadTest = photoFor(client, 'roadTest');
   const vehicle = photoFor(client, 'vehicle');
-  const atmosphere =
-    photoFor(client, 'support') ?? roadTest ?? vehicle ?? photoFor(client, 'hero')!;
+  const atmosphere = photoFor(client, 'hero')!;
   /** Enough programme photography to be worth composing around. */
   const imageCards = programsWithPages.filter((p) => p.image).length >= 2;
   const photoCards = programsWithPages.slice(0, imageCards ? 4 : 3);

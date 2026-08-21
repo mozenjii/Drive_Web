@@ -802,8 +802,8 @@
   inset: 0;
   z-index: -1;
   background:
-    linear-gradient(110deg, rgba(var(--wash), 0.94) 0%, rgba(var(--wash), 0.78) 48%, rgba(var(--wash), 0.62) 100%),
-    linear-gradient(0deg, rgba(var(--wash), 0.42), rgba(var(--wash), 0.08));
+    linear-gradient(110deg, rgba(var(--wash), 0.84) 0%, rgba(var(--wash), 0.62) 48%, rgba(var(--wash), 0.42) 100%),
+    linear-gradient(0deg, rgba(var(--wash), 0.3), rgba(var(--wash), 0.04));
 }
 .locationSectionInner { position: relative; z-index: 1; }
 .locationSection .sectionHead { max-width: 64ch; }
