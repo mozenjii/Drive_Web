@@ -12,7 +12,7 @@ const componentsCss = readFileSync(path.join(appDir, 'components.css'), 'utf8');
 
 describe('photo-led home-page experience', () => {
   it('uses client-specific photography as atmosphere for locations and the closing CTA', () => {
-    expect(homeSource).toContain("const atmosphere =");
+    expect(homeSource).toContain("const atmosphere = photoFor(client, 'hero')!;");
     expect(homeSource).toContain('className="section locationSection"');
     expect(homeSource).toContain('className="section finalCtaSection"');
     expect(homeSource.match(/className="sectionBackdrop"/g)).toHaveLength(2);
