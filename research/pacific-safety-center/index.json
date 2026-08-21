@@ -1,0 +1,651 @@
+{
+  "slug": "pacific-safety-center",
+  "base": "https://psc411.com/",
+  "resolved": "https://psc411.com/",
+  "pages": [
+    {
+      "url": "https://psc411.com/",
+      "title": "Pacific Safety Center | Workplace & Driver Safety Training San Diego Since 1953",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 6854
+    },
+    {
+      "url": "https://psc411.com/strategic-partners",
+      "title": "",
+      "status": 200,
+      "file": "01-strategic-partners.txt",
+      "chars": 4935
+    },
+    {
+      "url": "https://psc411.com/consulting-services",
+      "title": "",
+      "status": 200,
+      "file": "02-consulting-services.txt",
+      "chars": 3098
+    },
+    {
+      "url": "https://psc411.com/workplace-training",
+      "title": "",
+      "status": 200,
+      "file": "03-workplace-training.txt",
+      "chars": 3137
+    },
+    {
+      "url": "https://psc411.com/training-faqs",
+      "title": "",
+      "status": 200,
+      "file": "04-training-faqs.txt",
+      "chars": 3488
+    },
+    {
+      "url": "https://psc411.com/workplace-training/",
+      "title": "",
+      "status": 200,
+      "file": "05-workplace-training.txt",
+      "chars": 3137
+    },
+    {
+      "url": "https://psc411.com/drivers-ed-for-teens",
+      "title": "",
+      "status": 200,
+      "file": "06-drivers-ed-for-teens.txt",
+      "chars": 3971
+    },
+    {
+      "url": "https://psc411.com/drivers-ed-for-adults",
+      "title": "",
+      "status": 200,
+      "file": "07-drivers-ed-for-adults.txt",
+      "chars": 3935
+    },
+    {
+      "url": "https://psc411.com/drivers-education",
+      "title": "",
+      "status": 200,
+      "file": "08-drivers-education.txt",
+      "chars": 3744
+    },
+    {
+      "url": "https://psc411.com/drivers-ed-resources",
+      "title": "",
+      "status": 200,
+      "file": "09-drivers-ed-resources.txt",
+      "chars": 1819
+    },
+    {
+      "url": "https://psc411.com/drivers-education-faqs",
+      "title": "",
+      "status": 200,
+      "file": "10-drivers-education-faqs.txt",
+      "chars": 4630
+    },
+    {
+      "url": "https://psc411.com/about",
+      "title": "",
+      "status": 200,
+      "file": "11-about.txt",
+      "chars": 6103
+    },
+    {
+      "url": "https://psc411.com/about/",
+      "title": "",
+      "status": 200,
+      "file": "12-about.txt",
+      "chars": 6103
+    },
+    {
+      "url": "https://psc411.com/COSS-reviews",
+      "title": "",
+      "status": 200,
+      "file": "13-coss-reviews.txt",
+      "chars": 4464
+    },
+    {
+      "url": "https://psc411.com/membership-reviews",
+      "title": "",
+      "status": 200,
+      "file": "14-membership-reviews.txt",
+      "chars": 2439
+    },
+    {
+      "url": "https://psc411.com/consulting-reviews",
+      "title": "",
+      "status": 200,
+      "file": "15-consulting-reviews.txt",
+      "chars": 3553
+    },
+    {
+      "url": "https://psc411.com/coss-reviews",
+      "title": "",
+      "status": 200,
+      "file": "16-coss-reviews.txt",
+      "chars": 4464
+    },
+    {
+      "url": "https://psc411.com/coss-faqs",
+      "title": "",
+      "status": 200,
+      "file": "17-coss-faqs.txt",
+      "chars": 3261
+    },
+    {
+      "url": "https://psc411.com/keep-em-safe-faqs",
+      "title": "",
+      "status": 200,
+      "file": "18-keep-em-safe-faqs.txt",
+      "chars": 6936
+    },
+    {
+      "url": "https://psc411.com/motorcycle-faqs",
+      "title": "",
+      "status": 200,
+      "file": "19-motorcycle-faqs.txt",
+      "chars": 3708
+    },
+    {
+      "url": "https://psc411.com/consulting-faqs",
+      "title": "",
+      "status": 200,
+      "file": "20-consulting-faqs.txt",
+      "chars": 2216
+    },
+    {
+      "url": "https://psc411.com/contact-us",
+      "title": "",
+      "status": 200,
+      "file": "21-contact-us.txt",
+      "chars": 1916
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://psc411.com/assets/images/facebook-dark.svg",
+      "file": "facebook-dark.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 588
+    },
+    {
+      "url": "https://psc411.com/assets/images/linkedin.svg",
+      "file": "linkedin.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 582
+    },
+    {
+      "url": "https://psc411.com/assets/images/yelp.svg",
+      "file": "yelp.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2034
+    },
+    {
+      "url": "https://psc411.com/assets/images/charity-pin-green.svg",
+      "file": "charity-pin-green.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2096
+    },
+    {
+      "url": "https://psc411.com/assets/images/charity-phone-green.svg",
+      "file": "charity-phone-green.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2564
+    },
+    {
+      "url": "https://psc411.com/assets/images/charity-clock-green.svg",
+      "file": "charity-clock-green.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 1701
+    },
+    {
+      "url": "https://psc411.com/assets/images/logo.webp",
+      "file": "logo.webp",
+      "hint": "img",
+      "w": 157,
+      "h": 90,
+      "bytes": 3100
+    },
+    {
+      "url": "https://psc411.com/assets/images/down.svg",
+      "file": "down.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 791
+    },
+    {
+      "url": "https://psc411.com/assets/images/membership.svg",
+      "file": "membership.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2936
+    },
+    {
+      "url": "https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg",
+      "file": "Icons-2Fsun.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2436
+    },
+    {
+      "url": "https://psc411.com/assets/images/h2.jpg",
+      "file": "h2.jpg",
+      "hint": "img",
+      "w": 726,
+      "h": 360,
+      "bytes": 36072
+    },
+    {
+      "url": "https://psc411.com/assets/images/red-arrow-right.svg",
+      "file": "red-arrow-right.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 1191
+    },
+    {
+      "url": "https://psc411.com/assets/images/h1.jpg",
+      "file": "h1.jpg",
+      "hint": "img",
+      "w": 726,
+      "h": 360,
+      "bytes": 30819
+    },
+    {
+      "url": "https://psc411.com/assets/images/h3.jpg",
+      "file": "h3.jpg",
+      "hint": "img",
+      "w": 726,
+      "h": 360,
+      "bytes": 42234
+    },
+    {
+      "url": "https://psc411.com/assets/images/h4.jpg",
+      "file": "h4.jpg",
+      "hint": "img",
+      "w": 726,
+      "h": 360,
+      "bytes": 27414
+    },
+    {
+      "url": "https://psc411.com/assets/images/training1.jpg",
+      "file": "training1.jpg",
+      "hint": "img",
+      "w": 690,
+      "h": 480,
+      "bytes": 36238
+    },
+    {
+      "url": "https://psc411.com/assets/images/training2.jpg",
+      "file": "training2.jpg",
+      "hint": "img",
+      "w": 690,
+      "h": 480,
+      "bytes": 33355
+    },
+    {
+      "url": "https://psc411.com/assets/images/training3.jpg",
+      "file": "training3.jpg",
+      "hint": "img",
+      "w": 690,
+      "h": 480,
+      "bytes": 55662
+    },
+    {
+      "url": "https://psc411.com/assets/images/training4.jpg",
+      "file": "training4.jpg",
+      "hint": "img",
+      "w": 690,
+      "h": 480,
+      "bytes": 37636
+    },
+    {
+      "url": "https://psc411.com/assets/images/drivers-ed-a9931289dfa54dd7900ef7c617be0f25.jpeg",
+      "file": "drivers-ed-a9931289dfa54dd7900ef7c617be0f25.jpeg",
+      "hint": "img",
+      "w": 1328,
+      "h": 858,
+      "bytes": 98048
+    },
+    {
+      "url": "https://psc411.com/assets/images/green-blob.svg",
+      "file": "green-blob.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 1307
+    },
+    {
+      "url": "https://psc411.com/assets/images/squiggle-arrow2.svg",
+      "file": "squiggle-arrow2.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2363
+    },
+    {
+      "url": "https://psc411.com/assets/images/circle-shape.svg",
+      "file": "circle-shape.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 9085
+    },
+    {
+      "url": "https://psc411.com/assets/images/motorcycle.png",
+      "file": "motorcycle.png",
+      "hint": "img",
+      "w": 1320,
+      "h": 1098,
+      "bytes": 466647
+    },
+    {
+      "url": "https://psc411.com/assets/images/seeds.svg",
+      "file": "seeds.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 10483
+    },
+    {
+      "url": "https://psc411.com/assets/images/green-line.svg",
+      "file": "green-line.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2425
+    },
+    {
+      "url": "https://psc411.com/assets/images/about1.jpg",
+      "file": "about1.jpg",
+      "hint": "img",
+      "w": 1114,
+      "h": 1392,
+      "bytes": 140786
+    },
+    {
+      "url": "https://psc411.com/assets/images/waves-3.svg",
+      "file": "waves-3.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 173054
+    },
+    {
+      "url": "https://psc411.com/assets/images/training.jpg",
+      "file": "training.jpg",
+      "hint": "img",
+      "w": 1314,
+      "h": 1352,
+      "bytes": 84672
+    },
+    {
+      "url": "https://psc411.com/assets/images/member-graphic.svg",
+      "file": "member-graphic.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 9096
+    },
+    {
+      "url": "https://psc411.com/assets/images/darby.jpg",
+      "file": "darby.jpg",
+      "hint": "img",
+      "w": 328,
+      "h": 407,
+      "bytes": 10245
+    },
+    {
+      "url": "https://psc411.com/assets/images/elaina.jpg",
+      "file": "elaina.jpg",
+      "hint": "img",
+      "w": 328,
+      "h": 407,
+      "bytes": 15925
+    },
+    {
+      "url": "https://psc411.com/assets/images/lawrence.jpg",
+      "file": "lawrence.jpg",
+      "hint": "img",
+      "w": 480,
+      "h": 728,
+      "bytes": 35654
+    },
+    {
+      "url": "https://psc411.com/assets/images/kirsten.jpg",
+      "file": "kirsten.jpg",
+      "hint": "img",
+      "w": 328,
+      "h": 407,
+      "bytes": 15257
+    },
+    {
+      "url": "https://psc411.com/assets/images/quote-left-green.svg",
+      "file": "quote-left-green.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 587
+    },
+    {
+      "url": "https://psc411.com/assets/images/cta.jpg",
+      "file": "cta.jpg",
+      "hint": "img",
+      "w": 2000,
+      "h": 1000,
+      "bytes": 125157
+    },
+    {
+      "url": "https://psc411.com/assets/images/splash.png",
+      "file": "splash.png",
+      "hint": "img",
+      "w": 1920,
+      "h": 109,
+      "bytes": 51202
+    },
+    {
+      "url": "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/splash-dark.png",
+      "file": "splash-dark.png",
+      "hint": "img",
+      "w": 1920,
+      "h": 109,
+      "bytes": 51274
+    },
+    {
+      "url": "https://psc411.com/assets/images/phone-stroke.svg",
+      "file": "phone-stroke.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 822
+    },
+    {
+      "url": "https://psc411.com/assets/images/email-stroke.svg",
+      "file": "email-stroke.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 336
+    },
+    {
+      "url": "https://psc411.com/assets/images/pin-stroke.svg",
+      "file": "pin-stroke.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 465
+    },
+    {
+      "url": "https://psc411.com/assets/images/int.jpg",
+      "file": "int.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 1282,
+      "bytes": 253949
+    },
+    {
+      "url": "https://psc411.com/assets/images/asf.jpg",
+      "file": "asf.jpg",
+      "hint": "img",
+      "w": 423,
+      "h": 112,
+      "bytes": 7381
+    },
+    {
+      "url": "https://psc411.com/assets/images/aasc.svg",
+      "file": "aasc.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 16543
+    },
+    {
+      "url": "https://psc411.com/assets/images/coss.png",
+      "file": "coss.png",
+      "hint": "img",
+      "w": 300,
+      "h": 187,
+      "bytes": 19320
+    },
+    {
+      "url": "https://psc411.com/assets/images/CTYSEALC-logo.jpg",
+      "file": "CTYSEALC-logo.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 300,
+      "bytes": 122648
+    },
+    {
+      "url": "https://psc411.com/assets/images/drivers-ed.jpg",
+      "file": "drivers-ed.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 1280,
+      "bytes": 297523
+    },
+    {
+      "url": "https://psc411.com/assets/images/green-hand.svg",
+      "file": "green-hand.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 826
+    },
+    {
+      "url": "https://psc411.com/assets/images/blue-hand.svg",
+      "file": "blue-hand.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 828
+    },
+    {
+      "url": "https://psc411.com/assets/images/large-waves.svg",
+      "file": "large-waves.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 110214
+    },
+    {
+      "url": "https://psc411.com/assets/images/consulting-int.jpg",
+      "file": "consulting-int.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 1280,
+      "bytes": 383617
+    },
+    {
+      "url": "https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg",
+      "file": "Images-2FGraphics-2Fwaves-3.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 173054
+    },
+    {
+      "url": "https://psc411.com/assets/images/partner1.png",
+      "file": "partner1.png",
+      "hint": "img",
+      "w": 150,
+      "h": 94,
+      "bytes": 24664
+    },
+    {
+      "url": "https://psc411.com/assets/images/collage.jpg",
+      "file": "collage.jpg",
+      "hint": "img",
+      "w": 724,
+      "h": 724,
+      "bytes": 175603
+    },
+    {
+      "url": "https://psc411.com/assets/images/coss.jpg",
+      "file": "coss.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 1280,
+      "bytes": 298909
+    },
+    {
+      "url": "https://psc411.com/assets/images/teen-driving.jpg",
+      "file": "teen-driving.jpg",
+      "hint": "img",
+      "w": 1280,
+      "h": 853,
+      "bytes": 133115
+    },
+    {
+      "url": "https://psc411.com/assets/images/adults.jpg",
+      "file": "adults.jpg",
+      "hint": "img",
+      "w": 1280,
+      "h": 853,
+      "bytes": 148225
+    },
+    {
+      "url": "https://psc411.com/assets/images/resources.jpg",
+      "file": "resources.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 1280,
+      "bytes": 146464
+    },
+    {
+      "url": "https://psc411.com/assets/images/hands.jpg",
+      "file": "hands.jpg",
+      "hint": "img",
+      "w": 1920,
+      "h": 2877,
+      "bytes": 728360
+    },
+    {
+      "url": "https://psc411.com/assets/images/eclipses.svg",
+      "file": "eclipses.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 301
+    },
+    {
+      "url": "https://psc411.com/assets/images/stripes-long.svg",
+      "file": "stripes-long.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 2883
+    }
+  ]
+}

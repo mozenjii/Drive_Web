@@ -1,0 +1,152 @@
+{
+  "slug": "drive-academy-driving-school",
+  "base": "http://www.driveacademyca.com/",
+  "resolved": "https://driveacademyca.com/",
+  "pages": [
+    {
+      "url": "https://driveacademyca.com/",
+      "title": "Drive Academy | Driving School Teen Adults Driving Lessons",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 3774
+    },
+    {
+      "url": "https://driveacademyca.com/prices/",
+      "title": "Prices | Drive Academy",
+      "status": 200,
+      "file": "01-prices.txt",
+      "chars": 972
+    },
+    {
+      "url": "https://driveacademyca.com/adult-driving/",
+      "title": "Adult Driving | Drive Academy",
+      "status": 200,
+      "file": "02-adult-driving.txt",
+      "chars": 2552
+    },
+    {
+      "url": "https://driveacademyca.com/about-us/",
+      "title": "About Us | Drive Academy",
+      "status": 200,
+      "file": "03-about-us.txt",
+      "chars": 1884
+    },
+    {
+      "url": "https://driveacademyca.com/contact-us/",
+      "title": "Contact Us | Drive Academy",
+      "status": 200,
+      "file": "04-contact-us.txt",
+      "chars": 973
+    },
+    {
+      "url": "https://driveacademyca.com/parents-2/",
+      "title": "Parents | Drive Academy",
+      "status": 200,
+      "file": "05-parents-2.txt",
+      "chars": 2891
+    },
+    {
+      "url": "https://driveacademyca.com/parents/",
+      "title": "DMV | Drive Academy",
+      "status": 200,
+      "file": "06-parents.txt",
+      "chars": 1053
+    },
+    {
+      "url": "https://driveacademyca.com/author/driving-school/",
+      "title": "Driving School | Drive Academy",
+      "status": 200,
+      "file": "07-author-driving-school.txt",
+      "chars": 682
+    },
+    {
+      "url": "https://driveacademyca.com/author/driveacademywa/",
+      "title": "drive academy | Drive Academy",
+      "status": 200,
+      "file": "08-author-driveacademywa.txt",
+      "chars": 680
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/04/TEen-Image.jpg",
+      "file": "TEen-Image.jpg",
+      "hint": "img",
+      "w": 472,
+      "h": 316,
+      "bytes": 22193
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/04/TEen-Image-300x201.jpg",
+      "file": "TEen-Image-300x201.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 201,
+      "bytes": 12584
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/08/cropped-Drive-Academy-CA-Poster-192x192.jpg",
+      "file": "cropped-Drive-Academy-CA-Poster-192x192.jpg",
+      "hint": "icon",
+      "w": 192,
+      "h": 192,
+      "bytes": 11283
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/08/cropped-Drive-Academy-CA-Poster-180x180.jpg",
+      "file": "cropped-Drive-Academy-CA-Poster-180x180.jpg",
+      "hint": "icon",
+      "w": 180,
+      "h": 180,
+      "bytes": 10258
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/08/pink-sticker.jpg",
+      "file": "pink-sticker.jpg",
+      "hint": "img",
+      "w": 437,
+      "h": 145,
+      "bytes": 14249
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/08/OIP.jpg",
+      "file": "OIP.jpg",
+      "hint": "img",
+      "w": 425,
+      "h": 207,
+      "bytes": 22216
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/04/adult-image-1.jpg",
+      "file": "adult-image-1.jpg",
+      "hint": "img",
+      "w": 474,
+      "h": 267,
+      "bytes": 25365
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/04/adult-image-1-300x169.jpg",
+      "file": "adult-image-1-300x169.jpg",
+      "hint": "img",
+      "w": 300,
+      "h": 169,
+      "bytes": 13401
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2024/08/nissan-3-blurred-4-scaled.jpg",
+      "file": "nissan-3-blurred-4-scaled.jpg",
+      "hint": "img",
+      "w": 2560,
+      "h": 1920,
+      "bytes": 375695
+    },
+    {
+      "url": "https://driveacademyca.com/wp-content/uploads/2016/03/iStock_000009849440Small1.jpg",
+      "file": "iStock_000009849440Small1.jpg",
+      "hint": "img",
+      "w": 873,
+      "h": 550,
+      "bytes": 641501
+    }
+  ]
+}

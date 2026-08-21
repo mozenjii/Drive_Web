@@ -1,0 +1,318 @@
+{
+  "slug": "teen-driving-school",
+  "base": "http://www.teendrivingschool.com/",
+  "resolved": "http://www.teendrivingschool.com/",
+  "pages": [
+    {
+      "url": "http://www.teendrivingschool.com/",
+      "title": "Teen Driving School",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 840
+    },
+    {
+      "url": "http://www.teendrivingschool.com/other-services.html",
+      "title": "Services",
+      "status": 200,
+      "file": "01-other-services-html.txt",
+      "chars": 300
+    },
+    {
+      "url": "http://www.teendrivingschool.com/other-services/lost-certificates.html",
+      "title": "Lost Certificates",
+      "status": 200,
+      "file": "02-other-services-lost-certificates-html.txt",
+      "chars": 487
+    },
+    {
+      "url": "http://www.teendrivingschool.com/services",
+      "title": "403",
+      "status": 403,
+      "file": "03-services.txt",
+      "chars": 105
+    },
+    {
+      "url": "http://www.teendrivingschool.com/driving-lessons.html",
+      "title": "Behind the wheel for teens",
+      "status": 200,
+      "file": "04-driving-lessons-html.txt",
+      "chars": 888
+    },
+    {
+      "url": "http://www.teendrivingschool.com/home.html",
+      "title": "Teen Driving School",
+      "status": 200,
+      "file": "05-home-html.txt",
+      "chars": 840
+    },
+    {
+      "url": "http://www.teendrivingschool.com/home/our-license.html",
+      "title": "Our DMV License",
+      "status": 200,
+      "file": "06-home-our-license-html.txt",
+      "chars": 283
+    },
+    {
+      "url": "http://www.teendrivingschool.com/home/policy.html",
+      "title": "School Policies",
+      "status": 200,
+      "file": "07-home-policy-html.txt",
+      "chars": 1527
+    },
+    {
+      "url": "http://www.teendrivingschool.com/online-ed.html",
+      "title": "Online Driver Ed",
+      "status": 200,
+      "file": "08-online-ed-html.txt",
+      "chars": 666
+    },
+    {
+      "url": "http://teendrivingschool.com/home/policy.html",
+      "title": "School Policies",
+      "status": 200,
+      "file": "09-home-policy-html.txt",
+      "chars": 1527
+    },
+    {
+      "url": "http://teendrivingschool.com/other-services.html",
+      "title": "Services",
+      "status": 200,
+      "file": "10-other-services-html.txt",
+      "chars": 300
+    },
+    {
+      "url": "http://teendrivingschool.com/other-services/lost-certificates.html",
+      "title": "Lost Certificates",
+      "status": 200,
+      "file": "11-other-services-lost-certificates-html.txt",
+      "chars": 487
+    },
+    {
+      "url": "http://teendrivingschool.com/services",
+      "title": "403",
+      "status": 403,
+      "file": "12-services.txt",
+      "chars": 101
+    },
+    {
+      "url": "http://teendrivingschool.com/driving-lessons.html",
+      "title": "Behind the wheel for teens",
+      "status": 200,
+      "file": "13-driving-lessons-html.txt",
+      "chars": 888
+    },
+    {
+      "url": "http://www.teendrivingschool.com",
+      "title": "Teen Driving School",
+      "status": 200,
+      "file": "14-index.txt",
+      "chars": 840
+    },
+    {
+      "url": "http://teendrivingschool.com/home.html",
+      "title": "Teen Driving School",
+      "status": 200,
+      "file": "15-home-html.txt",
+      "chars": 840
+    },
+    {
+      "url": "http://teendrivingschool.com/home/our-license.html",
+      "title": "Our DMV License",
+      "status": 200,
+      "file": "16-home-our-license-html.txt",
+      "chars": 283
+    },
+    {
+      "url": "http://teendrivingschool.com/online-ed.html",
+      "title": "Online Driver Ed",
+      "status": 200,
+      "file": "17-online-ed-html.txt",
+      "chars": 666
+    },
+    {
+      "url": "http://teendrivingschool.com",
+      "title": "Teen Driving School",
+      "status": 200,
+      "file": "18-index.txt",
+      "chars": 840
+    }
+  ],
+  "assets": [
+    {
+      "url": "http://www.teendrivingschool.com/images/TEEN-GIRL-2.jpg",
+      "file": "TEEN-GIRL-2.jpg",
+      "hint": "img",
+      "w": 599,
+      "h": 399,
+      "bytes": 131072
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/W-S1B-TEXT-SM-2.png",
+      "file": "W-S1B-TEXT-SM-2.png",
+      "hint": "img",
+      "w": 142,
+      "h": 195,
+      "bytes": 39181
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/W-S1B-TEXT-SM2-2.png",
+      "file": "W-S1B-TEXT-SM2-2.png",
+      "hint": "img",
+      "w": 142,
+      "h": 195,
+      "bytes": 38088
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/B-W-CERT-2T.png",
+      "file": "B-W-CERT-2T.png",
+      "hint": "img",
+      "w": 180,
+      "h": 281,
+      "bytes": 64637
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/D-E-CERT-2T.png",
+      "file": "D-E-CERT-2T.png",
+      "hint": "img",
+      "w": 179,
+      "h": 281,
+      "bytes": 74364
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/ONLINE-CERT-2T.png",
+      "file": "ONLINE-CERT-2T.png",
+      "hint": "img",
+      "w": 180,
+      "h": 281,
+      "bytes": 75030
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/iStock_000000745163_Small.jpg",
+      "file": "iStock_000000745163_Small.jpg",
+      "hint": "img",
+      "w": 350,
+      "h": 232,
+      "bytes": 131072
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/SDMV-License-2-2-2.png",
+      "file": "SDMV-License-2-2-2.png",
+      "hint": "img",
+      "w": 331,
+      "h": 162,
+      "bytes": 66571
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/DMV-APPROVAL-2.png",
+      "file": "DMV-APPROVAL-2.png",
+      "hint": "img",
+      "w": 424,
+      "h": 424,
+      "bytes": 53441
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/TEEN-GIRL.jpg",
+      "file": "TEEN-GIRL.jpg",
+      "hint": "img",
+      "w": 531,
+      "h": 354,
+      "bytes": 131072
+    },
+    {
+      "url": "http://www.teendrivingschool.com/images/ONLINW%20VIDEO%201B%20SMALL.jpg",
+      "file": "ONLINW-20VIDEO-201B-20SMALL.jpg",
+      "hint": "img",
+      "w": 331,
+      "h": 191,
+      "bytes": 32768
+    },
+    {
+      "url": "http://teendrivingschool.com/images/W-S1B-TEXT-SM-2.png",
+      "file": "W-S1B-TEXT-SM-2-1.png",
+      "hint": "img",
+      "w": 142,
+      "h": 195,
+      "bytes": 39181
+    },
+    {
+      "url": "http://teendrivingschool.com/images/W-S1B-TEXT-SM2-2.png",
+      "file": "W-S1B-TEXT-SM2-2-1.png",
+      "hint": "img",
+      "w": 142,
+      "h": 195,
+      "bytes": 38088
+    },
+    {
+      "url": "http://teendrivingschool.com/images/B-W-CERT-2T.png",
+      "file": "B-W-CERT-2T-1.png",
+      "hint": "img",
+      "w": 180,
+      "h": 281,
+      "bytes": 64637
+    },
+    {
+      "url": "http://teendrivingschool.com/images/D-E-CERT-2T.png",
+      "file": "D-E-CERT-2T-1.png",
+      "hint": "img",
+      "w": 179,
+      "h": 281,
+      "bytes": 74364
+    },
+    {
+      "url": "http://teendrivingschool.com/images/ONLINE-CERT-2T.png",
+      "file": "ONLINE-CERT-2T-1.png",
+      "hint": "img",
+      "w": 180,
+      "h": 281,
+      "bytes": 75030
+    },
+    {
+      "url": "http://teendrivingschool.com/images/iStock_000000745163_Small.jpg",
+      "file": "iStock_000000745163_Small-1.jpg",
+      "hint": "img",
+      "w": 350,
+      "h": 232,
+      "bytes": 131072
+    },
+    {
+      "url": "http://teendrivingschool.com/images/TEEN-GIRL-2.jpg",
+      "file": "TEEN-GIRL-2-1.jpg",
+      "hint": "img",
+      "w": 599,
+      "h": 399,
+      "bytes": 131072
+    },
+    {
+      "url": "http://teendrivingschool.com/images/SDMV-License-2-2-2.png",
+      "file": "SDMV-License-2-2-2-1.png",
+      "hint": "img",
+      "w": 331,
+      "h": 162,
+      "bytes": 66571
+    },
+    {
+      "url": "http://teendrivingschool.com/images/DMV-APPROVAL-2.png",
+      "file": "DMV-APPROVAL-2-1.png",
+      "hint": "img",
+      "w": 424,
+      "h": 424,
+      "bytes": 53441
+    },
+    {
+      "url": "http://teendrivingschool.com/images/TEEN-GIRL.jpg",
+      "file": "TEEN-GIRL-1.jpg",
+      "hint": "img",
+      "w": 531,
+      "h": 354,
+      "bytes": 131072
+    },
+    {
+      "url": "http://teendrivingschool.com/images/ONLINW%20VIDEO%201B%20SMALL.jpg",
+      "file": "ONLINW-20VIDEO-201B-20SMALL-1.jpg",
+      "hint": "img",
+      "w": 331,
+      "h": 191,
+      "bytes": 32768
+    }
+  ]
+}

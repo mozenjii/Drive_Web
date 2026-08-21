@@ -1,0 +1,94 @@
+{
+  "slug": "world-driving-school",
+  "base": "https://worlddrivingschoolca.com/",
+  "resolved": "https://worlddrivingschoolca.com/",
+  "pages": [
+    {
+      "url": "https://worlddrivingschoolca.com/",
+      "title": "World Driving School | Licensed Driving School in Serving Santa Barbara & Goleta",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 3195
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/contact",
+      "title": "Contact World Driving School",
+      "status": 200,
+      "file": "01-contact.txt",
+      "chars": 349
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/waiver",
+      "title": "Accident Waiver and Release Liability Statement | World Driving School",
+      "status": 200,
+      "file": "02-waiver.txt",
+      "chars": 818
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://worlddrivingschoolca.com/image/logo.png",
+      "file": "logo.png",
+      "hint": "img",
+      "w": 1024,
+      "h": 1024,
+      "bytes": 992005
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/0.jpg",
+      "file": "0.jpg",
+      "hint": "img",
+      "w": 1218,
+      "h": 1080,
+      "bytes": 280413
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/1.jpg",
+      "file": "1.jpg",
+      "hint": "img",
+      "w": 1080,
+      "h": 1440,
+      "bytes": 180405
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/2.jpg",
+      "file": "2.jpg",
+      "hint": "img",
+      "w": 1440,
+      "h": 1080,
+      "bytes": 305976
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/3.jpg",
+      "file": "3.jpg",
+      "hint": "img",
+      "w": 1029,
+      "h": 918,
+      "bytes": 227631
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/4.jpg",
+      "file": "4.jpg",
+      "hint": "img",
+      "w": 1295,
+      "h": 838,
+      "bytes": 257971
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/5.jpg",
+      "file": "5.jpg",
+      "hint": "img",
+      "w": 1080,
+      "h": 1440,
+      "bytes": 144999
+    },
+    {
+      "url": "https://worlddrivingschoolca.com/image/watermarked/car.png",
+      "file": "car.png",
+      "hint": "img",
+      "w": 2752,
+      "h": 1536,
+      "bytes": 8636493
+    }
+  ]
+}

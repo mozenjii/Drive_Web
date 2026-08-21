@@ -1,0 +1,71 @@
+{
+  "slug": "easy-affordable-driving-school",
+  "base": "http://www.eadrivingschool.com/",
+  "resolved": "http://www.eadrivingschool.com/",
+  "pages": [
+    {
+      "url": "http://www.eadrivingschool.com/",
+      "title": "Driving School",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 4418
+    },
+    {
+      "url": "http://www.eadrivingschool.com/driving-lesson.html",
+      "title": "Behind the Wheel",
+      "status": 200,
+      "file": "01-driving-lesson-html.txt",
+      "chars": 2286
+    },
+    {
+      "url": "http://www.eadrivingschool.com/drivers-education.html",
+      "title": "Drivers Education",
+      "status": 200,
+      "file": "02-drivers-education-html.txt",
+      "chars": 2769
+    },
+    {
+      "url": "http://www.eadrivingschool.com/dmv-practice-test.html",
+      "title": "DMV Practice Test",
+      "status": 200,
+      "file": "03-dmv-practice-test-html.txt",
+      "chars": 1501
+    },
+    {
+      "url": "http://www.eadrivingschool.com/seniors.html",
+      "title": "Seniors",
+      "status": 200,
+      "file": "04-seniors-html.txt",
+      "chars": 1238
+    },
+    {
+      "url": "http://www.eadrivingschool.com/about-us.html",
+      "title": "About Us",
+      "status": 200,
+      "file": "05-about-us-html.txt",
+      "chars": 2634
+    },
+    {
+      "url": "http://www.eadrivingschool.com/contact-us.html",
+      "title": "Contact Us",
+      "status": 200,
+      "file": "06-contact-us-html.txt",
+      "chars": 2201
+    },
+    {
+      "url": "http://www.eadrivingschool.com/home.html",
+      "title": "Driving School",
+      "status": 200,
+      "file": "07-home-html.txt",
+      "chars": 4418
+    },
+    {
+      "url": "http://www.eadrivingschool.com/school---agency.html",
+      "title": "School & Agency",
+      "status": 200,
+      "file": "08-school-agency-html.txt",
+      "chars": 1246
+    }
+  ],
+  "assets": []
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "ab-driving-school",
+  "base": "https://www.abdrivingschools.com/",
+  "resolved": "https://abdrivingschools.com/",
+  "pages": [
+    {
+      "url": "https://abdrivingschools.com/",
+      "title": "ABDriving School: Driver Ed | Behind the Wheel | Riverside CA |",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 11293
+    },
+    {
+      "url": "https://abdrivingschools.com/helpful-resources/",
+      "title": "Helpful Resources | ABDriving School: Driver Ed | Behind the Wheel | Riverside CA",
+      "status": 200,
+      "file": "01-helpful-resources.txt",
+      "chars": 3103
+    },
+    {
+      "url": "https://abdrivingschools.com/videos/",
+      "title": "Videos | ABDriving School: Driver Ed | Behind the Wheel | Riverside CA",
+      "status": 200,
+      "file": "02-videos.txt",
+      "chars": 2841
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://abdrivingschools.com/wp-content/uploads/2025/05/ab-driving-school-nobg.png",
+      "file": "ab-driving-school-nobg.png",
+      "hint": "img",
+      "w": 500,
+      "h": 500,
+      "bytes": 236161
+    },
+    {
+      "url": "http://abdrivingschools.com/wp-content/uploads/2025/05/ab-driving-school-nobg.png",
+      "file": "ab-driving-school-nobg-1.png",
+      "hint": "img",
+      "w": 500,
+      "h": 500,
+      "bytes": 236161
+    },
+    {
+      "url": "https://abdrivingschools.com/wp-content/uploads/2025/05/306932690_594038882401245_403894442131611533_n.jpg",
+      "file": "306932690_594038882401245_403894442131611533_n.jpg",
+      "hint": "img",
+      "w": 1339,
+      "h": 1339,
+      "bytes": 266038
+    },
+    {
+      "url": "http://abdrivingschools.com/wp-content/uploads/2025/05/306932690_594038882401245_403894442131611533_n.jpg",
+      "file": "306932690_594038882401245_403894442131611533_n-1.jpg",
+      "hint": "img",
+      "w": 1339,
+      "h": 1339,
+      "bytes": 266038
+    },
+    {
+      "url": "http://abdrivingschools.com/wp-content/uploads/2025/05/ab-driving-school-nobg-300x300.png",
+      "file": "ab-driving-school-nobg-300x300.png",
+      "hint": "img",
+      "w": 300,
+      "h": 300,
+      "bytes": 92121
+    }
+  ]
+}

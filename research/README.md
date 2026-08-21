@@ -1,4 +1,4 @@
-# Research record — the first twenty previews
+# Research record — forty previews
 
 Every preview under `preview/src/data/clients/` is built from a scrape of the prospect's own public
 site, taken on **2026-08-09**. This directory is the evidence: `<slug>/pages/*.txt` is the visible
@@ -6,6 +6,10 @@ text of each page crawled, `<slug>/assets/` is every image worth keeping, and `<
 records the URL, HTTP status and dimensions behind each one.
 
 If a claim is in a client file and not in here, it should not have shipped.
+
+The second campaign batch was captured on **2026-08-13**. Coastline was researched but deliberately
+not built; Teen Driving School in Santee was substituted at the user's direction. The second batch
+therefore contains twenty new previews and evidence for twenty-one prospects.
 
 ## What was collected
 
@@ -16,6 +20,23 @@ If a claim is in a client file and not in here, it should not have shipped.
 | Assets kept | ~450 |
 | Previews built | 20 clients, 293 pages |
 | Client photography used | 13 of 20 |
+
+### Second batch
+
+| | |
+|---|---|
+| Sites researched | 21 (including the skipped Coastline lead) |
+| Evidence pages captured | 248, plus 21 crawl indexes |
+| Previews built | 20 clients, bringing the roster to 40 |
+| Deliberate substitution | Teen Driving School for Coastline |
+
+The second pass recovered additional licence numbers from first-party material, including Bolsa
+E0421, Drive Academy E0304, Budget E2166, Teen Driving School E2083, Premier 4734 and Icon's
+conflicting legacy/current identifiers. Conflicts are recorded rather than silently resolved: Icon's
+official logo says 4648 while the campaign directory reports E0672, so the preview publishes neither.
+
+The Riverside Driving School lead is a Manhattan, New York business despite its name and California
+campaign context. Its preview and metadata preserve New York; no California location was inferred.
 
 ## Facts recovered that the campaign workbook did not have
 

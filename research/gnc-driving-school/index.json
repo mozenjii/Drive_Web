@@ -1,0 +1,339 @@
+{
+  "slug": "gnc-driving-school",
+  "base": "http://www.gncdrivingschool.com/",
+  "resolved": "https://www.gncdrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://www.gncdrivingschool.com/",
+      "title": "GNC Driving School",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 6442
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/behind-the-wheel-lesson.php",
+      "title": "MATA11 GAME ONLINE BERTEMA MAHJONG RESMI DEPO QRIS 5000",
+      "status": 200,
+      "file": "01-behind-the-wheel-lesson-php.txt",
+      "chars": 5403
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/written-test-lessons.php",
+      "title": "BEJOTOTO GAME ONLINE MAHJONG RESMI DEPO QRIS 5000",
+      "status": 200,
+      "file": "02-written-test-lessons-php.txt",
+      "chars": 5411
+    },
+    {
+      "url": "https://gncdrivingschool.com/written-test-lessons.php",
+      "title": "BEJOTOTO GAME ONLINE MAHJONG RESMI DEPO QRIS 5000",
+      "status": 200,
+      "file": "03-written-test-lessons-php.txt",
+      "chars": 5411
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/for-teens.php",
+      "title": "MAHJONG333 GAME ONLINE MAHJONG RESMI DEPO QRIS 5000",
+      "status": 200,
+      "file": "04-for-teens-php.txt",
+      "chars": 5435
+    },
+    {
+      "url": "https://gncdrivingschool.com/for-teens.php",
+      "title": "MAHJONG333 GAME ONLINE MAHJONG RESMI DEPO QRIS 5000",
+      "status": 200,
+      "file": "05-for-teens-php.txt",
+      "chars": 5435
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/index.php",
+      "title": "GNC Driving School",
+      "status": 200,
+      "file": "06-index-php.txt",
+      "chars": 6442
+    },
+    {
+      "url": "https://gncdrivingschool.com/",
+      "title": "GNC Driving School",
+      "status": 200,
+      "file": "07-index.txt",
+      "chars": 6442
+    },
+    {
+      "url": "https://gncdrivingschool.com/behind-the-wheel-lesson.php",
+      "title": "MATA11 GAME ONLINE BERTEMA MAHJONG RESMI DEPO QRIS 5000",
+      "status": 200,
+      "file": "08-behind-the-wheel-lesson-php.txt",
+      "chars": 5403
+    },
+    {
+      "url": "https://gncdrivingschool.com/index.php",
+      "title": "GNC Driving School",
+      "status": 200,
+      "file": "09-index-php.txt",
+      "chars": 6442
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/legal/ip",
+      "title": "This Page Does Not Exist",
+      "status": 404,
+      "file": "10-legal-ip.txt",
+      "chars": 155
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/legal/cookies-and-tracking-technologies",
+      "title": "This Page Does Not Exist",
+      "status": 404,
+      "file": "11-legal-cookies-and-tracking-technologies.txt",
+      "chars": 155
+    },
+    {
+      "url": "https://gncdrivingschool.com/legal/ip",
+      "title": "This Page Does Not Exist",
+      "status": 404,
+      "file": "12-legal-ip.txt",
+      "chars": 155
+    },
+    {
+      "url": "https://gncdrivingschool.com/legal/cookies-and-tracking-technologies",
+      "title": "This Page Does Not Exist",
+      "status": 404,
+      "file": "13-legal-cookies-and-tracking-technologies.txt",
+      "chars": 155
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://www.gncdrivingschool.com/images/logo.png",
+      "file": "logo.png",
+      "hint": "img",
+      "w": 253,
+      "h": 95,
+      "bytes": 18651
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/images/banner/img1.jpg",
+      "file": "img1.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 500,
+      "bytes": 64171
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/images/banner/img2.jpg",
+      "file": "img2.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 500,
+      "bytes": 61950
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/images/banner/img3.jpg",
+      "file": "img3.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 500,
+      "bytes": 80019
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/images/about.jpg",
+      "file": "about.jpg",
+      "hint": "img",
+      "w": 960,
+      "h": 720,
+      "bytes": 89512
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img1.jpg",
+      "file": "img1-1.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 274681
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img2.jpg",
+      "file": "img2-1.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 240215
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img3.jpg",
+      "file": "img3-1.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 267141
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img4.jpg",
+      "file": "img4.jpg",
+      "hint": "img",
+      "w": 367,
+      "h": 400,
+      "bytes": 33951
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img5.jpg",
+      "file": "img5.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 298070
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img6.jpg",
+      "file": "img6.jpg",
+      "hint": "img",
+      "w": 160,
+      "h": 160,
+      "bytes": 7715
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img7.jpg",
+      "file": "img7.jpg",
+      "hint": "img",
+      "w": 960,
+      "h": 528,
+      "bytes": 99604
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/gallery/img8.jpg",
+      "file": "img8.jpg",
+      "hint": "img",
+      "w": 413,
+      "h": 299,
+      "bytes": 29669
+    },
+    {
+      "url": "https://i.ibb.co/KpH0zgVv/logo-ibosport.png",
+      "file": "logo-ibosport.png",
+      "hint": "img",
+      "w": 636,
+      "h": 187,
+      "bytes": 88138
+    },
+    {
+      "url": "https://cdn.postimage.me/2026/07/18/adakah-sedekah-boss.jpg",
+      "file": "adakah-sedekah-boss.jpg",
+      "hint": "img",
+      "w": 1024,
+      "h": 1024,
+      "bytes": 269933
+    },
+    {
+      "url": "https://gncdrivingschool.com/images/logo.png",
+      "file": "logo-1.png",
+      "hint": "img",
+      "w": 253,
+      "h": 95,
+      "bytes": 18651
+    },
+    {
+      "url": "https://gncdrivingschool.com/images/banner/img1.jpg",
+      "file": "img1-2.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 500,
+      "bytes": 64171
+    },
+    {
+      "url": "https://gncdrivingschool.com/images/banner/img2.jpg",
+      "file": "img2-2.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 500,
+      "bytes": 61950
+    },
+    {
+      "url": "https://gncdrivingschool.com/images/banner/img3.jpg",
+      "file": "img3-2.jpg",
+      "hint": "img",
+      "w": 1000,
+      "h": 500,
+      "bytes": 80019
+    },
+    {
+      "url": "https://gncdrivingschool.com/images/about.jpg",
+      "file": "about-1.jpg",
+      "hint": "img",
+      "w": 960,
+      "h": 720,
+      "bytes": 89512
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img1.jpg",
+      "file": "img1-3.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 274681
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img2.jpg",
+      "file": "img2-3.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 240215
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img4.jpg",
+      "file": "img4-1.jpg",
+      "hint": "img",
+      "w": 367,
+      "h": 400,
+      "bytes": 33951
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img6.jpg",
+      "file": "img6-1.jpg",
+      "hint": "img",
+      "w": 160,
+      "h": 160,
+      "bytes": 7715
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img7.jpg",
+      "file": "img7-1.jpg",
+      "hint": "img",
+      "w": 960,
+      "h": 528,
+      "bytes": 99604
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img8.jpg",
+      "file": "img8-1.jpg",
+      "hint": "img",
+      "w": 413,
+      "h": 299,
+      "bytes": 29669
+    },
+    {
+      "url": "https://gncdrivingschool.com/gallery/img9.jpg",
+      "file": "img9.jpg",
+      "hint": "img",
+      "w": 1600,
+      "h": 1200,
+      "bytes": 306883
+    },
+    {
+      "url": "https://www.gncdrivingschool.com/htdocs_error/page_not_found.svg",
+      "file": "page_not_found.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 1373144
+    },
+    {
+      "url": "https://gncdrivingschool.com/htdocs_error/page_not_found.svg",
+      "file": "page_not_found-1.svg",
+      "hint": "img",
+      "w": null,
+      "h": null,
+      "bytes": 1373144
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "slug": "a-california-driving-school",
+  "base": "http://www.acaliforniadrivingschool.com/",
+  "resolved": "https://acaliforniadrivingschool.com/",
+  "pages": [
+    {
+      "url": "https://acaliforniadrivingschool.com/",
+      "title": "A California Driving School",
+      "status": 200,
+      "file": "00-index.txt",
+      "chars": 6006
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/book-your-package/",
+      "title": "Book Your Package \u2013 A California Driving School",
+      "status": 200,
+      "file": "01-book-your-package.txt",
+      "chars": 8006
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/services/",
+      "title": "Services \u2013 A California Driving School",
+      "status": 200,
+      "file": "02-services.txt",
+      "chars": 1600
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/about-us/",
+      "title": "About Us \u2013 A California Driving School",
+      "status": 200,
+      "file": "03-about-us.txt",
+      "chars": 1005
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/reviews/",
+      "title": "Reviews \u2013 A California Driving School",
+      "status": 200,
+      "file": "04-reviews.txt",
+      "chars": 2934
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/faqs/",
+      "title": "FAQ\u2019s \u2013 A California Driving School",
+      "status": 200,
+      "file": "05-faqs.txt",
+      "chars": 1626
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/contact-us/",
+      "title": "Contact Us \u2013 A California Driving School",
+      "status": 200,
+      "file": "06-contact-us.txt",
+      "chars": 634
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/location/",
+      "title": "Location \u2013 A California Driving School",
+      "status": 200,
+      "file": "07-location.txt",
+      "chars": 2472
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/our-portfolio/",
+      "title": "Our Portfolio \u2013 A California Driving School",
+      "status": 200,
+      "file": "08-our-portfolio.txt",
+      "chars": 547
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/fremont-ca/",
+      "title": "Fremont, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "09-fremont-ca.txt",
+      "chars": 8637
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/union-city-ca/",
+      "title": "Union City, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "10-union-city-ca.txt",
+      "chars": 7848
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/hayward-ca/",
+      "title": "Hayward, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "11-hayward-ca.txt",
+      "chars": 7842
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/so-lorenzo-ca/",
+      "title": "San Lorenzo, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "12-so-lorenzo-ca.txt",
+      "chars": 7850
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/san-leandro-ca/",
+      "title": "San Leandro, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "13-san-leandro-ca.txt",
+      "chars": 7850
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/castor-valley-ca/",
+      "title": "Castor Valley, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "14-castor-valley-ca.txt",
+      "chars": 7683
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/mountain-house-ca/",
+      "title": "Mountain House, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "15-mountain-house-ca.txt",
+      "chars": 7686
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/tracy-ca/",
+      "title": "Tracy, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "16-tracy-ca.txt",
+      "chars": 7667
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/manteca-ca/",
+      "title": "Manteca, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "17-manteca-ca.txt",
+      "chars": 7671
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/lathrop-ca/",
+      "title": "Lathrop, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "18-lathrop-ca.txt",
+      "chars": 7671
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/salida-ca/",
+      "title": "Salida, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "19-salida-ca.txt",
+      "chars": 7669
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/ripon-ca/",
+      "title": "Ripon, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "20-ripon-ca.txt",
+      "chars": 7667
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/stockton-ca/",
+      "title": "Stockton, CA \u2013 A California Driving School",
+      "status": 200,
+      "file": "21-stockton-ca.txt",
+      "chars": 7673
+    }
+  ],
+  "assets": [
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2025/03/LOGO-Design-2-1.png",
+      "file": "LOGO-Design-2-1.png",
+      "hint": "img",
+      "w": 2400,
+      "h": 919,
+      "bytes": 341248
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2026/06/LOGO_Design__2-removebg-preview-1-1.png",
+      "file": "LOGO_Design__2-removebg-preview-1-1.png",
+      "hint": "img",
+      "w": 675,
+      "h": 212,
+      "bytes": 96745
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/autosalon-5-2048x1365.jpg",
+      "file": "autosalon-5-2048x1365.jpg",
+      "hint": "img",
+      "w": 2048,
+      "h": 1365,
+      "bytes": 240230
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/autosalon-5-600x400.jpg",
+      "file": "autosalon-5-600x400.jpg",
+      "hint": "img",
+      "w": 600,
+      "h": 400,
+      "bytes": 38047
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/2_modern-600x400d.png",
+      "file": "2_modern-600x400d.png",
+      "hint": "img",
+      "w": 600,
+      "h": 400,
+      "bytes": 405924
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/2_modern-600x400wqewqe.png",
+      "file": "2_modern-600x400wqewqe.png",
+      "hint": "img",
+      "w": 600,
+      "h": 400,
+      "bytes": 367392
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/SS_579467138.png",
+      "file": "SS_579467138.png",
+      "hint": "img",
+      "w": 740,
+      "h": 738,
+      "bytes": 16754
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2026/05/image-e1779742220646.png",
+      "file": "image-e1779742220646.png",
+      "hint": "img",
+      "w": 1288,
+      "h": 1016,
+      "bytes": 1872545
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/cropped-A-California-Driving-192x192.png",
+      "file": "cropped-A-California-Driving-192x192.png",
+      "hint": "icon",
+      "w": 192,
+      "h": 192,
+      "bytes": 5141
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/cropped-A-California-Driving-180x180.png",
+      "file": "cropped-A-California-Driving-180x180.png",
+      "hint": "icon",
+      "w": 180,
+      "h": 180,
+      "bytes": 4700
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/autosalon-5.jpg",
+      "file": "autosalon-5.jpg",
+      "hint": "img",
+      "w": 2560,
+      "h": 1706,
+      "bytes": 299165
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/banner-img-3.jpg",
+      "file": "banner-img-3.jpg",
+      "hint": "img",
+      "w": 785,
+      "h": 670,
+      "bytes": 174119
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/o-800h-e1728677068743.webp",
+      "file": "o-800h-e1728677068743.webp",
+      "hint": "img",
+      "w": 598,
+      "h": 611,
+      "bytes": 72098
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/qNXgfAMOAUJ0w5HsfoG0V_xeFNrKdRuvQQ-bb3c0790-1920w.webp",
+      "file": "qNXgfAMOAUJ0w5HsfoG0V_xeFNrKdRuvQQ-bb3c0790-1920w.webp",
+      "hint": "img",
+      "w": 1290,
+      "h": 1304,
+      "bytes": 68006
+    },
+    {
+      "url": "https://acaliforniadrivingschool.com/wp-content/uploads/2024/10/yhYZGwBCxXaZfHUaDniLf3tV98qTcxlHzA-b0dbe4d1-1920w.webp",
+      "file": "yhYZGwBCxXaZfHUaDniLf3tV98qTcxlHzA-b0dbe4d1-1920w.webp",
+      "hint": "img",
+      "w": 1290,
+      "h": 1304,
+      "bytes": 88206
+    }
+  ]
+}
