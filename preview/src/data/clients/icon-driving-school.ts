@@ -7,6 +7,13 @@ export const iconDriving: Client = {
   short: 'Icon Driving',
   variant: 'apex',
   heroStyle: 'editorial',
+  photos: {
+    hero: {
+      src: '/clients/icon-driving-school/human-hero.jpg',
+      alt: 'A confident adult driver smiling behind the wheel',
+      disclosure: 'Illustrative photography',
+    },
+  },
   brand: {
     primary: '#173f80', primaryDark: '#0d2858', primarySoft: '#e8eef9',
     accent: '#9a241d', accentDark: '#741813', accentSoft: '#fbe9e7', wash: '23, 63, 128',

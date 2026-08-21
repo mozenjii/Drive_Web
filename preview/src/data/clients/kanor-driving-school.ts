@@ -22,6 +22,14 @@ export const kanorDriving: Client = {
    *  is honestly available, and it carries the phone number they lead with. */
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/kanor-driving-school/human-hero.jpg',
+      alt: 'A mature learner smiling while driving on a clear day',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   /**
    * Their homepage is a "Why Choose Kanor Driving School?" list with five named
    * reasons. Those are their words and their emphasis, so they become the

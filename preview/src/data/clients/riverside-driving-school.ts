@@ -6,7 +6,14 @@ export const riversideDriving: Client = {
   name: 'Riverside Driving School',
   short: 'Riverside',
   variant: 'atelier',
-  heroStyle: 'panel',
+  heroStyle: 'stage',
+  photos: {
+    hero: {
+      src: '/clients/riverside-driving-school/human-hero.jpg',
+      alt: 'A learner smiling from the driver’s seat of a city car',
+      disclosure: 'Illustrative photography',
+    },
+  },
   sections: [
     { id: 'programs', kicker: 'Private lessons', title: 'Learn Manhattan one quiet street at a time.', lede: 'The first evaluation begins with safety and vehicle setup before the instructor moves into city traffic, manoeuvres and test preparation.' },
     { id: 'road-test', kicker: 'The curriculum', title: 'From leaving the curb to reading an intersection.', lede: 'A specific road-skills checklist covers vehicle control, traffic, parking, turns and defensive habits.' },

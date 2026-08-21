@@ -20,7 +20,15 @@ export const guardianAngel: Client = {
   name: 'Guardian Angel Driving School',
   short: 'Guardian Angel',
   variant: 'atelier',
-  heroStyle: 'panel',
+  heroStyle: 'editorial',
+
+  photos: {
+    hero: {
+      src: '/clients/guardian-angel-driving-school/human-hero.jpg',
+      alt: 'A student smiling while working through an online lesson',
+      disclosure: 'Illustrative photography',
+    },
+  },
 
   logo: '/clients/guardian-angel-driving-school/logo.png',
 

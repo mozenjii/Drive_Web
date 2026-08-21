@@ -23,7 +23,15 @@ export const americanBestCali: Client = {
   name: 'American Best Cali Driving School',
   short: 'American Best',
   variant: 'atelier',
-  heroStyle: 'panel',
+  heroStyle: 'stage',
+
+  photos: {
+    hero: {
+      src: '/clients/american-best-cali-driving-school/human-hero.jpg',
+      alt: 'A parent calmly coaching a teenage learner in the driver’s seat',
+      disclosure: 'Illustrative photography',
+    },
+  },
 
   /**
    * Their own order: what the lessons are, then the price list per area, then the

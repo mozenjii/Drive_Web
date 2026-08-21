@@ -20,7 +20,15 @@ export const abDriving: Client = {
   name: 'AB Driving School',
   short: 'AB Driving',
   variant: 'safe-route',
-  heroStyle: 'panel',
+  heroStyle: 'editorial',
+
+  photos: {
+    hero: {
+      src: '/clients/ab-driving-school/human-hero.jpg',
+      alt: 'A learner smiling while driving in warm evening light',
+      disclosure: 'Illustrative photography',
+    },
+  },
 
   logo: '/clients/ab-driving-school/logo.png',
 

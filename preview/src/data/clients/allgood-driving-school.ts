@@ -25,6 +25,14 @@ export const allgoodDriving: Client = {
    *  whose whole proposition is a scheduler anyway. */
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/allgood-driving-school/human-hero.jpg',
+      alt: 'A confident learner checking the mirror from the driver’s seat',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   /**
    * Their proposition is operational: book any lesson yourself, at any hour,
    * across twenty-nine cities, and use their car for the test. That is the page.

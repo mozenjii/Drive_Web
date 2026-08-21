@@ -99,8 +99,9 @@ export const billsDriving: Client = {
       disclosure: 'AI-generated promotional image',
     },
     hero: {
-      src: '/clients/bills-driving-school/hero.jpg',
-      alt: 'A car on an open road at sunset',
+      src: '/clients/bills-driving-school/student.jpg',
+      alt: 'A young driver at the wheel, belted in and looking across at the instructor',
+      disclosure: 'Illustrative photography',
     },
     roadTest: {
       src: '/clients/bills-driving-school/student.jpg',

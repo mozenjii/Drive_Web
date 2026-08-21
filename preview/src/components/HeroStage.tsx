@@ -20,8 +20,9 @@ import { formatPrice } from '@/lib/seo';
  *   is their strongest asset. Requires `photos.hero`.
  * - **editorial** — a named person is the product. Large serif, their words set
  *   as a pull quote, portrait to the side.
- * - **panel** — operations and numbers. No full-bleed photograph, so it is also
- *   the honest choice for a client who publishes none.
+ * - **panel** — operations and numbers, with an inset human photograph when the
+ *   client has one. This keeps the composition distinct from the full-bleed and
+ *   editorial treatments without leaving the most operational schools faceless.
  */
 
 function Proof({ client, years }: { client: Client; years?: number }) {
@@ -168,7 +169,7 @@ export function HeroStage({
                 priority
                 sizes="(max-width: 900px) 100vw, 42vw"
               />
-              <figcaption>{hero.alt}</figcaption>
+              <figcaption>{hero.disclosure ?? hero.alt}</figcaption>
             </figure>
           ) : null}
         </div>
@@ -178,7 +179,7 @@ export function HeroStage({
 
   if (style === 'panel') {
     return (
-      <section className="heroPanel">
+      <section className={`heroPanel${hero ? ' heroPanelWithPhoto' : ''}`}>
         <div className="wrap heroPanelInner">
           <div className="heroPanelCopy">
             <Licence client={client} />
@@ -186,6 +187,19 @@ export function HeroStage({
             {lede ? <p className="heroPanelLede">{lede}</p> : null}
             <Actions client={client} fromPrice={fromPrice} ghost="btn-ghost" />
           </div>
+          {hero ? (
+            <figure className="heroPanelPhoto">
+              <Photo
+                src={hero.src}
+                alt={hero.alt}
+                width={960}
+                height={720}
+                priority
+                sizes="(max-width: 1000px) 100vw, 32vw"
+              />
+              <figcaption>{hero.disclosure ?? hero.alt}</figcaption>
+            </figure>
+          ) : null}
           <aside className="heroPanelProof">
             <Proof client={client} years={years} />
           </aside>
@@ -201,6 +215,7 @@ export function HeroStage({
         <Photo src={hero!.src} alt={hero!.alt} fill priority sizes="100vw" className="stagePhoto" />
         <span className="stageWash" aria-hidden="true" />
         <span className="stageStreaks" aria-hidden="true" />
+        {hero!.disclosure ? <span className="stageDisclosure">{hero!.disclosure}</span> : null}
       </div>
 
       {/* The three vertical "structural rails" that used to sit here are gone.

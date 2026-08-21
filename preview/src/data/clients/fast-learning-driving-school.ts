@@ -23,6 +23,14 @@ export const fastLearning: Client = {
   variant: 'apex',
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/fast-learning-driving-school/human-hero.jpg',
+      alt: 'A learner smiling as she settles into the driver’s seat',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   sections: [
     {
       id: 'programs',

@@ -23,6 +23,14 @@ export const a1Driving: Client = {
 
   heroStyle: 'stage',
 
+  photos: {
+    hero: {
+      src: '/clients/a1-driving-school-bakersfield/human-hero.jpg',
+      alt: 'A relaxed learner smiling from the driver’s seat',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   /**
    * Anxiety-free training is their actual positioning and it is a good one, so
    * it leads. Everything around it on their own site is a problem:

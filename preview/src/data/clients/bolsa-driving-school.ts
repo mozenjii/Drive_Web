@@ -23,6 +23,14 @@ export const bolsaDriving: Client = {
   variant: 'safe-route',
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/bolsa-driving-school/human-hero.jpg',
+      alt: 'A newly confident driver holding her car keys beside a vehicle',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   logo: '/clients/bolsa-driving-school/logo.jpg',
 
   brand: {

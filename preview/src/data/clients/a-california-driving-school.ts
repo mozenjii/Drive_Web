@@ -24,6 +24,14 @@ export const aCaliforniaDriving: Client = {
   variant: 'apex',
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/a-california-driving-school/human-hero.jpg',
+      alt: 'A teenage learner concentrating during an in-car driving lesson',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   logo: '/clients/a-california-driving-school/logo.png',
 
   brand: {

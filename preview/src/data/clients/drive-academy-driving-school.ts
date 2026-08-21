@@ -41,8 +41,9 @@ export const driveAcademy: Client = {
 
   photos: {
     hero: {
-      src: '/clients/drive-academy-driving-school/car.jpg',
-      alt: 'The Drive Academy training car with the school’s door sign, photographed in Fresno',
+      src: '/clients/drive-academy-driving-school/human-hero.jpg',
+      alt: 'A mature learner smiling confidently from the driver’s seat',
+      disclosure: 'Illustrative photography',
     },
     vehicle: {
       src: '/clients/drive-academy-driving-school/car.jpg',

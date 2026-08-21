@@ -40,6 +40,11 @@ export const vipDriving: Client = {
   },
 
   photos: {
+    hero: {
+      src: '/clients/vip-driving-school/human-hero.jpg',
+      alt: 'A student smiling while working through driving theory on a laptop',
+      disclosure: 'Illustrative photography',
+    },
     vehicle: {
       src: '/clients/vip-driving-school/car.jpg',
       alt: 'A VIP Driving School training car in the school’s green, black and gold wrap',

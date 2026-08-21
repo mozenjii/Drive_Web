@@ -14,6 +14,14 @@ export const premierDriving: Client = {
   variant: 'atelier',
   heroStyle: 'editorial',
 
+  photos: {
+    hero: {
+      src: '/clients/premier-driving/human-hero.jpg',
+      alt: 'An adult learner smiling behind the wheel on a bright day',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   sections: [
     {
       id: 'programs',

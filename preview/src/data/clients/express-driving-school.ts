@@ -98,8 +98,9 @@ export const expressDriving: Client = {
 
   photos: {
     hero: {
-      src: '/clients/express-driving-school/keys.jpg',
-      alt: 'A newly licensed driver holding out a set of car keys',
+      src: '/clients/express-driving-school/human-hero.jpg',
+      alt: 'A mature learner smiling beside a car before a lesson',
+      disclosure: 'Illustrative photography',
     },
     support: {
       src: '/clients/express-driving-school/chula-vista.png',

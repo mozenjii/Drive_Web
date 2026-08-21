@@ -261,8 +261,9 @@
 }
 
 /* ============================================================
-   Panel hero — operations and numbers, no photograph.
-   Also the honest composition for a client who publishes none.
+   Panel hero — operations and numbers, with an inset photograph.
+   This is deliberately not another full-bleed hero: the image gives the school
+   a human presence while the price/review proof remains the visual anchor.
    ============================================================ */
 
 .heroPanel {
@@ -277,6 +278,48 @@
   grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
   gap: var(--space-12);
   align-items: end;
+}
+.heroPanelWithPhoto .heroPanelInner {
+  grid-template-columns: minmax(0, 1.1fr) minmax(250px, 0.78fr) minmax(190px, 0.52fr);
+  align-items: center;
+  gap: clamp(var(--space-6), 3vw, var(--space-12));
+}
+.heroPanelPhoto {
+  position: relative;
+  margin: 0;
+  min-width: 0;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--r-xl);
+  background: var(--surface);
+  box-shadow: var(--sh-4);
+  transform: rotate(-1.25deg);
+}
+.heroPanelPhoto::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: inherit;
+  pointer-events: none;
+}
+.heroPanelPhoto img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heroPanelPhoto figcaption {
+  position: absolute;
+  inset: auto var(--space-3) var(--space-3) auto;
+  max-width: calc(100% - var(--space-6));
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(9, 20, 52, 0.72);
+  backdrop-filter: blur(8px);
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 .heroPanelTitle {
   margin-top: var(--space-6);
@@ -310,6 +353,7 @@
 @media (max-width: 1000px) {
   .heroEditorialInner,
   .heroPanelInner { grid-template-columns: 1fr; gap: var(--space-9); }
+  .heroPanelWithPhoto .heroPanelInner { grid-template-columns: minmax(0, 1fr); }
   .heroPortrait { aspect-ratio: 16 / 11; }
   .heroPanelProof { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
 }
@@ -317,6 +361,20 @@
   .heroEditorial,
   .heroPanel { padding-block: var(--space-14) var(--space-10); }
   .heroEditorialProof { gap: var(--space-6); }
+  .heroPanelPhoto { aspect-ratio: 16 / 11; transform: none; }
+}
+
+.stageDisclosure {
+  position: absolute;
+  z-index: 3;
+  inset: auto var(--space-4) var(--space-4) auto;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.88);
+  background: rgba(9, 20, 52, 0.62);
+  backdrop-filter: blur(8px);
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 /* ---------------- photographs ---------------- */

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import manifest from '@/data/photo-manifest.json';
+import stockPhotoSources from '@/data/stock-photo-sources.json';
 import { clients } from '@/data';
 import type { Client } from '@/lib/types';
 
@@ -59,5 +60,28 @@ describe('the manifest itself', () => {
 
   it('never lists a derived file as an original', () => {
     expect(Object.keys(derived).filter((path) => /-\d+\.webp$/.test(path))).toEqual([]);
+  });
+});
+
+describe('human-centred home-page photography', () => {
+  it('gives every preview its own hero photograph', () => {
+    const missing = clients.filter((client) => !client.photos?.hero).map((client) => client.slug);
+    const heroPaths = clients.map((client) => client.photos?.hero?.src).filter(Boolean);
+
+    expect(missing).toEqual([]);
+    expect(new Set(heroPaths).size).toBe(clients.length);
+  });
+
+  it('keeps the source and qualification for every licensed stock hero', () => {
+    const sources = stockPhotoSources as Record<string, string>;
+    const stockHeroes = clients
+      .map((client) => ({ slug: client.slug, hero: client.photos?.hero }))
+      .filter(({ hero }) => hero?.src.endsWith('/human-hero.jpg'));
+
+    expect(stockHeroes).toHaveLength(Object.keys(sources).length);
+    for (const { slug, hero } of stockHeroes) {
+      expect(hero?.disclosure, slug).toBe('Illustrative photography');
+      expect(sources[hero!.src], slug).toMatch(/^https:\/\/www\.pexels\.com\/photo\/\d+\/$/);
+    }
   });
 });

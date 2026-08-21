@@ -96,8 +96,8 @@ export const sanDiegoBay: Client = {
 
   photos: {
     hero: {
-      src: '/clients/san-diego-bay-driving-school/hero.jpg',
-      alt: 'A San Diego Bay school car pulling away through a car park in late afternoon light',
+      src: '/clients/san-diego-bay-driving-school/in-car.jpg',
+      alt: 'An instructor talking a student through the next manoeuvre from the passenger seat',
     },
     roadTest: {
       src: '/clients/san-diego-bay-driving-school/in-car.jpg',

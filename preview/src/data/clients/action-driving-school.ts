@@ -32,6 +32,14 @@ export const actionDriving: Client = {
   variant: 'atelier',
   heroStyle: 'editorial',
 
+  photos: {
+    hero: {
+      src: '/clients/action-driving-school/human-hero.jpg',
+      alt: 'An adult driver smiling during a relaxed lesson',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   sections: [
     {
       id: 'programs',

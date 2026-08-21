@@ -6,7 +6,14 @@ export const pacificSafetyCenter: Client = {
   name: 'Pacific Safety Center',
   short: 'Pacific Safety',
   variant: 'safe-route',
-  heroStyle: 'panel',
+  heroStyle: 'editorial',
+  photos: {
+    hero: {
+      src: '/clients/pacific-safety-center/human-hero.jpg',
+      alt: 'An adult learner working through online safety training',
+      disclosure: 'Illustrative photography',
+    },
+  },
   logo: '/clients/pacific-safety-center/logo.webp',
   brand: {
     primary: '#075078', primaryDark: '#04354f', primarySoft: '#e2f2f8',

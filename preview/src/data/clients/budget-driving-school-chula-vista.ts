@@ -21,7 +21,15 @@ export const budgetDriving: Client = {
   name: 'Budget Driving School',
   short: 'Budget',
   variant: 'safe-route',
-  heroStyle: 'panel',
+  heroStyle: 'stage',
+
+  photos: {
+    hero: {
+      src: '/clients/budget-driving-school-chula-vista/human-hero.jpg',
+      alt: 'An adult learner smiling behind the wheel',
+      disclosure: 'Illustrative photography',
+    },
+  },
 
   logo: '/clients/budget-driving-school-chula-vista/logo.jpg',
 

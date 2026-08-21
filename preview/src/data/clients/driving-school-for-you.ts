@@ -22,6 +22,14 @@ export const drivingSchoolForYou: Client = {
 
   heroStyle: 'editorial',
 
+  photos: {
+    hero: {
+      src: '/clients/driving-school-for-you/human-hero.jpg',
+      alt: 'A smiling driver enjoying a calm lesson at sunset',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   /**
    * Two things here are unique in the whole set of twenty: lessons taught in an
    * all-electric 2024 Toyota bZ4X, and a DMV-approved 60-hour course that trains

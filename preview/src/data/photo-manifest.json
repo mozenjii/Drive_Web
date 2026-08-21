@@ -1,4 +1,29 @@
 {
+  "/clients/a-california-driving-school/human-hero.jpg": {
+    "hash": "fe49bfb2fde1",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAsABABsJZQAAxeK3ODzAAD+mxdlMohHaqXQQxEtIED5VIMykiYXYEAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/a-california-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/a-california-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/a-california-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/a-california-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/a-california-driving-school/logo.png": {
     "hash": "d75363fca54d",
     "width": 675,
@@ -37,6 +62,31 @@
       }
     ]
   },
+  "/clients/a1-driving-school-bakersfield/human-hero.jpg": {
+    "hash": "80ac0f0ae21e",
+    "width": 1600,
+    "height": 2369,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABwAgCdASoQABgABABsJQBOgCICBvrZdrZMhp9AAP7mIJPyxQswjiSwfdBFm3hQb4CbNQFuwxVl+RRKU8LYWvPBmwzhjzcGAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/a1-driving-school-bakersfield/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/a1-driving-school-bakersfield/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/a1-driving-school-bakersfield/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/a1-driving-school-bakersfield/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/a1-driving-school-bakersfield/logo.jpg": {
     "hash": "91a6935d3dc9",
     "width": 1773,
@@ -55,6 +105,31 @@
       {
         "w": 800,
         "src": "/d/clients/a1-driving-school-bakersfield/logo-800.webp"
+      }
+    ]
+  },
+  "/clients/ab-driving-school/human-hero.jpg": {
+    "hash": "11e098af1082",
+    "width": 1600,
+    "height": 2395,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACQAwCdASoQABgAPxl4slCspySisAgBkCMJaQAAW4BRXspc0PJ4AP7r7j6fqy9a4UwAI4um9u6U5qctuqcUmrxOvAAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/ab-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/ab-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/ab-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/ab-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -110,6 +185,56 @@
       {
         "w": 394,
         "src": "/d/clients/academic-driving-school/student-car-394.webp"
+      }
+    ]
+  },
+  "/clients/action-driving-school/human-hero.jpg": {
+    "hash": "12d23d2d1e53",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAABwAQCdASoQAAsABABsJZwAASIbAAD+dLgznj4DgvKwUq353uFndXG5jxBKUkQrGmVmgAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/action-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/action-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/action-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/action-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
+  "/clients/allgood-driving-school/human-hero.jpg": {
+    "hash": "161ff45e73ab",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAABQAgCdASoQAAsABABsJbACdH8AFMq/72OwwhAA/sKSTvnm6JKNtj10T+lkCEb7PZ+As3saxtRUFpmUfQAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/allgood-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/allgood-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/allgood-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/allgood-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -317,6 +442,31 @@
       }
     ]
   },
+  "/clients/american-best-cali-driving-school/human-hero.jpg": {
+    "hash": "a6c6a119370a",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAwCdASoQABgALtmMxmMkLKysjIDYSygGJsIdpcOBayK58/tnY7gAAP6yPZK0Z1LUQqyA01GyLHI8Y/79520IgprAOaAh3JKaaqNBBmIEhIIAAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/american-best-cali-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/american-best-cali-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/american-best-cali-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/american-best-cali-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/bills-driving-school/contact-team-car.webp": {
     "hash": "8bdd7074c1b7",
     "width": 1600,
@@ -460,6 +610,31 @@
       }
     ]
   },
+  "/clients/bolsa-driving-school/human-hero.jpg": {
+    "hash": "c404625da4ab",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAABwAQCdASoQAAsABABsJQBOgApQAAD+taTUJg5uGqtETxDJ1Q5nKRvo5EQCO/LNHgAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/bolsa-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/bolsa-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/bolsa-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/bolsa-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/bolsa-driving-school/logo.jpg": {
     "hash": "946460511e0c",
     "width": 410,
@@ -549,6 +724,31 @@
       {
         "w": 1440,
         "src": "/d/clients/bonita-driving-school/student-certificate-1440.webp"
+      }
+    ]
+  },
+  "/clients/budget-driving-school-chula-vista/human-hero.jpg": {
+    "hash": "76e195925324",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQAAsABABsJZwAAudi9qvhAAAA/mFh2OJ4INEE5/fVpbpl0AAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/budget-driving-school-chula-vista/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/budget-driving-school-chula-vista/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/budget-driving-school-chula-vista/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/budget-driving-school-chula-vista/human-hero-1600.webp"
       }
     ]
   },
@@ -772,6 +972,81 @@
       {
         "w": 1600,
         "src": "/d/clients/drive-academy-driving-school/car-1600.webp"
+      }
+    ]
+  },
+  "/clients/drive-academy-driving-school/human-hero.jpg": {
+    "hash": "c44435882ea0",
+    "width": 1600,
+    "height": 2395,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAAAQBACdASoQABgAPxl6slCsqCSisAgBkCMJaACdMoRwAII7kdj7pAtmAAD+4Am/1gwFbZYgjvH57RjLW8Y+guN4wJr8UngxihHcYVw00/xRPD4gjMPK4r96wsrJGbDoNyX8oXYyoZttmQAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/drive-academy-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/drive-academy-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/drive-academy-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/drive-academy-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
+  "/clients/driving-school-for-you/human-hero.jpg": {
+    "hash": "f2c28a07d189",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAwCdASoQABgAPxl4slEspySisAgBkCMJYgCdAB0bv/ta+Lzc0AD9RW72CPVZ8pPlZsnIugBPkQC5wiyjQyIjBc9nR5KAAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/driving-school-for-you/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/driving-school-for-you/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/driving-school-for-you/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/driving-school-for-you/human-hero-1600.webp"
+      }
+    ]
+  },
+  "/clients/easy-affordable-driving-school/human-hero.jpg": {
+    "hash": "97f125276410",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAsABABsJYwCdADHWgfdUgAA/PpsNyKc4AILOc5Skr76m0vU8fMuRrlQWSRgAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/easy-affordable-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/easy-affordable-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/easy-affordable-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/easy-affordable-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -1193,6 +1468,31 @@
       }
     ]
   },
+  "/clients/express-driving-school/human-hero.jpg": {
+    "hash": "3e218c50fcf8",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAwCdASoQABgAPxl4slEspySisAgBkCMJYwC06BdWFb/lMcN62nAA/svXXaj/ROiBWOIYsqZq5KL5nJweOE28v8w4UIaxK3eOh/KQMqL04AN4wAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/express-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/express-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/express-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/express-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/express-driving-school/keys.jpg": {
     "hash": "f96602c1ee04",
     "width": 722,
@@ -1228,6 +1528,31 @@
       {
         "w": 499,
         "src": "/d/clients/express-driving-school/logo-499.webp"
+      }
+    ]
+  },
+  "/clients/fast-learning-driving-school/human-hero.jpg": {
+    "hash": "1d90f5d70496",
+    "width": 1600,
+    "height": 1069,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQAAsABABsJaQAAxcMJcXU9AAA/vGE0vz3QT7IWQpptW3H9sXbaljlvhZQMAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/fast-learning-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/fast-learning-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/fast-learning-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/fast-learning-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -1295,6 +1620,31 @@
       {
         "w": 253,
         "src": "/d/clients/gnc-driving-school/logo-253.webp"
+      }
+    ]
+  },
+  "/clients/guardian-angel-driving-school/human-hero.jpg": {
+    "hash": "c93e19e74439",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAwCdASoQABgAPxmAtlKsqKUisAgBkCMJYwCdACHZ0Ed+842s+xAA/sOBAaX45cR7OQmNCgAK6crTpNDCkenQUSFYrZk6vcgAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/guardian-angel-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/guardian-angel-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/guardian-angel-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/guardian-angel-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -1400,6 +1750,56 @@
       {
         "w": 730,
         "src": "/d/clients/h-and-g-best-driving-school/training-730.webp"
+      }
+    ]
+  },
+  "/clients/icon-driving-school/human-hero.jpg": {
+    "hash": "724c399c811a",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAACwAwCdASoQABgAPxl4s1EspySisAgBkCMJQBOgA1v7dLfiYfsR4AC36W0FV8y5An7Eq9LNWFO8LrFEHh2qzQBe6MeVd3+XhnFZZlosAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/icon-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/icon-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/icon-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/icon-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
+  "/clients/kanor-driving-school/human-hero.jpg": {
+    "hash": "a31693c87ceb",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQAAsABABsJQBOgBtjspBcYAD9+f+n3HvT88N2ykKUhN12Phq5f2LPHAAAAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/kanor-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/kanor-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/kanor-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/kanor-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -1923,6 +2323,31 @@
       }
     ]
   },
+  "/clients/pacific-safety-center/human-hero.jpg": {
+    "hash": "45ceb0ced591",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAwCdASoQABgAPxmGtlMsqiUisAgBkCMJQBOgA8C0FU/zGVglH7gA8nPhRakZ2O7JbffEvdZY0Lyb0Hm3IE2pbMBSLmMTcritsbW9vJjyKiPCjbuRAAAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/pacific-safety-center/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/pacific-safety-center/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/pacific-safety-center/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/pacific-safety-center/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/pacific-safety-center/logo.webp": {
     "hash": "9c2f63ab19ba",
     "width": 157,
@@ -1933,6 +2358,56 @@
       {
         "w": 157,
         "src": "/d/clients/pacific-safety-center/logo-157.webp"
+      }
+    ]
+  },
+  "/clients/premier-driving/human-hero.jpg": {
+    "hash": "92b007ec4b10",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAAAQAgCdASoQAAsABABsJZQCdAEPg6dodbiAAP7hpfZYqNrAT0cDgpgGsMiADJfAAAA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/premier-driving/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/premier-driving/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/premier-driving/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/premier-driving/human-hero-1600.webp"
+      }
+    ]
+  },
+  "/clients/riverside-driving-school/human-hero.jpg": {
+    "hash": "0248f440c7cf",
+    "width": 1600,
+    "height": 1067,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoQAAsABABsJYwAAfq8AADJYDeMYqSJHfx8YvNfTbQQ40reRSnYAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/riverside-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/riverside-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/riverside-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/riverside-driving-school/human-hero-1600.webp"
       }
     ]
   },
@@ -2294,6 +2769,31 @@
       }
     ]
   },
+  "/clients/teen-driving-school/human-hero.jpg": {
+    "hash": "87e565e44ae5",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoQABgAPxl4slEspySisAgBkCMJZwC7ACG5qxtqyA1VQAD+6+A70AGDDLt9WbTA5t6K0XNs7XlRw6XgwDWIzBiD603zIIAA",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/teen-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/teen-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/teen-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/teen-driving-school/human-hero-1600.webp"
+      }
+    ]
+  },
   "/clients/turlock-driving-school/car-blueberry.png": {
     "hash": "edac51e0df2e",
     "width": 500,
@@ -2463,6 +2963,31 @@
       {
         "w": 1600,
         "src": "/d/clients/vip-driving-school/car-1600.webp"
+      }
+    ]
+  },
+  "/clients/vip-driving-school/human-hero.jpg": {
+    "hash": "6d683e961166",
+    "width": 1600,
+    "height": 2400,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAAAQBACdASoQABgAPxl8tlCsqCUisAgBkCMJYgCdMoAKRUc3OT+Io1YMAAD+6ydWM/kcd+KGp27XrgTSLugEpepEDIreUnoKP2dRDT7lTfTfCRyqY5bVSTmfJSnew/HhNSksAA==",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/vip-driving-school/human-hero-400.webp"
+      },
+      {
+        "w": 800,
+        "src": "/d/clients/vip-driving-school/human-hero-800.webp"
+      },
+      {
+        "w": 1200,
+        "src": "/d/clients/vip-driving-school/human-hero-1200.webp"
+      },
+      {
+        "w": 1600,
+        "src": "/d/clients/vip-driving-school/human-hero-1600.webp"
       }
     ]
   },

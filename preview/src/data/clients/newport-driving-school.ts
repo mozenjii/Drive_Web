@@ -104,8 +104,9 @@ export const newportDriving: Client = {
 
   photos: {
     hero: {
-      src: '/clients/newport-driving-school/hero.jpg',
-      alt: 'A car head-on at dusk on a quiet road',
+      src: '/clients/newport-driving-school/instructors.jpg',
+      alt: 'A learner at the wheel with an instructor coaching from the passenger seat',
+      disclosure: 'Illustrative photography published by Newport Driving School',
     },
     roadTest: {
       src: '/clients/newport-driving-school/driver.webp',

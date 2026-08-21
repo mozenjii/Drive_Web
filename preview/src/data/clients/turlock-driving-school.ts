@@ -114,6 +114,10 @@ export const turlockDriving: Client = {
   // Their banner photography has the headline burned into the JPEG, so none of
   // it is reusable. What they do have is three cars, photographed and named.
   photos: {
+    hero: {
+      src: '/clients/turlock-driving-school/hero.jpg',
+      alt: 'A Turlock Driving School instructor coaching a student in the driver’s seat',
+    },
     vehicle: {
       src: '/clients/turlock-driving-school/car-dory.jpg',
       alt: 'Dory — the blue Turlock Driving School hatchback, signwritten with the school name',

@@ -40,6 +40,10 @@ export const academicDriving: Client = {
    * 394 x 403 it is already being asked to fill ~470px there.
    */
   photos: {
+    hero: {
+      src: '/clients/academic-driving-school/student-car.jpg',
+      alt: 'A student in the driver’s seat of a signwritten Academic Driving School car',
+    },
     roadTest: {
       src: '/clients/academic-driving-school/student-car.jpg',
       alt: 'A student in the driver’s seat of a signwritten Academic Driving School car',

@@ -25,6 +25,14 @@ export const teenDrivingSchool: Client = {
   variant: 'safe-route',
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/teen-driving-school/human-hero.jpg',
+      alt: 'A teenage student working through an online course at a desk',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   sections: [
     {
       id: 'programs',

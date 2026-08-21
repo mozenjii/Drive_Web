@@ -19,6 +19,14 @@ export const easyAffordable: Client = {
   variant: 'safe-route',
   heroStyle: 'panel',
 
+  photos: {
+    hero: {
+      src: '/clients/easy-affordable-driving-school/human-hero.jpg',
+      alt: 'A student smiling during an online lesson with notes and a laptop',
+      disclosure: 'Illustrative photography',
+    },
+  },
+
   sections: [
     {
       id: 'programs',

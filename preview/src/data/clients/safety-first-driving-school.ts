@@ -95,8 +95,8 @@ export const safetyFirst: Client = {
       disclosure: 'AI-generated promotional image',
     },
     hero: {
-      src: '/clients/safety-first-driving-school/car-image.jpg',
-      alt: 'A white Safety First Driving School car, signwritten with STUDENT DRIVER, the school name and the phone number 805.374.2393',
+      src: '/clients/safety-first-driving-school/banner-621e980db672d.JPG',
+      alt: 'A smiling young driver in the driver’s seat holding up a set of car keys',
     },
     support: {
       src: '/clients/safety-first-driving-school/banner-621e980db672d.JPG',
