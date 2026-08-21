@@ -573,6 +573,49 @@
       }
     ]
   },
+  "/clients/commercial-drivers-license-of-california/graduate-and-truck.jpg": {
+    "hash": "2017ed3fa39c",
+    "width": 301,
+    "height": 280,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoQAA8ABABsJZACdADZKOIAANyyjz/Z7ISvqfOC9us3pGwn22CdkOVqI1KQAA==",
+    "variants": [
+      {
+        "w": 301,
+        "src": "/d/clients/commercial-drivers-license-of-california/graduate-and-truck-301.webp"
+      }
+    ]
+  },
+  "/clients/commercial-drivers-license-of-california/student-and-truck.jpg": {
+    "hash": "878b6bf32e73",
+    "width": 301,
+    "height": 280,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoQAA8ABABsJYwCdABpJpAA/rWGYJ3FHerG7hUSordQZOGJUo/EuFMVDWEQFwAA",
+    "variants": [
+      {
+        "w": 301,
+        "src": "/d/clients/commercial-drivers-license-of-california/student-and-truck-301.webp"
+      }
+    ]
+  },
+  "/clients/commercial-drivers-license-of-california/team-and-truck.jpg": {
+    "hash": "44ebdc6e574d",
+    "width": 727,
+    "height": 545,
+    "alpha": false,
+    "lqip": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAAAQAgCdASoQAAwABABsJYgCdAD1du7l2MIQAP6zK046ub6+pSZoSU20NsYaleIq4AA=",
+    "variants": [
+      {
+        "w": 400,
+        "src": "/d/clients/commercial-drivers-license-of-california/team-and-truck-400.webp"
+      },
+      {
+        "w": 727,
+        "src": "/d/clients/commercial-drivers-license-of-california/team-and-truck-727.webp"
+      }
+    ]
+  },
   "/clients/dollar-driving-school/hero.jpg": {
     "hash": "b21db84d2df9",
     "width": 1000,
@@ -1877,6 +1920,19 @@
       {
         "w": 1600,
         "src": "/d/clients/norcal-driving-school/vehicle-1600.webp"
+      }
+    ]
+  },
+  "/clients/pacific-safety-center/logo.webp": {
+    "hash": "9c2f63ab19ba",
+    "width": 157,
+    "height": 90,
+    "alpha": true,
+    "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4WAoAAAAQAAAADwAACAAAQUxQSHMAAAANcB3Jtmmtvc99tp2A8w+Bf4zj4ulgPSQRETnaLO3xFKsK/pzJ826p+ZwCQoaVfTh6a/IGEAQ3T16Fks1ekQFBopu6Qt2kd6ckidxTvZaL4eEBekr+ViwWiwV6RxEIZGuqrSJFAyEqyuu7UIu8iWgFMBIAAFZQOCA4AAAA0AEAnQEqEAAJAAQAbCWwAnQA83sCJAAA/pRGq5k+KZKRbzpYGx7mU5az72TNnkcsOuLu9h5r+AA=",
+    "variants": [
+      {
+        "w": 157,
+        "src": "/d/clients/pacific-safety-center/logo-157.webp"
       }
     ]
   },
