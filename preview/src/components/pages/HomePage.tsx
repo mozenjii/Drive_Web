@@ -9,6 +9,7 @@ import { Tick } from '@/components/SiteChrome';
 import { ManoeuvreSimulator } from '@/components/ManoeuvreSimulator';
 import { PackagePicker } from '@/components/PackagePicker';
 import { HeroStage } from '@/components/HeroStage';
+import { ArrowRightIcon, MapPinIcon } from '@heroicons/react/24/outline';
 
 /**
  * The home page renders `client.sections` — in the client's order, in the
@@ -46,6 +47,8 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
   const programsWithPages = (client.programs ?? []).filter((p) => p.slug);
   const roadTest = photoFor(client, 'roadTest');
   const vehicle = photoFor(client, 'vehicle');
+  const atmosphere =
+    photoFor(client, 'support') ?? roadTest ?? vehicle ?? photoFor(client, 'hero')!;
   /** Enough programme photography to be worth composing around. */
   const imageCards = programsWithPages.filter((p) => p.image).length >= 2;
   const photoCards = programsWithPages.slice(0, imageCards ? 4 : 3);
@@ -290,23 +293,58 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
 
       case 'areas':
         return (
-          <section className={surface()} id="areas" key={section.id}>
-            <div className="wrap">
+          <section
+            className="section locationSection"
+            id="areas"
+            key={section.id}
+          >
+            <Photo
+              className="sectionBackdrop"
+              src={atmosphere.src}
+              alt=""
+              fill
+              sizes="100vw"
+            />
+            <div className="wrap locationSectionInner">
               <Head section={section} />
-              <div className="chipRow">
+              <div className="locationGrid">
                 {client.areas.map((area) => (
-                  <Link key={area} className="chip" href={routed(['areas', slugify(area)])}>
-                    {area}
+                  <Link
+                    key={area}
+                    className="locationCard"
+                    href={routed(['areas', slugify(area)])}
+                    aria-label={`View driving lessons in ${area}`}
+                  >
+                    <span className="locationIcon" aria-hidden="true">
+                      <MapPinIcon />
+                    </span>
+                    <span className="locationCopy">
+                      <strong>{area}</strong>
+                      <span className="locationAction">View local lessons</span>
+                    </span>
+                    <span className="locationArrow" aria-hidden="true">
+                      <ArrowRightIcon />
+                    </span>
                   </Link>
                 ))}
               </div>
             </div>
+            {atmosphere.disclosure ? (
+              <span className="sectionPhotoDisclosure">{atmosphere.disclosure}</span>
+            ) : null}
           </section>
         );
 
       case 'cta':
         return (
-          <section className={surface()} key={section.id}>
+          <section className="section finalCtaSection" key={section.id}>
+            <Photo
+              className="sectionBackdrop"
+              src={atmosphere.src}
+              alt=""
+              fill
+              sizes="100vw"
+            />
             <div className="wrap finalCta">
               <h2>{section.title}</h2>
               {section.lede ? <p>{section.lede}</p> : null}
@@ -321,6 +359,9 @@ export function HomePage({ client, years }: { client: Client; years?: number }) 
                 </Link>
               </div>
             </div>
+            {atmosphere.disclosure ? (
+              <span className="sectionPhotoDisclosure">{atmosphere.disclosure}</span>
+            ) : null}
           </section>
         );
     }

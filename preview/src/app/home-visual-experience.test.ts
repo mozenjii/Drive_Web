@@ -13,11 +13,13 @@ const componentsCss = readFileSync(path.join(appDir, 'components.css'), 'utf8');
 describe('photo-led home-page experience', () => {
   it('uses client-specific photography as atmosphere for locations and the closing CTA', () => {
     expect(homeSource).toContain("const atmosphere =");
-    expect(homeSource).toContain("'--section-photo': `url(\"${atmosphere.src}\")`");
     expect(homeSource).toContain('className="section locationSection"');
     expect(homeSource).toContain('className="section finalCtaSection"');
-    expect(componentsCss).toMatch(/\.locationSection::before\s*\{[^}]*background-image:\s*var\(--section-photo\)/s);
-    expect(componentsCss).toMatch(/\.finalCtaSection::before\s*\{[^}]*background-image:\s*var\(--section-photo\)/s);
+    expect(homeSource.match(/className="sectionBackdrop"/g)).toHaveLength(2);
+    expect(homeSource.match(/src=\{atmosphere\.src\}/g)).toHaveLength(2);
+    expect(homeSource.match(/sizes="100vw"/g)).toHaveLength(2);
+    expect(componentsCss).toMatch(/\.sectionBackdrop\s*\{[^}]*position:\s*absolute/s);
+    expect(componentsCss).toMatch(/\.sectionBackdrop\s*\{[^}]*object-fit:\s*cover/s);
   });
 
   it('renders service areas as descriptive, icon-led navigation cards', () => {

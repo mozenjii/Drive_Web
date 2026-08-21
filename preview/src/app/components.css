@@ -122,8 +122,29 @@
 .pathCard h3 { font-size: 1.2rem; margin-bottom: var(--space-3); }
 .pathCard p { color: var(--fg-muted); font-size: 0.96rem; }
 .pathPrice { margin-top: var(--space-4); font-weight: 800; color: var(--accent-dark); }
-.pathLink { display: inline-block; margin-top: var(--space-5); font-weight: 700; color: var(--primary); }
-.pathLink:hover { text-decoration: underline; }
+.pathLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  margin-top: var(--space-5);
+  padding: 0.62rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  font-weight: 700;
+  transition: transform 0.18s var(--ease), background 0.18s var(--ease), border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+.pathLink:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  background: var(--surface);
+  box-shadow: var(--sh-2);
+  text-decoration: none;
+}
+.pathLink:active { transform: scale(0.98); }
 
 /* Photo-backed programme card. The photograph is the card, copy sits on a
    bottom-weighted scrim, and the link renders as an outlined control so it
@@ -759,15 +780,67 @@
 
 /* ---------------- final CTA ---------------- */
 
+.locationSection,
+.finalCtaSection {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--footer-bg);
+}
+.sectionBackdrop {
+  position: absolute;
+  z-index: -2;
+  object-fit: cover;
+  object-position: center 42%;
+  filter: saturate(1.08) contrast(1.03);
+  transform: scale(1.04);
+}
+.locationSection::after,
+.finalCtaSection::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(110deg, rgba(var(--wash), 0.94) 0%, rgba(var(--wash), 0.78) 48%, rgba(var(--wash), 0.62) 100%),
+    linear-gradient(0deg, rgba(var(--wash), 0.42), rgba(var(--wash), 0.08));
+}
+.locationSectionInner { position: relative; z-index: 1; }
+.locationSection .sectionHead { max-width: 64ch; }
+.locationSection .sectionTitle { color: #fff; }
+.locationSection .sectionLede { color: rgba(255, 255, 255, 0.84); }
+.locationSection .kicker {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(10px);
+}
+.sectionPhotoDisclosure {
+  position: absolute;
+  right: var(--space-4);
+  bottom: var(--space-3);
+  z-index: 3;
+  padding: 0.28rem 0.55rem;
+  border-radius: var(--r-full);
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(var(--wash), 0.7);
+  backdrop-filter: blur(8px);
+  font-size: 0.68rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
 .finalCta {
   text-align: center;
-  background: linear-gradient(140deg, var(--primary), #2b57d4 55%, var(--accent));
+  background: rgba(var(--wash), 0.52);
   border-radius: var(--r-xl);
   padding: var(--space-16) var(--space-8);
   color: #fff;
   position: relative;
   overflow: hidden;
-  box-shadow: var(--sh-4);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0 24px 70px rgba(var(--wash), 0.32);
+  backdrop-filter: blur(16px);
 }
 .finalCta::before {
   content: '';
@@ -780,6 +853,13 @@
 .finalCta p { color: rgba(255, 255, 255, 0.9); margin-top: var(--space-4); max-width: 56ch; margin-inline: auto; }
 .finalCta .btn-ghost { background: rgba(255, 255, 255, 0.14); color: #fff; border-color: rgba(255, 255, 255, 0.4); }
 .finalCta .btn-ghost:hover { background: rgba(255, 255, 255, 0.24); border-color: #fff; }
+
+@media (max-width: 640px) {
+  .sectionBackdrop { object-position: 62% center; }
+  .finalCta { padding: var(--space-12) var(--space-5); }
+  .finalCta .heroActions { flex-direction: column; }
+  .finalCta .btn { width: 100%; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .roadLine,
