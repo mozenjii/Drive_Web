@@ -18,6 +18,8 @@ import { easyAffordable } from './clients/easy-affordable-driving-school';
 import { premierDriving } from './clients/premier-driving';
 import { cdlCalifornia } from './clients/commercial-drivers-license-of-california';
 import { pacificSafetyCenter } from './clients/pacific-safety-center';
+import { riversideDriving } from './clients/riverside-driving-school';
+import { iconDriving } from './clients/icon-driving-school';
 import { academicDriving } from './clients/academic-driving-school';
 import { allgoodDriving } from './clients/allgood-driving-school';
 import { drivingSchoolForYou } from './clients/driving-school-for-you';
@@ -87,6 +89,8 @@ export const clients: Client[] = [
   premierDriving,
   cdlCalifornia,
   pacificSafetyCenter,
+  riversideDriving,
+  iconDriving,
 ];
 
 export const clientBySlug = new Map(clients.map((c) => [c.slug, c]));

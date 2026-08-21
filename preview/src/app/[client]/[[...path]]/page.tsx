@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const route = findRoute(client, path);
   if (!route) return {};
 
-  const where = `${client.city}, CA`;
+  const where = `${client.city}, ${client.state ?? 'CA'}`;
   const suffix = `${client.name} — ${where}`;
 
   const titles: Record<string, string> = {

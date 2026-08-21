@@ -281,6 +281,8 @@ export interface Client {
   photos?: Photos;
 
   city: string;
+  /** Two-letter state abbreviation. Defaults to CA for the campaign roster. */
+  state?: string;
   county?: string;
   /** Full street address as they publish it. */
   address?: string;
