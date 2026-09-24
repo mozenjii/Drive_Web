@@ -10,7 +10,7 @@ transcription rather than recall.
 
 It also prints the claims that must NOT be reproduced (pass rates, "#1", student
 counts), because those are easier to leave out when you have seen the list.
-See sites/VERIFY.md and memory/006-claims-refused.md.
+See sites/VERIFY.md for the claim verification rules.
 """
 from __future__ import annotations
 

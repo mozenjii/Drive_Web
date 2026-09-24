@@ -2,7 +2,7 @@
    Template variants.
 
    Three light-background directions. The variant is chosen per
-   client from the business they actually are — see docs/DESIGN.md.
+   client by its own brand and audience.
    Every token below is overridden by the client's OWN brand colours
    when we have scraped them, because a preview wearing the client's
    real mark reads as their site upgraded, not as a template.

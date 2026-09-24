@@ -4,8 +4,7 @@ const nextConfig: NextConfig = {
   /**
    * Static export. Every client page is prerendered to plain HTML at build time
    * and uploaded to one Cloudflare Pages project — no adapter, no Node runtime,
-   * no per-client configuration. See docs/ARCHITECTURE.md for why one project
-   * beats a project (or a branch) per client.
+   * no per-client configuration. One project serves every preview.
    */
   output: 'export',
   trailingSlash: true,

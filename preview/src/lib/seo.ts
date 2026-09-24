@@ -18,7 +18,7 @@ import type { Client } from './types';
  * repository variable arrives as the **empty string** — which is not nullish, so
  * `?? default` would have kept it. Every canonical and og:url in the export
  * would then have been a bare path with no host: exactly the class of fault
- * recorded in memory/014, invisible on the page and fatal to a pasted link.
+ * invisible on the page and fatal to a pasted link.
  */
 const configuredBase =
   process.env.NEXT_PUBLIC_PREVIEW_BASE?.trim().replace(/\/+$/, '') || undefined;

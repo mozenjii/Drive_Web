@@ -1,7 +1,6 @@
 name: Deploy previews
 
-# One build, one Cloudflare Pages project, every client. See docs/ARCHITECTURE.md
-# for why this is not a project (or a branch) per client.
+# One build and one Cloudflare Pages project serve every client.
 #
 # Required repository secrets:
 #   CLOUDFLARE_API_TOKEN   — a token with the "Cloudflare Pages: Edit" permission
@@ -84,8 +83,7 @@ jobs:
       #     the real business's own site in search)
       #   - every image reference resolves (a typo is a broken image on a page
       #     we are asking someone to judge us by)
-      #   - no page borrows shared stock   (twenty previews once shared one
-      #     photograph of one set of students — see memory/012)
+      #   - no page borrows shared stock photography
       #   - every internal link resolves
       #   - every page has a title, a lang attribute and exactly one h1
       #   - every img has an alt attribute
@@ -135,7 +133,7 @@ jobs:
             echo
             echo 'Add them under **Settings → Secrets and variables → Actions**. The token needs'
             echo '**Cloudflare Pages: Edit**, and it must belong to the account that owns the'
-            echo '`epoches` Pages project — see `memory/014-deployment.md`, which records that'
+            echo '`epoches` Pages project.'
             echo 'these previews live on the personal account and NOT the Epoches company one.'
           } >> "$GITHUB_STEP_SUMMARY"
 

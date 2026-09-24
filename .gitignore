@@ -10,16 +10,32 @@ npm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 .vercel
-coverage/
-playwright-report/
-test-results/
+**/coverage/
+**/playwright-report/
+**/test-results/
 
+# Local assistant/editor configuration and generated agent workflows.
+.agents/
+.claude/
+.codex/
+.cursor/
+.glo/
+.playwright/
+.playwright-mcp/
+.mcp.json
+mcp-configs/
 
-# Scraped prospect assets — 84MB of other people's images. The ones a preview
-# actually uses are copied into preview/public/clients/, and the rest can be
-# regenerated with research/tools/scrape.py. The page text and index.json ARE
-# tracked: they are the evidence behind every claim in a client file.
-research/*/assets/
+# Internal working material, research data, and generated review artifacts.
+.artifacts/
+design-qa.md
+docs/
+memory/
+research/
+!research/tools/
+research/tools/*
+!research/tools/*.py
+!research/tools/*.js
+
 
 # Wrangler local deploy state (account id, project name, build cache).
 # Not secret, but machine-local — the OAuth token itself lives outside the repo.

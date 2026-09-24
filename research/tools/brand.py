@@ -1,7 +1,7 @@
 """Sample a client's brand from their own logo and make it legible.
 
 Prints a ready-to-paste `brand: { ... }` block. The rule, from
-docs/DESIGN.md: keep their hue, lower the lightness until it clears WCAG AA,
+Keep their hue and lower the lightness until it clears WCAG AA,
 never ship the raw hex and never fall back to a safe default.
 
   python brand.py <image> [<image> ...]
